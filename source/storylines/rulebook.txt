@@ -1,0 +1,513 @@
+@storyline rulebook context=studio weight=2
+@thread rulebook-main writer=c3 title="{{c3.emoji}} {{c3.name}} · Rulebook comments"
+
+=== m rulebook.01 thread=rulebook-main side=u from=p2 to=c3 phase=backstory at=-3d17:20
+{{c3.name}}, I'm going to read the rulebook draft properly on Monday and leave my comments directly in the document. Before I do: is the copy in the shared folder the latest one? I'd rather not annotate a ghost.
+
+=== m rulebook.02 thread=rulebook-main side=a from=c3 to=p2 turn=t1 part=1 phase=backstory at=-3d17:34 files=rulebook_a1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+No ghosts. The copy in the shared folder is the latest: the third draft, sixteen pages, saved last night. I've attached it here as well, so you won't have to go looking.
+
+Comment wherever you like. I'll answer each comment where it sits, so the reasoning stays next to the sentence it's about.
+
+---
+
+📎 **Files**
+
+1. [rulebook-draft-v3.md](rulebook-draft-v3.md): the rulebook, third draft, sixteen pages.
+
+---
+
+=== note asset rulebook_a1: the rulebook's third draft, sixteen pages: intro, components, setup, a turn, the Tide, the end of the game, example of play, designer's note, credits
+
+=== m rulebook.03 thread=rulebook-main side=u from=p2 to=c3 card=doc
+Setup, step 4: "Shuffle the Tide deck and deal some cards to each player." "Some" is not a number. How many, exactly?
+
+=== m rulebook.04 thread=rulebook-main side=a from=c3 to=p2 turn=t2 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Fair catch. "Some" was a placeholder I forgot to fill in. I'm working out the right number now.
+
+---
+
+=== m rulebook.05 thread=rulebook-main side=a from=c3 to=p2 turn=t2 part=2 card=doc
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **Why the number matters**
+
+The Tide deck has 54 cards. At the end of every round the group reveals five, and the game ends when a full five can't be revealed. So every card dealt into a hand at setup is a card the clock doesn't get. {{p1.name}}'s design notes aim for eight rounds, which is what fits in forty minutes.
+
+▫️ **The arithmetic**
+
+| Players | 4 cards each | 3 cards each |
+|---|---|---|
+| 2 | 46 left, 9 rounds | 48 left, 9 rounds |
+| 3 | 42 left, 8 rounds | 45 left, 9 rounds |
+| 4 | 38 left, 7 rounds | 42 left, 8 rounds |
+| 5 | 34 left, 6 rounds | 39 left, 7 rounds |
+
+Four cards for everyone gives a five-player game only six rounds, and that's too few to finish the festival tasks. Four cards for two or three players and three cards for four or five keeps every player count within a round of the target.\
+↳ `Y1`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` Starting hand size:\
+> ⭐ **A** Four cards with two or three players, three with four or five\
+> ➖ **B** Four cards for everyone, simpler to explain, shorter big games
+
+---
+
+=== m rulebook.06 thread=rulebook-main side=u from=p2 to=c3
+Y1 A. Arithmetic I can't argue with, and believe me, I looked for a way.
+
+=== m rulebook.07 thread=rulebook-main side=a from=c3 to=p2 turn=t3 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Step 4 now reads: *"Shuffle the Tide deck. Deal four cards to each player in a game of two or three, or three cards each in a game of four or five."*
+
+I've also added the same line to the setup diagram's caption, so anyone setting up from the picture alone gets it right.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Starting hand: four cards for two or three players, three for four or five.*
+
+---
+
+=== m rulebook.08 thread=rulebook-main side=u from=p2 to=c3 card=doc
+The opening paragraph: "Welcome, dear neighbor! Pour yourself something warm, gather your favorite people, and let the sea breeze carry you into a cozy day of festival preparations." I read this aloud and my tea went cold out of embarrassment. Can we get to the point?
+
+=== m rulebook.09 thread=rulebook-main side=a from=c3 to=p2 turn=t4 part=1 card=doc
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Guilty. That paragraph was written in a sunnier mood than a rulebook deserves.
+
+▫️ **Two ways to fix it**
+
+1. **One warm sentence, then the goal.** *"You and your neighbors have one day to get the harbor ready for the festival."* The goal of the game follows straight after. It keeps a little of the game's feeling and costs one line.
+2. **No intro at all.** The page opens on "Goal of the game." It's the clearest option, but the rulebook would start colder than the box it comes in.
+
+I'd keep the one sentence. People read the first line of a rulebook to decide whether they'll enjoy the rest.\
+↳ `Y2`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y2` The opening:\
+> ⭐ **A** One warm sentence, then the goal\
+> ➖ **B** No intro, start with the goal
+
+---
+
+=== m rulebook.10 thread=rulebook-main side=u from=p2 to=c3
+A, but lose "cozy". We already say it on the box.
+
+=== m rulebook.11 thread=rulebook-main side=a from=c3 to=p2 turn=t5 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+"Cozy" has left the building. Page 1 now opens:
+
+*"You and your neighbors have one day to get the harbor ready for the festival. Finish every task before the tide runs out, and you all win together."*
+
+That's two sentences, both with a job, and the tea stays warm.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *Opening: one warm sentence, then the goal, without "cozy".*
+
+---
+
+=== m rulebook.12 thread=rulebook-main side=u from=p2 to=c3 card=doc
+Throughout: the wooden pieces are "shells" on page 3, "tokens" on page 7 and "markers" in the scoring section. Players will think there are three kinds. Pick one.
+
+=== m rulebook.13 thread=rulebook-main side=a from=c3 to=p2 turn=t6 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+You're right, and it's worse than three pages. I'm counting every use before I pick.
+
+---
+
+=== m rulebook.14 thread=rulebook-main side=a from=c3 to=p2 turn=t6 part=2 card=doc
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **The count**
+
+1. "Shells": 14 times.
+2. "Tokens": 9 times.
+3. "Markers": 3 times, all in scoring. I must have written that section on a different day.
+
+▫️ **My pick**
+
+I'd use "shells" everywhere. It's already the most common word, it fits the harbor, and it's easier to remember than a generic word. The components list would say it once in full, *"30 shells (wooden tokens)"*, so nobody wonders what a shell is.\
+↳ `Y3`
+
+There's one thing outside my document. The card diagram on page 5 shows the icon legend from {{c4.name}}'s layouts, and the legend says "token". If the cards and the book disagree, players will believe the cards.\
+↳ `T1`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y3` What to call the wooden pieces:\
+> ⭐ **A** "Shells" everywhere, with "wooden tokens" once in the components list\
+> ➖ **B** "Tokens" everywhere
+
+📋 **To do**
+
+> 💠 `T1` Let {{c4.name}} know the icon legend on the cards should say "shell".
+
+---
+
+=== m rulebook.15 thread=rulebook-main side=u from=p2 to=c3
+Y3 A. I'll tell {{c4.name}} after lunch.
+
+=== m rulebook.16 thread=rulebook-main side=a from=c3 to=p2 turn=t7 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Done: 12 changes from "tokens" and "markers" to "shells", plus the components line. I read the scoring section once more afterwards, and it now sounds like it was written in the same week as the rest.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Wooden pieces: "shells" throughout.*
+
+📋 **To do**
+
+> 🔷 `T1` Let {{c4.name}} know the icon legend on the cards should say "shell".
+
+---
+
+=== m rulebook.17 thread=rulebook-main side=u from=p2 to=c3 card=doc
+Example of play. It's the longest section and it repeats rules we've just explained. The printer's quote drops by 0.14 per copy at 12 pages instead of 16. On the 1,500-copy first run, that's 210. If we cut the example (two pages), the designer's note, and the separate credits page by moving credits to the back cover, we're at 12. Can we?
+
+=== m rulebook.18 thread=rulebook-main side=a from=c3 to=p2 turn=t8 part=1 card=doc
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Your page count is right: those four pages get us to 12, and 210 is real money. I'd still keep the example, and here's why, as plainly as I can put it.
+
+▫️ **Why I'd keep it**
+
+1. **The rules say what; the example shows how.** It's the only place in the book where one whole turn happens from start to finish, with real cards on the table.
+2. **It shows the cooperative part.** The rules can say "discuss your plans". The example shows two neighbors actually doing it ("I'll take the nets if you can cover the lanterns"). That's the feeling the game is selling.
+3. **It's where people go when they're stuck.** Repeating the rules is the point. Readers come back to it mid-game to check what they half-remember.
+
+▫️ **What it would cost to keep**
+
+We'd stay at 16 pages and the 210. I looked for four other pages to cut instead, and the only candidates left are the setup diagram and the Tide section, which teach more than they cost.
+
+▫️ **A free thing either way**
+
+The Tide card sheet has 55 slots and the deck uses 54. A turn-summary reference card can go in the spare slot at no extra cost, whichever way you choose.\
+↳ `Y4`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y4` The example of play:\
+> ➖ **A** Cut it and go to 12 pages, with a reference card in the spare slot\
+> ⭐ **B** Keep it at 16 pages
+
+📋 **To do**
+
+> 🔹 `T1` Let {{c4.name}} know the icon legend on the cards should say "shell".
+
+---
+
+=== branch rulebook.disagree
+--- option p2wins weight=1
+=== m rulebook.19 thread=rulebook-main side=u from=p2 to=c3
+Respectfully, no. Players read cards; they skim books. The reference card sits in front of every player for forty minutes, and the example sits in one booklet in the box. And 210 is real money for a studio of two. Y4 A. Also, I told {{c4.name}} about the shells.
+
+=== m rulebook.20 thread=rulebook-main side=a from=c3 to=p2 turn=t9 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+That's the argument I hadn't weighed properly: the card is in every player's hand, and the example is in one book. You've convinced me. Twelve pages it is.
+
+▫️ **Saving the best of the example**
+
+The most useful moment of the two pages is the one turn where two players trade a Tide card to finish a task. I can squeeze that onto the back of the reference card as a five-line mini example. The front would hold the turn in four steps.\
+↳ `Y5`
+
+▫️ **Checking the price**
+
+Before I rebuild the book around 12 pages, it's worth confirming that the lower price holds for the paper we chose. Quotes sometimes assume the cheapest stock.\
+↳ `T2`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y4` *Example of play: cut; the rulebook goes to 12 pages.*
+>
+> 💠 `Y5` The back of the reference card:\
+> ⭐ **A** A five-line mini example of one turn\
+> ➖ **B** The end-of-game rules
+
+📋 **To do**
+
+> ✅ `T1` *{{c4.name}} told about "shells".*\
+> 💠 `T2` Ask the printer to confirm the 12-page price holds for the paper we chose.
+
+---
+
+=== m rulebook.21 thread=rulebook-main side=u from=p2 to=c3
+Y5 A. I'll write to the printer this afternoon.
+
+=== m rulebook.22 thread=rulebook-main side=a from=c3 to=p2 turn=t10 part=1 files=rulebook_a2,rulebook_a3
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Here's the 12-page draft and the reference card. The credits now share the back cover with the components list. They fit, but only just, so I'd treat that page as full.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *Reference card back: a mini example of one turn.*
+
+📋 **To do**
+
+> 🔷 `T2` Ask the printer to confirm the 12-page price holds for the paper we chose.
+
+---
+
+📎 **Files**
+
+1. [rulebook-draft-v4.md](rulebook-draft-v4.md): the rulebook, fourth draft, twelve pages.
+2. [reference-card.md](reference-card.md): the turn summary on the front, the mini example on the back.
+
+---
+
+=== note asset rulebook_a2: the rulebook's fourth draft, twelve pages, without the example of play or the designer's note, credits on the back cover
+=== note asset rulebook_a3: the reference card text: the turn in four steps on the front, a five-line example of one turn on the back
+
+=== m rulebook.23 thread=rulebook-main side=u from=p2 to=c3
+The printer confirmed it: 12 pages, same paper, and the lower price holds.
+
+=== m rulebook.24 thread=rulebook-main side=a from=c3 to=p2 turn=t11 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Good news, and confirmed in writing. The 210 is officially saved.
+
+---
+
+📋 **To do**
+
+> ✅ `T2` *Printer confirmed the 12-page price on our paper.*
+
+---
+--- option c3wins weight=2
+=== m rulebook.19b thread=rulebook-main side=u from=p2 to=c3
+Before I decide: who actually reads page 13? Honestly. Also, I told {{c4.name}} about the shells.
+
+=== m rulebook.20b thread=rulebook-main side=a from=c3 to=p2 turn=t9 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Honestly: not everyone. But the people who do read it matter a lot.
+
+▫️ **Who reads the example**
+
+1. **The person teaching the game.** One player at each table reads the whole book before the first game, and the example is how they check they've understood a turn before explaining it to four people.
+2. **Anyone stuck in the second round.** That's the usual moment someone says "wait, can I do that?" The example answers by showing, which settles arguments faster than rereading a rule.
+3. **The player who joins later.** They get handed the book open at the example, because it's the quickest page to catch up from.
+
+▫️ **What the reference card can't do**
+
+The card can hold the order of a turn. It can't hold the reasons, like why you'd keep a Tide card instead of playing it. The example is the only place the book shows a player thinking.
+
+The person teaching the game is also the one who decides whether it comes off the shelf again.\
+↳ `Y4`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y4` The example of play:\
+> ➖ **A** Cut it and go to 12 pages, with a reference card in the spare slot\
+> ⭐ **B** Keep it at 16 pages
+
+📋 **To do**
+
+> ✅ `T1` *{{c4.name}} told about "shells".*
+
+---
+
+=== m rulebook.21b thread=rulebook-main side=u from=p2 to=c3
+Annoyingly convincing. The person teaching it is exactly who buys our next game. Y4 B, keep it, but make it shorter in words, not pages.
+
+=== m rulebook.22b thread=rulebook-main side=a from=c3 to=p2 turn=t10 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Deal. The example went from about 900 words to about 600. I cut every sentence that restated a rule and kept every sentence where a player decides something. The freed space now holds a larger diagram of the table, which was cramped before.
+
+▫️ **The spare card slot**
+
+The 55th slot on the Tide card sheet is still empty. A turn-summary card there costs nothing extra and helps the teacher, the stuck player and the latecomer all at once.\
+↳ `Y5`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y4` *Example of play: kept, tightened to about 600 words; the rulebook stays at 16 pages.*
+>
+> 💠 `Y5` The spare slot on the Tide card sheet:\
+> ⭐ **A** A turn-summary reference card\
+> ➖ **B** Leave it empty
+
+---
+
+=== m rulebook.23b thread=rulebook-main side=u from=p2 to=c3
+Y5 A. Free is my favorite price.
+
+=== m rulebook.24b thread=rulebook-main side=a from=c3 to=p2 turn=t11 part=1 files=rulebook_a4,rulebook_a5
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Mine too. Here's the 16-page draft with the shorter example, and the reference card text. The turn is on the front; the end-of-round steps are on the back, because that's the part people forget most.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *Spare slot: a turn-summary reference card.*
+
+---
+
+📎 **Files**
+
+1. [rulebook-draft-v4.md](rulebook-draft-v4.md): the rulebook, fourth draft, sixteen pages, with the tighter example.
+2. [reference-card.md](reference-card.md): the turn on the front, the end of the round on the back.
+
+---
+
+=== note asset rulebook_a4: the rulebook's fourth draft, sixteen pages, with the example of play cut to about 600 words and a larger table diagram
+=== note asset rulebook_a5: the reference card text: the turn in four steps on the front, the end-of-round steps on the back
+=== end branch
+
+=== m rulebook.25 thread=rulebook-main side=u from=p2 to=c3 card=doc
+Last one, I promise. The end of the game: "If all players agree, you may win." Agree to what? This reads like we're asking them to vote on victory.
+
+=== m rulebook.26 thread=rulebook-main side=a from=c3 to=p2 turn=t12 part=1 card=doc
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+That sentence is my mistake, and a good catch. It's left over from an older version of the game, where players could agree to end early once every task was done. I rewrote the section around it and missed the sentence itself.
+
+▫️ **The fix**
+
+*"The game ends at the end of the round in which you can't reveal five Tide cards. If every festival task is complete, you all win. If not, you all lose together, and probably play again."*
+
+▫️ **One thing to confirm**
+
+Game rules are {{p1.name}}'s call, not mine. I'm fairly sure the early ending is gone, but I'd rather hear it than assume it.\
+↳ `T3`
+
+---
+
+📋 **To do**
+
+> 💠 `T3` Check with {{p1.name}} that the early-ending rule is gone for good.
+
+---
+
+=== m rulebook.27 thread=rulebook-main side=u from=p2 to=c3
+Asked {{p1.name}}. It's been gone since the spring version, and {{p1.name}} said, and I quote, "please burn that sentence."
+
+=== m rulebook.28 thread=rulebook-main side=a from=c3 to=p2 turn=t13 part=1 files=rulebook_a6
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Burned. The new ending is in, and every comment from this week is answered and applied. The draft is ready to print for Friday's playtest at {{pick.cafe}}.
+
+I read the whole book once more from the first page to the last, as a new player would. Nothing else jumped out, though playtesters always find the sentence nobody else did.
+
+---
+
+📌 **Summary**
+
+1. Starting hands are now an exact number: four cards for two or three players, three for four or five.
+2. The opening is two sentences long, with no "cozy".
+3. The wooden pieces are "shells" everywhere.
+4. The ending no longer asks players to vote on winning.
+
+📋 **To do**
+
+> ✅ `T3` *{{p1.name}} confirmed: the early-ending rule is gone.*
+
+---
+
+📎 **Files**
+
+1. [rulebook-draft-v5.md](rulebook-draft-v5.md): the rulebook, fifth draft, ready for the playtest print.
+
+---
+
+=== note asset rulebook_a6: the rulebook's fifth draft with every comment applied: 12 pages after the p2wins option of rulebook.disagree, 16 pages after c3wins
+
+=== m rulebook.29 thread=rulebook-main side=u from=p2 to=c3
+That was less painful than I expected. Thank you, {{c3.name}}. I may even leave comments voluntarily next time.
+
+=== m rulebook.30 thread=rulebook-main side=a from=c3 to=p2 turn=t14 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+I'll hold you to that. Your comments made the book shorter, clearer and about forty percent less sugary, which is a good week's work for one document.
+
+---
+
+=== side_story rulebook.credits chance=0.4
+=== m rulebook.31 thread=rulebook-main side=u from=p1 to=c3 card=doc
+Hi {{c3.name}}! One comment from me on the credits: can we thank {{pick.dog}}? Nine socks went missing during playtesting and I refuse to believe it was a coincidence. And is there room to credit {{p3.name}} for naming the ferry card? Thanks!
+
+=== m rulebook.32 thread=rulebook-main side=a from=c3 to=p1 turn=t15 part=1 card=doc
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Room for both. {{p3.name}}'s line is in as it should be, plainly: *"Ferry card name: {{p3.name}}."* The dog's line deserves a little more thought, so here are two versions.\
+↳ `Y6`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y6` {{pick.dog}}'s line in the credits:\
+> ⭐ **A** "Sock quality control: {{pick.dog}}"\
+> ➖ **B** "Special thanks to {{pick.dog}}, for nine socks and zero apologies"
+
+---
+
+=== m rulebook.33 thread=rulebook-main side=u from=p1 to=c3
+Y6 B! Nine socks deserves to be on the record. Thanks!
+
+=== m rulebook.34 thread=rulebook-main side=a from=c3 to=p1 turn=t16 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+On the record it is, right under {{p3.name}}. It's the only line in the book that nobody will skim.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y6` *Credits: "Special thanks to {{pick.dog}}, for nine socks and zero apologies."*
+
+---
+=== end side_story
+
+=== canon The game's theme: neighbors have one day to get the harbor ready for a festival, finishing every task before the tide runs out.
+=== canon The Tide deck has 54 cards; five are revealed at the end of each round, and the game ends at the end of the round in which five can't be revealed.
+=== canon {{p1.name}}'s design target is eight rounds, which fits the forty-minute game.
+=== canon Starting hands: four Tide cards each with two or three players, three each with four or five.
+=== canon The rulebook opens: "You and your neighbors have one day to get the harbor ready for the festival."
+=== canon The rulebook never says "cozy"; it's already on the box.
+=== canon The wooden pieces are called "shells" everywhere, listed once as "30 shells (wooden tokens)"; the cards' icon legend says "shell" too.
+=== canon The Tide card sheet has 55 slots; the spare one holds a turn-summary reference card.
+=== canon The printer's quote is 0.14 per copy cheaper at 12 pages than at 16; the first run is 1,500 copies, so 210 in all.
+=== canon The rulebook's length follows the rulebook.disagree branch: 12 pages without the example of play (p2wins), or 16 pages with an example cut to about 600 words (c3wins).
+=== canon The early-ending rule, where players could agree to end once every task was done, has been gone since the spring version.
+=== canon In the cooperative game, everyone wins together or loses together.
+
+=== asset rulebook_a6 when rulebook.disagree=p2wins use rulebook_a6_12

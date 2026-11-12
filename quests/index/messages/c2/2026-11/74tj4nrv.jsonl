@@ -1,0 +1,30 @@
+{"id":"261107-070500-c2-74tj-u","t":"2026-11-07T07:05:00Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Elodie, a side quest!"}
+{"id":"261107-071100-c2-74tj-a","t":"2026-11-07T07:11:00Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"The plan: Greetings and being polite.","codes":["Y1","Y2"],"turn":"4b88d1e7","part":1}
+{"id":"261107-072000-c2-74tj-u","t":"2026-11-07T07:20:00Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"A and A!"}
+{"id":"261107-072600-c2-74tj-a","t":"2026-11-07T07:26:00Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"Lesson 1: hello, please, thank you: Guten Morgen (GOO-ten MOR-gen): good morning.","codes":["T1","Y1","Y2"],"terms":["german-vocab-v1.md","german-vocab-v1"],"turn":"9d91225d","part":1}
+{"id":"261110-120000-c2-74tj-u","t":"2026-11-10T12:00:00Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Did T1 in the car.","codes":["T1"]}
+{"id":"261110-120001-c2-74tj-a","t":"2026-11-10T12:00:01Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"Lesson 2: at the booth: Möchten Sie es ausprobieren?","codes":["T2","T1"],"turn":"26db13df","part":1}
+{"id":"261110-120003-c2-74tj-u","t":"2026-11-10T12:00:03Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"I keep scribbling words on the back of playtest scorecards and then losing them."}
+{"id":"261110-120005-c2-74tj-a","t":"2026-11-10T12:00:05Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"There's a skill for exactly that.","turn":"ddad666f","part":1}
+{"id":"261110-120008-c2-74tj-a","t":"2026-11-10T12:00:08Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"rough-notes: a safe place for your half-formed notes, kept exactly as you wrote them, with a tidy version alongside.","card":"skills","turn":"ddad666f","part":2}
+{"id":"261110-120010-c2-74tj-u","t":"2026-11-10T12:00:10Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Yes please!"}
+{"id":"261110-120011-c2-74tj-a","t":"2026-11-10T12:00:11Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"Your notes, tidied: \"gooten tag\": Guten Tag.","codes":["T2"],"terms":["rough-notes","gooten tag","danke shern??","said with rounded lips, so"],"turn":"d2936cdb","part":1}
+{"id":"261110-120013-c2-74tj-u","t":"2026-11-10T12:00:13Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Pitch done twice, once to the kettle."}
+{"id":"261110-120028-c2-74tj-a","t":"2026-11-10T12:00:28Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"Lesson 3: when you don't understand: Wie bitte?","codes":["T3","Y3","T2"],"terms":["try out","Können Sie das bitte wiederholen?"],"turn":"c52845c9","part":1}
+{"id":"261110-120036-c2-74tj-u","t":"2026-11-10T12:00:36Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Field report!","terms":["Langsamer, bitte!","sehr gut"]}
+{"id":"261110-120042-c2-74tj-a","t":"2026-11-10T12:00:42Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"I can't reconstruct a paragraph from two words, so take this as a guess.","terms":["very good","Thanks, very kind!"],"turn":"1da0a990","part":1}
+{"id":"261110-120049-c2-74tj-u","t":"2026-11-10T12:00:49Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Danke, sehr nett!"}
+{"id":"261110-120056-c2-74tj-u","t":"2026-11-10T12:00:56Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Y3 A, prices.","codes":["Y3","T3"]}
+{"id":"261110-120113-c2-74tj-a","t":"2026-11-10T12:01:13Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"Tens, a hundred, and how to ask a price.","codes":["T4","Y3","T3"],"terms":["german-vocab-v2.md","five-and-twenty","two-and-forty","german-vocab-v2"],"turn":"c1d5d358","part":1}
+{"id":"261110-120120-c2-74tj-u","t":"2026-11-10T12:01:20Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Did T4 with the grocery receipt.","codes":["T4"]}
+{"id":"261110-120132-c2-74tj-a","t":"2026-11-10T12:01:32Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"Lesson 5: small talk and goodbyes: Woher kommen Sie?","codes":["Y4","T4"],"terms":["german-vocab-v3.md","four-and-twenty","german-vocab-v3"],"turn":"2e8222c2","part":1}
+{"id":"261110-120139-c2-74tj-u","t":"2026-11-10T12:01:39Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Y4 A.","codes":["Y4"]}
+{"id":"261110-120145-c2-74tj-a","t":"2026-11-10T12:01:45Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"The quiz: Write the German for each one.","codes":["T5","Y4"],"turn":"cc09ef93","part":1}
+{"id":"261110-120152-c2-74tj-u","t":"2026-11-10T12:01:52Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Guten Morgen Danke schön Möchtest du es ausprobieren Für zwei bis fünf Spieler Langsamer bitte Ich spreche nur ein…"}
+{"id":"261110-120206-c2-74tj-a","t":"2026-11-10T12:02:06Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"5 out of 10; a pass is 7.","codes":["T6","T5"],"terms":["pleased to meet you","Wie bitte?"],"turn":"8529ceab","part":1}
+{"id":"261110-120214-c2-74tj-u","t":"2026-11-10T12:02:14Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Okay, read it twice and said the numbers to Noodle."}
+{"id":"261110-120220-c2-74tj-a","t":"2026-11-10T12:02:20Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"The retake: Would you like to try it?","codes":["T7","T6"],"turn":"8fd2ee2b","part":1}
+{"id":"261110-120227-c2-74tj-u","t":"2026-11-10T12:02:27Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"Möchten Sie es ausprobieren?"}
+{"id":"261110-120233-c2-74tj-a","t":"2026-11-10T12:02:33Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"6 out of 6.","codes":["T7"],"turn":"205d0105","part":1}
+{"id":"261110-120240-c2-74tj-u","t":"2026-11-10T12:02:40Z","from":"Lena","side":"u","conv":"74tj4nrv","gist":"One more thing: could you squeeze the best bits onto one page I can fold into my badge holder?"}
+{"id":"261110-120246-c2-74tj-a","t":"2026-11-10T12:02:46Z","from":"Elodie","side":"a","conv":"74tj4nrv","gist":"Done.","terms":["german-pocket-sheet.md","german-pocket-sheet","rough-notes"],"skills":["rough-notes"],"turn":"f2baa1a3","part":1}

@@ -1,0 +1,1158 @@
+@storyline launch context=studio weight=3
+@thread launch-main writer=c3 title="{{c3.emoji}} {{c3.name}} · Launch page"
+@thread launch-research writer=c2 title="{{c2.emoji}} {{c2.name}} · Comparable campaigns"
+
+=== m launch.01 thread=launch-main side=u from=p1 to=c3 phase=backstory at=-4d09:12
+Morning {{c3.name}}! Can we start on the campaign page for {{pick.game}} today? Launch is in six weeks and I'd love the page ready by the end of next week. The short version of the game: two to five players, about forty minutes, and everyone works together to put a little harbor town back together after a storm. Cards, a folding board, wooden tokens. What do you need from me?
+
+=== m launch.02 thread=launch-main side=a from=c3 to=p1 turn=t1 part=1 phase=backstory at=-4d09:14
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Happy to start today. I have three questions first, so the first draft is aimed at the right reader.
+
+▫️ **Tone**
+
+The game is warm by design, so the page can lean into that warmth. It can also keep a lighter touch and let the photos do the warming.\
+↳ `Y1`
+
+▫️ **Length**
+
+Campaign pages tend to come in two shapes. A short page gets readers to the pledge button in two scrolls. A long page walks them through a full turn. Long pages win over readers who are already curious, and short ones catch people passing by.\
+↳ `Y2`
+
+▫️ **The opening**
+
+I can open on the game itself, or on the two of you and the studio.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` Tone of the page:\
+> ⭐ **A** Warm and friendly, like the game\
+> ➖ **B** Light and plain, with the warmth left to the photos
+>
+> 💠 `Y2` Length:\
+> ⭐ **A** Short, about 600 words, pledge button early\
+> ➖ **B** Long, about 1,500 words, with a full example turn
+>
+> 💠 `Y3` What the page opens on:\
+> ⭐ **A** The game: the storm, the town, the table\
+> ➖ **B** The studio: five years, two people, one coast
+>
+> Answer line: `Y1 A`, `Y2 A`, `Y3 A`, or "all recommended".
+
+---
+
+=== m launch.03 thread=launch-main side=u from=p1 to=c3 phase=backstory at=-4d09:40
+All recommended! Warm is right for this one. Could you add one line about the studio near the end? People liked knowing it's just the two of us last time.
+
+=== m launch.04 thread=launch-main side=a from=c3 to=p1 turn=t2 part=1 phase=backstory at=-4d09:41
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+So that's warm and short, with the game first and a line about the two of you near the end. I'm writing it now.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Tone: warm and friendly.*
+>
+> ✅ `Y2` *Length: short, about 600 words.*
+>
+> ✅ `Y3` *Opening: the game, with a studio line near the end.*
+
+---
+
+=== note asset launch_a1: the campaign page's first draft, about 610 words. Placeholder headline "A Warm Hug in a Box", an opening on the storm and the harbor town, a paragraph on passing the last lantern across the table, a short studio note, and a pledge section with [PRICE] left blank. Uses "cozy" nine times, "heartwarming" three times, "sprinkled with friendship" once and "snuggle" once.
+=== m launch.05 thread=launch-main side=a from=c3 to=p1 turn=t2 part=2 phase=backstory at=-4d11:20 files=launch_a1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **The draft**
+
+Here's the first draft, about 610 words. The storm and the town come first, then how a turn feels, then the two of you near the end. The pledge section has the price left as `[PRICE]` until we know it.
+
+▫️ **Where I'm least sure**
+
+1. The headline, "A Warm Hug in a Box", is a placeholder. I like it, but I like a lot of things at eleven in the morning.
+2. The pledge section needs a real price and a box description before it can do its job.
+
+---
+
+📎 **Files**
+
+1. [launch-page-v1.md](launch-page-v1.md): the first draft of the campaign page.
+
+---
+
+=== m launch.06 thread=launch-main side=u from=p1 to=c3 phase=backstory at=-3d08:30
+I read it with my coffee and I'm a bit in love! The bit about passing the last lantern across the table is exactly how the game feels when it's going well. I'm sending it to {{p2.name}} for the business side, so brace yourself.
+
+=== m launch.07 thread=launch-main side=u from=p2 to=c3 phase=backstory at=-3d10:02
+{{c3.name}}, I've read the draft twice. Numbers first: 610 words, "cozy" nine times, "heartwarming" three times, "sprinkled with friendship" once, and one "snuggle". Our backers are adults deciding whether to spend real money on a board game. They need to know what it is, how long it takes and what's in the box. Right now they'd mostly learn how we'd like them to feel. It's too sugary. The lantern paragraph can stay.
+
+=== m launch.08 thread=launch-main side=a from=c3 to=p2 turn=t3 part=1 phase=backstory at=-3d10:05
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Nine cozies is eight too many, and I won't argue with a count. You're right that the draft spends its words on feelings and skimps on facts.
+
+▫️ **What I'd change**
+
+1. Lead with what the game is: two to five players, about forty minutes, cooperative, a harbor town to rebuild.
+2. Keep one warm moment, the lantern paragraph, and let it do the work the adjectives were doing.
+3. Say plainly what's in the box: cards, a folding board, wooden tokens.
+4. Give the pledge section a real price instead of `[PRICE]`.
+
+▫️ **The price**
+
+I shouldn't guess a price. Instead I've written a prompt for {{c2.name}}, `{{code.r1}} A`, asking what comparable campaigns charged and how many backers they drew. Once the answer is back, I can put real options in front of you.\
+↳ `T1`
+
+▫️ **How far to cut**
+
+I could trim gently or do a proper rewrite. I'd do the rewrite: trimming adjectives leaves sentences that were built around them.\
+↳ `Y4`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y4` How to fix the tone:\
+> ⭐ **A** Rewrite in a plainer voice, keeping the lantern paragraph\
+> ➖ **B** Keep the draft and trim the sugar word by word
+
+📋 **To do**
+
+> 💠 `T1` Paste the prompt below into {{c2.name}}'s thread, then bring the answer back here.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c2.emoji}} {{c2.name}}
+From: {{c3.emoji}} {{c3.name}}
+Subject: Price points of comparable campaigns
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+I'm writing the campaign page for {{pick.game}}, a cooperative board game for two to five players. It takes about forty minutes and comes with cards, a folding board and wooden tokens. The studio needs to pick a main pledge price.
+
+Please find six to eight crowdfunding campaigns for comparable games: cooperative, cozy in theme, two to five players, thirty to fifty minutes, funded in the last two years. For each, I'd like:
+
+1. The main pledge price for one copy of the game.
+2. The box size, and anything special about it.
+3. The final number of backers.
+4. The total raised.
+
+Please send it back as a table. Add a line on where the numbers came from and which ones you're less sure of. A short summary of what the prices suggest would help too.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+---
+
+=== m launch.09 thread=launch-main side=u from=p2 to=c3 phase=backstory at=-3d10:30
+Y4 A. One warm paragraph is plenty. For the price section you'll want these numbers from {{c8.name}}'s cost sheet. Landed cost is €14.20 a copy with our standard box, and €19.60 with the deluxe box (magnetic lid, linen finish, token tray).
+
+=== note asset launch_a2: the campaign page's second draft, about 500 words, in a plainer voice. It opens with what the game is, keeps the lantern paragraph in the middle, lists the box contents plainly and ends with a one-line studio note. The price is still [PRICE]. "Cozy" appears once.
+=== m launch.10 thread=launch-main side=a from=c3 to=p2 turn=t4 part=1 phase=backstory at=-3d10:36 files=launch_a2
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+It's rewritten. The second draft is about 500 words. The first two lines say what the game is, the lantern paragraph sits in the middle, the box contents are a plain list and the studio line comes at the end. "Cozy" appears once, in the one sentence where it's true. Both costs stay off the page itself, but they'll go into the price options once {{c2.name}}'s numbers are back.\
+↳ `T1`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y4` *Tone: rewritten in a plainer voice, lantern paragraph kept.*
+
+📋 **To do**
+
+> 🔷 `T1` Paste the prompt into {{c2.name}}'s thread, then bring the answer back here.
+
+---
+
+📎 **Files**
+
+1. [launch-page-v2.md](launch-page-v2.md): the second draft, plainer, with the price still blank.
+
+---
+
+=== m launch.11 thread=launch-research side=u from=p1 to=c2 phase=backstory at=-2d14:05
+Hi {{c2.name}}! This one's from {{c3.name}}:
+
+[PROMPT {{code.r1}} A START]
+To: {{c2.emoji}} {{c2.name}}
+From: {{c3.emoji}} {{c3.name}}
+Subject: Price points of comparable campaigns
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+I'm writing the campaign page for {{pick.game}}, a cooperative board game for two to five players. It takes about forty minutes and comes with cards, a folding board and wooden tokens. The studio needs to pick a main pledge price.
+
+Please find six to eight crowdfunding campaigns for comparable games: cooperative, cozy in theme, two to five players, thirty to fifty minutes, funded in the last two years. For each, I'd like:
+
+1. The main pledge price for one copy of the game.
+2. The box size, and anything special about it.
+3. The final number of backers.
+4. The total raised.
+
+Please send it back as a table. Add a line on where the numbers came from and which ones you're less sure of. A short summary of what the prices suggest would help too.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+
+=== m launch.12 thread=launch-research side=a from=c2 to=p1 turn=t1 part=1 phase=backstory at=-2d14:06
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Got it. I'll look for funded cooperative campaigns from the last two years and note anything I can't confirm. I'll be back shortly with a table.
+
+---
+
+=== note asset launch_a3: comparable-campaigns.csv, a CSV of six comparable campaigns, with columns for name, players, play time, box, main pledge, backers and raised. The rows match the table in the answer frame, including Fennel Ferry's total raised as 176,400 (a typo for 76,400).
+=== m launch.13 thread=launch-research side=a from=c2 to=p1 turn=t1 part=2 phase=backstory at=-2d14:31 files=launch_a3
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+▫️ **What I found**
+
+Six campaigns fit closely enough. All are cooperative, for two to five players or near it, take thirty to forty-five minutes, and were funded in the last two years. The table is in the answer `{{code.r1}} B` below, and also in the file.
+
+▫️ **How sure I am**
+
+1. Prices and backer counts come from each campaign's own page at the close of funding. That's about as solid as these numbers get.
+2. Totals raised include add-ons and shipping for some campaigns and not for others, so I wouldn't compare them closely.
+3. Six is a small sample. Treat the pattern as a hint, not a law.
+
+---
+
+📋 **To do**
+
+> 💠 `T1` Carry the answer below back to {{c3.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} B START]
+To: {{c3.emoji}} {{c3.name}}
+From: {{c2.emoji}} {{c2.name}}
+Subject: Price points of comparable campaigns
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅱️⬛🔽🔽⬛
+
+Here are six comparable campaigns, all funded in the last two years.
+
+| Campaign | Players · time | Box | Main pledge | Backers | Raised |
+|---|---|---|---|---|---|
+| Kettle & Kite | 2–4 · 30 min | small | €29 | 2,150 | €66,800 |
+| Puddle Parade | 2–5 · 35 min | small | €32 | 3,400 | €117,000 |
+| Brindle Lane Bakers | 2–4 · 40 min | medium | €35 | 2,980 | €112,300 |
+| Fennel Ferry | 1–4 · 45 min | medium | €39 | 1,820 | €176,400 |
+| Lanterns of Fernquill | 2–5 · 40 min | medium | €42 | 2,600 | €118,900 |
+| The Mossback Rescue | 2–5 · 45 min | large, with insert | €49 | 1,310 | €71,500 |
+
+Where it comes from: each campaign's own page at the close of funding. Pledge prices and backer counts are firm. Totals raised mix in add-ons and sometimes shipping, so I left them out of the summary below.
+
+What it suggests:
+
+1. The median main pledge is €37.
+2. The three campaigns at €35 or less averaged 2,843 backers. The three at €39 or more averaged 1,910.
+3. The €49 campaign had the most elaborate box and the fewest backers, but one row is too thin to say the box caused it.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} B END]
+```
+
+---
+
+=== m launch.14 thread=launch-main side=u from=p1 to=c3
+Morning! Here's {{c2.name}}'s answer:
+
+[PROMPT {{code.r1}} B START]
+To: {{c3.emoji}} {{c3.name}}
+From: {{c2.emoji}} {{c2.name}}
+Subject: Price points of comparable campaigns
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅱️⬛🔽🔽⬛
+
+Here are six comparable campaigns, all funded in the last two years.
+
+| Campaign | Players · time | Box | Main pledge | Backers | Raised |
+|---|---|---|---|---|---|
+| Kettle & Kite | 2–4 · 30 min | small | €29 | 2,150 | €66,800 |
+| Puddle Parade | 2–5 · 35 min | small | €32 | 3,400 | €117,000 |
+| Brindle Lane Bakers | 2–4 · 40 min | medium | €35 | 2,980 | €112,300 |
+| Fennel Ferry | 1–4 · 45 min | medium | €39 | 1,820 | €176,400 |
+| Lanterns of Fernquill | 2–5 · 40 min | medium | €42 | 2,600 | €118,900 |
+| The Mossback Rescue | 2–5 · 45 min | large, with insert | €49 | 1,310 | €71,500 |
+
+Where it comes from: each campaign's own page at the close of funding. Pledge prices and backer counts are firm. Totals raised mix in add-ons and sometimes shipping, so I left them out of the summary below.
+
+What it suggests:
+
+1. The median main pledge is €37.
+2. The three campaigns at €35 or less averaged 2,843 backers. The three at €39 or more averaged 1,910.
+3. The €49 campaign had the most elaborate box and the fewest backers, but one row is too thin to say the box caused it.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} B END]
+
+=== m launch.15 thread=launch-main side=a from=c3 to=p1 turn=t5 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Thank you, both of you. This is enough to put two honest options on the table.
+
+▫️ **What the table says**
+
+The middle of the market is about €37. In this sample, campaigns at €35 or less drew roughly 2,800 backers, and campaigns at €39 or more drew roughly 1,900.
+
+▫️ **Two prices**
+
+1. **€34 with the standard box.** This is under the median, in the range where the sample drew the most backers. At 2,800 backers that's about €95,200 pledged. Each copy brings in €19.80 over the €14.20 landed cost, so about €55,400 before shipping and fees.
+2. **€44 with the deluxe box:** magnetic lid, linen finish, token tray. At 1,900 backers that's about €83,600 pledged. Each copy brings in €24.40 over the €19.60 landed cost, so about €46,400 before shipping and fees.
+
+▫️ **What the numbers don't say**
+
+Backer counts depend on mailing lists, launch months and luck at least as much as on price. Also, I'm a writer doing a bookkeeper's sums, so {{c8.name}} should check these before anyone quotes them. The deluxe box also has a reason the table can't show: a game people keep on the shelf for years sells the next one.\
+↳ `Y5`
+
+---
+
+📌 **Summary**
+
+1. Six comparable campaigns put the median pledge at €37.
+2. €34 with the standard box likely means more backers and a little more margin.
+3. €44 with the deluxe box means fewer backers and a nicer object.
+
+❓ **Choices**
+
+> 💠 `Y5` Main pledge price:\
+> ⭐ **A** €34, standard box\
+> ➖ **B** €44, deluxe box
+
+📋 **To do**
+
+> ✅ `T1` *Prompt carried to {{c2.name}} and the answer brought back.*
+
+---
+
+=== m launch.16 thread=launch-main side=a from=c3 to=p1 turn=t5 part=2 card=decision
+`Y5` Which main pledge price for {{pick.game}}?
+
+A. €34, standard box: the page leads with value and aims for more backers ⭐
+B. €44, deluxe box: the page leads with the box and aims for a keepsake
+
+=== m launch.17 thread=launch-main side=u from=p1 to=c3
+Ooh, hard one. Before we pick: if we go with B, how much of the page changes? And would the lantern paragraph survive?
+
+=== m launch.18 thread=launch-main side=a from=c3 to=p1 turn=t6 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+About a fifth of the page changes either way, and the lantern paragraph survives both.
+
+1. **With A,** the pledge section leads with what you get for €34, and the closing line invites people to the table.
+2. **With B,** the box gets its own short paragraph (magnetic lid, linen finish, token tray), and the closing line leans on keeping the game for years.
+
+The opening, the description of a turn and the studio line stay as they are.\
+↳ `Y5`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y5` Main pledge price:\
+> ⭐ **A** €34, standard box\
+> ➖ **B** €44, deluxe box
+
+---
+
+=== branch launch.price
+--- option low weight=3
+=== m launch.19 thread=launch-main side=u from=p2 to=c3
+Y5 A. €34 keeps us under the median, and inside what people spend without a second thought. If the game earns it, the deluxe box can come with the reprint.
+
+=== note asset launch_a4: the campaign page's third draft, priced at €34 with the standard box. It has a new pledge line and the closing line "Pull up a chair. There's always room for one more neighbor."
+=== m launch.20 thread=launch-main side=a from=c3 to=p2 turn=t7 part=1 files=launch_a4
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Done. The pledge section and the closing line now point the same way.
+
+▫️ **Pledge section**
+
+> One copy of {{pick.game}}: the cards, the folding board, the wooden tokens and a rulebook you can learn in one sitting. €34.
+
+▫️ **Closing line**
+
+> Pull up a chair. There's always room for one more neighbor.
+
+▫️ **Recorded**
+
+The price is now a decision the other threads can cite: main pledge €34, with the standard box.\
+↳ `D-001`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *Price: €34, standard box.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+📎 **Files**
+
+1. [launch-page-v3.md](launch-page-v3.md): the third draft, priced at €34.
+
+---
+
+=== m launch.21 thread=launch-main side=u from=p1 to=c3
+Love "room for one more neighbor"! Does the page still say anything about the box? And can we make sure it says the tokens are wooden? People always ask.
+
+=== m launch.22 thread=launch-main side=a from=c3 to=p1 turn=t8 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Both are covered now.
+
+1. The box gets one plain line: "A sturdy box sized for your shelf, with room for everything."
+2. "Wooden tokens" is in the pledge line, and again in the caption under the table photo, since that's where people look when they wonder.
+
+The file is updated in place.
+
+---
+
+=== m launch.23 thread=launch-main side=u from=p2 to=c3
+Better. I've stopped counting cozies.
+
+=== m launch.24 thread=launch-main side=a from=c3 to=p2 turn=t9 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+I'll take that as the highest praise this page is likely to get. There's one cozy left, and it's earned.
+
+---
+
+--- option high weight=2
+=== m launch.19b thread=launch-main side=u from=p1 to=c3
+We talked it over at lunch: Y5 B. If this is the game people keep for years, the box should feel like it. {{p2.name}} says the margin difference is a price worth paying for the shelf.
+
+=== note asset launch_a5: the campaign page's third draft, priced at €44 with the deluxe box. It has a new box paragraph that wrongly calls the token tray wooden, and the closing line "Built to last as long as the friendships around it."
+=== m launch.20b thread=launch-main side=a from=c3 to=p1 turn=t7 part=1 files=launch_a5
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Done. The box now has its own paragraph, and the closing line points at the years ahead.
+
+▫️ **The box**
+
+> A box worth keeping: a magnetic lid that closes with a soft click, a linen finish, and a wooden tray that keeps every token sorted.
+
+▫️ **Pledge section**
+
+> One copy of {{pick.game}} in the deluxe box: the cards, the folding board, the wooden tokens and a rulebook you can learn in one sitting. €44.
+
+▫️ **Closing line**
+
+> Built to last as long as the friendships around it.
+
+▫️ **Recorded**
+
+The price is now a decision the other threads can cite: main pledge €44, with the deluxe box.\
+↳ `D-001`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *Price: €44, deluxe box.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+📎 **Files**
+
+1. [launch-page-v3.md](launch-page-v3.md): the third draft, priced at €44.
+
+---
+
+=== m launch.21b thread=launch-main side=u from=p2 to=c3
+One correction before this goes anywhere. The token tray is cardboard. The box with a wooden tray was the €22.40 quote, and we didn't take it.
+
+=== m launch.22b thread=launch-main side=a from=c3 to=p2 turn=t8 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+You're right, and that mistake is mine. Your note said "token tray", and I added "wooden" because the tokens are. I'm correcting the earlier reply and the file now.
+
+---
+
+=== note asset launch_a6: the corrected third draft at €44. The box paragraph no longer calls the token tray wooden; everything else matches a5.
+=== m launch.23b thread=launch-main side=a from=c3 to=p1 turn=t8 part=2 edits=launch.20b files=launch_a6
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Done. The box now has its own paragraph, and the closing line points at the years ahead.
+
+▫️ **The box**
+
+> A box worth keeping: a magnetic lid that closes with a soft click, a linen finish, and a tray that keeps every token sorted.
+
+▫️ **Pledge section**
+
+> One copy of {{pick.game}} in the deluxe box: the cards, the folding board, the wooden tokens and a rulebook you can learn in one sitting. €44.
+
+▫️ **Closing line**
+
+> Built to last as long as the friendships around it.
+
+▫️ **Recorded**
+
+The price is now a decision the other threads can cite: main pledge €44, with the deluxe box.\
+↳ `D-001`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *Price: €44, deluxe box.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+📎 **Files**
+
+1. [launch-page-v3.md](launch-page-v3.md): the third draft, priced at €44.
+
+---
+
+=== m launch.24b thread=launch-main side=u from=p2 to=c3
+Thank you. That's the description I'll check against the printer's spec, word for word.
+
+=== m launch.25b thread=launch-main side=a from=c3 to=p2 turn=t9 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Good. If anything else on the page doesn't match the spec, send it back and I'll fix it the same way: in the reply and in the file.
+
+---
+
+=== end branch
+
+=== hook after-price
+
+=== side_story launch.table chance=0.4
+=== m launch.26 thread=launch-research side=u from=p1 to=c2
+{{c2.name}}, a quick one while I'm looking at your table again. Fennel Ferry has 1,820 backers at €39, but €176,400 raised? That's about €97 a backer. Is that a typo? (Your answer already went to {{c3.name}}, by the way.)
+
+=== note asset launch_a7: the corrected CSV of six comparable campaigns, with Fennel Ferry's total raised changed to 76,400. All other cells match a3.
+=== m launch.27 thread=launch-research side=a from=c2 to=p1 turn=t2 part=1 files=launch_a7
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Good catch, and yes, it's a typo of mine. The campaign's page says €76,400, about €42 a backer, which fits the other rows.
+
+▫️ **Corrected table**
+
+| Campaign | Players · time | Box | Main pledge | Backers | Raised |
+|---|---|---|---|---|---|
+| Kettle & Kite | 2–4 · 30 min | small | €29 | 2,150 | €66,800 |
+| Puddle Parade | 2–5 · 35 min | small | €32 | 3,400 | €117,000 |
+| Brindle Lane Bakers | 2–4 · 40 min | medium | €35 | 2,980 | €112,300 |
+| Fennel Ferry | 1–4 · 45 min | medium | €39 | 1,820 | €76,400 |
+| Lanterns of Fernquill | 2–5 · 40 min | medium | €42 | 2,600 | €118,900 |
+| The Mossback Rescue | 2–5 · 45 min | large, with insert | €49 | 1,310 | €71,500 |
+
+▫️ **Does it change anything?**
+
+No. The summary used only pledge prices and backer counts, so the €37 median and both backer averages stand. I've corrected the file so nobody picks up the wrong number later. I should have checked that row's arithmetic myself, so thank you for doing it.
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *Answer carried back to {{c3.name}}.*
+
+---
+
+📎 **Files**
+
+1. [comparable-campaigns-v2.csv](comparable-campaigns-v2.csv): the table, with Fennel Ferry's total corrected to €76,400.
+
+---
+
+=== m launch.28 thread=launch-research side=u from=p1 to=c2
+Thanks! Glad it was in the column nobody used.
+=== end side_story
+
+=== m launch.29 thread=launch-main side=u from=p2 to=c3
+Pledge tiers next. {{c3.name}}, do we do an early-bird? I've seen campaigns do it well and badly, and I'd like the reasons, not a vibe.
+
+=== m launch.30 thread=launch-main side=a from=c3 to=p2 turn=t10 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Here are the reasons, then.
+
+▫️ **An early-bird discount**
+
+Backers would get 10% off the main pledge in the first 48 hours. That gives the campaign a strong first day, and a strong first day is what makes strangers trust a page. The cost is margin. It also teaches some backers to wait for the next discount.
+
+▫️ **An early-bird card**
+
+Everyone who pledges in the first 48 hours would get one extra card, printed with the rest. It gives the same push to pledge early, and the price stays a single number. The cost is one card's worth of printing rather than a tenth of every early pledge.
+
+I'd go with the card. It rewards the same people without making the price on the page feel negotiable.\
+↳ `Y6`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y6` Reward for pledging in the first 48 hours:\
+> ➖ **A** 10% off the main pledge\
+> ⭐ **B** A bonus card, printed with the game
+
+---
+
+=== branch launch.earlybird
+--- option discount weight=1
+=== m launch.31 thread=launch-main side=u from=p2 to=c3
+Y6 A. I'd rather spend margin on the first day than add a component to the print run this close to the deadline for the files.
+
+=== m launch.32 thread=launch-main side=a from=c3 to=p2 turn=t11 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+That's a fair trade, and the timing argument is a good one. Here's the new line for the top of the pledge section:
+
+> Pledge in the first 48 hours and the main pledge is 10% off.
+
+It's recorded alongside the price: 10% off the main pledge for pledges in the first 48 hours.\
+↳ `D-002`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y6` *Early-bird: 10% off for the first 48 hours.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+=== m launch.33 thread=launch-main side=u from=p1 to=c3
+Should we cap it? I'm worried half the campaign happens in the first two days and we end up giving everyone the discount. And does a cap make us look stingy?
+
+=== m launch.34 thread=launch-main side=a from=c3 to=p1 turn=t12 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+A cap is wise, and done well it reads as exciting rather than stingy. People like a reason to act now.
+
+1. The line becomes: "The first 500 backers, or everyone in the first 48 hours, whichever comes first, get 10% off the main pledge."
+2. A small counter beside it shows how many early spots are left, so the cap feels like a race rather than a rule.
+
+I've added the cap to the decision. The worst case is now 500 discounted copies, which is a number {{c8.name}} can check against the budget.\
+↳ `D-002`, `T2`
+
+---
+
+📋 **To do**
+
+> 💠 `T2` Check with {{c8.name}} what the early-bird reward costs us.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+=== m launch.35 thread=launch-main side=u from=p1 to=c3
+{{c8.name}} ran it: with the cap at 500, it fits in the budget, with room to spare. Thanks for the counter idea, I love a race!
+
+=== m launch.36 thread=launch-main side=a from=c3 to=p1 turn=t13 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Then the early-bird is settled, cap and all. The counter is in the page draft as a note for whoever builds the page.
+
+---
+
+📋 **To do**
+
+> ✅ `T2` *Early-bird cost checked with {{c8.name}}: it fits the budget with the cap.*
+
+---
+
+--- option promo weight=2
+=== m launch.31b thread=launch-main side=u from=p1 to=c3
+B! And I already know which card: the harbor cat. The cat can't fix a single roof, but whoever sits next to the cat gets one extra calm each round. Everyone at the last playtest wanted a cat, and this way the cat is a little gift instead of a rule.
+
+=== m launch.32b thread=launch-main side=a from=c3 to=p1 turn=t11 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+A cat who can't fix anything but makes everyone feel better is the most honest character in the game. Here's the new line for the top of the pledge section:
+
+> Pledge in the first 48 hours and the harbor cat comes home with you: a bonus card who can't fix a single roof, but keeps the whole table calm.
+
+It's recorded alongside the price: the harbor cat bonus card for pledges in the first 48 hours.\
+↳ `D-002`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y6` *Early-bird: the harbor cat bonus card for the first 48 hours.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+=== m launch.33b thread=launch-main side=u from=p2 to=c3
+Fine by me, the cat has a following. What does one extra card cost us per copy? Numbers, please, not adjectives.
+
+=== m launch.34b thread=launch-main side=a from=c3 to=p2 turn=t12 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+I don't have a printing quote, so any number from me would be a guess, and you'd be right not to trust it. {{c8.name}} has the quotes. The figure to ask for is the cost of one extra card per copy, at the size of our print run.\
+↳ `T2`
+
+---
+
+📋 **To do**
+
+> 💠 `T2` Check with {{c8.name}} what the early-bird reward costs us.
+
+---
+
+=== m launch.35b thread=launch-main side=u from=p2 to=c3
+{{c8.name}} says €0.04 a copy at our run size. For a cat with a following, that's approved.
+
+=== m launch.36b thread=launch-main side=a from=c3 to=p2 turn=t13 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Four cents for a cat. The early-bird is settled, and the cat line stays exactly as written.
+
+---
+
+📋 **To do**
+
+> ✅ `T2` *Early-bird cost checked with {{c8.name}}: €0.04 a copy.*
+
+---
+
+=== end branch
+
+=== side_story launch.faq chance=0.5
+=== m launch.37 thread=launch-main side=u from=p1 to=c3
+Could the page have a short FAQ at the bottom? People always ask the same five things.
+
+=== m launch.38 thread=launch-main side=a from=c3 to=p1 turn=t14 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Here are the five I'd expect, with answers.
+
+1. **How many players?** Two to five. It plays well at every count, and best, we think, at four.
+2. **How long does it take?** About forty minutes once everyone knows the rules. Your first game will run closer to an hour.
+3. **Is it competitive?** No. Everyone wins together, or the storm does.
+4. **Can I play solo?** It's built for two to five. We've heard the requests, and we aren't promising a solo mode yet.
+5. **When will it ship?** We'll post a shipping date before the campaign opens, along with the countries we ship to. We'll keep you posted at every step from the printer to your door. If anything is delayed, we'll tell you early rather than late, because we'd rather you hear it from us than wonder.
+
+---
+
+=== m launch.39 thread=launch-main side=u from=p2 to=c3
+Number 3 is good. Number 5 is a paragraph, and nobody reads a paragraph in an FAQ. Two sentences, maximum.
+
+=== m launch.40 thread=launch-main side=a from=c3 to=p2 turn=t15 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Two sentences it is:
+
+> **When will it ship?** We'll post a shipping date and the countries we ship to before the campaign opens. If anything slips, you'll hear it from us first.
+
+---
+=== end side_story
+
+=== m launch.41 thread=launch-main side=u from=p1 to=c3
+Headline time! I have strong feelings about this one, but {{p2.name}} gets the last word.
+
+=== m launch.42 thread=launch-main side=a from=c3 to=p1 turn=t16 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+A headline has one job: telling a stranger in three seconds whether to keep reading. Here are two ways to do it.
+
+▫️ **Playful**
+
+> Many hands make light houses.
+
+It plays on the old proverb and on the lighthouse waiting at the end of every game. It makes people smile and stop. The risk is the reader who doesn't get it and scrolls on.
+
+▫️ **Plain**
+
+> {{pick.game}}: a cooperative board game for two to five players.
+
+It says exactly what the game is. Nobody will misread it, and nobody will remember it either.
+
+▫️ **What stays either way**
+
+The line underneath keeps the facts: "Rebuild a storm-battered harbor town together, in about forty minutes." Since that line carries the facts, I think the headline can afford to smile.\
+↳ `Y7`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y7` The page's headline:\
+> ⭐ **A** Playful: "Many hands make light houses."\
+> ➖ **B** Plain: "{{pick.game}}: a cooperative board game for two to five players."
+
+---
+
+=== m launch.43 thread=launch-main side=a from=c3 to=p1 turn=t16 part=2 card=decision
+`Y7` Which headline for the campaign page?
+
+A. "Many hands make light houses": the page opens with a smile, and the line underneath carries the facts ⭐
+B. "{{pick.game}}: a cooperative board game for two to five players": the page opens with the facts, plain and unmissable
+
+=== m launch.44 thread=launch-main side=u from=p1 to=c3
+A, obviously. I've been saying "many hands make light houses" to {{pick.dog}} all morning. {{p2.name}}?
+
+=== branch launch.headline
+--- option plain weight=3
+=== m launch.45 thread=launch-main side=u from=p2 to=c3
+B. A stranger has three seconds, and I'd rather spend them on what the game is. I do like the pun, though. Put it on the back of the box.
+
+=== note asset launch_a8: the campaign page's fourth draft with the plain headline "{{pick.game}}: a cooperative board game for two to five players" and the line "Rebuild a storm-battered harbor town together, in about forty minutes" beneath it.
+=== m launch.46 thread=launch-main side=a from=c3 to=p2 turn=t17 part=1 files=launch_a8
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Plain it is. The page now opens:
+
+> {{pick.game}}: a cooperative board game for two to five players.
+>
+> Rebuild a storm-battered harbor town together, in about forty minutes.
+
+The headline is recorded. I've also noted the pun for the back of the box. The box is {{c4.name}}'s ground, though, so for now it's a suggestion waiting for {{c4.name}}, not a decision.\
+↳ `D-003`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y7` *Headline: plain.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+📎 **Files**
+
+1. [launch-page-v4.md](launch-page-v4.md): the fourth draft, with the plain headline.
+
+---
+
+=== m launch.47 thread=launch-main side=u from=p1 to=c3 after=week.12
+Fair, the back of the box is a good home for it. Next: can you draft the announcement email for our mailing list? {{c1.name}} says {{p2.name}} wants it out by Thursday, so I'll send it tonight.
+
+=== m launch.48 thread=launch-main side=a from=c3 to=p1 turn=t18 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The draft is on the card below. It's short on purpose: who you are, what the game is, and one button to press. It doesn't mention the price or the early-bird, so they'll still be news on the day.\
+↳ `T3`
+
+---
+
+📋 **To do**
+
+> 💠 `T3` Send the announcement email to the mailing list.
+
+---
+
+=== m launch.49 thread=launch-main side=a from=c3 to=p1 turn=t18 part=2 card=widget
+The announcement email for the mailing list, ready for you to send.
+
+Subject: Our new game is almost here, and you're the first to hear about it
+
+Hi there,
+
+Five years ago we made our first game around a kitchen table in {{pick.town}}. In six weeks we launch the second one, and we wanted you to hear it from us first.
+
+{{pick.game}} is a cooperative board game for two to five players. You and your friends rebuild a storm-battered harbor town together, in about forty minutes. Everyone wins together, or the storm does.
+
+The campaign page is up today. Tap "Notify me" and we'll tell you the minute pledges open:
+
+[link to the campaign page]
+
+Thank you for sticking with us,
+{{p1.name}} and {{p2.name}}
+{{pick.studio}}
+
+=== m launch.50 thread=launch-main side=u from=p1 to=c3
+I sent a test to myself first. On my phone the subject cuts off after "Our new game is almost here, and". Which is a cliffhanger, but not the good kind.
+
+=== m launch.51 thread=launch-main side=a from=c3 to=p1 turn=t19 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+That's a cliffhanger nobody asked for. Make the subject just:
+
+> Our new game is almost here
+
+It fits on most phone screens with room to spare, and "you're the first to hear" is already in the first paragraph. Everything else stays as it is.\
+↳ `T3`
+
+---
+
+📋 **To do**
+
+> 🔷 `T3` Send the announcement email to the mailing list.
+
+---
+
+=== m launch.52 thread=launch-main side=u from=p1 to=c3
+Sent for real! Fingers crossed and coffee in hand. Thank you!
+
+=== m launch.53 thread=launch-main side=a from=c3 to=p1 turn=t20 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Fingers crossed here too. If replies come in with questions, send me the common ones and I'll make sure the page answers them.
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Announcement email sent to the mailing list.*
+
+---
+
+--- option playful weight=2
+=== m launch.45b thread=launch-main side=u from=p2 to=c3
+A. I hate that I like it. Two conditions: no exclamation mark, ever, and the plain line goes right under it so nobody has to guess what we're selling.
+
+=== note asset launch_a9: the campaign page's fourth draft with the playful headline "Many hands make light houses", then "A cooperative board game for two to five players", then "Rebuild a storm-battered harbor town together, in about forty minutes". No exclamation marks anywhere.
+=== m launch.46b thread=launch-main side=a from=c3 to=p2 turn=t17 part=1 files=launch_a9
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Both conditions are met. The page now opens:
+
+> Many hands make light houses.
+>
+> A cooperative board game for two to five players.
+>
+> Rebuild a storm-battered harbor town together, in about forty minutes.
+
+There's no exclamation mark anywhere on the page. I checked, and the first draft had four. The headline is recorded, plain line and all.\
+↳ `D-003`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y7` *Headline: playful, with the plain line beneath it.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+📎 **Files**
+
+1. [launch-page-v4.md](launch-page-v4.md): the fourth draft, with the playful headline.
+
+---
+
+=== m launch.47b thread=launch-main side=u from=p1 to=c3 after=week.12
+Yes! Can you draft the announcement email for our mailing list next? {{c1.name}} says {{p2.name}} wants it out by Thursday. And can it mention {{pick.dog}}? People love the dog.
+
+=== m launch.48b thread=launch-main side=a from=c3 to=p1 turn=t18 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The draft is on the card below, and {{pick.dog}} gets the P.S., which is where people actually read. It doesn't mention the price or the early-bird, so they'll still be news on the day.\
+↳ `T3`
+
+---
+
+📋 **To do**
+
+> 💠 `T3` Send the announcement email to the mailing list.
+
+---
+
+=== m launch.49b thread=launch-main side=a from=c3 to=p1 turn=t18 part=2 card=widget
+The announcement email for the mailing list, ready for you to send.
+
+Subject: Many hands make light houses
+
+Hi there,
+
+Five years ago we made our first game around a kitchen table in {{pick.town}}. In six weeks we launch the second one, and we wanted you to hear it from us first.
+
+{{pick.game}} is a cooperative board game for two to five players. You and your friends rebuild a storm-battered harbor town together, in about forty minutes. Everyone wins together, or the storm does.
+
+The campaign page is up today. Tap "Notify me" and we'll tell you the minute pledges open:
+
+[link to the campaign page]
+
+Thank you for sticking with us,
+{{p1.name}} and {{p2.name}}
+{{pick.studio}}
+
+P.S. {{pick.dog}} attended every playtest, mostly from under the table, and has so far stolen only one sock.
+
+=== m launch.50b thread=launch-main side=u from=p1 to=c3
+The P.S. is perfect. One worry, though: in an inbox, "light houses" with a space might just look like we can't spell.
+
+=== m launch.51b thread=launch-main side=a from=c3 to=p1 turn=t19 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+You're right. On the page the pun has the whole game around it to explain the joke, but in an inbox it's on its own. Here's the fix:
+
+1. Subject: "{{pick.game}} is almost here".
+2. The pun opens the first paragraph instead: "Many hands make light houses. That's the idea behind our new game, and in six weeks you can bring yours." Read there, it's clearly a joke.
+
+Everything else stays, the P.S. included.\
+↳ `T3`
+
+---
+
+📋 **To do**
+
+> 🔷 `T3` Send the announcement email to the mailing list.
+
+---
+
+=== m launch.52b thread=launch-main side=u from=p1 to=c3
+Sent! Two replies already, and both of them are about {{pick.dog}}. Thank you!
+
+=== m launch.53b thread=launch-main side=a from=c3 to=p1 turn=t20 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+I'd expected the dog to steal the show, though not this quickly. If the replies bring questions about the game itself, send me the common ones and I'll make sure the page answers them.
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Announcement email sent to the mailing list.*
+
+---
+
+=== end branch
+
+=== side_story launch.orange chance=0.4
+=== m launch.54 thread=launch-main side=u from=p1 to=c3
+{{p2.name}} asked me to pass on a message, and I quote: "Make sure nothing on that page says orange."
+
+=== m launch.55 thread=launch-main side=a from=c3 to=p1 turn=t21 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+I've checked every line, and the word "orange" isn't on the page. In the opening, though, the harbor lights glow "amber" after the storm. Is amber close enough to count?
+
+---
+
+=== m launch.56 thread=launch-main side=u from=p1 to=c3
+{{p2.name}} says, and again I quote: "Amber is orange in a nicer coat."
+
+=== m launch.57 thread=launch-main side=a from=c3 to=p1 turn=t22 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Then the harbor lights glow gold. It's changed in the file, and there are no other color words on the page to worry about.
+
+---
+=== end side_story
+
+=== m launch.58 thread=launch-main side=u from=p2 to=c3
+I've read the whole page top to bottom, on paper. Two things. First, "about forty minutes" appears twice before the first photo. Second, the shipping line says "ships worldwide". We haven't settled shipping regions, so which countries, exactly? Until we know, the page shouldn't promise.
+
+=== note asset launch_a10: the final campaign page text, with the price, early-bird and headline settled earlier. The intro now ends on how a game ends, and the shipping line no longer promises worldwide shipping.
+=== m launch.59 thread=launch-main side=a from=c3 to=p2 turn=t23 part=1 files=launch_a10
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Both are fixed.
+
+▫️ **Forty minutes**
+
+The line under the headline keeps it. The intro no longer repeats it, and that sentence now says how a game ends instead: "When the harbor is rebuilt, everyone wins together. If the storm gets there first, nobody does."
+
+▫️ **Shipping**
+
+"Ships worldwide" is gone. The line now reads: "Shipping regions and costs will be on this page before pledges open." It only promises what you'll actually do.
+
+---
+
+📌 **Summary**
+
+1. The page now says "about forty minutes" once.
+2. The page makes no shipping promise until the regions are settled.
+3. The page text is final and ready for Friday.
+
+---
+
+📎 **Files**
+
+1. [launch-page-final.md](launch-page-final.md): the final campaign page text.
+
+---
+
+=== m launch.60 thread=launch-main side=u from=p1 to=c3
+Thank you both! A finished page before Friday. I might frame it, or at least celebrate with the good biscuits.
+
+=== m launch.61 thread=launch-main side=a from=c3 to=p1 turn=t24 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Enjoy the good biscuits. The page earned them, and so did the two of you. If backers ask anything the page doesn't answer, send it here and it'll go in the next version.
+
+---
+
+=== canon {{pick.game}} is about neighbors rebuilding a storm-battered harbor town together; everyone wins together, or the storm does.
+=== canon The studio's prices and costs are in euros.
+=== canon Landed cost per copy is €14.20 with the standard box and €19.60 with the deluxe box (magnetic lid, linen finish, cardboard token tray); a box with a wooden tray was quoted at €22.40 a copy and turned down.
+=== canon Six comparable campaigns researched by c2 put the median main pledge at €37; those at €35 or less averaged 2,843 backers, those at €39 or more averaged 1,910.
+=== canon D-001 is the main pledge price: €34 with the standard box (launch.price low) or €44 with the deluxe box (launch.price high).
+=== canon D-002 is the early-bird: 10% off the main pledge for the first 500 backers or 48 hours, whichever comes first (launch.earlybird discount), or the harbor cat bonus card for pledges in the first 48 hours, at €0.04 a copy (launch.earlybird promo).
+=== canon D-003 is the headline: "{{pick.game}}: a cooperative board game for two to five players" (launch.headline plain, with the pun suggested for the back of the box), or "Many hands make light houses" with the plain line beneath it and no exclamation marks (launch.headline playful).
+=== canon The line under the campaign page's headline is "Rebuild a storm-battered harbor town together, in about forty minutes."
+=== canon The campaign page's one warm moment is the paragraph about passing the last lantern across the table.
+=== canon The first draft's placeholder headline was "A Warm Hug in a Box", and p2 counted "cozy" nine times in it.
+=== canon The announcement email went to the mailing list midweek, with a "Notify me" link and no price in it.
+=== canon The campaign page text was final before Friday, with no shipping promise until regions are settled.
+
+=== asset launch_a8 when launch.price=low, launch.earlybird=promo use launch_a8_lp
+=== asset launch_a8 when launch.price=high, launch.earlybird=discount use launch_a8_hd
+=== asset launch_a8 when launch.price=high, launch.earlybird=promo use launch_a8_hp
+=== asset launch_a9 when launch.price=low, launch.earlybird=promo use launch_a9_lp
+=== asset launch_a9 when launch.price=high, launch.earlybird=discount use launch_a9_hd
+=== asset launch_a9 when launch.price=high, launch.earlybird=promo use launch_a9_hp
+=== asset launch_a10 when launch.headline=plain, launch.price=low, launch.earlybird=promo use launch_a10_nlp
+=== asset launch_a10 when launch.headline=plain, launch.price=high, launch.earlybird=discount use launch_a10_nhd
+=== asset launch_a10 when launch.headline=plain, launch.price=high, launch.earlybird=promo use launch_a10_nhp
+=== asset launch_a10 when launch.headline=playful, launch.price=low, launch.earlybird=discount use launch_a10_yld
+=== asset launch_a10 when launch.headline=playful, launch.price=low, launch.earlybird=promo use launch_a10_ylp
+=== asset launch_a10 when launch.headline=playful, launch.price=high, launch.earlybird=discount use launch_a10_yhd
+=== asset launch_a10 when launch.headline=playful, launch.price=high, launch.earlybird=promo use launch_a10_yhp

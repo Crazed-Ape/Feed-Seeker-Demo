@@ -1,0 +1,556 @@
+@storyline language context=quests weight=1
+@thread language-main writer=c2 title="{{c2.emoji}} {{c2.name}} · German for the fair"
+
+=== m language.01 thread=language-main side=u from=p1 to=c2 phase=backstory at=-3d07:05
+{{c2.name}}, a side quest! {{p2.name}} and I are going to the fair in {{pick.fair_city}} and I know exactly two words of German. Can you teach me enough to be polite at a booth? Short lessons please, I get about ten minutes in the mornings.
+
+=== m language.02 thread=language-main side=a from=c2 to=p1 turn=t1 part=1 phase=backstory at=-3d07:11
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Happily. Ten minutes a day is enough for booth German if we stay narrow: phrases you'll actually say, not grammar tables.
+
+▫️ **The plan**
+
+1. Greetings and being polite.
+2. At the booth: {{pick.game}} in a few lines.
+3. What to say when you don't understand. Honestly, this is the most useful lesson.
+4. Numbers and prices.
+5. Small talk and goodbyes, then a short quiz.
+
+▫️ **A note on sources**
+
+I'll stick to standard German, which is understood everywhere it's spoken. Accents and everyday words vary from region to region. When a phrase has a common local twist I'll flag it rather than guess which one {{pick.fair_city}} uses.
+
+Two things to settle before lesson one.\
+↳ `Y1` `Y2`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` How long each lesson should be:\
+> ⭐ **A** About ten minutes, five to seven phrases\
+> ➖ **B** About five minutes, three phrases
+>
+> 💠 `Y2` What the lessons lean toward:\
+> ⭐ **A** The booth: greetings, pitching, prices, small talk\
+> ➖ **B** Getting around: tickets, the hotel, ordering food
+>
+> Answer line: `Y1 A Y2 A`, or "all recommended".
+
+---
+
+=== m language.03 thread=language-main side=u from=p1 to=c2 phase=backstory at=-3d07:20
+A and A! Ten minutes is about what I get before {{p3.name}} wakes up.
+
+=== m language.04 thread=language-main side=a from=c2 to=p1 turn=t2 part=1 phase=backstory at=-3d07:26 files=language_a1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+▫️ **Lesson 1: hello, please, thank you**
+
+1. **Guten Morgen** (GOO-ten MOR-gen): good morning. Use it until about eleven.
+2. **Guten Tag**: hello. This is the safe greeting for the rest of the day.
+3. **Hallo**: hi. Friendly, and fine with other exhibitors.
+4. **Danke** / **Danke schön**: thanks / thank you very much.
+5. **Bitte**: please. It also means "you're welcome", which is handy.
+6. **Entschuldigung**: excuse me, or sorry.
+7. **Auf Wiedersehen** / **Tschüss**: goodbye, formal and casual.
+
+▫️ **Sie and du**
+
+German has two words for "you". **Sie** is polite, for strangers and anyone selling you something. **du** is for friends. From what I've read, people at game fairs move to **du** quickly. I'd still start with **Sie** and follow the other person's lead. Nobody minds being treated politely.
+
+▫️ **Today's practice**
+
+Say three of these out loud, anywhere, to anyone, including the dog.\
+↳ `T1`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Lessons: about ten minutes each.*
+>
+> ✅ `Y2` *Focus: the booth.*
+
+📋 **To do**
+
+> 💠 `T1` Say three of the lesson 1 phrases out loud.
+
+---
+
+📎 **Files**
+
+1. [german-vocab-v1.md](german-vocab-v1.md): lesson 1's phrases with sound-alike hints.
+
+---
+
+=== note asset language_a1: a short vocabulary list of lesson one's seven greetings and polite words, each with a sound-alike pronunciation hint
+
+=== m language.05 thread=language-main side=u from=p1 to=c2
+Did T1 in the car. {{pick.dog}} looked worried by the end. Is "Entschuldigung" really that long, and do people actually say the whole thing?
+
+=== m language.06 thread=language-main side=a from=c2 to=p1 turn=t3 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Yes, they say the whole thing, and yes, it's that long. It's easier in four beats: **ent-SHOOL-di-gung**, with the weight on the second one. People sometimes shorten it to **'tschuldigung** in casual speech. I'd use the full word, though, since it's never wrong.
+
+▫️ **Lesson 2: at the booth**
+
+1. **Möchten Sie es ausprobieren?** Would you like to try it?
+2. **Das ist ein kooperatives Spiel.** It's a cooperative game.
+3. **Alle spielen zusammen.** Everyone plays together.
+4. **Für zwei bis fünf Spieler.** For two to five players.
+5. **Eine Partie dauert ungefähr vierzig Minuten.** A game takes about forty minutes.
+
+▫️ **Numbers you just used**
+
+1. **eins, zwei, drei, vier, fünf**: one to five.
+2. **vierzig**: forty. It's **vier** (four) plus **-zig**, and most tens are built the same way.
+
+Together, lines 1 to 5 are a whole pitch. Try it twice, start to finish.\
+↳ `T2`
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *Three phrases said out loud. The dog survived.*\
+> 💠 `T2` Say the five-line booth pitch twice, start to finish.
+
+---
+
+=== m language.07 thread=language-main side=u from=p1 to=c2
+I keep scribbling words on the back of playtest scorecards and then losing them. Is there somewhere better to keep my scribbles? They're very rough.
+
+=== m language.08 thread=language-main side=a from=c2 to=p1 turn=t4 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+There's a skill for exactly that. Rough is the point: write words the way they sound to you, and I'll tidy them without losing yours.
+
+---
+
+=== m language.09 thread=language-main side=a from=c2 to=p1 turn=t4 part=2 card=skills
+{{skill.rough_notes}}: a safe place for your half-formed notes, kept exactly as you wrote them, with a tidy version alongside.
+
+=== m language.10 thread=language-main side=u from=p1 to=c2
+Yes please! Here's what survived the scorecards:
+
+gooten tag (fine)
+danke shern??
+mershten zee es owsprobeeren = try it
+feer is 4, feertsig is 40?
+coop spiel something
+the long sorry word
+
+=== m language.11 thread=language-main side=a from=c2 to=p1 turn=t5 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+These are better than you think. Your spellings show you're hearing the sounds correctly. I've kept your notes as they are and put the tidy version next to each one.
+
+▫️ **Your notes, tidied**
+
+1. "gooten tag": **Guten Tag**. Right.
+2. "danke shern??": **Danke schön**. The **ö** is close to "er" said with rounded lips, so "shern" is a good hint. Keep it.
+3. "mershten zee es owsprobeeren": **Möchten Sie es ausprobieren?** All the sounds are there.
+4. "feer, feertsig": **vier**, **vierzig**. Both right.
+5. "coop spiel something": **ein kooperatives Spiel**.
+6. "the long sorry word": **Entschuldigung**. Four beats.
+
+I'll add to these notes as you send more. Your version stays in each time.\
+↳ `T2`
+
+---
+
+📋 **To do**
+
+> 🔷 `T2` Say the five-line booth pitch twice, start to finish.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.rough_notes}}` {{skillv.rough_notes}}
+
+---
+
+=== m language.12 thread=language-main side=u from=p1 to=c2
+Pitch done twice, once to the kettle. Lesson 3? And is it normal that I already forgot "ausprobieren"?
+
+=== m language.13 thread=language-main side=a from=c2 to=p1 turn=t6 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Very normal. Long words come back with use, not with staring at them. **aus-pro-BEE-ren**, "try out". Today's lesson is the one that rescues you when words don't come back.
+
+▫️ **Lesson 3: when you don't understand**
+
+1. **Wie bitte?** Sorry? / Pardon? The quickest one.
+2. **Können Sie das bitte wiederholen?** Could you repeat that, please?
+3. **Langsamer, bitte.** Slower, please.
+4. **Ich verstehe nicht.** I don't understand.
+5. **Ich spreche nur ein bisschen Deutsch.** I only speak a little German.
+6. **Sprechen Sie Englisch?** Do you speak English?
+
+▫️ **Why this one matters**
+
+In my reading on phrasebook learners, the common trouble isn't saying things. It's the reply, which comes back fast and full. Line 5 gets most people to slow down kindly. Line 3 does the rest.
+
+Line 2 is a mouthful, so it's today's practice.\
+↳ `T3`
+
+▫️ **What's next**
+
+Lesson 4 can go two ways.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y3` What lesson 4 covers:\
+> ⭐ **A** Numbers and prices, for suppliers' stands and your own booth\
+> ➖ **B** Food and ordering, for the evenings
+
+📋 **To do**
+
+> ✅ `T2` *Booth pitch said twice. The kettle was impressed.*\
+> 💠 `T3` Say "Können Sie das bitte wiederholen?" three times, getting faster.
+
+---
+
+=== side_story language.cafe chance=0.5
+=== m language.30 thread=language-main side=u from=p1 to=c2
+Field report! It turns out the owner of {{pick.cafe}} lived somewhere German-speaking for years. I said "Guten Morgen, ich spreche nur ein bisschen Deutsch" and got a whole paragraph back. I said "Langsamer, bitte!" and they laughed and actually slowed down. I caught "Kaffee" and "sehr gut", and got a free biscuit. What do you think they said?
+
+=== m language.31 thread=language-main side=a from=c2 to=p1 turn=tc1 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+I can't reconstruct a paragraph from two words, so take this as a guess. **Sehr gut** is "very good", so the paragraph was almost certainly praise, and "Kaffee" suggests your order came into it. Something like "very good, and what coffee would you like?" fits. That's only a likely version, not a translation.
+
+What I can say for sure: you used lesson 3 exactly as it's meant to be used, and it worked on the first try. For next time, **Danke, sehr nett!** means "Thanks, very kind!" It's the right line for a free biscuit.
+
+---
+
+=== m language.32 thread=language-main side=u from=p1 to=c2
+Danke, sehr nett! Saving that one for the next biscuit.
+=== end side_story
+
+=== m language.14 thread=language-main side=u from=p1 to=c2
+Y3 A, prices. Suppliers will absolutely try to sell us things. T3 done too, and my tongue is in a knot.
+
+=== m language.15 thread=language-main side=a from=c2 to=p1 turn=t7 part=1 files=language_a2
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+▫️ **Lesson 4: numbers and prices**
+
+1. **zehn, zwanzig, dreißig, vierzig, fünfzig**: ten, twenty, thirty, forty, fifty.
+2. **hundert**: a hundred.
+3. **Was kostet das?** What does it cost?
+4. **Das kostet fünfundzwanzig.** It costs twenty-five.
+5. **Ab welcher Stückzahl gibt es einen Rabatt?** From what quantity is there a discount?
+6. **Haben Sie eine Visitenkarte?** Do you have a business card?
+
+▫️ **The tricky bit**
+
+German says the ones before the tens: 25 is **fünfundzwanzig**, "five-and-twenty". 42 is **zweiundvierzig**, "two-and-forty". When someone says a price, the last part you hear is the tens, so wait for the end before you decide. I'd write the number down rather than trust your ear on the first day. Fair stands usually have a pen.
+
+▫️ **Practice**
+
+Read five prices off any receipt aloud, in German.\
+↳ `T4`
+
+---
+
+📌 **Summary**
+
+1. Tens, a hundred, and how to ask a price.
+2. Numbers come ones-first: 25 is "five-and-twenty".
+3. The vocabulary file now covers lessons 1 to 4.
+
+❓ **Choices**
+
+> ✅ `Y3` *Lesson 4: numbers and prices.*
+
+📋 **To do**
+
+> ✅ `T3` *"Können Sie das bitte wiederholen?" said three times, knot included.*\
+> 💠 `T4` Read five prices from a receipt aloud in German.
+
+---
+
+📎 **Files**
+
+1. [german-vocab-v2.md](german-vocab-v2.md): the vocabulary list, now with lessons 2 to 4 and the numbers.
+
+---
+
+=== note asset language_a2: the second version of the vocabulary list, adding the booth pitch, the not-understanding phrases, and numbers and prices
+
+=== m language.16 thread=language-main side=u from=p1 to=c2
+Did T4 with the grocery receipt. Fünfundzwanzig is evil. Five-and-twenty?! Who does that? Lesson 5 next, and then the quiz?
+
+=== m language.17 thread=language-main side=a from=c2 to=p1 turn=t8 part=1 files=language_a3
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Older English did, for what it's worth: "four-and-twenty blackbirds". German just never stopped. Yes to both.
+
+▫️ **Lesson 5: small talk and goodbyes**
+
+1. **Woher kommen Sie?** Where are you from?
+2. **Ich komme aus {{pick.town}}. Es liegt am Meer.** I'm from {{pick.town}}. It's by the sea.
+3. **Wir sind ein kleines Spielestudio.** We're a small game studio.
+4. **Hier ist meine Karte.** Here's my card.
+5. **Schön, Sie kennenzulernen.** Nice to meet you.
+6. **Bis morgen!** See you tomorrow!
+
+▫️ **A word that does two jobs**
+
+**Karte** means a business card, and also a card in a game. Line 4 will get a smile at a board-game booth. If you need to be exact, a playing card is a **Spielkarte**.
+
+▫️ **The quiz**
+
+That's all five lessons, and the file now has everything. Ten questions should take you about the same ten minutes. A pass is 7 out of 10.\
+↳ `Y4`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y4` How the quiz works:\
+> ⭐ **A** Ten written questions, English to German\
+> ➖ **B** Five situations, and you type what you'd say
+
+📋 **To do**
+
+> ✅ `T4` *Five prices read aloud, including the evil one.*
+
+---
+
+📎 **Files**
+
+1. [german-vocab-v3.md](german-vocab-v3.md): the complete vocabulary list, all five lessons.
+
+---
+
+=== note asset language_a3: the third and complete version of the vocabulary list, all five lessons with sound-alike hints
+
+=== m language.18 thread=language-main side=u from=p1 to=c2
+Y4 A. Ready-ish. No peeking, promise.
+
+=== m language.19 thread=language-main side=a from=c2 to=p1 turn=t9 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+▫️ **The quiz**
+
+Write the German for each one. Spelling counts only if it would change the meaning.
+
+1. Good morning.
+2. Thank you very much.
+3. Would you like to try it? (polite)
+4. It's for two to five players.
+5. Pardon? / Sorry, what?
+6. I only speak a little German.
+7. What does it cost?
+8. 25, written out.
+9. Where are you from? (polite)
+10. Nice to meet you.
+
+Send all ten in one message.\
+↳ `T5`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y4` *Quiz: ten written questions.*
+
+📋 **To do**
+
+> 💠 `T5` Answer the ten quiz questions in one message.
+
+---
+
+=== branch language.quiz
+--- option pass weight=2
+=== m language.20 thread=language-main side=u from=p1 to=c2
+1. Guten Morgen
+2. Danke schön
+3. Möchtest du es ausprobieren?
+4. Für zwei bis fünf Spieler
+5. Wie bitte?
+6. Ich spreche nur ein bisschen Deutsch
+7. Was kostet das?
+8. fünfundzwanzig (I hate it, but I know it)
+9. Woher kommst Sie?
+10. Schön, Sie kennenzulernen
+
+=== m language.21 thread=language-main side=a from=c2 to=p1 turn=t10 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Marking it now.
+
+---
+
+=== m language.22 thread=language-main side=a from=c2 to=p1 turn=t10 part=2
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+**8 out of 10: a pass.** Number 8 especially. You beat the evil one.
+
+▫️ **The two misses**
+
+Both are the same slip, which is good news: one thing to fix, not two.
+
+1. **Number 3:** **Möchtest du** is correct German, but it's the friendly form, and the question asked for polite. Polite is **Möchten Sie es ausprobieren?**
+2. **Number 9:** **kommst** goes with **du**, and **kommen** goes with **Sie**. You mixed them. Polite is **Woher kommen Sie?**
+
+A quick rule: with **Sie**, the verb ends in **-en**. With **du**, it ends in **-st**. If you forget at the fair, people will understand you anyway. It just sounds a little friendlier than you meant.\
+↳ `T5`
+
+---
+
+📋 **To do**
+
+> ✅ `T5` *Quiz taken: 8 out of 10, passed.*
+
+---
+
+=== m language.23 thread=language-main side=u from=p1 to=c2
+Danke schön! I'm writing "-en with Sie" on my hand at the fair.
+--- option retake weight=1
+=== m language.20b thread=language-main side=u from=p1 to=c2
+1. Guten Morgen
+2. Danke schön
+3. Möchtest du es ausprobieren
+4. Für zwei bis fünf Spieler
+5. Langsamer bitte
+6. Ich spreche nur ein bisschen Deutsch
+7. Was kostet das
+8. zweiundfünfzig
+9. Woher kommst Sie
+10. no idea, sorry
+
+=== m language.21b thread=language-main side=a from=c2 to=p1 turn=t10 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+**5 out of 10.** Not a pass yet, but it's a very clear result. The five misses come down to three things, and each is a two-minute fix. So here's a short review lesson, and then a retake.
+
+▫️ **Review 1: Sie and du**
+
+With **Sie**, the verb ends in **-en**: **Möchten Sie**, **Kommen Sie**. With **du**, it ends in **-st**: **Möchtest du**, **Kommst du**. Your 3 and 9 mixed them. For polite, look for **-en**.
+
+▫️ **Review 2: numbers backwards**
+
+**zweiundfünfzig** is 52, so you said the numbers the English way round. In German the ones come first, then **und**, then the tens:
+
+1. 25: **fünf-und-zwanzig**.
+2. 52: **zwei-und-fünfzig**.
+
+▫️ **Review 3: the right rescue phrase**
+
+**Langsamer, bitte** asks for slower, which is useful but answers a different question. For "Pardon?", the short one is **Wie bitte?**
+
+▫️ **And number 10**
+
+**Schön, Sie kennenzulernen** is the full version. There's also a shortcut: **Freut mich!** means "pleased to meet you", and it works with anyone, **Sie** or **du**.
+
+Read this through, then tell me when you're ready for six new questions.\
+↳ `T6`
+
+---
+
+📌 **Summary**
+
+1. 5 out of 10; a pass is 7.
+2. Three fixes: Sie takes -en, numbers go ones-first, "Wie bitte?" means pardon.
+3. A six-question retake when you're ready.
+
+📋 **To do**
+
+> ✅ `T5` *Quiz taken: 5 out of 10.*\
+> 💠 `T6` Read the review lesson, then ask for the retake.
+
+---
+
+=== m language.22b thread=language-main side=u from=p1 to=c2
+Okay, read it twice and said the numbers to {{pick.dog}}. Hit me with the retake. Freut mich already feels like a cheat code!
+
+=== m language.23b thread=language-main side=a from=c2 to=p1 turn=t11 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+It's a fair cheat code. People use it all the time. Six questions, each one aimed at a miss.
+
+▫️ **The retake**
+
+1. Would you like to try it? (polite)
+2. 34, written out.
+3. 43, written out.
+4. Someone mumbles at you. What do you say?
+5. Where are you from? (polite)
+6. Nice to meet you. Either version counts.
+
+A pass is 5 out of 6.\
+↳ `T7`
+
+---
+
+📋 **To do**
+
+> ✅ `T6` *Review lesson read, twice.*\
+> 💠 `T7` Answer the six retake questions.
+
+---
+
+=== m language.24b thread=language-main side=u from=p1 to=c2
+1. Möchten Sie es ausprobieren?
+2. vierunddreißig
+3. dreiundvierzig
+4. Wie bitte?
+5. Woher kommen Sie?
+6. Freut mich!
+
+=== m language.25b thread=language-main side=a from=c2 to=p1 turn=t12 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+**6 out of 6.** That's a clean pass. 2 and 3 were the real test: the same two digits in opposite orders, and you got both right. Every one of your first-round misses is fixed.\
+↳ `T7`
+
+---
+
+📋 **To do**
+
+> ✅ `T7` *Retake: 6 out of 6, passed.*
+
+---
+=== end branch
+
+=== m language.24 thread=language-main side=u from=p1 to=c2
+One more thing: could you squeeze the best bits onto one page I can fold into my badge holder? Thank you for all of this!
+
+=== m language.25 thread=language-main side=a from=c2 to=p1 turn=t13 part=1 files=language_a4
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Done. It has one line per situation, grouped the way a fair day goes: hello, the pitch, rescue phrases, prices, goodbye. The polite **-en** rule is in a box at the top. **fünfundzwanzig** is in bold, for old times' sake. Your scorecard scribbles are on it too, each one as you wrote it, next to the tidy version.
+
+Viel Erfolg in {{pick.fair_city}}: good luck at the fair.
+
+---
+
+🧩 **Skills**
+
+> Loaded: `{{skill.rough_notes}}` {{skillv.rough_notes}}
+
+---
+
+📎 **Files**
+
+1. [german-pocket-sheet.md](german-pocket-sheet.md): the five lessons on one foldable page.
+
+---
+
+=== note asset language_a4: a one-page pocket sheet of the most useful phrases from all five lessons, grouped by moment of the fair day, sized to fold into a badge holder
+
+=== canon The fair city {{pick.fair_city}} is German-speaking; {{p1.name}} learns booth German from {{c2.name}} before the trip.
+=== canon {{c2.name}} taught five lessons: greetings, the booth pitch, not understanding, numbers and prices, small talk.
+=== canon {{p1.name}}'s booth pitch: "Möchten Sie es ausprobieren? Das ist ein kooperatives Spiel. Für zwei bis fünf Spieler."
+=== canon {{p1.name}} thinks "fünfundzwanzig" is evil; it's a running joke.
+=== canon {{p1.name}} keeps rough vocabulary notes with {{skill.rough_notes}}.
+=== canon {{p1.name}} passed {{c2.name}}'s German quiz, first time or on a retake; the pass mark was 7 out of 10.
+=== canon {{p1.name}} has a one-page German pocket sheet for the fair, german-pocket-sheet.md.

@@ -1,0 +1,858 @@
+@storyline quotes context=studio weight=2
+@thread quotes-main writer=c8 title="{{c8.emoji}} {{c8.name}} · Printer quotes"
+@thread quotes-research writer=c2 title="{{c2.emoji}} {{c2.name}} · Printer references"
+@thread quotes-copy writer=c3 title="{{c3.emoji}} {{c3.name}} · Delivery estimate"
+
+=== note asset quotes_a1: the spec sheet both printers were asked to price: 1,500 copies, 110 cards, a six-panel folding board, 60 wooden tokens in five colors, a 16-page rulebook, a lidded box
+=== note asset quotes_a2: first-quote.png, a picture of {{pick.printer_a}}'s two-page quote side by side, with an orange letterhead
+=== note asset quotes_a3: second-quote.png, a picture of {{pick.printer_b}}'s two-page quote side by side; the freight table is on page 2
+=== note asset quotes_a4: the first side-by-side comparison of the two quotes, with {{pick.printer_b}}'s freight misread as 1,040
+=== note asset quotes_a5: the corrected side-by-side comparison, with {{pick.printer_b}}'s freight at 1,400
+=== note asset quotes_a6: {{c2.name}}'s notes on both printers' track records, with sources counted
+=== note asset quotes_a7: card-sheet-proof.png, a picture of {{pick.printer_a}}'s first digital proof of the card sheet: a page of task and weather card fronts, with no resource icons
+=== note asset quotes_a8: sample-box-corner.png, a photo of {{pick.printer_b}}'s blank sample box, one corner crushed
+=== note asset quotes_a9: third-quote.png, a picture of a late third printer's quote
+
+=== m quotes.01 thread=quotes-main side=u from=p2 to=c8 phase=backstory at=-3d15:20
+{{c8.name}}, both printers have promised quotes by Monday. Before they arrive, what should I ask them for so the two quotes can actually be compared? Last time one quoted with freight and one without, and it took me an evening to notice.
+
+=== m quotes.02 thread=quotes-main side=a from=c8 to=p2 turn=t0 part=1 phase=backstory at=-3d15:34 files=quotes_a1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+That evening is worth avoiding. The fix is to send both of them the same spec sheet and ask for the same lines back.
+
+▫️ **What to ask for**
+
+1. **The same quantity:** 1,500 copies, with no "from" prices.
+2. **The same parts:** cards, board, tokens, rulebook and box, all in the one quote.
+3. **Every cost on its own line:** per copy, setup, sample copies, freight to the studio.
+4. **The lead time,** counted from the day we approve the proof, not from the day we pay.
+5. **The deposit,** as a percentage.
+
+I've put all of it on one page you can attach to both emails.\
+↳ `T1`
+
+---
+
+📋 **To do**
+
+> 💠 `T1` Send the spec sheet to both printers with the same request.
+
+---
+
+📎 **Files**
+
+1. [quotes-spec.md](quotes-spec.md): the spec sheet and the five lines to quote.
+
+---
+
+=== m quotes.03 thread=quotes-main side=u from=p2 to=c8 phase=backstory at=-2d10:05
+Sent to both, word for word. One of them has already replied "noted", which I'll take as enthusiasm.
+
+=== m quotes.04 thread=quotes-main side=u from=p2 to=c8 files=quotes_a2,quotes_a3
+Both quotes are in, attached. 1,500 copies each, same spec, as asked. {{pick.printer_a}}'s PDF has an orange letterhead, which I am choosing not to hold against them. Can you line them up for me?
+
+=== m quotes.05 thread=quotes-main side=a from=c8 to=p2 turn=t1 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Reading both now, line by line.
+
+---
+
+=== m quotes.06 thread=quotes-main side=a from=c8 to=p2 turn=t1 part=2 files=quotes_a4
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+▫️ **The two quotes, side by side**
+
+Both priced the spec sheet as sent, so the lines compare directly.
+
+| Line | {{pick.printer_a}} | {{pick.printer_b}} |
+|---|---|---|
+| Per copy | 9.40 | 10.20 |
+| 1,500 copies | 14,100 | 15,300 |
+| Setup | 850 | 600 |
+| Sample copies | 120 | included |
+| Freight to the studio | 1,200 | 1,040 |
+| **Total** | **16,270** | **16,940** |
+| All-in per copy | 10.85 | 11.29 |
+| Box board | 1.5 mm | 2 mm |
+| Lead time after proof approval | 9 weeks | 7 weeks |
+| Deposit | 30% | 30% |
+
+▫️ **What the difference buys**
+
+{{pick.printer_b}} costs 670 more, about 4.1%, and buys two weeks and a thicker box. {{pick.printer_a}} comes in 230 under the 16,500 the plan holds for printing; {{pick.printer_b}} would be 440 over it.
+
+▫️ **What the quotes don't say**
+
+A quote tells us what a printer promises, not how it usually goes. A two-week head start isn't worth much if a printer tends to arrive a week late, so I've written {{c2.name}} a prompt to check both printers' records with other small studios.
+
+On money alone I lean {{pick.printer_a}}. I'd keep the choice open until {{c2.name}} answers.\
+↳ `Y1`
+
+---
+
+📌 **Summary**
+
+1. {{pick.printer_a}}: 16,270 in all, nine weeks.
+2. {{pick.printer_b}}: 16,940 in all, seven weeks, thicker box.
+3. A prompt to {{c2.name}} checks how each printer has done for other studios.
+
+❓ **Choices**
+
+> 💠 `Y1` Which printer prints the first run:\
+> ⭐ **A** {{pick.printer_a}}: 16,270 in all, nine weeks after proof approval\
+> ➖ **B** {{pick.printer_b}}: 16,940 in all, seven weeks, thicker box
+
+📋 **To do**
+
+> ✅ `T1` *Spec sheet sent to both printers.*\
+> 💠 `T2` Paste the prompt below into {{c2.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c2.emoji}} {{c2.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Two printers' track records
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+{{pick.printer_a}} and {{pick.printer_b}} have both quoted for the first run of {{pick.game}}: 1,500 copies with cards, a folding board, wooden tokens and a box. {{pick.printer_a}} is cheaper and promises nine weeks; {{pick.printer_b}} promises seven.
+
+Please find out what you can about how each one has done for other small studios:
+
+1. Whether they kept their promised dates, and by how much they missed when they didn't.
+2. How the cards and the wooden tokens turned out.
+3. Any reports of boxes arriving damaged.
+
+Tell me how many sources you found and how much weight they deserve. Short notes for each printer are enough; no recommendation needed, since the cost side is with me.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+📎 **Files**
+
+1. [printer-comparison.md](printer-comparison.md): the two quotes, line by line.
+
+---
+
+=== m quotes.07 thread=quotes-main side=u from=p2 to=c8
+One thing before I read further: {{pick.printer_b}}'s freight is 1,400, page 2, second table. The 1,040 is their rate for each extra pallet if we ever order more than 1,500.
+
+=== m quotes.08 thread=quotes-main side=a from=c8 to=p2 turn=t1 part=2 edits=quotes.06 files=quotes_a5
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+▫️ **The two quotes, side by side**
+
+Both priced the spec sheet as sent, so the lines compare directly.
+
+| Line | {{pick.printer_a}} | {{pick.printer_b}} |
+|---|---|---|
+| Per copy | 9.40 | 10.20 |
+| 1,500 copies | 14,100 | 15,300 |
+| Setup | 850 | 600 |
+| Sample copies | 120 | included |
+| Freight to the studio | 1,200 | 1,400 |
+| **Total** | **16,270** | **17,300** |
+| All-in per copy | 10.85 | 11.53 |
+| Box board | 1.5 mm | 2 mm |
+| Lead time after proof approval | 9 weeks | 7 weeks |
+| Deposit | 30% | 30% |
+
+▫️ **What the difference buys**
+
+{{pick.printer_b}} costs 1,030 more, about 6.3%, and buys two weeks and a thicker box. {{pick.printer_a}} comes in 230 under the 16,500 the plan holds for printing; {{pick.printer_b}} would be 800 over it.
+
+▫️ **What the quotes don't say**
+
+A quote tells us what a printer promises, not how it usually goes. A two-week head start isn't worth much if a printer tends to arrive a week late, so I've written {{c2.name}} a prompt to check both printers' records with other small studios.
+
+On money alone I lean {{pick.printer_a}}. I'd keep the choice open until {{c2.name}} answers.\
+↳ `Y1`
+
+---
+
+📌 **Summary**
+
+1. {{pick.printer_a}}: 16,270 in all, nine weeks.
+2. {{pick.printer_b}}: 17,300 in all, seven weeks, thicker box.
+3. A prompt to {{c2.name}} checks how each printer has done for other studios.
+
+❓ **Choices**
+
+> 💠 `Y1` Which printer prints the first run:\
+> ⭐ **A** {{pick.printer_a}}: 16,270 in all, nine weeks after proof approval\
+> ➖ **B** {{pick.printer_b}}: 17,300 in all, seven weeks, thicker box
+
+📋 **To do**
+
+> ✅ `T1` *Spec sheet sent to both printers.*\
+> 💠 `T2` Paste the prompt below into {{c2.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c2.emoji}} {{c2.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Two printers' track records
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+{{pick.printer_a}} and {{pick.printer_b}} have both quoted for the first run of {{pick.game}}: 1,500 copies with cards, a folding board, wooden tokens and a box. {{pick.printer_a}} is cheaper and promises nine weeks; {{pick.printer_b}} promises seven.
+
+Please find out what you can about how each one has done for other small studios:
+
+1. Whether they kept their promised dates, and by how much they missed when they didn't.
+2. How the cards and the wooden tokens turned out.
+3. Any reports of boxes arriving damaged.
+
+Tell me how many sources you found and how much weight they deserve. Short notes for each printer are enough; no recommendation needed, since the cost side is with me.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+📎 **Files**
+
+1. [printer-comparison-v2.md](printer-comparison-v2.md): the two quotes, line by line, with the freight corrected.
+
+---
+
+=== m quotes.09 thread=quotes-main side=a from=c8 to=p2 turn=t2 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+You're right, and thank you. I read the extra-pallet rate as the freight. I've corrected the comparison above: the gap is 1,030, not 670, and {{pick.printer_b}} would be 800 over the plan, not 440. That makes the case for {{pick.printer_a}} stronger, but the question is still the same.
+
+---
+
+=== m quotes.10 thread=quotes-research side=u from=p2 to=c2
+From {{c8.name}}, about the printers:
+
+[PROMPT {{code.r1}} A START]
+To: {{c2.emoji}} {{c2.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Two printers' track records
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+{{pick.printer_a}} and {{pick.printer_b}} have both quoted for the first run of {{pick.game}}: 1,500 copies with cards, a folding board, wooden tokens and a box. {{pick.printer_a}} is cheaper and promises nine weeks; {{pick.printer_b}} promises seven.
+
+Please find out what you can about how each one has done for other small studios:
+
+1. Whether they kept their promised dates, and by how much they missed when they didn't.
+2. How the cards and the wooden tokens turned out.
+3. Any reports of boxes arriving damaged.
+
+Tell me how many sources you found and how much weight they deserve. Short notes for each printer are enough; no recommendation needed, since the cost side is with me.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+
+=== m quotes.11 thread=quotes-research side=a from=c2 to=p2 turn=t1 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+On it. I'll count the sources as I go, so you'll know how much each finding is worth.
+
+---
+
+=== m quotes.12 thread=quotes-research side=a from=c2 to=p2 turn=t1 part=2 files=quotes_a6
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+▫️ **Where this comes from**
+
+1. Two supplier directories where small studios rate printers: 14 reviews of {{pick.printer_a}} and 9 of {{pick.printer_b}}.
+2. One long forum thread where small studios compare printers. Four posts mention one of the two.
+3. Nothing I could confirm firsthand. Reviews lean toward people who had a very good time or a very bad one, so the middle is probably quieter than it looks.
+
+▫️ **{{pick.printer_a}}**
+
+1. Card and print quality are praised in 11 of the 14 reviews.
+2. The wooden tokens are made in their own workshop. Two reviews mention clean cuts and even color.
+3. Three of the 14 mention a late delivery, each by about a week, and all three were orders in the last quarter of the year, which looks like their busy season.
+
+▫️ **{{pick.printer_b}}**
+
+1. Dates were kept in 8 of the 9 reviews. The ninth was held up by a freight company, not the printer.
+2. The tokens come from a partner workshop. One review says the colors varied between two batches.
+3. One report, two years old, of box corners crushed in transit. {{pick.printer_b}} answered it publicly and says the packing has changed since.
+
+The samples are small, so I'd treat a one-week slip at {{pick.printer_a}} as a real possibility, not a certainty.
+
+---
+
+📋 **To do**
+
+> 💠 `T1` Paste the answer below into {{c8.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} B START]
+To: {{c8.emoji}} {{c8.name}}
+From: {{c2.emoji}} {{c2.name}}
+Subject: Two printers' track records
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅱️⬛🔽🔽⬛
+
+Sources: 14 directory reviews of {{pick.printer_a}}, 9 of {{pick.printer_b}}, and 4 forum posts. Nothing confirmed firsthand, and the samples are small.
+
+{{pick.printer_a}}:
+1. Cards and print praised in 11 of 14.
+2. Tokens made in their own workshop: clean cuts, even color (2 reviews).
+3. Late by about a week in 3 of 14, all orders in the last quarter of the year.
+
+{{pick.printer_b}}:
+1. Dates kept in 8 of 9; the ninth was a freight delay.
+2. Tokens from a partner workshop: uneven color between batches (1 review).
+3. Crushed box corners in transit, two years ago (1 report); packing changed since, by their account.
+
+Full notes are in printer-references.md.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} B END]
+```
+
+📎 **Files**
+
+1. [printer-references.md](printer-references.md): what I found on each printer, with every source counted.
+
+---
+
+=== m quotes.13 thread=quotes-main side=u from=p2 to=c8
+{{c2.name}}'s answer:
+
+[PROMPT {{code.r1}} B START]
+To: {{c8.emoji}} {{c8.name}}
+From: {{c2.emoji}} {{c2.name}}
+Subject: Two printers' track records
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅱️⬛🔽🔽⬛
+
+Sources: 14 directory reviews of {{pick.printer_a}}, 9 of {{pick.printer_b}}, and 4 forum posts. Nothing confirmed firsthand, and the samples are small.
+
+{{pick.printer_a}}:
+1. Cards and print praised in 11 of 14.
+2. Tokens made in their own workshop: clean cuts, even color (2 reviews).
+3. Late by about a week in 3 of 14, all orders in the last quarter of the year.
+
+{{pick.printer_b}}:
+1. Dates kept in 8 of 9; the ninth was a freight delay.
+2. Tokens from a partner workshop: uneven color between batches (1 review).
+3. Crushed box corners in transit, two years ago (1 report); packing changed since, by their account.
+
+Full notes are in printer-references.md.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} B END]
+
+=== m quotes.14 thread=quotes-main side=a from=c8 to=p2 turn=t3 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Thank you for carrying it. Here are {{c2.name}}'s notes, turned into time and money.
+
+▫️ **{{pick.printer_a}}**
+
+1. A one-week slip shows up often enough that I'd plan for ten weeks, not nine. The slip costs time, not money: the price stays 16,270.
+2. The tokens are made in their own workshop and come out an even color. That counts for more than it sounds, because the tokens are the part players touch most.
+
+▫️ **{{pick.printer_b}}**
+
+1. Dates kept in eight of nine, so seven weeks probably means seven.
+2. The tokens come from a partner workshop, with one report of uneven color. The crushed-box report is old and they say it's fixed.
+
+▫️ **Where that leaves it**
+
+I still lean {{pick.printer_a}}. Planned at ten weeks it's three weeks slower than {{pick.printer_b}}, not two, and that's the honest price of saving 1,030. If a shorter wait on the page matters more to you than the money, {{pick.printer_b}} is a sound choice and I wouldn't argue hard.\
+↳ `Y1`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y1` Which printer prints the first run:\
+> ⭐ **A** {{pick.printer_a}}: 16,270 in all, plan for ten weeks, tokens made in-house\
+> ➖ **B** {{pick.printer_b}}: 17,300 in all, seven weeks, thicker box
+
+📋 **To do**
+
+> ✅ `T2` *Prompt carried to {{c2.name}} and answered.*
+
+---
+
+=== m quotes.15 thread=quotes-research side=u from=p2 to=c2
+Passed on. Thank you, that's more care than I expected from a pile of reviews. The busy-season detail was useful.
+
+=== m quotes.16 thread=quotes-research side=a from=c2 to=p2 turn=t2 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Glad it helped. That detail came from a single column in one of the directories, so it's worth one quick question to {{pick.printer_a}} if you go with them: "Is your schedule busier at this time of year?" A printer that answers it straight is a good sign.
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *Answer carried back to {{c8.name}}.*
+
+---
+
+=== m quotes.17 thread=quotes-main side=u from=p1 to=c8
+Jumping in between school pickups! If we pick the slower one, does anything we're doing this week move? And what does the extra 1,030 actually buy us besides speed? Thanks!
+
+=== m quotes.18 thread=quotes-main side=a from=c8 to=p1 turn=t4 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+▫️ **This week**
+
+Nothing this week moves. Printing starts after the campaign closes, so the printer choice only changes one thing you can see now: the delivery estimate on the campaign page, which {{c3.name}} needs before the page goes up on Friday. I'll send it over as soon as you've decided.
+
+▫️ **The 1,030**
+
+1. Three weeks less wait, counting the slip {{c2.name}} found at {{pick.printer_a}}.
+2. A box of 2 mm board instead of 1.5 mm: sturdier corners, and it feels heavier in the hand.
+3. Steadier dates, going by its record.
+
+It doesn't buy better tokens. On {{c2.name}}'s notes, those are the one place {{pick.printer_a}} comes out ahead.\
+↳ `Y1`
+
+---
+
+❓ **Choices**
+
+> 🔹 `Y1` Which printer prints the first run:\
+> ⭐ **A** {{pick.printer_a}}: 16,270 in all, plan for ten weeks, tokens made in-house\
+> ➖ **B** {{pick.printer_b}}: 17,300 in all, seven weeks, thicker box
+
+---
+
+=== branch quotes.printer
+--- option printer_a weight=3
+=== m quotes.19 thread=quotes-main side=u from=p2 to=c8
+Y1 A. A thousand is a thousand, the page can carry a longer wait honestly, and our first game survived in a 1.5 mm box. I'll ask them about their busy season when I sign.
+
+=== m quotes.20 thread=quotes-main side=a from=c8 to=p2 turn=t5 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+▫️ **Recorded**
+
+`D-004` {{pick.printer_a}} prints the first run of {{pick.game}}: 1,500 copies, 16,270 in all, nine weeks after proof approval, with a 30% deposit. That leaves 230 unspent on the print line.\
+↳ `D-004`
+
+▫️ **The date for the page**
+
+Counting from the day the campaign closes:
+
+1. About a week to approve the proof.
+2. Nine weeks of printing.
+3. A week of slack for the slip {{c2.name}} found.
+4. A week of freight and packing.
+
+That comes to about twelve weeks. I've written {{c3.name}} a heads-up so the page says so, and it needs no answer.\
+↳ `T5`
+
+▫️ **To sign**
+
+The deposit is 30% of 16,270, so 4,881. It can go out from the studio account any day this week.\
+↳ `T3`, `T4`
+
+---
+
+📌 **Summary**
+
+1. `D-004`: {{pick.printer_a}}, 16,270, nine weeks.
+2. The page will promise about twelve weeks after the campaign closes.
+3. Next: sign, pay the 4,881 deposit, and pass the date to {{c3.name}}.
+
+❓ **Choices**
+
+> ✅ `Y1` *Printer for the first run: {{pick.printer_a}}.*
+
+📋 **To do**
+
+> 💠 `T3` Sign and return {{pick.printer_a}}'s quote.\
+> 💠 `T4` Pay the 30% deposit: 4,881.\
+> 💠 `T5` Paste the heads-up below into {{c3.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}, `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r2}} A START]
+To: {{c3.emoji}} {{c3.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Delivery estimate for the campaign page
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅰️⬛🔽🔽⬛
+
+{{pick.printer_a}} will print the first run (`D-004`). Counting from the day the campaign closes: about a week to approve the proof, nine weeks of printing, a week of slack because this printer has slipped by a week before, and a week of freight.
+
+Please make the page's delivery estimate "about twelve weeks after the campaign closes". It's only so the page is right before it goes up on Friday.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} A END]
+```
+
+---
+
+=== m quotes.21 thread=quotes-copy side=u from=p2 to=c3
+Heads-up from {{c8.name}}, nothing to send back:
+
+[PROMPT {{code.r2}} A START]
+To: {{c3.emoji}} {{c3.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Delivery estimate for the campaign page
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅰️⬛🔽🔽⬛
+
+{{pick.printer_a}} will print the first run (`D-004`). Counting from the day the campaign closes: about a week to approve the proof, nine weeks of printing, a week of slack because this printer has slipped by a week before, and a week of freight.
+
+Please make the page's delivery estimate "about twelve weeks after the campaign closes". It's only so the page is right before it goes up on Friday.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} A END]
+
+=== m quotes.22 thread=quotes-copy side=a from=c3 to=p2 turn=t1 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Twelve weeks it is. I've put the estimate in one sentence on the page and nowhere else, so if it ever changes it's a one-line fix, not a treasure hunt.
+
+---
+
+=== m quotes.23 thread=quotes-main side=u from=p2 to=c8
+Signed and returned, and the heads-up went to {{c3.name}}. They answered the busy-season question straight: yes, busier, and they've booked our slot anyway. The deposit goes out first thing tomorrow. I want to see it clear before I relax.
+
+=== m quotes.24 thread=quotes-main side=a from=c8 to=p2 turn=t6 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+A booked slot is the best answer they could have given. I'll keep the week of slack in the estimate anyway, since it costs nothing to keep.
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Quote signed and returned to {{pick.printer_a}}.*\
+> 🔷 `T4` Pay the 30% deposit: 4,881.\
+> ✅ `T5` *Heads-up passed to {{c3.name}}.*
+
+---
+
+=== m quotes.25 thread=quotes-main side=u from=p2 to=c8
+Deposit paid: 4,881, cleared this morning. Relaxing now, briefly.
+
+=== m quotes.26 thread=quotes-main side=a from=c8 to=p2 turn=t7 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Thank you. It's in this month's numbers on the print line, with 11,389 left to pay on delivery.
+
+---
+
+📋 **To do**
+
+> ✅ `T4` *Deposit of 4,881 paid.*
+
+---
+
+=== m quotes.27 thread=quotes-main side=u from=p2 to=c8 files=quotes_a7
+Their first digital proof of the card sheet has arrived. The card fronts look warmer than our file to me. Is that us or them, and does it matter for the money?
+
+=== m quotes.28 thread=quotes-main side=a from=c8 to=p2 turn=t8 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Whether the color is right is a question for {{c4.name}}, who'll know at a glance if it's the proof or the file. The money side is simpler: a color correction before approval is free under the quote, and a reprint after approval isn't.
+
+The calendar matters more. The nine weeks start the day you approve the proof, and the page promises twelve weeks counting a week for approval. A proof that goes back and forth for two weeks eats the slack.\
+↳ `T6`
+
+---
+
+📋 **To do**
+
+> 💠 `T6` Send the proof to {{c4.name}} for a color check, and approve within the week.
+
+---
+--- option printer_b weight=2
+=== m quotes.19b thread=quotes-main side=u from=p2 to=c8
+B. I'd rather pay 1,030 than explain a late box to 1,500 people. Also, the orange letterhead was a test, and they failed it.
+
+=== m quotes.20b thread=quotes-main side=a from=c8 to=p2 turn=t5 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+▫️ **Recorded**
+
+`D-004` {{pick.printer_b}} prints the first run of {{pick.game}}: 1,500 copies, 17,300 in all, seven weeks after proof approval, with a 30% deposit.\
+↳ `D-004`
+
+▫️ **The 800 over**
+
+The plan holds 16,500 for printing, so this is 800 over. There are two honest ways to cover it:
+
+1. **The contingency line.** It holds 2,000, which would leave 1,200 for the rest of the launch.
+2. **Ask first.** Some printers take 2 or 3% off for a larger deposit. If {{pick.printer_b}} takes 2% for 50% up front, that saves 346, and the contingency covers the rest. It costs one email and a few days, and they may say no.
+
+I'd take it from the contingency and sign today.\
+↳ `Y2`
+
+▫️ **The date for the page**
+
+Counting from the day the campaign closes: about a week to approve the proof, seven weeks of printing and a week of freight. That makes nine. I'd still promise about ten, because one spare week on a public page is cheap insurance. I've written {{c3.name}} a heads-up, and it needs no answer.\
+↳ `T5`
+
+---
+
+📌 **Summary**
+
+1. `D-004`: {{pick.printer_b}}, 17,300, seven weeks.
+2. 800 over the print line; the choice now is how to cover it.
+3. The page will promise about ten weeks after the campaign closes.
+
+❓ **Choices**
+
+> ✅ `Y1` *Printer for the first run: {{pick.printer_b}}.*
+>
+> 💠 `Y2` How to cover the 800 over the print line:\
+> ⭐ **A** From the contingency line, and sign today\
+> ➖ **B** Ask {{pick.printer_b}} for 2% off for a 50% deposit first, with the contingency covering the rest
+
+📋 **To do**
+
+> 💠 `T3` Sign and return {{pick.printer_b}}'s quote.\
+> 💠 `T4` Pay the deposit.\
+> 💠 `T5` Paste the heads-up below into {{c3.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}, `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r2}} A START]
+To: {{c3.emoji}} {{c3.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Delivery estimate for the campaign page
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅰️⬛🔽🔽⬛
+
+{{pick.printer_b}} will print the first run (`D-004`). Counting from the day the campaign closes: about a week to approve the proof, seven weeks of printing, and a week of freight. That makes nine, plus one spare week.
+
+Please make the page's delivery estimate "about ten weeks after the campaign closes". It's only so the page is right before it goes up on Friday.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} A END]
+```
+
+---
+
+=== m quotes.21b thread=quotes-copy side=u from=p2 to=c3
+From {{c8.name}}, no answer needed:
+
+[PROMPT {{code.r2}} A START]
+To: {{c3.emoji}} {{c3.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Delivery estimate for the campaign page
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅰️⬛🔽🔽⬛
+
+{{pick.printer_b}} will print the first run (`D-004`). Counting from the day the campaign closes: about a week to approve the proof, seven weeks of printing, and a week of freight. That makes nine, plus one spare week.
+
+Please make the page's delivery estimate "about ten weeks after the campaign closes". It's only so the page is right before it goes up on Friday.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} A END]
+
+=== m quotes.22b thread=quotes-copy side=a from=c3 to=p2 turn=t1 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Ten weeks, noted. It lives in one sentence on the page, so if it ever changes, that's the only sentence that changes. "Ten weeks" also reads better than "nine weeks". Round numbers sound like promises; odd ones sound like excuses.
+
+---
+
+=== m quotes.23b thread=quotes-main side=u from=p2 to=c8
+Y2 B. It costs one email to ask, and the contingency will still be there on Thursday. Heads-up is with {{c3.name}}.
+
+=== m quotes.24b thread=quotes-main side=a from=c8 to=p2 turn=t6 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Fair, and worth the email. I'll hold signing and the deposit until they answer, since the deposit amount depends on it: 5,190 at 30%, or 8,477 at 50% with the discount.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *The 800: ask {{pick.printer_b}} for 2% off for a 50% deposit first.*
+
+📋 **To do**
+
+> 🔷 `T3` Sign and return {{pick.printer_b}}'s quote, once they've answered.\
+> 🔷 `T4` Pay the deposit.\
+> ✅ `T5` *Heads-up passed to {{c3.name}}.*
+
+---
+
+=== m quotes.25b thread=quotes-main side=u from=p2 to=c8
+They said yes: 2% off for a 50% deposit. Signed and returned with the new terms.
+
+=== m quotes.26b thread=quotes-main side=a from=c8 to=p2 turn=t7 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Good asking. Here are the new numbers:
+
+1. Total: 17,300 less 2% is 16,954.
+2. Over the print line: 454, not 800.
+3. Contingency after covering it: 1,546.
+4. Deposit at 50%: 8,477, with the other 8,477 due on delivery.
+
+`D-004` still stands; I've updated the price on it to 16,954.\
+↳ `D-004`, `T4`
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Quote signed and returned with the 2% discount.*\
+> 🔹 `T4` Pay the 50% deposit: 8,477.
+
+---
+
+=== m quotes.27b thread=quotes-main side=u from=p2 to=c8 files=quotes_a8
+Deposit paid, 8,477. Also, their blank sample box came by courier today. The board is lovely, and one corner arrived crushed. {{c2.name}} did warn us.
+
+=== m quotes.28b thread=quotes-main side=a from=c8 to=p2 turn=t8 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Thank you, the deposit is in this month's numbers.
+
+The corner is worth one email now rather than 1,500 later. A single sample sent by courier doesn't prove the full shipment will arrive the same way, but it matches the old report {{c2.name}} found. I'd ask {{pick.printer_b}} to confirm corner protectors on every carton in the freight terms. If they charge for them, it should be small, and the contingency has room.\
+↳ `T6`
+
+---
+
+📋 **To do**
+
+> ✅ `T4` *Deposit of 8,477 paid.*\
+> 💠 `T6` Ask {{pick.printer_b}} to confirm corner protectors on every carton, and at what cost.
+
+---
+=== end branch
+
+=== side_story quotes.late chance=0.4
+=== m quotes.29 thread=quotes-main side=u from=p2 to=c8 files=quotes_a9
+A third quote has just landed, from the printer I'd written off. A week after the deadline, but 8.90 a copy. Do we need to rethink anything?
+
+=== m quotes.30 thread=quotes-main side=a from=c8 to=p2 turn=t9 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+It deserves a proper look even though it's late, so here it is.
+
+▫️ **The third quote**
+
+1. 8.90 a copy, so 13,350 for 1,500: the lowest line of the three.
+2. It leaves out the wooden tokens. Their note prices them separately at about 1.00 a set, which adds 1,500.
+3. Setup is 700, and freight is "to be quoted", so the real total isn't known.
+4. Fourteen weeks after proof approval.
+
+▫️ **What I'd do**
+
+Before freight it's already 15,550. With any sensible freight it lands near the other two, with a much longer wait. `D-004` is signed and the deposit is paid, so reopening it would cost more than it could save. I'd say no, warmly: they were thorough, and a reprint is a good reason to ask them again. A draft follows.\
+↳ `T9`
+
+---
+
+📋 **To do**
+
+> 💠 `T9` Send the draft below to the third printer.
+
+---
+
+=== m quotes.31 thread=quotes-main side=a from=c8 to=p2 turn=t9 part=2 card=widget
+A polite no to the third printer, ready to send.
+
+Hello,
+
+Thank you for your quote for {{pick.game}}, and for the care you put into it. We've already signed with another printer for this first run, so we won't go ahead this time.
+
+We'd be glad to ask you again when we plan a reprint or our next game.
+
+Best wishes,
+{{p2.name}}
+{{pick.studio}}
+
+=== m quotes.32 thread=quotes-main side=u from=p2 to=c8
+Sent, with "glad" changed to "happy". I'm only so glad about anything before lunch.
+
+=== m quotes.33 thread=quotes-main side=a from=c8 to=p2 turn=t10 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+A fair edit. I've filed their quote with the other two, so it's easy to find when a reprint comes up.
+
+---
+
+📋 **To do**
+
+> ✅ `T9` *Polite no sent to the third printer.*
+
+---
+=== end side_story
+
+=== canon The first print run of {{pick.game}} is 1,500 copies.
+=== canon The plan holds 16,500 for printing and 2,000 for contingency.
+=== canon {{pick.printer_a}} quoted 16,270 in all (9.40 a copy, 850 setup, 120 for samples, 1,200 freight), nine weeks after proof approval, with a 1.5 mm box.
+=== canon {{pick.printer_b}} quoted 17,300 in all (10.20 a copy, 600 setup, samples included, 1,400 freight), seven weeks after proof approval, with a 2 mm box.
+=== canon Both printers ask a 30% deposit; printing starts after the campaign closes.
+=== canon {{pick.printer_a}} makes its wooden tokens in-house; {{pick.printer_b}}'s come from a partner workshop.
+=== canon {{pick.printer_a}} has slipped by about a week in its busy season, so its estimate includes a week of slack.
+=== canon {{pick.printer_a}}'s quote has an orange letterhead.
+=== canon `D-004` is the printer for the first run; the `quotes.printer` branch decides which.
+=== canon With {{pick.printer_a}}, the campaign page promises delivery about twelve weeks after the campaign closes; with {{pick.printer_b}}, about ten.
+=== canon With {{pick.printer_b}}, a 2% discount for a 50% deposit brings the total to 16,954 and leaves 1,546 in contingency.
+=== canon The delivery estimate appears in one sentence on the campaign page and nowhere else.

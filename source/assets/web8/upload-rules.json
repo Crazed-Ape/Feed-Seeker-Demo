@@ -1,0 +1,37 @@
+{
+  "name": "upload-rules",
+  "owner": "{{c5.name}}",
+  "upload_folder": "/files/print-and-play",
+  "max_size_mb": 50,
+  "allowed_endings": ["pdf", "png", "zip"],
+  "file_names": {
+    "keep": ["letters", "numbers", "dots", "dashes"],
+    "keep_pattern": "[A-Za-z0-9.-]",
+    "replace_everything_else_with": "-",
+    "collapse_doubled_dashes": true,
+    "trim_dashes_at_ends": true,
+    "show_saved_name": "Saved as {name}",
+    "examples": [
+      {
+        "uploaded_as": "print and play v3.pdf",
+        "saved_as": "print-and-play-v3.pdf"
+      },
+      {
+        "uploaded_as": "test file #1.pdf",
+        "saved_as": "test-file-1.pdf"
+      },
+      {
+        "uploaded_as": "print - and - play.pdf",
+        "saved_as": "print-and-play.pdf"
+      }
+    ]
+  },
+  "forwarding": [
+    {
+      "from": "/files/print-and-play/print and play v3.pdf",
+      "to": "/files/print-and-play/print-and-play-v3.pdf",
+      "permanent": true,
+      "reason": "Old v3 address with spaces, already saved and shared by testers"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "download-settings",
+  "owner": "{{c5.name}}",
+  "folder": "/files",
+  "keep_downloaded_files": {
+    "minutes": 10,
+    "was_minutes": 1440,
+    "reason": "Phones that fetched a file with the wrong label get the right one on their next try"
+  },
+  "labels_by_ending": {
+    ".pdf": {
+      "label": "application/pdf",
+      "shown_as": "PDF document"
+    },
+    ".png": {
+      "label": "image/png",
+      "shown_as": "PNG picture"
+    },
+    ".zip": {
+      "label": "application/zip",
+      "shown_as": "ZIP archive"
+    }
+  },
+  "unknown_ending": {
+    "action": "refuse",
+    "message": "This file wasn't saved: the upload page doesn't know what a {ending} file is yet. Please use pdf, png or zip."
+  },
+  "relabeled": [
+    {
+      "file": "print-and-play-v3.pdf",
+      "was": "unknown binary data",
+      "now": "PDF document"
+    },
+    {
+      "file": "press-kit.zip",
+      "was": "unknown binary data",
+      "now": "ZIP archive"
+    }
+  ]
+}

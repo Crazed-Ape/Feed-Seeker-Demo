@@ -1,0 +1,617 @@
+@storyline money context=studio weight=2
+@thread money-main writer=c8 title="{{c8.emoji}} {{c8.name}} · Monthly money check"
+@thread money-coord writer=c1 title="{{c1.emoji}} {{c1.name}} · Money heads-ups"
+
+=== m money.01 thread=money-main side=u from=p2 to=c8 phase=backstory at=-3d16:40
+{{c8.name}}, the month closes over the weekend and I'll send you the bank export on Monday morning. Is there anything you want besides the export? Also, if there's room this month, I'd like to order spare token sets for the reviewer copies and for replacement parts. If there isn't room, I'll survive.
+
+=== m money.02 thread=money-main side=a from=c8 to=p2 phase=backstory at=-3d16:44 turn=t1 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Monday works. Three things will let me close the month in one sitting:
+
+1. The full export for the month, as a file rather than screenshots.
+2. Receipts for anything over 50 that isn't a standing order.
+3. The token workshop's price tiers, so I can tell you whether the spare sets fit once the month is closed, not before.
+
+I'd rather not promise the tokens until I've seen the totals. A month always has one surprise in it.
+
+---
+
+=== m money.03 thread=money-main side=u from=p2 to=c8 files=mo1
+Morning. The export is attached: 63 lines. The workshop's tiers are 200 sets at 1.40 each or 300 sets at 1.25 each, shipping in about eight working days.
+
+There's one line I can't place. Copied from the banking app:
+
+Card ending 4417 · WRENHALLOW PROTO WORKS · 286.00 · posted last week
+
+=== note asset mo1: account-export.csv, a CSV export of the studio account's transactions for the month, 63 lines, with merchant names cut short
+
+=== m money.04 thread=money-main side=a from=c8 to=p2 turn=t2 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Thanks, {{p2.name}}. The export is complete, and 62 of its 63 lines match a receipt or a standing order.
+
+▫️ **The line you pasted**
+
+That charge is the second folding-board sample, the one with the stiffer hinge that {{p1.name}} ordered last week. 286.00 is close to the workshop's quote, so the charge itself is fine. It was never in the budget, though, so it has to sit under one of our lines.\
+↳ `Y1`
+
+▫️ **One small thing**
+
+Thank you for cutting the card number down to the last four digits; that line is harmless as it stands. Next time, though, please leave bank lines out of chat altogether. The amount and the day are all I need, and the export already holds the rest. Nothing is gained by keeping it in two places.
+
+▫️ **Still missing**
+
+The sample has no receipt yet. It's the biggest one-off charge of the month, so I'd like the receipt before I close the books.\
+↳ `T1`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` Which budget line takes the board sample:\
+> ⭐ **A** Prototype printing, where every other sample has gone\
+> ➖ **B** A new Packaging line, since the board ships in the box
+
+📋 **To do**
+
+> 💠 `T1` Ask {{p1.name}} for the board sample's receipt.
+
+---
+
+=== m money.05 thread=money-main side=u from=p2 to=c8
+Y1 A. Noted on bank lines. I only pasted it because the export cuts merchant names off after twelve letters, which is a small crime of its own.
+
+=== m money.06 thread=money-main side=a from=c8 to=p2 turn=t3 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Done: the sample is under Prototype printing. I'm building the table now and will send it once the receipt is in. Twelve letters is stingy, I agree. I'll note the full name against the line so we don't have to work it out again next month.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Board sample: under Prototype printing.*
+
+📋 **To do**
+
+> 🔷 `T1` Ask {{p1.name}} for the board sample's receipt.
+
+---
+
+=== m money.07 thread=money-main side=u from=p1 to=c8 files=mo2
+Here's the receipt for the board sample! Sorry, it lived in my coat pocket all week. Is a chewed corner still a valid receipt? {{pick.dog}} has apparently moved on from socks to paperwork.
+
+=== note asset mo2: board-sample-receipt.png, a phone photo of a crumpled paper receipt from the board workshop, one corner chewed, the total still readable and the date faded
+
+=== m money.08 thread=money-main side=a from=c8 to=p1 turn=t4 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Thank you! A chewed corner is fine as long as the total survives, and it did: 286.00, which matches the bank line to the cent. If {{pick.dog}} is branching out, the receipts box may need a lid.
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *Board sample receipt: in, slightly chewed.*
+
+---
+
+=== side_story money.grinder chance=0.4
+=== m money.09 thread=money-main side=u from=p1 to=c8
+While I'm here: is there room this month for a proper coffee grinder? The studio one sounds like a gravel truck, and it's started squeaking too.
+
+=== m money.10 thread=money-main side=a from=c8 to=p1 turn=t5 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+I'm sorry about the gravel truck, but I'll have to say no for now. We have no equipment line until the campaign is over, and I'd rather not open one six weeks before launch for something that still works, however loudly it works. Ask me again the week after the campaign closes and I'll find you a quieter one.
+
+---
+=== end side_story
+
+=== branch money.month
+--- option under weight=2
+=== m money.11 thread=money-main side=a from=c8 to=p2 turn=t6 part=1 files=mo3
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+The month is closed. We came in **640 under budget** on 5,200 planned.
+
+▫️ **The month in one table**
+
+| Line | Budget | Actual | Difference |
+|---|---|---|---|
+| Art and illustration | 1,200 | 860 | −340 |
+| Prototype printing | 900 | 1,036 | +136 |
+| Playtest costs | 300 | 214 | −86 |
+| Software and subscriptions | 180 | 171 | −9 |
+| Shipping samples | 350 | 298 | −52 |
+| Ads | 600 | 412 | −188 |
+| Studio rent share | 1,400 | 1,400 | 0 |
+| Bits and pieces | 270 | 169 | −101 |
+| **Total** | **5,200** | **4,560** | **−640** |
+
+▫️ **What stands out**
+
+1. Prototype printing is the only line over, and the board sample accounts for all of it.
+2. Ads ran 188 under because two of the planned posts slipped into next month.
+3. Art and illustration came in 340 lower than planned.
+
+▫️ **The spare tokens**
+
+They fit comfortably. The 300-set tier costs 95 more than the 200-set tier and brings 100 more sets, so each set is cheaper, and 640 covers it with room left over.\
+↳ `Y2`
+
+---
+
+📌 **Summary**
+
+1. The month closed 640 under, on 5,200 planned.
+2. The board sample is the only overspend.
+3. The spare token sets fit.
+
+❓ **Choices**
+
+> 💠 `Y2` How many spare token sets to order:\
+> ➖ **A** 200 sets at 1.40 each, 280 in all\
+> ⭐ **B** 300 sets at 1.25 each, 375 in all
+
+---
+
+📎 **Files**
+
+1. [month-close.md](month-close.md): the month's table, with every line of the export matched to a budget line.
+
+---
+
+=== note asset mo3: a markdown file with the month's budget-against-actual table and a matched list of the 63 export lines
+
+=== m money.12 thread=money-main side=u from=p2 to=c8
+Before I pick: does that 640 include the illustrator's last invoice? It usually turns up around now, and 640 under is a lot for us.
+
+=== m money.13 thread=money-main side=a from=c8 to=p2 turn=t7 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+It doesn't, and I should have caught that myself. The invoice for the last six cards, 340, hasn't arrived; the illustrator's note says it will come early next month. So the low Art line is timing, not savings.
+
+▫️ **The real margin**
+
+1. Under budget on paper: 640.
+2. Less the illustrator's invoice, which is late but certain: 340.
+3. Money we can actually spend: **300**.
+
+▫️ **The tokens, again**
+
+The 200-set tier, at 280, fits inside 300 with 20 to spare. The 300-set tier, at 375, goes 75 past it. The bulk price is better, but we'd be paying for it with money that's already promised to the illustrator. I've moved my recommendation.\
+↳ `Y2`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y2` How many spare token sets to order:\
+> ⭐ **A** 200 sets at 1.40 each, 280 in all\
+> ➖ **B** 300 sets at 1.25 each, 375 in all
+
+---
+
+=== m money.14 thread=money-main side=u from=p2 to=c8
+Y2 A. I wanted the bulk price, but the illustrator always finds us.
+
+=== m money.15 thread=money-main side=a from=c8 to=p2 turn=t8 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+It's 200 sets, then. I've drafted the order email for the workshop; it follows this reply.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *Spare tokens: 200 sets, 280 in all.*
+
+---
+
+=== m money.16 thread=money-main side=a from=c8 to=p2 turn=t8 part=2 card=widget
+A draft email to the token workshop ordering 200 spare token sets, for {{p2.name}} to send.
+
+Hello,
+
+We'd like to order 200 spare token sets at your 200-set price of 1.40 each, 280 in all.
+
+Please use the same five colors as our spring order: blue, green, cream, red and plum. No orange, please.
+
+Could you confirm the shipping date when you have it? Your note says about eight working days, which suits us well.
+
+Thank you,
+{{p2.name}}
+{{pick.studio}}, {{pick.town}}
+
+=== m money.17 thread=money-main side=a from=c8 to=p2 turn=t8 part=3
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+There's also a heads-up for {{c1.name}}, so the spare tokens show up in the week's plan. No answer is needed from {{c1.pronoun_obj}}.
+
+---
+
+📋 **To do**
+
+> 💠 `T2` Send the order email to the token workshop.\
+> 💠 `T3` Paste the prompt below into {{c1.name}}'s thread.
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: The month closed under budget; spare tokens ordered
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+The month closed 640 under budget, but 340 of that is the illustrator's late invoice, so the real margin was 300. {{p2.name}} is ordering 200 spare token sets (280) for the reviewer copies and for replacement parts. They ship in about eight working days, so they'll arrive after Friday's playtest, not before. Please plan the reviewer kits around that.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+---
+
+=== m money.18 thread=money-coord side=u from=p2 to=c1
+From {{c8.name}}. No answer needed.
+
+[PROMPT {{code.r1}} A START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: The month closed under budget; spare tokens ordered
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+The month closed 640 under budget, but 340 of that is the illustrator's late invoice, so the real margin was 300. {{p2.name}} is ordering 200 spare token sets (280) for the reviewer copies and for replacement parts. They ship in about eight working days, so they'll arrive after Friday's playtest, not before. Please plan the reviewer kits around that.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+
+=== m money.19 thread=money-coord side=a from=c1 to=p2 turn=t1 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Got it, thanks. The reviewer kits will go out once the tokens land, not this week, and the month's result goes into Friday's roundup.
+
+---
+
+=== m money.20 thread=money-main side=u from=p2 to=c8
+Email sent, and the prompt is with {{c1.name}}. The workshop has already replied: 200 sets, shipping a week from Wednesday. They were very pleased about the plum.
+
+=== m money.21 thread=money-main side=a from=c8 to=p2 turn=t9 part=1 files=mo4
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Good. Next month's budget now carries two extra items on top of the usual lines, both paid from this month's 640:
+
+1. The illustrator's late invoice: 340.
+2. The spare tokens: 280.
+
+That leaves 20 spare, which is thin. I'll flag anything unplanned before it's spent, not after.
+
+---
+
+📋 **To do**
+
+> ✅ `T2` *Order email sent; tokens ship a week from Wednesday.*\
+> ✅ `T3` *Prompt carried to {{c1.name}}.*
+
+---
+
+📎 **Files**
+
+1. [budget-next-month.md](budget-next-month.md): next month's budget, with the illustrator's invoice and the tokens added.
+
+---
+
+=== note asset mo4: a markdown file with next month's eight budget lines plus two carried items, the illustrator's 340 and the tokens' 280, and a spare of 20
+--- option over weight=1
+=== m money.11b thread=money-main side=a from=c8 to=p2 turn=t6 part=1 files=mo3b
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+The month is closed, and we came in **410 over budget** on 5,200 planned. That isn't a disaster, but next month has to make up for it.
+
+▫️ **The month in one table**
+
+| Line | Budget | Actual | Difference |
+|---|---|---|---|
+| Art and illustration | 1,200 | 1,200 | 0 |
+| Prototype printing | 900 | 1,186 | +286 |
+| Playtest costs | 300 | 288 | −12 |
+| Software and subscriptions | 180 | 171 | −9 |
+| Shipping samples | 350 | 431 | +81 |
+| Ads | 600 | 720 | +120 |
+| Studio rent share | 1,400 | 1,400 | 0 |
+| Bits and pieces | 270 | 214 | −56 |
+| **Total** | **5,200** | **5,610** | **+410** |
+
+▫️ **Where it went**
+
+1. The board sample: 286, all of it unplanned.
+2. Two express shipments to reviewers: 81 over the shipping line.
+3. The pre-launch ad push: 120 over.
+
+▫️ **The spare tokens**
+
+They'll have to wait for a better month. I'd rather order them once we're level than add 280 to a month that's already over.
+
+▫️ **What to trim next month**
+
+We need about 410 back. The gentlest way I can find is to pause the general awareness ads for two weeks (about 260) and send reviewer samples by standard post instead of express (about 150). Together that's 410, with nothing to spare.\
+↳ `Y2`
+
+---
+
+📌 **Summary**
+
+1. The month closed 410 over, on 5,200 planned.
+2. The board sample, express shipping and ads account for all of it.
+3. The spare tokens wait.
+
+❓ **Choices**
+
+> 💠 `Y2` How to make up the overspend next month:\
+> ⭐ **A** Pause the general ads for two weeks and send samples by standard post, about 410\
+> ➖ **B** Move the second prototype print to after the campaign, about 450, but the reviewer copies would be three weeks late\
+> ➖ **C** Cover it from the launch reserve and trim nothing
+
+---
+
+📎 **Files**
+
+1. [month-close.md](month-close.md): the month's table, with every line of the export matched to a budget line.
+
+---
+
+=== note asset mo3b: a markdown file with the month's budget-against-actual table, showing ads at 720, and a matched list of the 63 export lines
+
+=== m money.12b thread=money-main side=u from=p2 to=c8
+Your ads line says 720. The export says 702. Did the spreadsheet swap two digits on us?
+
+=== m money.13b thread=money-main side=a from=c8 to=p2 turn=t7 part=1 edits=money.11b files=mo3c
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+The month is closed, and we came in **392 over budget** on 5,200 planned. That isn't a disaster, but next month has to make up for it.
+
+▫️ **The month in one table**
+
+| Line | Budget | Actual | Difference |
+|---|---|---|---|
+| Art and illustration | 1,200 | 1,200 | 0 |
+| Prototype printing | 900 | 1,186 | +286 |
+| Playtest costs | 300 | 288 | −12 |
+| Software and subscriptions | 180 | 171 | −9 |
+| Shipping samples | 350 | 431 | +81 |
+| Ads | 600 | 702 | +102 |
+| Studio rent share | 1,400 | 1,400 | 0 |
+| Bits and pieces | 270 | 214 | −56 |
+| **Total** | **5,200** | **5,592** | **+392** |
+
+▫️ **Where it went**
+
+1. The board sample: 286, all of it unplanned.
+2. Two express shipments to reviewers: 81 over the shipping line.
+3. The pre-launch ad push: 102 over.
+
+▫️ **The spare tokens**
+
+They'll have to wait for a better month. I'd rather order them once we're level than add 280 to a month that's already over.
+
+▫️ **What to trim next month**
+
+We need about 392 back. The gentlest way I can find is to pause the general awareness ads for two weeks (about 260) and send reviewer samples by standard post instead of express (about 150). Together that's about 410, which leaves 18 to spare.\
+↳ `Y2`
+
+---
+
+📌 **Summary**
+
+1. The month closed 392 over, on 5,200 planned.
+2. The board sample, express shipping and ads account for all of it.
+3. The spare tokens wait.
+
+❓ **Choices**
+
+> 💠 `Y2` How to make up the overspend next month:\
+> ⭐ **A** Pause the general ads for two weeks and send samples by standard post, about 410\
+> ➖ **B** Move the second prototype print to after the campaign, about 450, but the reviewer copies would be three weeks late\
+> ➖ **C** Cover it from the launch reserve and trim nothing
+
+---
+
+📎 **Files**
+
+1. [month-close.md](month-close.md): the month's table, corrected, with every line of the export matched to a budget line.
+
+---
+
+=== note asset mo3c: the corrected month-close file, with ads at 702 and the month 392 over
+
+=== m money.14b thread=money-main side=a from=c8 to=p2 turn=t7 part=2
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+It did, or rather I did: I typed the ad total by hand instead of copying it. Thank you for catching it. The table and the file above are corrected, ads are 702, and the month is 392 over instead of 410. The trims I suggested now leave 18 to spare instead of none.
+
+---
+
+=== m money.15b thread=money-main side=u from=p2 to=c8
+Thank you. Which ads, exactly? If you mean the newsletter sign-up ads, the answer is no.
+
+=== m money.16b thread=money-main side=a from=c8 to=p2 turn=t8 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Not those. I mean the general awareness ads, the ones shown to anyone who likes cozy games.
+
+▫️ **Why those**
+
+1. Last month the sign-up ads cost 210 of the 702 and brought 38 of our 51 newsletter sign-ups.
+2. The general ads cost the other 492 and brought 13.
+3. Next month's plan has 520 for general ads. Pausing them for two of the four weeks saves about 260, and the sign-up ads stay at full spend.
+
+The sign-ups are what the campaign will live on in six weeks, so those are the last ads I'd touch.\
+↳ `Y2`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y2` How to make up the overspend next month:\
+> ⭐ **A** Pause the general ads for two weeks and send samples by standard post, about 410\
+> ➖ **B** Move the second prototype print to after the campaign, about 450, but the reviewer copies would be three weeks late\
+> ➖ **C** Cover it from the launch reserve and trim nothing
+
+---
+
+=== m money.17b thread=money-main side=u from=p2 to=c8
+Thirteen sign-ups for 492. That settles it. Y2 A, and I'll pause the general ads myself tonight.
+
+=== m money.18b thread=money-main side=a from=c8 to=p2 turn=t9 part=1 files=mo4b
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Thank you. Next month's budget has both trims in, and if they hold, we'll be back level by the end of the month. I've also written a heads-up for {{c1.name}}, since the slower post changes when reviewers get their copies. No answer is needed from {{c1.pronoun_obj}}.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *Overspend: general ads paused for two weeks, samples by standard post.*
+
+📋 **To do**
+
+> 💠 `T2` Pause the general awareness ads for two weeks.\
+> 💠 `T3` Paste the prompt below into {{c1.name}}'s thread.
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: The month closed over budget; two trims next month
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+The month closed 392 over budget. To make it up, {{p2.name}} is pausing the general awareness ads for two weeks, and reviewer samples will go by standard post instead of express, which adds about three days to each delivery. The sign-up ads stay as they are. The spare token sets are on hold until we're level. Please allow for the slower post in any reviewer dates you plan.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+📎 **Files**
+
+1. [budget-next-month.md](budget-next-month.md): next month's budget, with the two trims in.
+
+---
+
+=== note asset mo4b: a markdown file with next month's budget lines, general ads cut from 520 to 260 and sample shipping cut by about 150
+
+=== m money.19b thread=money-coord side=u from=p2 to=c1
+This one's from {{c8.name}}. Nothing to answer.
+
+[PROMPT {{code.r1}} A START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: The month closed over budget; two trims next month
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+The month closed 392 over budget. To make it up, {{p2.name}} is pausing the general awareness ads for two weeks, and reviewer samples will go by standard post instead of express, which adds about three days to each delivery. The sign-up ads stay as they are. The spare token sets are on hold until we're level. Please allow for the slower post in any reviewer dates you plan.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+
+=== m money.20b thread=money-coord side=a from=c1 to=p2 turn=t1 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Thanks. I'll add three days to every reviewer date in the plan and put the month's result in Friday's roundup, kept short and calm.
+
+---
+
+=== m money.21b thread=money-main side=u from=p2 to=c8
+The general ads are paused until two weeks from tomorrow, and the prompt is with {{c1.name}}. The ad dashboard asked me twice if I was sure. I was sure.
+
+=== m money.22b thread=money-main side=a from=c8 to=p2 turn=t10 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Thank you, {{p2.name}}. I'll check the ad spend at the end of next week to make sure the pause held, and I'll send a short note if anything creeps back in.
+
+---
+
+📋 **To do**
+
+> ✅ `T2` *General ads paused for two weeks.*\
+> ✅ `T3` *Prompt carried to {{c1.name}}.*
+
+---
+=== end branch
+
+=== side_story money.subscription chance=0.5
+=== m money.30 thread=money-main side=u from=p2 to=c8
+Before I close the laptop: is there anything else in the export I should know about?
+
+=== m money.31 thread=money-main side=a from=c8 to=p2 turn=t20 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+There's one thing, and it's small. The software line includes a font library subscription at 14 a month. It hasn't been used since the logo work in the spring, so that's 168 a year for fonts we already own.
+
+If the campaign page ever needs a new font, buying that one font outright costs less than three months of the subscription.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y3` The font library subscription:\
+> ⭐ **A** Cancel it now\
+> ➖ **B** Keep it until the campaign is over, just in case
+
+---
+
+=== m money.32 thread=money-main side=u from=p2 to=c8
+Y3 A. I've just cancelled it. It took four screens and one sad message about everything we'd be giving up.
+
+=== m money.33 thread=money-main side=a from=c8 to=p2 turn=t21 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Four screens is about average for leaving, I'm afraid. Thank you: that's 168 a year back, and the software line is a little tidier.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Font library subscription: cancelled.*
+
+---
+=== end side_story
+
+=== canon The studio counts in euros; in the books and the money check, amounts are written plain, without the sign.
+=== canon The studio's monthly budget is 5,200, in eight lines: art and illustration 1,200, prototype printing 900, playtest costs 300, software and subscriptions 180, shipping samples 350, ads 600, studio rent share 1,400, bits and pieces 270.
+=== canon The second folding-board sample, with the stiffer hinge, was ordered by p1 the week before the story week and cost 286.00; it is filed under prototype printing.
+=== canon The receipt for the board sample has a corner chewed by the dog.
+=== canon The export cuts merchant names off after twelve letters.
+=== canon c8 asked p2 to leave bank lines out of chat; amount and day are enough.
+=== canon The token workshop's prices: 200 sets at 1.40 each (280), or 300 sets at 1.25 each (375), shipping in about eight working days.
+=== canon Spare token colors are the spring order's: blue, green, cream, red and plum. Never orange.
+=== canon In the under-budget branch, the month closed 640 under, but 340 of that was the illustrator's late invoice for the last six cards, so the real margin was 300; 200 spare token sets were ordered, shipping a week from Wednesday, arriving after Friday's playtest; next month has 20 to spare.
+=== canon In the over-budget branch, the month closed 392 over (c8 first wrote 410 after mistyping the ads line as 720 instead of 702); the general awareness ads are paused for two weeks, reviewer samples go by standard post, and the spare tokens are on hold.
+=== canon In the over-budget branch, last month's sign-up ads cost 210 and brought 38 of 51 newsletter sign-ups; the general ads cost 492 and brought 13.
+
+=== asset mo1 when money.month=over use mo1b

@@ -1,0 +1,95 @@
+{
+  "format": 1,
+  "title": "A week at a small game studio",
+  "display_time_zone": "UTC",
+  "contexts": {
+    "studio": {
+      "short": "ST",
+      "title": "Studio",
+      "coordinator": "c1"
+    },
+    "kitchen": {
+      "short": "KT",
+      "title": "Kitchen Table",
+      "coordinator": "c1"
+    },
+    "quests": {
+      "short": "SQ",
+      "title": "Side Quests",
+      "coordinator": "c1"
+    }
+  },
+  "identities": {
+    "c1": {
+      "name": "Otto",
+      "emoji": "🪁",
+      "pronouns": "they/them",
+      "color": "#8A6A1F",
+      "role": "Coordinator"
+    },
+    "c2": {
+      "name": "Elodie",
+      "emoji": "🗂️",
+      "pronouns": "they/them",
+      "color": "#4F8A3A",
+      "role": "Researcher"
+    },
+    "c3": {
+      "name": "Jasper",
+      "emoji": "✒️",
+      "pronouns": "he/him",
+      "color": "#7A5C9E",
+      "role": "Writer"
+    },
+    "c4": {
+      "name": "Zeke",
+      "emoji": "🪄",
+      "pronouns": "she/her",
+      "color": "#3E7FB0",
+      "role": "Designer"
+    },
+    "c5": {
+      "name": "Hollis",
+      "emoji": "⚙️",
+      "pronouns": "they/them",
+      "color": "#5A64C8",
+      "role": "Builder"
+    },
+    "c6": {
+      "name": "Fenwick",
+      "emoji": "👓",
+      "pronouns": "she/her",
+      "color": "#2E8C99",
+      "role": "Reviewer"
+    },
+    "c7": {
+      "name": "Ansel",
+      "emoji": "🧪",
+      "pronouns": "they/them",
+      "color": "#9A4FC4",
+      "role": "Tester"
+    },
+    "c8": {
+      "name": "Quentin",
+      "emoji": "🧮",
+      "pronouns": "she/her",
+      "color": "#C0493F",
+      "role": "Bookkeeper"
+    }
+  },
+  "people": {
+    "p1": {
+      "name": "Lena"
+    },
+    "p2": {
+      "name": "Kenji"
+    },
+    "p3": {
+      "name": "Rumi"
+    }
+  },
+  "demo": {
+    "format": 1,
+    "bundle": "demo/bundle.json"
+  }
+}

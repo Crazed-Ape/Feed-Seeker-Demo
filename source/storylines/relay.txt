@@ -1,0 +1,1038 @@
+@storyline relay context=studio weight=2
+@thread relay-coord writer=c1 title="{{c1.emoji}} {{c1.name}} · Loose ends"
+@thread relay-research writer=c2 title="{{c2.emoji}} {{c2.name}} · Card readability"
+@thread relay-design writer=c4 title="{{c4.emoji}} {{c4.name}} · Resource icons"
+@thread relay-review writer=c6 title="{{c6.emoji}} {{c6.name}} · Second looks"
+
+=== m relay.01 thread=relay-coord side=u from=p1 to=c1 phase=backstory at=-3d16:40
+{{c1.name}}, before I forget: could you ask {{c6.name}} for a second look at the backer update calendar? No rush, it just has to happen before launch. Thanks!
+
+=== m relay.02 thread=relay-coord side=a from=c1 to=p1 turn=t1 part=1 phase=backstory at=-3d16:44
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Done. The whole calendar draft is inside the prompt, so {{c6.name}} won't have to look anything up, and I've said plainly that there's no rush before launch.\
+↳ `{{code.r3}} A`, `T1`
+
+---
+
+📋 **To do**
+
+> 💠 `T1` Paste `{{code.r3}} A` into {{c6.name}}'s thread.
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r3}} A START]
+To: {{c6.emoji}} {{c6.name}}
+From: {{c1.emoji}} {{c1.name}}
+Subject: Second look at the backer update calendar
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r3.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c6.name}}. Here is the draft plan for backer updates during the 30-day campaign for {{pick.game}}. Could you give it a second look?
+
+1. Day 1: launch post.
+2. Day 2: behind the scenes of the card art.
+3. Day 3: first stretch-goal teaser.
+4. Day 4: thank-you to early backers.
+5. Day 10: designer diary.
+6. Day 20: shipping timeline, with a date.
+7. Day 28: the last 48 hours.
+
+Please send back numbered findings: what's risky, what's missing, and what you'd move. Say which findings matter most. There's no rush. Any time before launch is fine.
+
+⬛🔼🔼⬛🆔{{code.r3.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r3}} A END]
+```
+
+---
+
+=== m relay.03 thread=relay-review side=u from=p1 to=c6 phase=backstory at=-3d16:52
+From {{c1.name}}, no rush:
+
+[PROMPT {{code.r3}} A START]
+To: {{c6.emoji}} {{c6.name}}
+From: {{c1.emoji}} {{c1.name}}
+Subject: Second look at the backer update calendar
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r3.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c6.name}}. Here is the draft plan for backer updates during the 30-day campaign for {{pick.game}}. Could you give it a second look?
+
+1. Day 1: launch post.
+2. Day 2: behind the scenes of the card art.
+3. Day 3: first stretch-goal teaser.
+4. Day 4: thank-you to early backers.
+5. Day 10: designer diary.
+6. Day 20: shipping timeline, with a date.
+7. Day 28: the last 48 hours.
+
+Please send back numbered findings: what's risky, what's missing, and what you'd move. Say which findings matter most. There's no rush. Any time before launch is fine.
+
+⬛🔼🔼⬛🆔{{code.r3.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r3}} A END]
+
+=== m relay.04 thread=relay-review side=a from=c6 to=p1 turn=t1 part=1 phase=backstory at=-3d16:53
+{{c6.emoji}} **{{c6.name}}** · {{date}} · {{time}}
+
+Received. I'd rather read this properly than skim it at the end of the day, so expect an answer early next week. It's on my list.
+
+---
+
+=== m relay.05 thread=relay-coord side=u from=p1 to=c1 phase=backstory at=-3d16:58
+Carried. {{c6.name}} says early next week, which is fair.
+
+=== m relay.06 thread=relay-coord side=a from=c1 to=p1 turn=t2 part=1 phase=backstory at=-3d16:59
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Thanks. Early next week is fine with launch six weeks out. I'll keep it on the prompt list.
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *`{{code.r3}} A` pasted into {{c6.name}}'s thread.*
+
+---
+
+=== m relay.07 thread=relay-research side=u from=p1 to=c2 files=ra1
+Morning {{c2.name}}! One of our testers wrote this on their score sheet last month (photo attached). Can you find out what games like ours do so people can tell the resource icons apart? And how big are their icons?
+
+=== note asset ra1: score-sheet-shell-or-wool.png, a phone photo of a playtest score sheet; next to a small pencil drawing of an icon, someone has written "shell or wool??"
+
+=== m relay.08 thread=relay-research side=a from=c2 to=p1 turn=t1 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+Good question, and a very useful photo. Measuring now, back shortly.
+
+---
+
+=== m relay.09 thread=relay-research side=a from=c2 to=p1 turn=t1 part=2 files=ra2
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+▫️ **What similar games do**
+
+I measured the resource icons on twelve cozy cooperative games, the ones on the studio's shelf and the ones at {{pick.cafe}}. I worked from photos with a ruler in frame.
+
+1. 9 of the 12 give each resource its own shape as well as its own color.
+2. The other 3 use color alone, and all 3 print a symbol key on every card to make up for it.
+3. Icons on the card faces run from 8 to 11 mm. Ours are 7 mm.
+4. Icons in cost rows, where they sit small, run from 5 to 7 mm. Ours are 5 mm.
+
+▫️ **Why it matters**
+
+The commonly cited figure is that about 1 in 12 men and 1 in 200 women have some red-green color vision deficiency. At a table of five, the chance that someone sees our colors differently is real. Your tester may also have been fighting dim café light, though. Shell and wool are both pale, so this could be a lighting problem as much as a color one.
+
+▫️ **How sure I am**
+
+The sizes come from photos, so trust them to about a millimeter. Twelve games is a shelf, not a market survey. The color-vision figure is the general one, not a count of board gamers.
+
+▫️ **Next step**
+
+The icons are {{c4.name}}'s work, so I've written a prompt asking whether ours survive grayscale and the common color-blind simulations, and what size they are now. It follows this message.\
+↳ `{{code.r1}} A`, `T1`
+
+---
+
+📌 **Summary**
+
+1. Most similar games use shape and color together; ours rely on color.
+2. Our face icons are 7 mm against a usual 8 to 11 mm.
+3. A prompt for {{c4.name}} follows.
+
+📋 **To do**
+
+> 💠 `T1` Paste `{{code.r1}} A` into {{c4.name}}'s thread.
+
+---
+
+📎 **Files**
+
+1. [card-readability-notes.md](card-readability-notes.md): the twelve games, their icon sizes, and how each tells resources apart.
+
+---
+
+=== note asset ra2: a short markdown file listing twelve fictional cozy co-op games by shelf position, with face icon size, cost-row icon size, and whether each uses shape, color or both
+
+=== m relay.10 thread=relay-research side=a from=c2 to=p1 turn=t1 part=3 card=widget
+A prompt for {{c4.name}}, ready to carry to the Resource icons thread.
+
+[PROMPT {{code.r1}} A START]
+To: {{c4.emoji}} {{c4.name}}
+From: {{c2.emoji}} {{c2.name}}
+Subject: Do our six icons survive grayscale?
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c4.name}}. A tester at last month's playtest couldn't tell shell from wool. Before anything gets redrawn, could you check our six resource icons?
+
+1. Do they stay distinct in grayscale?
+2. Do they stay distinct under the two common red-green simulations?
+3. What sizes are they now, on card faces and in the cost row?
+
+For reference, 9 of 12 similar games give each resource its own shape, and their face icons run from 8 to 11 mm. My full notes are in card-readability-notes.md.
+
+Please send back a short pass-or-fail list, pair by pair, and any plan you have.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+
+=== m relay.11 thread=relay-design side=u from=p1 to=c4
+From {{c2.name}}:
+
+[PROMPT {{code.r1}} A START]
+To: {{c4.emoji}} {{c4.name}}
+From: {{c2.emoji}} {{c2.name}}
+Subject: Do our six icons survive grayscale?
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c4.name}}. A tester at last month's playtest couldn't tell shell from wool. Before anything gets redrawn, could you check our six resource icons?
+
+1. Do they stay distinct in grayscale?
+2. Do they stay distinct under the two common red-green simulations?
+3. What sizes are they now, on card faces and in the cost row?
+
+For reference, 9 of 12 similar games give each resource its own shape, and their face icons run from 8 to 11 mm. My full notes are in card-readability-notes.md.
+
+Please send back a short pass-or-fail list, pair by pair, and any plan you have.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+
+=== m relay.12 thread=relay-design side=a from=c4 to=p1 turn=t1 part=1 files=ra3
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+I ran all six icons through grayscale and both red-green simulations at real print size, side by side. The sheet is attached so you can see what I saw.
+
+▫️ **What fails**
+
+1. **Shell and wool, in grayscale.** Pale pink and pale gray land within a few percent of each other, and at 7 mm both are soft round blobs. Your tester was right.
+2. **Kelp and lantern, in both red-green simulations.** Sea green and brick red turn into the same olive brown, and both icons are tall and narrow.
+
+▫️ **What passes**
+
+1. **Bread and honey** stay distinct in every view. Honey is amber, by the way, not orange. I checked twice, for everyone's sake.
+
+▫️ **My plan**
+
+1. Face icons go from 7 to 9 mm, cost-row icons from 5 to 6 mm.
+2. Each resource gets a silhouette that works with no color at all: a spiral shell, wavy kelp, a square lantern, a round bun, cloud-shaped wool and a drop of honey.
+3. A darker outline on every icon.
+4. A second cue in one corner of each card, so the resource still reads when a thumb covers the icon.
+
+I've answered {{c2.name}} below. Since this touches all 96 resource cards, I want {{c6.name}} to take a second look before I redraw anything.\
+↳ `{{code.r1}} B`, `T1`
+
+---
+
+📋 **To do**
+
+> 💠 `T1` Carry `{{code.r1}} B` back to {{c2.name}}'s thread.
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} B START]
+To: {{c2.emoji}} {{c2.name}}
+From: {{c4.emoji}} {{c4.name}}
+Subject: Do our six icons survive grayscale?
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅱️⬛🔽🔽⬛
+
+Thanks, {{c2.name}}. Pair by pair:
+
+1. Shell and wool: fail in grayscale.
+2. Kelp and lantern: fail in both red-green simulations.
+3. Bread and honey: pass everywhere.
+4. Sizes: 7 mm on card faces and 5 mm in the cost row, both below your ranges.
+
+My plan is 9 mm faces, 6 mm cost rows, one distinct silhouette per resource, a darker outline and a second cue in a card corner. {{c6.name}} gets a second look before I redraw. Nothing more needed from you.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} B END]
+```
+
+📎 **Files**
+
+1. [icon-check.png](icon-check.png): all six icons in normal color, grayscale and both red-green simulations, at print size.
+
+---
+
+=== note asset ra3: a picture sheet of six small resource icons (shell, kelp, lantern, bread, wool, honey) in four rows: normal color, grayscale, and two red-green simulations; the failing pairs are circled
+
+=== m relay.13 thread=relay-design side=a from=c4 to=p1 turn=t1 part=2
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+And here's the one for {{c6.name}}. I'd rather hear what's wrong with the plan now than after 96 cards.\
+↳ `{{code.r2}} A`, `T2`
+
+---
+
+📋 **To do**
+
+> 🔷 `T1` Carry `{{code.r1}} B` back to {{c2.name}}'s thread.\
+> 💠 `T2` Carry `{{code.r2}} A` to {{c6.name}}'s thread.
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r2}} A START]
+To: {{c6.emoji}} {{c6.name}}
+From: {{c4.emoji}} {{c4.name}}
+Subject: Second look at the new icon plan
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c6.name}}. Before I redraw the 96 resource cards, could you take a second look at this plan?
+
+The problem: in grayscale, shell and wool merge, and in both red-green simulations, kelp and lantern merge. The icons are 7 mm on card faces and 5 mm in the cost row; similar games use 8 to 11 mm.
+
+The plan:
+
+1. Face icons to 9 mm, cost-row icons to 6 mm.
+2. One silhouette per resource: spiral shell, wavy kelp, square lantern, round bun, cloud-shaped wool, drop-shaped honey.
+3. A darker outline on every icon.
+4. A second cue in one card corner, either dots or stripes, one to six.
+
+Please send back numbered findings, and say which ones, if any, should stop the redraw. The check sheet is icon-check.png.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} A END]
+```
+
+---
+
+=== m relay.14 thread=relay-research side=u from=p1 to=c2
+Back from {{c4.name}}:
+
+[PROMPT {{code.r1}} B START]
+To: {{c2.emoji}} {{c2.name}}
+From: {{c4.emoji}} {{c4.name}}
+Subject: Do our six icons survive grayscale?
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅱️⬛🔽🔽⬛
+
+Thanks, {{c2.name}}. Pair by pair:
+
+1. Shell and wool: fail in grayscale.
+2. Kelp and lantern: fail in both red-green simulations.
+3. Bread and honey: pass everywhere.
+4. Sizes: 7 mm on card faces and 5 mm in the cost row, both below your ranges.
+
+My plan is 9 mm faces, 6 mm cost rows, one distinct silhouette per resource, a darker outline and a second cue in a card corner. {{c6.name}} gets a second look before I redraw. Nothing more needed from you.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} B END]
+
+=== m relay.15 thread=relay-research side=a from=c2 to=p1 turn=t2 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+That fits the shelf neatly. The two pairs that fail are exactly the two pairs with no shape difference, and the 9 mm target sits in the middle of the 8 to 11 mm range. Nothing more needed from me. The next step is {{c6.name}}'s look at {{c4.name}}'s plan.
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *`{{code.r1}} A` carried to {{c4.name}}, answer received.*
+
+---
+
+=== side_story relay.wrong chance=0.4
+=== m relay.16 thread=relay-research side=u from=p1 to=c2
+And this one's from {{c4.name}} too:
+
+[PROMPT {{code.r2}} A START]
+To: {{c6.emoji}} {{c6.name}}
+From: {{c4.emoji}} {{c4.name}}
+Subject: Second look at the new icon plan
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c6.name}}. Before I redraw the 96 resource cards, could you take a second look at this plan?
+
+The problem: in grayscale, shell and wool merge, and in both red-green simulations, kelp and lantern merge. The icons are 7 mm on card faces and 5 mm in the cost row; similar games use 8 to 11 mm.
+
+The plan:
+
+1. Face icons to 9 mm, cost-row icons to 6 mm.
+2. One silhouette per resource: spiral shell, wavy kelp, square lantern, round bun, cloud-shaped wool, drop-shaped honey.
+3. A darker outline on every icon.
+4. A second cue in one card corner, either dots or stripes, one to six.
+
+Please send back numbered findings, and say which ones, if any, should stop the redraw. The check sheet is icon-check.png.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} A END]
+
+=== m relay.17 thread=relay-research side=a from=c2 to=p1 turn=t3 part=1
+{{c2.emoji}} **{{c2.name}}** · {{date}} · {{time}}
+
+This one isn't mine. It's addressed to {{c6.emoji}} {{c6.name}}: {{c4.name}} is asking for a second look at the icon plan. I haven't acted on it. Paste it into the Second looks thread and it's all {{c6.name}}'s.\
+↳ `{{code.r2}} A`
+
+---
+=== end side_story
+
+=== m relay.18 thread=relay-review side=u from=p1 to=c6
+From {{c4.name}}. This one's more urgent than the calendar:
+
+[PROMPT {{code.r2}} A START]
+To: {{c6.emoji}} {{c6.name}}
+From: {{c4.emoji}} {{c4.name}}
+Subject: Second look at the new icon plan
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c6.name}}. Before I redraw the 96 resource cards, could you take a second look at this plan?
+
+The problem: in grayscale, shell and wool merge, and in both red-green simulations, kelp and lantern merge. The icons are 7 mm on card faces and 5 mm in the cost row; similar games use 8 to 11 mm.
+
+The plan:
+
+1. Face icons to 9 mm, cost-row icons to 6 mm.
+2. One silhouette per resource: spiral shell, wavy kelp, square lantern, round bun, cloud-shaped wool, drop-shaped honey.
+3. A darker outline on every icon.
+4. A second cue in one card corner, either dots or stripes, one to six.
+
+Please send back numbered findings, and say which ones, if any, should stop the redraw. The check sheet is icon-check.png.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} A END]
+
+=== m relay.19 thread=relay-review side=a from=c6 to=p1 turn=t2 part=1
+{{c6.emoji}} **{{c6.name}}** · {{date}} · {{time}}
+
+Reading it now. And yes, I know {{c1.name}}'s calendar prompt is still open. It's next after this one.\
+↳ `{{code.r2}} A`, `{{code.r3}} A`
+
+---
+
+=== m relay.20 thread=relay-coord side=u from=p1 to=c1
+{{c1.name}}, I've lost track of who's waiting on whom with all these prompts. Where does everything stand, and is anything actually late?
+
+=== m relay.21 thread=relay-coord side=a from=c1 to=p1 turn=t3 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+There are three prompts in play this week. One is finished, and the other two are both waiting on {{c6.name}}.
+
+▫️ **Where each one stands**
+
+1. `{{code.r1}} A`, {{c2.name}} to {{c4.name}}, on icon readability: written, carried, answered with `{{code.r1}} B` and carried back. Closed.
+2. `{{code.r2}} A`, {{c4.name}} to {{c6.name}}, a second look at the icon plan: written and carried today. {{c6.name}} is reading it now.
+3. `{{code.r3}} A`, mine to {{c6.name}}, the backer update calendar: written and carried before the weekend, received, and now waiting three days. It isn't late yet with launch six weeks out, but it's the oldest one open.
+
+▫️ **What I'd do**
+
+{{c6.name}} has two prompts queued. The icon review blocks {{c4.name}} from redrawing 96 cards, and the calendar blocks nothing this week. I'd let the icons go first and nudge about the calendar once that review is back.\
+↳ `Y1`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` When to nudge {{c6.name}} about `{{code.r3}} A`:\
+> ➖ **A** Now, so it's on the record\
+> ⭐ **B** After the icon review is back
+
+---
+
+=== m relay.22 thread=relay-coord side=u from=p1 to=c1
+B. Icons first, the calendar can wait a day or two.
+
+=== m relay.23 thread=relay-coord side=a from=c1 to=p1 turn=t4 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Icons first, then. I'll nudge once {{c6.name}}'s review is back with {{c4.name}}.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Nudge about `{{code.r3}} A`: after the icon review.*
+
+---
+
+=== branch relay.review
+--- option go weight=2
+=== m relay.24 thread=relay-review side=a from=c6 to=p1 turn=t2 part=2
+{{c6.emoji}} **{{c6.name}}** · {{date}} · {{time}}
+
+The plan is sound. I have four findings, and none of them is blocking.
+
+▫️ **Findings**
+
+1. **Outline at small sizes.** 6 mm is fine for the silhouettes, but at that size the outline matters more than the icon does. Keep the outline the same width at 6 mm as at 9 mm instead of scaling it down, or it vanishes in the cost row.
+2. **The corner cue.** Players have to count stripes, and past four that gets slow. Dots in die patterns read at a glance because nearly everyone already knows them. I'd use dots.
+3. **Honey.** I checked the color value myself. It is amber, and it stays amber in all three views. Nobody needs to have that conversation.
+4. **The symbol key.** The rulebook's symbol key will need the new icons. That isn't {{c4.name}}'s job, but it belongs on someone's list.
+
+▫️ **Verdict**
+
+Go ahead with the redraw. Finding 2 is a recommendation, and the rest are details to carry along.\
+↳ `{{code.r2}} B`, `T1`
+
+---
+
+📋 **To do**
+
+> 💠 `T1` Carry `{{code.r2}} B` back to {{c4.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.second_look}}` {{skillv.second_look}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r2}} B START]
+To: {{c4.emoji}} {{c4.name}}
+From: {{c6.emoji}} {{c6.name}}
+Subject: Second look at the new icon plan
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅱️⬛🔽🔽⬛
+
+Hi {{c4.name}}. The plan is sound. Go ahead with the redraw.
+
+1. Keep the outline the same width at 6 mm as at 9 mm, or it disappears in the cost row.
+2. For the corner cue, I recommend dots in die patterns over stripes, because stripes past four have to be counted.
+3. Honey is amber in all three views. No change needed.
+4. The rulebook's symbol key will need the new icons. Worth flagging to whoever owns it.
+
+None of this is blocking.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} B END]
+```
+
+---
+
+=== m relay.25 thread=relay-design side=u from=p1 to=c4
+Back from {{c6.name}}:
+
+[PROMPT {{code.r2}} B START]
+To: {{c4.emoji}} {{c4.name}}
+From: {{c6.emoji}} {{c6.name}}
+Subject: Second look at the new icon plan
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅱️⬛🔽🔽⬛
+
+Hi {{c4.name}}. The plan is sound. Go ahead with the redraw.
+
+1. Keep the outline the same width at 6 mm as at 9 mm, or it disappears in the cost row.
+2. For the corner cue, I recommend dots in die patterns over stripes, because stripes past four have to be counted.
+3. Honey is amber in all three views. No change needed.
+4. The rulebook's symbol key will need the new icons. Worth flagging to whoever owns it.
+
+None of this is blocking.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} B END]
+
+=== m relay.26 thread=relay-design side=a from=c4 to=p1 turn=t2 part=1 files=ra4
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+I'm taking all four findings. The outline stays the same width at every size, and I've added a line about the symbol key to my icon notes so it doesn't get lost.
+
+▫️ **Pick a corner cue**
+
+{{c6.name}} recommends dots and I agree, but it's your card, so I've drawn both styles on three sample cards each. Look at the sheet from across a table if you can, since that's how players will see it.\
+↳ `Y1`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` Corner cue for the resource cards:\
+> ⭐ **A** Dots in die patterns, one to six\
+> ➖ **B** Stripes, one to six
+
+📋 **To do**
+
+> ✅ `T1` *`{{code.r1}} B` carried back to {{c2.name}}.*\
+> ✅ `T2` *`{{code.r2}} A` carried to {{c6.name}}, review received.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [corner-cues.png](corner-cues.png): six sample cards at print size, three with corner dots and three with corner stripes.
+
+---
+
+=== note asset ra4: a picture of six sample resource cards in two rows; the top row has die-pattern dots in the corner, the bottom row has short parallel stripes
+
+=== m relay.27 thread=relay-design side=u from=p1 to=c4
+Y1 A. Dots read better from across the table, I held my phone at arm's length to check. {{pick.dog}} approved too, or at least sniffed the screen.
+
+=== m relay.28 thread=relay-design side=a from=c4 to=p1 turn=t3 part=1 files=ra5
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Dots it is, with thanks to the second reviewer. The final icon sheet is attached: six icons at 9 mm and 6 mm, with outlines and the dot cue for each resource. Redrawing the 96 resource cards is about a day's work, so you'll have them tomorrow.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Corner cue: dots in die patterns.*
+
+---
+
+📎 **Files**
+
+1. [icon-set-v2.png](icon-set-v2.png): the six final icons with outlines and corner dots, at print size.
+
+---
+
+=== note asset ra5: a one-page picture showing the six redrawn icons (spiral shell, wavy kelp, square lantern, round bun, cloud-shaped wool, honey drop) at two sizes, each with its corner dot pattern
+--- option rework weight=1
+=== m relay.24b thread=relay-review side=a from=c6 to=p1 turn=t2 part=2
+{{c6.emoji}} **{{c6.name}}** · {{date}} · {{time}}
+
+The plan is mostly sound, but one finding should stop the redraw.
+
+▫️ **Findings**
+
+1. **Shell and bun become the same shape at 6 mm. Blocking.** I shrank the planned silhouettes to cost-row size and turned them gray. A spiral shell and a round bun are both circles with a little detail inside, and at 6 mm the detail disappears. The plan fixes shell and wool by creating shell and bread. Bread needs a shape that isn't round.
+2. **Outline at small sizes.** Keep the outline the same width at 6 mm as at 9 mm, or it vanishes in the cost row.
+3. **The corner cue.** Players have to count stripes, and past four that gets slow. Dots in die patterns read at a glance. I'd use dots.
+4. **Honey.** It's amber in all three views. No change.
+
+▫️ **Verdict**
+
+Change bread's silhouette and check it at 6 mm in grayscale next to shell, then redraw. Everything else can go ahead as planned.\
+↳ `{{code.r2}} B`, `T1`
+
+---
+
+📋 **To do**
+
+> 💠 `T1` Carry `{{code.r2}} B` back to {{c4.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.second_look}}` {{skillv.second_look}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r2}} B START]
+To: {{c4.emoji}} {{c4.name}}
+From: {{c6.emoji}} {{c6.name}}
+Subject: Second look at the new icon plan
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅱️⬛🔽🔽⬛
+
+Hi {{c4.name}}. One finding should stop the redraw. The rest can ride along.
+
+1. Blocking: at 6 mm in grayscale, the spiral shell and the round bun read as the same circle. Give bread a shape that isn't round, check it next to shell, then redraw.
+2. Keep the outline the same width at 6 mm as at 9 mm.
+3. For the corner cue, I recommend dots in die patterns over stripes.
+4. Honey is amber in all three views. No change needed.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} B END]
+```
+
+---
+
+=== m relay.25b thread=relay-design side=u from=p1 to=c4
+Back from {{c6.name}}, and it's not all good news:
+
+[PROMPT {{code.r2}} B START]
+To: {{c4.emoji}} {{c4.name}}
+From: {{c6.emoji}} {{c6.name}}
+Subject: Second look at the new icon plan
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r2.keys}}🅱️⬛🔽🔽⬛
+
+Hi {{c4.name}}. One finding should stop the redraw. The rest can ride along.
+
+1. Blocking: at 6 mm in grayscale, the spiral shell and the round bun read as the same circle. Give bread a shape that isn't round, check it next to shell, then redraw.
+2. Keep the outline the same width at 6 mm as at 9 mm.
+3. For the corner cue, I recommend dots in die patterns over stripes.
+4. Honey is amber in all three views. No change needed.
+
+⬛🔼🔼⬛🆔{{code.r2.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r2}} B END]
+
+=== m relay.26b thread=relay-design side=a from=c4 to=p1 turn=t2 part=1 files=ra4b
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Fair catch, and I'm glad it came before the 96 cards and not after. At 6 mm my spiral shell and round bun really are the same coin.
+
+▫️ **A new bread**
+
+Bread can't be round, so I've drawn two candidates and run each through grayscale at both sizes, next to shell and wool:
+
+1. **A long loaf** with three score marks on top. It's unmistakable at 9 mm and still a clear oblong at 6 mm.
+2. **A pretzel.** It's more charming, but at 6 mm the loops close up and it starts to look like a tangle, a little too close to wool.
+
+I'm taking the other findings as written: the same outline width at every size, dots for the corner cue, and honey stays amber.\
+↳ `Y1`
+
+▫️ **What it costs**
+
+The redraw slips by about half a day. The 96 cards will reach you tomorrow evening instead of tomorrow morning.
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` Bread's new silhouette:\
+> ⭐ **A** The long loaf\
+> ➖ **B** The pretzel
+
+📋 **To do**
+
+> ✅ `T1` *`{{code.r1}} B` carried back to {{c2.name}}.*\
+> ✅ `T2` *`{{code.r2}} A` carried to {{c6.name}}, review received.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [bread-options.png](bread-options.png): the loaf and the pretzel beside shell and wool, in color and grayscale, at 9 mm and 6 mm.
+
+---
+
+=== note asset ra4b: a picture grid comparing a loaf icon and a pretzel icon with the shell and wool icons, in color and grayscale, at two sizes; at the small size the pretzel looks like a tangle of yarn
+
+=== m relay.27b thread=relay-design side=u from=p1 to=c4
+Oh, the pretzel's adorable. Hang on, you're right, at the small size it's a ball of yarn. Y1 A, the loaf. Half a day is fine.
+
+=== m relay.28b thread=relay-design side=a from=c4 to=p1 turn=t3 part=1 files=ra5b
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+The loaf it is. The pretzel goes in my drawer of good ideas for other games. The final icon sheet is attached, and the 96 resource cards will be with you tomorrow evening.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Bread: the long loaf.*
+
+---
+
+📎 **Files**
+
+1. [icon-set-v2-loaf.png](icon-set-v2-loaf.png): the six final icons with outlines and corner dots, at print size, with bread as a long loaf.
+
+---
+
+=== note asset ra5b: a one-page picture showing the six redrawn icons (spiral shell, wavy kelp, square lantern, long loaf, cloud-shaped wool, honey drop) at two sizes, each with its corner dot pattern
+=== end branch
+
+=== m relay.29 thread=relay-review side=u from=c1 to=c6 card=relay
+A note from {{c1.name}}: your icon review is back with {{c4.name}}, and that work is moving. `{{code.r3}} A`, the backer update calendar, has been open since before the weekend. {{p1.name}} isn't worried, but it's now the oldest open prompt in the studio. When can you get to it?
+
+=== m relay.30 thread=relay-review side=a from=c6 to=c1 turn=t3 part=1
+{{c6.emoji}} **{{c6.name}}** · {{date}} · {{time}}
+
+Fair nudge. This one has slipped twice: first behind the icon review, which was the right call, and then behind nothing in particular, which wasn't. I'll answer it first thing on the playtest morning, so {{p1.name}} can carry it back before heading to {{pick.cafe}}.\
+↳ `{{code.r3}} A`
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *`{{code.r2}} B` carried back to {{c4.name}}.*
+
+---
+
+=== hook relay-friday
+
+=== branch relay.late
+--- option answered weight=2
+=== m relay.32 thread=relay-review side=u from=p1 to=c6
+Morning! Is today calendar day? I'm off to {{pick.cafe}} at nine for the playtest, so no pressure, but I'd love to carry it back before then.
+
+=== m relay.33 thread=relay-review side=a from=c6 to=p1 turn=t4 part=1
+{{c6.emoji}} **{{c6.name}}** · {{date}} · {{time}}
+
+It is. "No rush" was the brief, but a week is more than no rush, so thank you for your patience.
+
+▫️ **Findings**
+
+1. **Days 1 to 4 are four updates in four days.** Backers who get an update every day tend to stop opening them. That comes from reading campaign comment threads, not from a measured number. Fold the day 4 thank-you into the day 1 launch post, while early backers are arriving, and merge the art and stretch-goal posts into one on day 3.
+2. **Days 11 to 19 are silent.** Campaigns tend to sag in the middle, and silence makes the sag worse. Move the designer diary from day 10 to day 14.
+3. **Day 20 promises a shipping date.** That date depends on the printer's schedule, which isn't yours to promise. Give a month, not a day. Of the four, this is the one I'd fix even if you change nothing else.
+4. **Nothing comes after day 28.** Add a "what happens now" update two days after the campaign closes, covering surveys, the timeline and a thank-you.
+
+▫️ **Verdict**
+
+Finding 3 is the only one that could cause real trouble later. The other three would make the calendar better, but leaving them out won't hurt anyone.\
+↳ `{{code.r3}} B`, `T2`
+
+---
+
+📋 **To do**
+
+> 💠 `T2` Carry `{{code.r3}} B` back to {{c1.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.second_look}}` {{skillv.second_look}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r3}} B START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c6.emoji}} {{c6.name}}
+Subject: Second look at the backer update calendar
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r3.keys}}🅱️⬛🔽🔽⬛
+
+Hi {{c1.name}}, and sorry this took a week. Four findings:
+
+1. Days 1 to 4 are four updates in four days. Fold the thank-you into the launch post and merge the art and stretch-goal posts into one on day 3.
+2. Days 11 to 19 are silent. Move the designer diary to day 14.
+3. Day 20 promises a shipping date that depends on the printer. Give a month, not a day. This is the one that matters most.
+4. Nothing comes after day 28. Add a "what happens now" update two days after the close.
+
+⬛🔼🔼⬛🆔{{code.r3.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r3}} B END]
+```
+
+---
+
+=== m relay.34 thread=relay-coord side=u from=p1 to=c1
+Finally! From {{c6.name}}:
+
+[PROMPT {{code.r3}} B START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c6.emoji}} {{c6.name}}
+Subject: Second look at the backer update calendar
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r3.keys}}🅱️⬛🔽🔽⬛
+
+Hi {{c1.name}}, and sorry this took a week. Four findings:
+
+1. Days 1 to 4 are four updates in four days. Fold the thank-you into the launch post and merge the art and stretch-goal posts into one on day 3.
+2. Days 11 to 19 are silent. Move the designer diary to day 14.
+3. Day 20 promises a shipping date that depends on the printer. Give a month, not a day. This is the one that matters most.
+4. Nothing comes after day 28. Add a "what happens now" update two days after the close.
+
+⬛🔼🔼⬛🆔{{code.r3.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r3}} B END]
+
+=== m relay.35 thread=relay-coord side=a from=c1 to=p1 turn=t5 part=1 files=ra6
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+That closes the last open prompt. Here's the calendar with all four findings applied.
+
+▫️ **The calendar, revised**
+
+1. Day 1: launch post, with the thank-you to early backers.
+2. Day 3: behind the art, with the first stretch-goal teaser.
+3. Day 14: designer diary.
+4. Day 20: shipping timeline, given as a month.
+5. Day 28: the last 48 hours.
+6. Day 32: what happens now.
+
+That's six updates instead of seven, spread out so no stretch of the campaign goes quiet for long.\
+↳ `Y2`
+
+▫️ **The prompt list**
+
+1. `{{code.r1}}`: answered and closed.
+2. `{{code.r2}}`: answered and closed.
+3. `{{code.r3}}`: answered today, a week after it was written, and closed.
+
+---
+
+❓ **Choices**
+
+> 💠 `Y2` How much of {{c6.name}}'s review to take:\
+> ⭐ **A** All four findings, as in the revised calendar\
+> ➖ **B** Findings 1, 3 and 4, with the designer diary staying on day 10
+
+🧩 **Skills**
+
+> Loaded: `{{skill.team_identities}}` {{skillv.team_identities}}
+
+---
+
+📎 **Files**
+
+1. [backer-update-calendar-v2.md](backer-update-calendar-v2.md): the revised six-update calendar, with a line on what each update covers.
+
+---
+
+=== note asset ra6: a short markdown file listing six backer updates by campaign day, each with a one-line description
+
+=== m relay.36 thread=relay-coord side=u from=p1 to=c1
+A, all four. And can you write {{p2.name}} two lines about the month-not-a-day thing? {{p2.name}} has been saying it for weeks and deserves to hear it was the right call.
+
+=== m relay.37 thread=relay-coord side=a from=c1 to=p1 turn=t6 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Happily. Here it is, ready to forward:
+
+> {{c6.name}} reviewed the backer update calendar, and the main finding was yours all along: updates will give a shipping month, never a day. The revised calendar is in backer-update-calendar-v2.md.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *Calendar: all four findings taken.*
+
+📋 **To do**
+
+> 💠 `T2` Forward the note to {{p2.name}}.
+
+---
+--- option withdrawn weight=1
+=== m relay.32b thread=relay-coord side=u from=p1 to=c1
+{{c1.name}}, {{p2.name}} and I talked last night: one short backer update every Tuesday, nothing fancier. Does that make the calendar review pointless? Should we pull it before {{c6.name}} spends the morning on it?
+
+=== m relay.33b thread=relay-coord side=a from=c1 to=p1 turn=t5 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Yes. A weekly update on a fixed day replaces the calendar, so the review would answer a question nobody is asking anymore. Better to pull it now than have {{c6.name}} spend the morning on it. The withdrawal is below, and it doesn't need a reply.\
+↳ `{{code.r4}} A`, `T2`
+
+▫️ **The prompt list after this**
+
+1. `{{code.r1}}` and `{{code.r2}}`: answered and closed.
+2. `{{code.r3}}`: withdrawn, a week after it was written.
+3. `{{code.r4}}`: the withdrawal itself, which needs no answer.
+
+---
+
+📋 **To do**
+
+> 💠 `T2` Paste `{{code.r4}} A` into {{c6.name}}'s thread.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.team_identities}}` {{skillv.team_identities}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r4}} A START]
+To: {{c6.emoji}} {{c6.name}}
+From: {{c1.emoji}} {{c1.name}}
+Subject: Withdrawn: the backer update calendar
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r4.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c6.name}}. Please drop `{{code.r3}} A`. {{p1.name}} and {{p2.name}} have settled on one short backer update every Tuesday, so there's no calendar left to review. Thank you for keeping it on your list all week.
+
+⬛🔼🔼⬛🆔{{code.r4.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r4}} A END]
+```
+
+---
+
+=== m relay.34b thread=relay-review side=u from=p1 to=c6
+Good news, one less thing for your morning:
+
+[PROMPT {{code.r4}} A START]
+To: {{c6.emoji}} {{c6.name}}
+From: {{c1.emoji}} {{c1.name}}
+Subject: Withdrawn: the backer update calendar
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r4.keys}}🅰️⬛🔽🔽⬛
+
+Hi {{c6.name}}. Please drop `{{code.r3}} A`. {{p1.name}} and {{p2.name}} have settled on one short backer update every Tuesday, so there's no calendar left to review. Thank you for keeping it on your list all week.
+
+⬛🔼🔼⬛🆔{{code.r4.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r4}} A END]
+
+=== m relay.35b thread=relay-review side=a from=c6 to=p1 turn=t4 part=1
+{{c6.emoji}} **{{c6.name}}** · {{date}} · {{time}}
+
+Dropped, and thanks for catching me before I'd started. Every Tuesday sounds right to me. One line from the old draft is worth keeping even with weekly updates: never put a shipping day in an update, only a month.\
+↳ `{{code.r3}} A`
+
+---
+
+=== m relay.36b thread=relay-coord side=u from=p1 to=c1
+Carried. {{c6.name}} took it gracefully and slipped in a tip anyway.
+
+=== m relay.37b thread=relay-coord side=a from=c1 to=p1 turn=t6 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+That sounds like {{c6.name}}. Every prompt this week is now closed: two answered, one withdrawn, none waiting.
+
+---
+
+📋 **To do**
+
+> ✅ `T2` *`{{code.r4}} A` pasted into {{c6.name}}'s thread.*
+
+---
+=== end branch
+
+=== canon {{pick.game}} has six resources, each with its own icon: shell, kelp, lantern, bread, wool and honey.
+=== canon The game has 96 resource cards.
+=== canon A tester at last month's playtest wrote "shell or wool??" on a score sheet, which started the icon review.
+=== canon The old icons were 7 mm on card faces and 5 mm in the cost row; the new ones are 9 mm and 6 mm, with an outline of the same width at both sizes.
+=== canon The honey icon is amber, not orange, and has been checked more than once for {{p2.name}}'s sake.
+=== canon Each resource card carries a corner cue of dots in a die pattern, one to six.
+=== canon In the relay.review "go" branch, bread's icon is a round bun; in the "rework" branch, it is a long loaf with three score marks, and the cards arrived half a day later.
+=== canon The crowdfunding campaign runs 30 days.
+=== canon {{c1.name}}'s prompt to {{c6.name}} about the backer update calendar was written before the story week and was still open on the Friday.
+=== canon In the relay.late "answered" branch, the backer update calendar has six updates, on days 1, 3, 14, 20, 28 and 32, and updates give a shipping month, never a day.
+=== canon In the relay.late "withdrawn" branch, {{p1.name}} and {{p2.name}} settled on one short backer update every Tuesday, and the calendar review was withdrawn.

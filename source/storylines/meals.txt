@@ -1,0 +1,477 @@
+@storyline meals context=kitchen weight=2
+@thread meals-main writer=c1 title="{{c1.emoji}} {{c1.name}} · Dinners this week"
+
+=== m meals.01 thread=meals-main side=u from=p1 to=c1 phase=backstory at=-2d17:50
+Hi {{c1.name}}! Big week coming: the campaign page is due Friday and the playtest is Friday too. Could you plan our dinners for the week, and make me one shopping list for all of it? Three of us, and {{p3.name}} eats most things.
+
+=== m meals.02 thread=meals-main side=a from=c1 to=p1 turn=t1 part=1 phase=backstory at=-2d17:53
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Happy to. Three quick questions first, so the plan fits the week you'll actually have and not an ideal one.\
+↳ `Y1` `Y2` `Y3`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` How many dinners to plan:\
+> ⭐ **A** Monday to Friday properly, the weekend loose\
+> ➖ **B** All seven nights
+>
+> 💠 `Y2` Weeknight cooking time:\
+> ⭐ **A** 30 minutes or less of hands-on time\
+> ➖ **B** Up to 45 minutes
+>
+> 💠 `Y3` Shopping:\
+> ⭐ **A** One big shop on Sunday\
+> ➖ **B** Sunday, plus a top-up on Wednesday
+>
+> Answer line: `Y1 A`, `Y2 A`, `Y3 A`, or "all recommended".
+
+---
+
+=== m meals.03 thread=meals-main side=u from=p1 to=c1 phase=backstory at=-2d17:58
+All recommended! One thing: {{p3.name}} is off mushrooms this month. Strictly.
+
+=== m meals.04 thread=meals-main side=u from=p1 to=c1 phase=backstory at=-2d17:58 retry edits=meals.03
+All recommended! One thing: {{p3.name}} is off mushrooms this month. Strictly.
+
+=== m meals.05 thread=meals-main side=a from=c1 to=p1 turn=t2 part=1 phase=backstory at=-2d18:01
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Got it, both copies. No mushrooms anywhere this week, not even hiding in a sauce. Building the plan now.
+
+---
+
+=== m meals.06 thread=meals-main side=a from=c1 to=p1 turn=t2 part=2 files=meals_a1 phase=backstory at=-2d18:04
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **The week**
+
+1. **Monday:** sheet-pan chicken thighs with potatoes and carrots. About 10 minutes hands-on, then 35 in the oven while you do something else.
+2. **Tuesday:** tomato soup and grilled cheese. 20 minutes, mostly from the cupboard.
+3. **Wednesday:** {{pick.dish}}, for a change from the usual.
+4. **Thursday:** sausages, mash and peas. 25 minutes.
+5. **Friday:** pizza night with bought dough, everyone tops their own. 15 minutes of prep and 12 in the oven, so it fits around Friday's playtest.
+6. **Weekend:** loose. Leftovers for Saturday lunch, and the fridge has room for whatever you fancy.
+
+▫️ **The list**
+
+One list for the whole week, sorted by aisle so the shop goes in one loop. Estimate: about 90 at your usual shop. There's a pantry check at the bottom (flour, rice, stock cubes) so you don't buy what you already have.
+
+The sausages are the only tricky part: fresh ones won't keep from Sunday to Thursday, so they go in the freezer on Sunday and move to the fridge on Wednesday night.\
+↳ `T2` `T3`
+
+---
+
+📌 **Summary**
+
+1. Five planned dinners, the weekend loose, every weeknight 30 minutes hands-on or less.
+2. One shop on Sunday, about 90; no mushrooms anywhere.
+3. The sausages need freezing on Sunday and thawing on Wednesday night.
+
+❓ **Choices**
+
+> ✅ `Y1` *Dinners: Monday to Friday, the weekend loose.*
+>
+> ✅ `Y2` *Weeknights: 30 minutes or less hands-on.*
+>
+> ✅ `Y3` *Shopping: one big shop on Sunday.*
+
+📋 **To do**
+
+> 💠 `T1` Do the Sunday shop with the list.\
+> 💠 `T2` Freeze the sausages when you get home.\
+> 💠 `T3` On Wednesday night, move the sausages from the freezer to the fridge.
+
+---
+
+📎 **Files**
+
+1. [grocery-list-week.md](grocery-list-week.md): one shopping list for the whole week, sorted by aisle, no mushrooms.
+
+---
+
+=== note asset meals_a1: grocery-list-week.md, one shopping list for the week sorted by aisle: chicken thighs, potatoes, carrots, tinned tomatoes, bread, cheese, six sausages, peas, pizza dough, pizza toppings, a dozen eggs, milk, the ingredients for {{pick.dish}}, and a pantry check at the bottom (flour, rice, stock cubes); no mushrooms anywhere.
+
+=== m meals.07 thread=meals-main side=u from=p1 to=c1 phase=backstory at=-2d18:30
+This is great, thank you. Could one night be something {{p3.name}} can help cook? They've been asking all week.
+
+=== m meals.08 thread=meals-main side=a from=c1 to=p1 turn=t3 part=1 phase=backstory at=-2d18:34
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Tuesday is already a good one for a helper, so I'd keep it and hand out jobs:
+
+1. Buttering the outside of the bread for the grilled cheese.
+2. Stirring the soup once it's off the boil.
+3. Setting the timer and calling out "flip!" for the sandwiches.
+
+The hot pan and the stove stay with you; everything else can be {{p3.name}}'s.
+
+---
+
+📋 **To do**
+
+> 🔷 `T1` Do the Sunday shop with the list.\
+> 🔷 `T2` Freeze the sausages when you get home.\
+> 🔷 `T3` On Wednesday night, move the sausages from the freezer to the fridge.
+
+---
+
+=== m meals.09 thread=meals-main side=u from=p1 to=c1 phase=backstory at=-1d11:15
+Shop done, 92 on the receipt. They were out of peas so I got green beans, is that ok for Thursday? Sausages are in the freezer.
+
+=== m meals.10 thread=meals-main side=a from=c1 to=p1 turn=t4 part=1 phase=backstory at=-1d11:19
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+92 against an estimate of about 90: close enough to call it on budget. Green beans are a fine swap for Thursday. They take about 6 minutes in boiling water, nearly the same as peas, so the timing doesn't change.
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *Sunday shop done: 92, green beans instead of peas.*\
+> ✅ `T2` *Sausages frozen.*\
+> 🔹 `T3` On Wednesday night, move the sausages from the freezer to the fridge.
+
+---
+
+=== m meals.11 thread=meals-main side=u from=p1 to=c1
+Chicken night done, 35 minutes on the dot, and the carrots were the best part! Do I need to defrost anything for tomorrow's soup?
+
+=== m meals.12 thread=meals-main side=a from=c1 to=p1 turn=t5 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Nothing to defrost: Tuesday is all cupboard and fridge. Glad the carrots won; I'll remember that for next week.
+
+---
+
+📋 **To do**
+
+> 🔹 `T3` On Wednesday night, move the sausages from the freezer to the fridge.
+
+---
+
+=== m meals.13 thread=meals-main side=u from=p3 to=c1
+Hi {{c1.name}}! It's {{p3.name}}, {{p1.name}} said I could type. I helped with the soup!! I buttered ALL the bread. But I saw that tomorrow is {{pick.dish}} and I really really don't want it. Can we have something else? Is that allowed? What else is there?
+{{p3.name}} and {{pick.dog}}
+
+=== m meals.14 thread=meals-main side=a from=c1 to=p3 turn=t6 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **Thank you for the bread**
+
+All of it buttered is a serious job. Good work, head chef's assistant.
+
+▫️ **About tomorrow**
+
+You're allowed to ask, and {{p1.name}} gets the final word. Here are two swaps that only use food that's already in the house, so nothing has to be bought. {{pick.dish}} doesn't disappear: it moves to Saturday, when the weekend is loose anyway.\
+↳ `Y4` `T4`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y4` Wednesday's dinner instead of {{pick.dish}}:\
+> ⭐ **A** Breakfast for dinner: pancakes, scrambled eggs and fruit\
+> ➖ **B** Build-your-own sandwiches with whatever's left from Tuesday
+
+📋 **To do**
+
+> 💠 `T4` Show this to {{p1.name}} before you pick.\
+> 🔹 `T3` On Wednesday night, move the sausages from the freezer to the fridge.
+
+---
+
+=== branch meals.swap
+--- option substitute weight=2
+=== m meals.15 thread=meals-main side=u from=p3 to=c1
+{{p1.name}} said YES!!! Y4 A. BREAKFAST FOR DINNER. Can I flip the pancakes? How many do we make?
+{{p3.name}} and {{pick.dog}}
+
+=== m meals.16 thread=meals-main side=a from=c1 to=p3 turn=t7 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **How many**
+
+This batch makes about twelve small pancakes, four each for three people. You need 200 g of flour, 2 eggs, 300 ml of milk, 1 tablespoon of sugar, 2 teaspoons of baking powder, a pinch of salt and a little butter for the pan. The eggs and milk came from Sunday's shop and the flour passed the pantry check.
+
+▫️ **How to make them**
+
+Do these in order, and don't go on until the check is true. {{p1.name}} stays at the stove the whole time; you're in charge of the spatula.
+
+1. Wash your hands. Check: hands are dry before you touch the flour.
+2. In a big bowl, whisk the flour, sugar, baking powder and salt. Check: no white lumps of baking powder left.
+3. {{p1.name}} cracks the eggs into the milk, and you whisk them together. Check: no bits of shell.
+4. Pour the wet bowl into the dry bowl and stir until it's just mixed. Check: a few small lumps are fine, so stop stirring.
+5. {{p1.name}} heats the pan on medium with a little butter. Check: a drop of batter sizzles gently and doesn't smoke.
+6. Pour one small ladle for each pancake. Check: they don't touch each other.
+7. Flip when the bubbles on top pop and stay open, after about 2 minutes. Check: the edges look dry.
+8. Cook the second side for about 1 minute. Check: golden underneath, then onto the plate.
+
+Turn the pan handle in toward the wall so nobody bumps it.\
+↳ `Y4`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y4` *Wednesday: breakfast for dinner, {{pick.dish}} moves to Saturday.*
+
+📋 **To do**
+
+> ✅ `T4` *Shown to {{p1.name}}, who said yes.*\
+> 🔹 `T3` On Wednesday night, move the sausages from the freezer to the fridge.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.run_steps}}` {{skillv.run_steps}}
+
+---
+
+=== m meals.17 thread=meals-main side=u from=p1 to=c1 files=meals_a2
+Pancakes! {{p3.name}} flipped nine, one folded in half and got eaten anyway. Twelve was exactly right. And the sausages are in the fridge for tomorrow. Thank you!
+
+=== note asset meals_a2: breakfast-for-dinner.png, a photo of a kitchen table with a stack of slightly uneven pancakes, a bowl of scrambled eggs and a plate of sliced fruit; one pancake is folded in half.
+
+=== m meals.18 thread=meals-main side=a from=c1 to=p1 turn=t8 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Nine flips on a first go is a very good score, and a folded pancake still counts. Thursday is set: the sausages have the whole night to thaw.
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Sausages moved to the fridge.*
+
+---
+--- option takeout weight=1
+=== m meals.15b thread=meals-main side=u from=p3 to=c1
+{{p1.name}} said I could ask for anything so... can it be NEITHER and we get noodles from the place with the dragon on the sign? PLEASE?
+{{p3.name}} and {{pick.dog}}
+
+=== m meals.16b thread=meals-main side=u from=p1 to=c1
+{{p1.name}} here. I really did say that. Wednesday's a long day for me anyway, so noodles it is. Can you adjust the plan so nothing goes to waste?
+
+=== m meals.17b thread=meals-main side=a from=c1 to=p1 turn=t7 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **What moves**
+
+1. {{pick.dish}} moves to Saturday, when the weekend is loose anyway.
+2. If anything for it is fresh meat or fish, freeze it tonight and move it to the fridge on Friday night. Everything else keeps until Saturday as it is.
+3. The eggs and milk that would have gone into the swap stay for weekend breakfasts, so nothing goes off.
+
+▫️ **What it costs**
+
+Takeout for three usually lands somewhere between 30 and 40, so the week comes to about 125 to 130 with Sunday's 92. That's still less than two takeout nights would have been, and Wednesday was always going to be your long one.\
+↳ `Y4` `T5`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y4` *Wednesday: noodles from the place with the dragon, {{pick.dish}} moves to Saturday.*
+
+📋 **To do**
+
+> ✅ `T4` *Shown to {{p1.name}}, who chose takeout.*\
+> 💠 `T5` Order by 5:30 for delivery around 6:30.\
+> 💠 `T6` Freeze anything fresh for {{pick.dish}} tonight.\
+> 🔹 `T3` On Wednesday night, move the sausages from the freezer to the fridge.
+
+---
+
+=== m meals.18b thread=meals-main side=u from=p1 to=c1
+Ordered at 5:20! {{p3.name}} picked, I paid, and the sausages are in the fridge. Nothing for Saturday needed freezing, so that one's easy.
+
+=== m meals.19b thread=meals-main side=a from=c1 to=p1 turn=t8 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Ten minutes early, on your longest day. Enjoy the dragon noodles. Thursday is set: the sausages have the whole night to thaw.
+
+---
+
+📋 **To do**
+
+> ✅ `T5` *Takeout ordered at 5:20.*\
+> ✅ `T6` *Nothing needed freezing.*\
+> ✅ `T3` *Sausages moved to the fridge.*
+
+---
+=== end branch
+
+=== m meals.20 thread=meals-main side=u from=p1 to=c1
+Sausage night! I'm still deep in the campaign page. Mash, or something quicker?
+
+=== m meals.21 thread=meals-main side=a from=c1 to=p1 turn=t9 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Quicker wins tonight. Baby potatoes boiled with their skins on need no peeling, and the green beans can go into the same pot for the last 6 minutes: one pot, one drain.\
+↳ `Y5`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y5` Thursday's side:\
+> ⭐ **A** Baby potatoes and beans in one pot, 15 minutes\
+> ➖ **B** Mash as planned, about 25 minutes with peeling
+
+---
+
+=== m meals.22 thread=meals-main side=u from=p1 to=c1
+Potatoes, no peeler tonight. Love the one-pot trick.
+
+=== m meals.23 thread=meals-main side=a from=c1 to=p1 turn=t10 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Timings, all starting together:
+
+1. Potatoes into boiling water, sausages into the pan on medium.
+2. At 9 minutes, the beans go in with the potatoes.
+3. At 15 minutes, drain the pot. The sausages are done when they're browned all over with no pink inside, usually 12 to 15 minutes with a turn every few minutes.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *Thursday's side: baby potatoes and beans in one pot.*
+
+---
+
+=== side_story meals.sausage chance=0.45
+=== m meals.24 thread=meals-main side=u from=p1 to=c1
+Small disaster: {{pick.dog}} just took a sausage straight off the counter while they were resting. Is five enough for three of us? And should I worry about the dog?
+
+=== m meals.25 thread=meals-main side=a from=c1 to=p1 turn=t11 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **Dinner**
+
+Five is enough: two for you, two for the hungriest, one for the third, and a bigger scoop of potatoes and beans to make up for it. Nobody leaves the table hungry.
+
+▫️ **The dog**
+
+One cooked sausage usually means an upset tummy at worst. Two things to check, though:
+
+1. Look at the pack. Sausages often contain onion or garlic, which aren't good for dogs. If either is listed, call your vet for advice tonight rather than waiting.
+2. Keep an eye on {{pick.dog}} this evening and leave fresh water out. Repeated vomiting, or seeming unwell or very quiet, is also a reason to call.
+
+It seems the counter is the new sock drawer.
+
+---
+
+=== m meals.26 thread=meals-main side=u from=p3 to=c1
+The pack says no onion and no garlic, I checked!! {{pick.dog}} looks SO PROUD. Can a dog get grounded?
+{{p3.name}} and {{pick.dog}} (the thief)
+
+=== m meals.27 thread=meals-main side=a from=c1 to=p3 turn=t12 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Thank you for checking the pack, that was exactly the right thing to do. Dogs don't really understand grounding, but they do understand an empty counter, so next time the plate rests at the back, out of reach.
+
+---
+=== end side_story
+
+=== m meals.28 thread=meals-main side=u from=p1 to=c1
+Playtest at {{pick.cafe}} this morning, then the studio all afternoon, so I'll be back around 7. Is pizza still realistic or should we bail?
+
+=== m meals.29 thread=meals-main side=a from=c1 to=p1 turn=t13 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Still realistic, if two small things happen before you leave:
+
+1. Ask {{p3.name}} to take the dough out of the fridge after school. It wants at least an hour at room temperature to stretch easily, and it's happy for up to three.
+2. Chop the toppings before you leave this morning and keep them in a box in the fridge.
+
+Then it's oven on the moment you're home, topped by 7:20, out by about 7:35. Good luck at the playtest.\
+↳ `T7` `T8`
+
+---
+
+📋 **To do**
+
+> 💠 `T7` Ask {{p3.name}} to take the dough out after school.\
+> 💠 `T8` Chop the pizza toppings before you leave.
+
+---
+
+=== side_story meals.chart chance=0.4
+=== m meals.30 thread=meals-main side=u from=p3 to=c1 files=meals_a3
+I made a TOPPINGS CHART so everyone picks before {{p1.name}} gets home and it's faster!! Is it good? Did I forget anything?
+{{p3.name}} and {{pick.dog}}
+
+=== note asset meals_a3: topping-chart.png, a photo of a hand-drawn chart on lined paper with three columns, one per person, and rows of toppings drawn in colored pencil: cheese, tomato, ham, peppers, olives, sweetcorn; a small drawing of a dog sits in the corner.
+
+=== m meals.31 thread=meals-main side=a from=c1 to=p3 turn=t14 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+It's very good. A column for each person and a row for each topping is exactly how I'd have laid it out. Two small ideas:
+
+1. Add a row for "extra cheese", because someone always asks.
+2. Put a tick box at the bottom of each column for "done picking", so you know when to stop waiting.
+
+You didn't forget anything, and there isn't a mushroom anywhere, as promised. The dog in the corner is a nice touch.
+
+---
+=== end side_story
+
+=== m meals.32 thread=meals-main side=u from=p1 to=c1 after=week.41
+Home at 7:10, pizzas out by 7:40, everyone fed. The playtest went really well too! Thank you for carrying dinners this week.
+
+=== m meals.33 thread=meals-main side=a from=c1 to=p1 turn=t15 part=1 after=week.47b
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Five weeknights, one shop, and dinner on the table thirty minutes after a playtest. That's a good week.
+
+▫️ **The weekend**
+
+{{pick.dish}} is waiting for Saturday, and Sunday is open. If you'd like, I'll have next week's plan ready before Sunday's shop.\
+↳ `Y6`
+
+---
+
+📌 **Summary**
+
+1. Every planned weeknight happened, with one swap on Wednesday.
+2. Sunday's shop came to 92; nothing went to waste.
+3. {{pick.dish}} is on Saturday.
+
+❓ **Choices**
+
+> 💠 `Y6` Next week's dinners:\
+> ⭐ **A** Same shape: five planned nights, one Sunday shop, the weekend loose\
+> ➖ **B** Lighter: three planned nights, the rest freestyle
+
+📋 **To do**
+
+> ✅ `T7` *Dough out on time.*\
+> ✅ `T8` *Toppings chopped before the playtest.*
+
+---
+
+=== m meals.34 thread=meals-main side=u from=p1 to=c1
+Y6 A. Same mushroom rule, please, and one more night {{p3.name}} can help cook.
+
+=== m meals.35 thread=meals-main side=a from=c1 to=p1 turn=t16 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Noted: same shape, still no mushrooms, and two helper nights instead of one. The plan and the list will be here before Sunday's shop.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y6` *Next week: same shape, two nights {{p3.name}} can help cook.*
+
+---
+
+=== canon {{p3.name}} is off mushrooms this month, and {{c1.name}} keeps them out of every meal plan.
+=== canon The household shops once a week, on Sunday; the story week's shop came to 92.
+=== canon The story week's dinners: Monday sheet-pan chicken, Tuesday tomato soup and grilled cheese, Thursday sausages with baby potatoes and green beans, Friday pizza night after the playtest.
+=== canon {{p3.name}} refused {{pick.dish}} on Wednesday, so it moved to Saturday.
+=== canon {{p3.name}} likes to help cook and buttered all the bread for Tuesday's grilled cheese.
+=== canon The carrots were the best part of Monday's chicken.
+=== canon {{c1.name}} plans next week's dinners before the Sunday shop, in the same shape, with two nights {{p3.name}} can help cook.

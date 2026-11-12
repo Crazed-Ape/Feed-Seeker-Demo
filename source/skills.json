@@ -1,0 +1,66 @@
+[
+ {
+  "id": "reply_layout",
+  "name": "reply-layout",
+  "version": "2.1",
+  "what": "Gives every reply the same shape: a title line, the answer, then Choices and To do, so a busy person can skim it.",
+  "look_for": "The title line with name and time, and the Choices and To do lists at the end.",
+  "example": "A reply that ends with one choice, its recommended option starred."
+ },
+ {
+  "id": "prompt_relay",
+  "name": "prompt-relay",
+  "version": "2.3",
+  "what": "Lets one Claude write a prompt for another, framed with a code, for a person to carry between threads.",
+  "look_for": "A framed prompt with a four-digit code, and its answer carried back.",
+  "example": "A price question sent from the writer to the researcher and answered."
+ },
+ {
+  "id": "decision_log",
+  "name": "decision-log",
+  "version": "1.4",
+  "what": "Records each settled decision with a number, so later replies can cite it instead of repeating it.",
+  "look_for": "Codes like D-001 in replies, each pointing at one settled choice.",
+  "example": "The pledge price, recorded once and cited from then on."
+ },
+ {
+  "id": "visual_picks",
+  "name": "visual-picks",
+  "version": "1.8",
+  "what": "Shows options as pictures or small pages to look at and compare before picking.",
+  "look_for": "A reply with pictures side by side and a pick to make.",
+  "example": "Three card-back sketches, one of them recommended."
+ },
+ {
+  "id": "team_identities",
+  "name": "team-identities",
+  "version": "1.2",
+  "what": "Gives every Claude a name, an emoji, a role and pronouns, so a person always knows who is talking.",
+  "look_for": "The emoji and name in every title line, the same across threads.",
+  "example": "The bookkeeper and the tester, each with their own mark."
+ },
+ {
+  "id": "run_steps",
+  "name": "run-steps",
+  "version": "1.5",
+  "what": "Writes steps a person runs themselves in strict order, each with a check to confirm it worked.",
+  "look_for": "Numbered steps, each ending in a Check line.",
+  "example": "Fixing a download on the studio site, one step at a time."
+ },
+ {
+  "id": "second_look",
+  "name": "second-look",
+  "version": "1.1",
+  "what": "Reviews another Claude's plan or draft and reports numbered findings, most serious first.",
+  "look_for": "A short list of findings, each with what to change.",
+  "example": "A review of the backer update calendar."
+ },
+ {
+  "id": "rough_notes",
+  "name": "rough-notes",
+  "version": "1.0",
+  "what": "A safe place for a person's half-formed notes, tidied without losing anything.",
+  "look_for": "Messy notes in, a clean version out, with nothing acted on yet.",
+  "example": "Character ideas for a game night, sorted into three sheets."
+ }
+]
