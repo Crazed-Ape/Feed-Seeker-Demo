@@ -1,0 +1,12 @@
+{
+ "id": "studio",
+ "version": "2026.11.1",
+ "welcome": {
+  "title": "A week at a small game studio",
+  "tagline": "A two-person board-game studio, its team of Claudes and one busy week, archived the way Feed Keeper keeps it.",
+  "pitch": "A crowdfunding page, a rulebook, a trade fair and a school volcano, with eight Claudes and a dog with opinions. Messages arrive as the week happens, and each visit takes its own turns."
+ },
+ "world": {
+  "backstory_days": 4
+ }
+}

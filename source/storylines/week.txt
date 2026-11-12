@@ -1,0 +1,728 @@
+@storyline week context=studio weight=3
+@thread week-main writer=c1 title="{{c1.emoji}} {{c1.name}} · The studio week"
+@thread week-c3 writer=c3 title="{{c3.emoji}} {{c3.name}} · Handoffs this week"
+@thread week-c4 writer=c4 title="{{c4.emoji}} {{c4.name}} · Handoffs this week"
+@thread week-c5 writer=c5 title="{{c5.emoji}} {{c5.name}} · Handoffs this week"
+@thread week-c6 writer=c6 title="{{c6.emoji}} {{c6.name}} · Handoffs this week"
+@thread week-c7 writer=c7 title="{{c7.emoji}} {{c7.name}} · Handoffs this week"
+@thread week-c8 writer=c8 title="{{c8.emoji}} {{c8.name}} · Handoffs this week"
+
+=== m week.01 thread=week-main side=u from=p1 to=c1 phase=backstory at=-3d16:40
+Hi {{c1.name}}! Big week coming. Can you keep it moving for us? The campaign page has to be ready by Friday, the playtest is Friday at {{pick.cafe}}, and {{p2.name}} wants the announcement email before all that. What do you need from me?
+
+=== m week.02 thread=week-main side=a from=c1 to=p1 turn=t1 part=1 phase=backstory at=-3d16:44
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Happy to. I'll keep one picture of the week in this thread and send short notes into the other threads, so nobody has to chase anybody.
+
+▫️ **How I'd run it**
+
+Three posts in this thread: Monday's plan, a midweek check on Wednesday and Friday's roundup with what's waiting on whom. Anything urgent in between goes straight to whoever it's for.\
+↳ `Y1`
+
+Notes into the other threads stay short, one or two lines, and only go out when something changes: a date, an owner or a handoff.\
+↳ `Y2`
+
+The roundup can go out before or after the playtest. After means it can say how the playtest went.\
+↳ `Y3`
+
+▫️ **What I have so far**
+
+1. Campaign page: {{c3.name}}, ready by Friday.
+2. Announcement email: {{c3.name}}, before Friday. I'll ask {{p2.name}} for the exact day.
+3. Playtest: Friday at {{pick.cafe}}, with {{c7.name}}. I don't have a start time yet.
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` How often I post here:\
+> ⭐ **A** Three posts: Monday, Wednesday, Friday\
+> ➖ **B** A short post every morning
+>
+> 💠 `Y2` When I send notes to other threads:\
+> ⭐ **A** Only when a date, owner or handoff changes\
+> ➖ **B** A daily check-in in every thread
+>
+> 💠 `Y3` When Friday's roundup goes out:\
+> ⭐ **A** After the playtest, so it covers it\
+> ➖ **B** Friday morning, before the playtest
+>
+> Answer line: `Y1 A Y2 A Y3 A`, or "all recommended".
+
+📋 **To do**
+
+> 💠 `T1` Tell me what time the playtest starts at {{pick.cafe}}.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.team_identities}}` {{skillv.team_identities}}
+
+---
+
+=== m week.03 thread=week-main side=u from=p1 to=c1 phase=backstory at=-3d17:02
+Y1 A, Y2 A, Y3 A. The café has us from ten until one, so the roundup can wait till the afternoon. Thank you, this already feels lighter.
+
+=== m week.04 thread=week-main side=a from=c1 to=p1 turn=t2 part=1 phase=backstory at=-3d17:05
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Ten until one, noted. I'll aim the roundup for about four on Friday, once you've had lunch and the testers' sheets are in.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Posts: Monday, Wednesday and Friday.*
+>
+> ✅ `Y2` *Notes: only when a date, owner or handoff changes.*
+>
+> ✅ `Y3` *Roundup: Friday afternoon, after the playtest.*
+
+📋 **To do**
+
+> ✅ `T1` *Playtest time: ten until one at {{pick.cafe}}.*
+
+---
+
+=== m week.05 thread=week-main side=u from=p2 to=c1 phase=backstory at=-3d17:55
+{{p1.name}} tells me you'll be keeping our week. Before I agree to anything: how many messages does that mean for me, exactly? I already get more than I read.
+
+=== m week.06 thread=week-main side=a from=c1 to=p2 turn=t3 part=1 phase=backstory at=-3d17:58
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Fair question. Three posts in this thread across the whole week, and you only need to read two of them: the Wednesday check and Friday's roundup. Every other note goes into the other Claudes' threads, not to you.
+
+The one thing I'd like to settle is who each post is written for, so it reads like a note to a person and not a newsletter.\
+↳ `Y4`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y4` Who each post is for:\
+> ⭐ **A** Monday to {{p1.name}}, Wednesday to you, Friday to you both\
+> ➖ **B** Every post to you both
+
+---
+
+=== m week.07 thread=week-main side=u from=p2 to=c1 phase=backstory at=-3d18:04
+Y4 A. Three posts, two for me. I'm counting.
+
+=== m week.08 thread=week-c8 side=u from=c1 to=c8 card=relay phase=backstory at=-3d18:10
+Hi {{c8.name}}, {{p2.name}} would like the printer comparison in hand before Monday, so the printer pick can land by Wednesday. If you still need anything from {{p2.name}}, put it in a To do here.
+
+=== m week.09 thread=week-c8 side=a from=c8 to=c1 turn=t1 part=1 phase=backstory at=-3d18:31
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+The comparison will be ready on Monday. The printer totals don't depend on anything missing, so the Wednesday pick is safe.
+
+The shipping estimate is another matter. Both couriers price by box size, and the only size I have is the old game's box. Until I have the new box's measurements, the shipping line could be off by several percent either way, and I'd rather not hand {{p2.name}} a number I don't trust.\
+↳ `T1`
+
+---
+
+📋 **To do**
+
+> 💠 `T1` For {{p2.name}}: send me the new box's width, depth and height from the printer's spec sheet.
+
+---
+
+=== m week.10 thread=week-main side=a from=c1 to=p1 turn=t4 part=1 card=post
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Good morning, {{p1.name}}. Here's the week: five days, one big Friday.
+
+▫️ **The plan**
+
+| Day | What | Who |
+|---|---|---|
+| Monday | Campaign page second pass; card back shortlist | {{c3.name}}, {{c4.name}} |
+| Tuesday | Announcement email draft; print-and-play download ready on the site | {{c3.name}}, {{c5.name}} |
+| Wednesday | Printer pick; final card back; {{c6.name}}'s look at the email; my midweek check | {{p2.name}}, {{c4.name}}, {{c6.name}} |
+| Thursday | Feedback sheets printed; download checked on phones and laptops | {{c7.name}} |
+| Friday | Playtest at {{pick.cafe}}, ten to one; campaign page ready; roundup at four | everyone |
+
+▫️ **Handoffs to watch**
+
+1. The page needs the card back picture by Wednesday, so {{c4.name}}'s final pick has to come before {{c3.name}}'s last pass.
+2. The page links to the print-and-play file, so the download has to work everywhere before Friday, not just on the laptop it was built on.
+3. {{c6.name}} gives the email a second look before it goes to {{p2.name}}. I still need the day {{p2.name}} wants it.
+
+▫️ **Friday's roundup**
+
+I'd like the roundup to end with three lines about next week, so Monday's plan is half written before the weekend.\
+↳ `Y5`
+
+---
+
+📌 **Summary**
+
+1. Friday holds three things: the playtest, the page and the roundup.
+2. The card back by Wednesday is the handoff most likely to pinch.
+3. Two small asks below, one for you and one for {{p2.name}}.
+
+❓ **Choices**
+
+> ✅ `Y4` *Posts: Monday to {{p1.name}}, Wednesday to {{p2.name}}, Friday to both.*
+>
+> 💠 `Y5` What Friday's roundup ends with:\
+> ⭐ **A** Three lines on next week\
+> ➖ **B** Nothing; the roundup covers this week only
+
+📋 **To do**
+
+> 💠 `T2` Send {{c3.name}} the two lines you want at the top of the announcement email.\
+> 💠 `T3` For {{p2.name}}: give {{c8.name}} the printer pick by Wednesday.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.reply_layout}}` {{skillv.reply_layout}}
+
+---
+
+=== m week.11 thread=week-main side=u from=p1 to=c1
+This is great, thank you! Y5 A, three lines is plenty. Can you tell {{c3.name}} that {{p2.name}} wants the email by Thursday morning? And does {{c7.name}} know we start at ten? I'll do T2 tonight.
+
+=== m week.12 thread=week-c3 side=u from=c1 to=c3 card=relay
+{{c3.name}}, {{p2.name}} would like the announcement email by Thursday morning, with {{c6.name}}'s second look done before that. {{p1.name}} is sending you the two opening lines tonight.
+
+=== m week.13 thread=week-c3 side=a from=c3 to=c1 turn=t1 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Thursday morning it is. I'll have a draft by Tuesday evening, which gives {{c6.name}} a whole day to be unimpressed by it. I'll leave the opening blank until {{p1.name}}'s two lines arrive; the rest of the email can start now.
+
+---
+
+=== m week.14 thread=week-c7 side=u from=c1 to=c7 card=relay
+{{c7.name}}, Friday's playtest at {{pick.cafe}} runs from ten until one. {{p1.name}} and {{p2.name}} will be there from half past nine to set up.
+
+=== m week.15 thread=week-c7 side=a from=c7 to=c1 turn=t1 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Got it! Ten until one, setup from half past nine. That gives Friday a shape:
+
+1. 9:30: tables set, boxes open, tokens counted.
+2. 10:00: first games start.
+3. 11:45: feedback sheets go out, so nobody fills one in while putting a coat on.
+4. 12:45: sheets collected.
+
+I'll print the feedback sheets on Thursday morning, which leaves the afternoon to fix a typo if I find one. I usually find one.
+
+---
+
+=== m week.16 thread=week-main side=a from=c1 to=p1 turn=t5 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Both sent. {{c3.name}} will have the email draft by Tuesday evening, and {{c7.name}} has built Friday around ten o'clock, with the feedback sheets going out at quarter to twelve.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *Roundup: ends with three lines on next week.*
+
+📋 **To do**
+
+> 🔷 `T2` Send {{c3.name}} the two lines you want at the top of the announcement email.\
+> 🔷 `T3` For {{p2.name}}: give {{c8.name}} the printer pick by Wednesday.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.team_identities}}` {{skillv.team_identities}}
+
+---
+
+=== m week.17 thread=week-c4 side=u from=c1 to=c4 card=relay
+{{c4.name}}, {{c3.name}} needs the final card back picture by Wednesday afternoon for the campaign page. One reminder for the shortlist: no orange on anything that might end up on the box.
+
+=== m week.18 thread=week-c4 side=a from=c4 to=c1 turn=t1 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Wednesday afternoon works. {{c3.name}} will get two pictures: a wide one for the page header, and a single card at actual size, so the page shows what's really in the box. And no orange anywhere on the shortlist. I checked every swatch twice, once on screen and once printed, because orange likes to sneak in through the browns.
+
+---
+
+=== m week.19 thread=week-c5 side=u from=c1 to=c5 card=relay
+{{c5.name}}, the campaign page will link to the print-and-play file on Friday. Could the download be ready by Tuesday, so {{c7.name}} can check it on phones and laptops on Thursday?
+
+=== m week.20 thread=week-c5 side=a from=c5 to=c1 turn=t1 part=1
+{{c5.emoji}} **{{c5.name}}** · {{date}} · {{time}}
+
+The file and the download page are ready now. The download works on the test laptop. I haven't tried a phone. I'll leave that to {{c7.name}}'s checks, so it gets tested the way visitors will use it, not the way I built it.
+
+---
+
+=== m week.21 thread=week-main side=u from=p2 to=c1
+Quick question. Is the feedback sheet ready? I'd like to see it before it goes to strangers at {{pick.cafe}}.
+
+=== m week.22 thread=week-main side=a from=c1 to=p2 turn=t6 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+It's with {{c7.name}}. The second version is due today and printing is Thursday morning, so you'll see it with nearly two days to spare. I've asked {{c7.name}} to post it in that thread when it's ready.
+
+---
+
+📋 **To do**
+
+> ✅ `T2` *Opening lines: {{p1.name}} sent them to {{c3.name}} last night.*\
+> 🔹 `T3` For {{p2.name}}: give {{c8.name}} the printer pick by Wednesday.
+
+---
+
+=== m week.23 thread=week-c7 side=u from=c1 to=c7 card=relay
+{{c7.name}}, {{p2.name}} would like to see the feedback sheet's second version before Thursday's printing. Could you post it here when it's ready?
+
+=== m week.24 thread=week-c7 side=a from=c7 to=c1 turn=t2 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Yes! It'll be here by five. I'll put a short list on top of what changed since the first version, so {{p2.name}} can read the changes first and the rest only if wanted.
+
+---
+
+=== m week.25 thread=week-c6 side=u from=c1 to=c6 card=relay
+{{c6.name}}, {{c3.name}}'s announcement email draft lands this evening. {{p2.name}} wants the final by Thursday morning, so your second look by Wednesday evening keeps everyone comfortable.
+
+=== m week.26 thread=week-c6 side=a from=c6 to=c1 turn=t1 part=1
+{{c6.emoji}} **{{c6.name}}** · {{date}} · {{time}}
+
+Wednesday evening is fine. I'll read it twice: once as someone who loves board games, and once as someone who has never heard of the studio. The second reader is usually harsher, and usually right.
+
+---
+
+🧩 **Skills**
+
+> Loaded: `{{skill.second_look}}` {{skillv.second_look}}
+
+---
+
+=== side_story week.bag chance=0.3
+=== m week.27 thread=week-main side=u from=p1 to=c1
+Small emergency. {{pick.dog}} took one of the cloth token bags off the prototype box. I think it looked like a sock. Do we have a spare for Friday?
+
+=== m week.28 thread=week-main side=a from=c1 to=p1 turn=t7 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Very on-brand for {{pick.dog}}. The prototype box has five bags, one per player color, and a five-player table needs all of them. Two easy fixes:
+
+1. Check the dog bed and under the sofa first. That's where the socks usually end up.
+2. If it's gone, any small cloth pouch will do for one afternoon. The testers will be judging the tokens, not the bags.
+
+---
+
+=== m week.29 thread=week-main side=u from=p1 to=c1
+Found it in the dog bed, slightly damp but whole. Crisis over!
+=== end side_story
+
+=== side_story week.nudge chance=0.5
+=== m week.30 thread=week-main side=a from=c1 to=p2 turn=t8 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+{{p2.name}}, one small thing before my midweek check. {{c8.name}} has been waiting since Friday for the new box's measurements from the printer's spec sheet. It doesn't hold up the printer pick, but {{c8.name}} can't finish the shipping estimate without it. It's a two-minute job if the sheet is handy.\
+↳ {{c8.name}}'s `T1`
+
+---
+
+=== m week.31 thread=week-main side=u from=p2 to=c1
+You're right, it's been sitting in my inbox since Friday. Sending it now.
+
+=== m week.32 thread=week-c8 side=u from=p2 to=c8 files=wk01
+Here are the measurements from the spec sheet: 290 by 290 by 75 millimeters, about 1.4 kilograms packed. The sheet is attached in case I've misread something.
+
+=== note asset wk01: box-spec-sheet.png, a photo of the printer's spec sheet for the new game's box, with the measurements circled
+
+=== m week.33 thread=week-c8 side=a from=c8 to=p2 turn=t2 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Thank you. 290 by 290 by 75 matches the sheet, so you read it correctly. With the real size, shipping comes out about 6% higher than my estimate from the old box, because the new box is deeper. That's within what we planned for, but I'm glad it's a number now and not a guess.
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *Box measurements: 290 × 290 × 75 mm, 1.4 kg packed.*
+
+---
+=== end side_story
+
+=== branch week.midweek
+--- option ontrack weight=2
+=== m week.34 thread=week-main side=a from=c1 to=p2 turn=t9 part=1 card=post after=website.35
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Midweek check, {{p2.name}}. Short version: nothing is late.
+
+▫️ **Where things stand**
+
+| Thread | Due | Status |
+|---|---|---|
+| Campaign page | Friday | Second pass done; card back picture arrives this afternoon |
+| Announcement email | Thursday morning | Draft done; {{c6.name}}'s second look this evening |
+| Card backs | Wednesday | Final picked |
+| Print-and-play download | Friday | Works on laptops and phones |
+| Feedback sheet | Thursday | Second version in {{c7.name}}'s thread |
+| Printer | Wednesday | Picked, in {{c8.name}}'s thread |
+
+▫️ **Thursday**
+
+1. Morning: the email comes to you for a last read, then goes to {{p1.name}} to send.
+2. Morning: {{c7.name}} prints the feedback sheets.
+3. Evening: nothing at all, which I'd like to protect.
+
+With nothing behind, I don't think Thursday needs a check of its own. I'd rather save your reading for Friday.\
+↳ `Y6`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y6` A Thursday check:\
+> ⭐ **A** None; Friday's roundup is enough\
+> ➖ **B** A short one on Thursday evening
+
+📋 **To do**
+
+> ✅ `T3` *Printer pick: given to {{c8.name}}.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.reply_layout}}` {{skillv.reply_layout}}
+
+---
+
+=== m week.35 thread=week-main side=u from=p2 to=c1
+Y6 A. I'll admit I'm almost disappointed nothing is on fire.
+
+=== m week.36 thread=week-main side=a from=c1 to=p2 turn=t10 part=1 after=launch.52b
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+I'll keep the extinguisher in the cupboard, then. See you in Friday's roundup.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y6` *Thursday check: none; Friday's roundup is enough.*
+
+---
+
+=== m week.37 thread=week-c3 side=u from=c1 to=c3 card=relay after=launch.52
+{{c3.name}}, {{p2.name}} has read the email and passed it to {{p1.name}} to send. The campaign page is the last thing before Friday, and {{c4.name}}'s card back picture is in your thread.
+
+=== m week.38 thread=week-c3 side=a from=c3 to=c1 turn=t2 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Lovely. The card back is in the header and the page is down to its last commas. I'll hand it over by Friday noon, which gives everyone the afternoon to read it with fresh, slightly playtest-tired eyes.
+
+---
+
+=== m week.39 thread=week-c7 side=u from=c1 to=c7 card=relay after=launch.60
+{{c7.name}}, tomorrow is unchanged: setup at half past nine, sheets out at quarter to twelve. Tell me if the printing runs short.
+
+=== m week.40 thread=week-c7 side=a from=c7 to=c1 turn=t3 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Twenty sheets printed, which is more testers than we've ever had, plus a cup of pencils. I found exactly one typo before printing: "turn odrer". It's fixed. I'm calling that a successful test of the test.
+
+---
+
+=== m week.41 thread=week-main side=a from=c1 to=p1 turn=t11 part=1 card=post after=meals.28
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Friday roundup, for you both. The week ended where Monday said it would.
+
+▫️ **Done this week**
+
+1. Campaign page: ready, handed over by {{c3.name}} at noon.
+2. Announcement email: read by {{p2.name}} on Thursday morning and sent by {{p1.name}}.
+3. Card backs: final picked on Wednesday, now in the page header.
+4. Printer: picked on Wednesday; the order details are in {{c8.name}}'s thread.
+5. Print-and-play download: works on phones and laptops, linked from the page.
+6. Playtest: run at {{pick.cafe}}, ten to one. {{c7.name}} has every sheet.
+
+▫️ **Waiting on whom**
+
+1. On {{p1.name}}:
+   1. The playtest sheets, to the studio on Monday.
+2. On {{p2.name}}:
+   1. A word to {{c3.name}} by Monday if the page needs anything. Silence counts as yes.
+3. On the team:
+   1. {{c7.name}}: sorting the playtest feedback on Monday.
+   2. {{c3.name}}: rulebook fixes, once the feedback is sorted.
+
+▫️ **Next week**
+
+1. Monday: playtest feedback sorted into To do items.
+2. Midweek: rulebook fixes from what the testers found.
+3. Friday: a preview link to the page for a few friends of the studio.
+
+---
+
+📌 **Summary**
+
+1. Everything planned on Monday is done.
+2. Two small things wait on you over the weekend, both light.
+3. Next week is feedback, then fixes.
+
+📋 **To do**
+
+> 💠 `T4` Bring the playtest sheets to the studio on Monday.\
+> 💠 `T5` For {{p2.name}}: tell {{c3.name}} by Monday if the page needs anything.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.reply_layout}}` {{skillv.reply_layout}}
+
+---
+
+=== m week.42 thread=week-main side=u from=p1 to=c1
+What a week. Thank you {{c1.name}}! The sheets are already in my bag. Can we do the same three posts next week?
+
+=== m week.43 thread=week-main side=u from=p2 to=c1
+Same three posts next week works for me. For the record: two posts for me, as promised, and both were worth reading.
+
+=== m week.44 thread=week-main side=a from=c1 to=p1 turn=t12 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Same three posts next week, then. Monday's plan will be short, since the last three lines of the roundup already wrote half of it. Have a good weekend, both of you.
+
+---
+
+📋 **To do**
+
+> 🔷 `T4` Bring the playtest sheets to the studio on Monday.\
+> 🔷 `T5` For {{p2.name}}: tell {{c3.name}} by Monday if the page needs anything.
+
+---
+--- option behind weight=1
+=== m week.34b thread=week-main side=a from=c1 to=p2 turn=t9 part=1 card=post after=website.03
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Midweek check, {{p2.name}}. One thing has slipped, and I'd like to move Thursday around before it slips any further.
+
+▫️ **What slipped**
+
+The print-and-play download works on laptops but not on phones. {{c5.name}} is ruling out causes one by one and hasn't found the culprit yet. The campaign page links to that file, and most visitors will arrive from a phone, so I don't want the page going out on Friday with a link that only half works.
+
+▫️ **Everything else**
+
+| Thread | Due | Status |
+|---|---|---|
+| Campaign page | Friday | Second pass done; card back picture arrives this afternoon |
+| Announcement email | Thursday morning | Draft done; {{c6.name}}'s second look this evening |
+| Card backs | Wednesday | Final picked |
+| Print-and-play download | Friday | Behind: fails on phones |
+| Feedback sheet | Thursday | Second version in {{c7.name}}'s thread |
+| Printer | Wednesday | Picked, in {{c8.name}}'s thread |
+
+▫️ **Thursday, moved around**
+
+1. 9:00 to 10:00: {{c7.name}} runs the phone checks with {{p1.name}}, step by step, with {{c5.name}} on hand to fix whatever turns up. This moves from the afternoon to first thing.
+2. 10:00 to noon: your last read of the email, as planned.
+3. Afternoon: the feedback sheets are printed. This moves from the morning to the afternoon.
+4. Friday at 8:30: {{c3.name}} adds the download link to the page, once the checks pass.
+
+If the checks haven't passed by Thursday afternoon, the page still goes out on Friday, just without the link, and gains it next week. Nothing else on Friday moves either way.\
+↳ `Y6`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y6` Thursday:\
+> ⭐ **A** Phone checks first thing, sheets in the afternoon, link added Friday morning\
+> ➖ **B** Keep Thursday as planned and launch the page without the download link
+
+📋 **To do**
+
+> ✅ `T3` *Printer pick: given to {{c8.name}}.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.reply_layout}}` {{skillv.reply_layout}}
+
+---
+
+=== m week.35b thread=week-main side=u from=p2 to=c1
+Which phones, exactly? "Not on phones" could mean every phone in the world or the one somebody happened to try.
+
+=== m week.36b thread=week-main side=a from=c1 to=p2 turn=t10 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Fair. Two phones so far, both {{p1.name}}'s: the current one and the old one in the drawer. On both, the download starts and then stops. On the laptop it works every time.
+
+Whether it's every phone, I don't know yet. Two phones that belong to the same person aren't much of a sample, which is part of why I want Thursday's checks to cover more than those two.\
+↳ `Y6`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y6` Thursday:\
+> ⭐ **A** Phone checks first thing, sheets in the afternoon, link added Friday morning\
+> ➖ **B** Keep Thursday as planned and launch the page without the download link
+
+---
+
+=== m week.37b thread=week-main side=u from=p2 to=c1
+Good, that's an actual answer. Y6 A. I'd rather lose a morning than launch with a broken link. Bring my phone into the checks too.
+
+=== m week.38b thread=week-main side=a from=c1 to=p2 turn=t11 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Moving Thursday now. Your phone makes three, which is a better sample already. I'll tell {{c7.name}}, {{c5.name}} and {{c3.name}}, and ask {{p1.name}} to keep the first hour free.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y6` *Thursday: phone checks first thing, sheets in the afternoon, link added Friday morning.*
+
+📋 **To do**
+
+> 💠 `T4` For {{p1.name}}: keep nine to ten free on Thursday, and bring both phones and {{p2.name}}'s.
+
+---
+
+=== m week.39b thread=week-c7 side=u from=c1 to=c7 card=relay
+{{c7.name}}, Thursday has moved: phone checks on the print-and-play download from nine to ten with {{p1.name}}, on three phones, and the feedback sheets print in the afternoon instead of the morning.
+
+=== m week.40b thread=week-c7 side=a from=c7 to=c1 turn=t3 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+On it! I'll write the checks as numbered steps {{p1.name}} can run, each with something to look for, one phone at a time. The laptop goes first as a control, so we know the file itself is fine before we blame anything else. Printing in the afternoon is no trouble: the print run takes twenty minutes, and the typo hunt takes longer.
+
+---
+
+🧩 **Skills**
+
+> Loaded: `{{skill.run_steps}}` {{skillv.run_steps}}
+
+---
+
+=== m week.41b thread=week-c5 side=u from=c1 to=c5 card=relay
+{{c5.name}}, {{c7.name}} runs phone checks on the download with {{p1.name}} tomorrow from nine to ten. If you can be in your thread then, a fix can go in within the same hour.
+
+=== m week.42b thread=week-c5 side=a from=c5 to=c1 turn=t2 part=1
+{{c5.emoji}} **{{c5.name}}** · {{date}} · {{time}}
+
+I'll be here. Until then I'll keep narrowing it down. So far:
+
+1. The file itself is fine: it opens on the laptop.
+2. The page is fine: the download starts on the phones.
+3. So whatever breaks, it breaks after the download starts and before the phone opens the file.
+
+That's fewer suspects than this morning.
+
+---
+
+=== m week.43b thread=week-c3 side=u from=c1 to=c3 card=relay
+{{c3.name}}, one change for Friday: the print-and-play link goes into the campaign page at half past eight on Friday morning, once Thursday's phone checks pass. Everything else on the page stays on your plan.
+
+=== m week.44b thread=week-c3 side=a from=c3 to=c1 turn=t2 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Understood. I'll leave a tidy gap in the page where the link goes, like a reserved seat with a little card on it. At half past eight on Friday, the link takes its seat.
+
+---
+
+=== m week.45b thread=week-main side=u from=p1 to=c1 after=website.35
+Phones work! All three of them, mine, the old one and {{p2.name}}'s. Did the rest of Thursday survive the shuffle?
+
+=== m week.46b thread=week-main side=a from=c1 to=p1 turn=t12 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+It did. {{p2.name}} read the email at eleven and sent it to you at quarter past. {{c7.name}} printed the feedback sheets at two and still had time for a typo hunt. The only thing that moved for good is the link, which {{c3.name}} adds tomorrow at half past eight.
+
+---
+
+📋 **To do**
+
+> ✅ `T4` *Phone checks: run Thursday from nine; all three phones pass.*
+
+---
+
+=== m week.47b thread=week-main side=a from=c1 to=p1 turn=t13 part=1 card=post after=meals.28
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Friday roundup, for you both. The week ended where Monday said it would, by way of a rearranged Thursday.
+
+▫️ **Done this week**
+
+1. Campaign page: ready, handed over by {{c3.name}} at noon.
+2. Print-and-play download: fixed, checked on three phones on Thursday morning, linked from the page at half past eight today.
+3. Announcement email: read by {{p2.name}} on Thursday and sent by {{p1.name}}.
+4. Card backs: final picked on Wednesday, now in the page header.
+5. Printer: picked on Wednesday; the order details are in {{c8.name}}'s thread.
+6. Playtest: run at {{pick.cafe}}, ten to one. {{c7.name}} has every sheet.
+
+▫️ **What I'd do differently**
+
+1. Check anything on the website on phones on Tuesday, not Thursday. The slip cost us one morning; found on Thursday afternoon instead, it would have cost us the link.
+
+▫️ **Waiting on whom**
+
+1. On {{p1.name}}:
+   1. The playtest sheets, to the studio on Monday.
+2. On {{p2.name}}:
+   1. A word to {{c3.name}} by Monday if the page needs anything. Silence counts as yes.
+3. On the team:
+   1. {{c7.name}}: sorting the playtest feedback on Monday.
+   2. {{c3.name}}: rulebook fixes, once the feedback is sorted.
+
+▫️ **Next week**
+
+1. Monday: playtest feedback sorted into To do items.
+2. Tuesday: phone checks on anything new on the website.
+3. Friday: a preview link to the page for a few friends of the studio.
+
+---
+
+📌 **Summary**
+
+1. Everything planned on Monday is done, the download link a few hours late.
+2. Moving Thursday's checks to first thing is what saved the link.
+3. Phone checks move to Tuesdays from now on.
+
+📋 **To do**
+
+> 💠 `T5` Bring the playtest sheets to the studio on Monday.\
+> 💠 `T6` For {{p2.name}}: tell {{c3.name}} by Monday if the page needs anything.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.reply_layout}}` {{skillv.reply_layout}}
+
+---
+
+=== m week.48b thread=week-main side=u from=p1 to=c1
+Thank you {{c1.name}}! The Thursday shuffle saved us. Same three posts next week? And yes, phone checks earlier, please.
+
+=== m week.49b thread=week-main side=u from=p2 to=c1
+Agreed on both. I'll also admit the Wednesday post was the most useful message I got all week. It told me what was wrong before I had to ask.
+
+=== m week.50b thread=week-main side=a from=c1 to=p1 turn=t14 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Same three posts next week, and the phone checks go on Tuesday's line in Monday's plan. Thank you both for moving your Thursday without a fuss. Have a good weekend.
+
+---
+
+📋 **To do**
+
+> 🔷 `T5` Bring the playtest sheets to the studio on Monday.\
+> 🔷 `T6` For {{p2.name}}: tell {{c3.name}} by Monday if the page needs anything.
+
+---
+=== end branch
+
+=== hook friday-roundup
+
+=== canon Friday's playtest at {{pick.cafe}} runs from ten until one, with setup from half past nine.
+=== canon At the playtest, feedback sheets go out at quarter to twelve and are collected at quarter to one.
+=== canon {{c1.name}} posts three times a week in the studio thread: Monday's plan to {{p1.name}}, the Wednesday check to {{p2.name}}, and Friday's roundup to both at about four.
+=== canon Friday's roundup ends with three lines on next week.
+=== canon {{c1.name}} sends notes to other threads only when a date, owner or handoff changes.
+=== canon {{p2.name}} wants the announcement email by Thursday morning, after {{c6.name}}'s second look on Wednesday evening.
+=== canon {{c4.name}}'s final card back picture reaches {{c3.name}} by Wednesday afternoon, as a wide header picture and a single card at actual size.
+=== canon {{p2.name}} gives {{c8.name}} the printer pick by Wednesday.
+=== canon {{c7.name}} prints the playtest feedback sheets on Thursday.

@@ -1,0 +1,989 @@
+@storyline playtest context=studio weight=2
+@thread playtest-main writer=c7 title="{{c7.emoji}} {{c7.name}} · Playtest triage"
+
+=== branch playtest.complaint
+--- option drag weight=3
+=== note asset playtest_a1: playtest-feedback.csv, a CSV of twelve playtesters' feedback from three tables of four, with columns for tester number, table, fun, clarity and length scored 1 to 5, the table's minutes for each season (spring, summer, autumn, winter) and a free-text comment. Fun averages 4.1, clarity 3.8, length 2.3; games average 58 minutes (9, 18, 19 and 12 per season). Eight comments call summer and autumn slow, and five of those are about choosing a task card. Five testers notice that the card Mend the Nets says 3 favor while the reference sheet says 2, two tables lose favor tokens in the board's fold, all three tables forget the market refill, three testers ask for a solo mode and two ask for bigger cards. Tester 4 calls the prototype box "a little orange".
+=== m playtest.01 thread=playtest-main side=u from=p1 to=c7 phase=backstory at=-2d21:04 files=playtest_a1
+Hi {{c7.name}}! The feedback from this afternoon's playtest is attached: twelve testers, three tables of four. Everyone smiled, but I watched a lot of people staring at their hands in the middle of the game. Can you sort it into what I actually need to do, and tell me whether I'm imagining the slow bit?
+
+=== m playtest.02 thread=playtest-main side=a from=c7 to=p1 turn=t1 part=1 phase=backstory at=-2d21:05
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Twelve rows and no blanks, a good start. I'm sorting them by theme now, then I'll count.
+
+---
+
+=== note asset a1s: playtest-sorted.md, the twelve rows grouped by theme (middle rounds, small fixes, requests), with counts, season times per table and a Comments section that holds every free-text comment word for word.
+=== m playtest.03 thread=playtest-main side=a from=c7 to=p1 turn=t1 part=2 phase=backstory at=-2d21:19 files=a1s
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+You're not imagining it. The good news comes first, though: fun averages 4.1 out of 5, and nobody scored it below 3.
+
+▫️ **The big one: the middle drags**
+
+1. Games averaged 58 minutes, against the 40 on the box.
+2. Across the three tables, the seasons averaged 9 minutes for spring, 18 for summer, 19 for autumn and 12 for winter.
+3. The length score averages 2.3, the lowest of the three scores.
+4. Eight of the twelve comments mention summer or autumn, and five of those eight describe the same moment: choosing a task card. Tester 6 put it best: "I counted my cards twice and still didn't know."
+
+Here's my read. In spring, most task cards can't be done yet, so the choice makes itself. By summer all five cards in a hand are playable, and every turn becomes a comparison of five options. That's a choosing problem rather than a doing problem, so the fix should make the choice smaller.\
+↳ `Y1` `T1`
+
+▫️ **Three ways to fix it**
+
+1. **Cut the hand from five task cards to four.** Only one rule changes. My guess is that it saves 8 to 12 minutes, but it stays a guess until someone times it.
+2. **Merge summer and autumn into one season.** This saves the most time, about 15 minutes, but the autumn harvest is the moment four testers named as their favorite.
+3. **Keep the seasons and add a sand timer.** It costs almost nothing, but a timer pushes against a cozy game, and two testers wrote that they liked not being rushed.\
+↳ `Y1`
+
+▫️ **The smaller things**
+
+1. **Mend the Nets** says 3 favor, and the reference sheet says 2. Five testers noticed. Table 2 played it as 3 and won by exactly one favor, so it matters.
+2. **The score track** runs along the board's fold, and favor tokens slid into the crease at two of the three tables.
+3. **The market refill** was forgotten at all three tables, at least once each.
+4. **Solo mode:** three testers asked for one, and all three say they mostly play alone.
+5. **Bigger cards:** two testers asked for them, and both mention small text.
+
+Each of these has a line on the To do list below, and the sorted file has every comment word for word.\
+↳ `T2` `T3` `T4` `T5` `T6`
+
+---
+
+📌 **Summary**
+
+1. Fun is high at 4.1. Length is the problem at 2.3, and it lives in summer and autumn.
+2. The slow part is choosing a task card, so I'd make the hand smaller.
+3. Four small fixes and two requests are on the To do list.
+
+❓ **Choices**
+
+> 💠 `Y1` How to speed up the middle rounds:\
+> ⭐ **A** Cut the task hand from five cards to four\
+> ➖ **B** Merge summer and autumn into one season\
+> ➖ **C** Keep the seasons and add a sand timer
+
+📋 **To do**
+
+> 💠 `T1` Pick a fix for the middle rounds and time it at a table.\
+> 💠 `T2` Check Mend the Nets: the card says 3 favor, the reference sheet says 2.\
+> 💠 `T3` Move the score track off the board's fold.\
+> 💠 `T4` Add a refill reminder to the market row.\
+> 💠 `T5` Decide on solo mode: three testers asked for it.\
+> 💠 `T6` Decide on bigger cards: two testers asked for them.
+
+---
+
+📎 **Files**
+
+1. [playtest-sorted.md](playtest-sorted.md): the twelve rows grouped by theme, with counts and every comment word for word.
+
+---
+
+=== m playtest.04 thread=playtest-main side=u from=p1 to=c7 phase=backstory at=-2d21:31
+Thank you! I'm too tired to think about hand sizes tonight. I'll pick in the morning.
+
+=== m playtest.05 thread=playtest-main side=u from=p1 to=c7
+Morning! Y1 A. The middle drags because by summer every card in your hand is playable, so each turn stops being a choice and becomes a five-way puzzle. With four cards the puzzle stays small enough to feel like a decision, and that's the whole game really: small decisions that add up to a village. T2: it's 2, the card was wrong, and I've fixed all three copies. Can I test the four-card hand tonight, and what should I time?
+
+=== m playtest.06 thread=playtest-main side=a from=c7 to=p1 turn=t2 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Four cards it is. I like the reasoning: a hand you can hold in your head. Testing it tonight is the right instinct, because my 8 to 12 minutes is still only a guess. Thanks for fixing Mend the Nets so fast.\
+↳ `Y1` `T2`
+
+▫️ **Tonight's test, in order**
+
+1. Set the hand limit to four for the whole game: deal four task cards each and refill to four. Check: you've said the new limit out loud once before the first turn, and every hand holds four cards.
+2. Start a timer on the first spring turn and note the time at each change of season. Check: you have four season times plus the finish time.
+3. Teach everything else exactly as you did at the playtest. Check: the hand size is the only rule you explained differently.
+4. After the game, have each player score fun, clarity and length from 1 to 5. Check: you have one row per player, with the same columns as the first CSV.
+5. Send me the CSV. Check: the number of rows matches the number of players.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Middle rounds: the task hand goes from five cards to four.*
+
+📋 **To do**
+
+> ✅ `T2` *Mend the Nets: 2 favor, fixed on all three copies.*\
+> 🔷 `T1` Pick a fix for the middle rounds and time it at a table.\
+> 🔷 `T3` Move the score track off the board's fold.\
+> 🔷 `T4` Add a refill reminder to the market row.\
+> 🔷 `T5` Decide on solo mode: three testers asked for it.\
+> 🔷 `T6` Decide on bigger cards: two testers asked for them.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.run_steps}}` {{skillv.run_steps}}
+
+---
+
+=== m playtest.07 thread=playtest-main side=u from=p1 to=c7
+Quick one: four neighbors are coming tonight. Can I play too, or does that spoil the numbers?
+
+=== m playtest.08 thread=playtest-main side=a from=c7 to=p1 turn=t3 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Play! A table of five is a good test, because five players is where a slow middle hurts most. Just leave your own row out of the CSV: you know what changed, so yours is the one length score I can't trust. Keep the timer on your phone, face down, so nobody plays faster for the clock.
+
+---
+
+=== note asset playtest_a2: table-of-five.csv, a CSV of four rows from a table of five (the fifth player's row left out), with the same columns as the first playtest CSV. Seasons took 9, 12, 13 and 10 minutes, 44 in all. Fun scores are 5, 4, 4 and 5, clarity is 4 across the board and length is 4, 4, 3 and 5. No comment mentions choosing a task card; one says "summer flew".
+=== m playtest.09 thread=playtest-main side=u from=p1 to=c7 files=playtest_a2
+We played last night: four neighbors and me. The CSV is attached, four rows, with mine left out. I also drew a refill arrow on the last market slot of each copy, so T4 is done too.
+
+=== m playtest.10 thread=playtest-main side=a from=c7 to=p1 turn=t4 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Four rows. I'm doing the season times first, then the comments.
+
+---
+
+=== m playtest.11 thread=playtest-main side=a from=c7 to=p1 turn=t4 part=2
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+The four-card hand works, and by more than I guessed.
+
+▫️ **The numbers**
+
+1. The game took 44 minutes, down from 58: spring 9, summer 12, autumn 13 and winter 10.
+2. Summer and autumn together went from 37 minutes to 25.
+3. Length went from 2.3 to 4.0, and fun went from 4.1 to 4.5.
+4. None of the four comments mentions choosing a task card. One says "summer flew", which is the opposite of the first playtest's complaint.
+
+There's one more reason to trust the 44: last night's table had five players and the first playtest's tables had four. More players usually means a longer game, so if anything this number is conservative.\
+↳ `T1`
+
+▫️ **The honest part**
+
+Four rows is a small sample from friendly neighbors. Friday's twelve players will tell us whether it holds. Still, a 12-minute cut at a bigger table is hard to explain away.
+
+The refill arrow is a nice touch, too: a reminder at the spot where people forget beats a line in the rulebook.\
+↳ `T4`
+
+---
+
+📌 **Summary**
+
+1. The four-card hand cut the game from 58 minutes to 44, at a table of five.
+2. Length went from 2.3 to 4.0, and nobody mentioned agonizing over cards.
+3. Three items are still open: the score track, solo mode and bigger cards.
+
+📋 **To do**
+
+> ✅ `T1` *Middle rounds: a four-card hand, 44 minutes at a table of five.*\
+> ✅ `T4` *Refill arrow drawn on the market of all three copies.*\
+> 🔹 `T3` Move the score track off the board's fold.\
+> 🔹 `T5` Decide on solo mode: three testers asked for it.\
+> 🔹 `T6` Decide on bigger cards: two testers asked for them.
+
+---
+
+=== m playtest.12 thread=playtest-main side=u from=p1 to=c7
+44 minutes, at a table of five! I'm going to frame this CSV.
+
+=== m playtest.13 thread=playtest-main side=a from=c7 to=p1 turn=t5 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Frame the summer column: 18 minutes down to 12. There's one thing I'll watch on Friday. Winter got two minutes shorter as well, and winter is where the game ends, so I want to know it still feels like a finale and not a cleanup.
+
+---
+
+--- option turns weight=2
+=== note asset playtest_a1b: playtest-scores.csv, a CSV of twelve playtesters' feedback from three tables of four, with columns for tester number, table, fun, clarity and length scored 1 to 5, the table's game length in minutes, which turn order the table followed and a free-text comment. Fun averages 4.2, clarity 2.4, length 3.7; games average 46 minutes (table 1 took 44, table 2 took 50, table 3 took 45). Seven comments are about turn order: two from table 1, four from table 2 and one from table 3. Five testers notice that the card Mend the Nets says 3 favor while the reference sheet says 2, two tables lose favor tokens in the board's fold, all three tables forget the market refill, three testers ask for a solo mode and two ask for bigger cards. Tester 4 calls the prototype box "a little orange".
+=== m playtest.01b thread=playtest-main side=u from=p1 to=c7 phase=backstory at=-2d21:04 files=playtest_a1b
+Hi {{c7.name}}! The feedback from this afternoon's playtest is attached: twelve testers, three tables of four. People had fun, I think, but there was an awful lot of rule-checking. Can you sort it into what I actually need to do?
+
+=== m playtest.02b thread=playtest-main side=a from=c7 to=p1 turn=t1 part=1 phase=backstory at=-2d21:05
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Twelve rows and no blanks, a good start. I'm sorting them by theme now, then I'll count.
+
+---
+
+=== note asset a1bs: playtest-sorted-turns.md, the twelve rows grouped by theme (turn order, small fixes, requests), with counts, each table's game length and turn order, and a Comments section that holds every free-text comment word for word.
+=== m playtest.03b thread=playtest-main side=a from=c7 to=p1 turn=t1 part=2 phase=backstory at=-2d21:19 files=a1bs
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+You're right about the rule-checking, and almost all of it has one cause. The good news comes first: fun averages 4.2 out of 5, and games ran 46 minutes on average, close to the 40 on the box.
+
+▫️ **The big one: turn order**
+
+1. Clarity averages 2.4, the lowest of the three scores by a long way.
+2. Seven of the twelve comments are about the order of a turn, most of them some version of "do we draw weather before or after our actions?"
+3. The rulebook and the reference card disagree. Page 4 says: take two actions, draw weather, refill the market. The reference card says: draw weather, take two actions, refill the market.
+
+So the problem isn't a hard rule. It's two rules for the same thing.\
+↳ `Y1` `T1`
+
+▫️ **Three ways to fix it**
+
+1. **Make the two match**, written once as four numbered steps and used word for word in both places. It's the cheapest fix, and it removes the cause.
+2. **Print a turn-order strip along the board's edge.** It's visible all game, but it's a third copy to keep in sync, and the board art is the last thing you want to reopen.
+3. **Both.** Belt and braces, at the board's cost.\
+↳ `Y1`
+
+▫️ **The smaller things**
+
+1. **Mend the Nets** says 3 favor, and the reference sheet says 2. Five testers noticed. Table 2 played it as 3 and won by exactly one favor, so it matters.
+2. **The score track** runs along the board's fold, and favor tokens slid into the crease at two of the three tables.
+3. **The market refill** was forgotten at all three tables, at least once each.
+4. **Solo mode:** three testers asked for one, and all three say they mostly play alone.
+5. **Bigger cards:** two testers asked for them, and both mention small text.
+
+Each of these has a line on the To do list below, and the sorted file has every comment word for word.\
+↳ `T2` `T3` `T4` `T5` `T6`
+
+---
+
+📌 **Summary**
+
+1. Fun is high at 4.2. Clarity is the problem at 2.4.
+2. The rulebook and the reference card give two different turn orders.
+3. Four small fixes and two requests are on the To do list.
+
+❓ **Choices**
+
+> 💠 `Y1` How to fix the turn order:\
+> ⭐ **A** Make the rulebook and the reference card match, as four numbered steps\
+> ➖ **B** Add a turn-order strip along the board's edge\
+> ➖ **C** Both
+
+📋 **To do**
+
+> 💠 `T1` Pick a fix for the turn order and try it on fresh players.\
+> 💠 `T2` Check Mend the Nets: the card says 3 favor, the reference sheet says 2.\
+> 💠 `T3` Move the score track off the board's fold.\
+> 💠 `T4` Add a refill reminder to the market row.\
+> 💠 `T5` Decide on solo mode: three testers asked for it.\
+> 💠 `T6` Decide on bigger cards: two testers asked for them.
+
+---
+
+📎 **Files**
+
+1. [playtest-sorted-turns.md](playtest-sorted-turns.md): the twelve rows grouped by theme, with counts and every comment word for word.
+
+---
+
+=== m playtest.04b thread=playtest-main side=u from=p1 to=c7
+Morning! Before I pick: which order were people actually following, the card's or the rulebook's? And did one of them go better?
+
+=== m playtest.05b thread=playtest-main side=a from=c7 to=p1 turn=t2 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Each table followed one or the other, and one table followed both. Here's how the three split:
+
+1. **Table 1** followed the reference card all game: 44 minutes, two confused comments.
+2. **Table 2** started with the card, then someone read page 4 aloud during summer and they switched: 50 minutes, four confused comments.
+3. **Table 3** followed the rulebook all game: 45 minutes, one confused comment.
+
+Both orders play fine. What hurt was the switch. Which order is right is your call as the designer, and the data won't make it for you. Either way, the fix in `Y1` A is the same: one order, written once, in both places.\
+↳ `Y1`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y1` How to fix the turn order:\
+> ⭐ **A** Make the rulebook and the reference card match, as four numbered steps\
+> ➖ **B** Add a turn-order strip along the board's edge\
+> ➖ **C** Both
+
+📋 **To do**
+
+> 🔷 `T1` Pick a fix for the turn order and try it on fresh players.\
+> 🔷 `T2` Check Mend the Nets: the card says 3 favor, the reference sheet says 2.\
+> 🔷 `T3` Move the score track off the board's fold.\
+> 🔷 `T4` Add a refill reminder to the market row.\
+> 🔷 `T5` Decide on solo mode: three testers asked for it.\
+> 🔷 `T6` Decide on bigger cards: two testers asked for them.
+
+---
+
+=== m playtest.06b thread=playtest-main side=u from=p1 to=c7
+That settles it: Y1 A. And T2 is done: it's 2 favor, the card was wrong, and I've fixed all three copies.
+
+=== m playtest.07b thread=playtest-main side=a from=c7 to=p1 turn=t3 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Matching it is. You didn't say which order, so I've gone with the rulebook's: its draft is dated later than the reference card, so I've read it as the newer thinking. If that's wrong, tell me before you paste the prompt below. Thanks for fixing Mend the Nets.\
+↳ `Y1` `T2`
+
+▫️ **The four steps**
+
+1. Take two actions.
+2. Draw a weather card and resolve it.
+3. Refill the market row to five cards.
+4. Pass the lantern to the left.
+
+▫️ **What happens next**
+
+The same four lines go on the reference card and on page 4 of the rulebook. The prompt below is a heads-up for {{c3.name}}, so the next rulebook draft uses this wording. After that, the real test is fresh players: people who have never seen the game and only have the printed rules.\
+↳ `T1`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Turn order: one set of four steps, word for word, in the rulebook and on the reference card.*
+
+📋 **To do**
+
+> ✅ `T2` *Mend the Nets: 2 favor, fixed on all three copies.*\
+> 🔹 `T1` Pick a fix for the turn order and try it on fresh players.\
+> 🔹 `T3` Move the score track off the board's fold.\
+> 🔹 `T4` Add a refill reminder to the market row.\
+> 🔹 `T5` Decide on solo mode: three testers asked for it.\
+> 🔹 `T6` Decide on bigger cards: two testers asked for them.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c3.emoji}} {{c3.name}}
+From: {{c7.emoji}} {{c7.name}}
+Subject: Turn order, four steps, word for word
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+Seven of twelve playtesters got lost in the turn order because page 4 of the rulebook and the reference card gave two different orders. {{p1.name}} picked one fix: the same four steps, word for word, in both places. Here they are:
+
+1. Take two actions.
+2. Draw a weather card and resolve it.
+3. Refill the market row to five cards.
+4. Pass the lantern to the left.
+
+Please use this wording on page 4 the next time you touch the rulebook. The reference card will carry the same four lines.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+---
+
+=== m playtest.08b thread=playtest-main side=u from=p1 to=c7
+Wait, before I paste it to {{c3.name}}: the card's right! Weather comes first. Page 4 is the old order. I changed it after the first prototype and never fixed the rulebook.
+
+=== m playtest.09b thread=playtest-main side=a from=c7 to=p1 turn=t4 part=1 edits=playtest.07b
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Matching it is, in the reference card's order: weather first, as you've confirmed. Page 4 has the old order and gets this wording too. Thanks for fixing Mend the Nets.\
+↳ `Y1` `T2`
+
+▫️ **The four steps**
+
+1. Draw a weather card and resolve it.
+2. Take two actions.
+3. Refill the market row to five cards.
+4. Pass the lantern to the left.
+
+▫️ **What happens next**
+
+The same four lines go on the reference card and on page 4 of the rulebook. The prompt below is a heads-up for {{c3.name}}, so the next rulebook draft uses this wording. After that, the real test is fresh players: people who have never seen the game and only have the printed rules.\
+↳ `T1`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Turn order: one set of four steps, word for word, in the rulebook and on the reference card.*
+
+📋 **To do**
+
+> ✅ `T2` *Mend the Nets: 2 favor, fixed on all three copies.*\
+> 🔹 `T1` Pick a fix for the turn order and try it on fresh players.\
+> 🔹 `T3` Move the score track off the board's fold.\
+> 🔹 `T4` Add a refill reminder to the market row.\
+> 🔹 `T5` Decide on solo mode: three testers asked for it.\
+> 🔹 `T6` Decide on bigger cards: two testers asked for them.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c3.emoji}} {{c3.name}}
+From: {{c7.emoji}} {{c7.name}}
+Subject: Turn order, four steps, word for word
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+Seven of twelve playtesters got lost in the turn order because page 4 of the rulebook and the reference card gave two different orders. The reference card has the intended order; page 4 is left over from the first prototype. {{p1.name}} picked one fix: the same four steps, word for word, in both places. Here they are:
+
+1. Draw a weather card and resolve it.
+2. Take two actions.
+3. Refill the market row to five cards.
+4. Pass the lantern to the left.
+
+Please use this wording on page 4 the next time you touch the rulebook. The reference card already has this order and will carry the same four lines.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+---
+
+=== m playtest.10b thread=playtest-main side=a from=c7 to=p1 turn=t4 part=2
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+I've corrected my last message: weather now comes first, in the steps and in the prompt. I should have asked you instead of guessing from a date.
+
+---
+
+=== note asset playtest_a2b: club-table.csv, a CSV of five rows from a board game club table of five who had never seen the game and learned it from the printed rules only, with the same columns as the first playtest CSV. The game took 43 minutes. Fun scores are 4, 4, 5, 4 and 4, clarity is 5, 4, 5, 4 and 4, and length is 4, 4, 3, 4 and 4. No comment mentions turn order; one asks whether favor can be given to another player and says they found the answer in the rulebook.
+=== m playtest.11b thread=playtest-main side=u from=p1 to=c7 files=playtest_a2b
+Pasted to {{c3.name}}. And the board game club tried the new steps last night: five people who'd never seen the game, printed rules only, and I just watched. The CSV is attached! I also drew a refill arrow on the last market slot of each copy, so T4 is done.
+
+=== m playtest.12b thread=playtest-main side=a from=c7 to=p1 turn=t5 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Five rows from five strangers, the best kind of test. Reading now.
+
+---
+
+=== m playtest.13b thread=playtest-main side=a from=c7 to=p1 turn=t5 part=2
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+The four steps work.
+
+▫️ **The numbers**
+
+1. Clarity went from 2.4 to 4.4.
+2. Fun is 4.2 and length is 3.8, both steady.
+3. The game took 43 minutes at a table of five, faster than any table at the first playtest.
+4. There were no comments about turn order. The only rules question was whether you can give favor to another player, and they found the answer in the rulebook themselves, which is the rulebook doing its job.
+
+This table also had the hardest setup: five players, no teacher and rules only. Those are exactly the conditions where two different orders would have shown up again.\
+↳ `T1`
+
+▫️ **The honest part**
+
+Five rows is a small sample. Friday's twelve players will tell us whether it holds with a teacher at the table, but I'd be surprised if it didn't.
+
+The refill arrow is a nice touch, too: a reminder at the spot where people forget beats another line in the rulebook.\
+↳ `T4`
+
+---
+
+📌 **Summary**
+
+1. Clarity went from 2.4 to 4.4 with fresh players and printed rules only.
+2. Nobody asked about turn order at all.
+3. Three items are still open: the score track, solo mode and bigger cards.
+
+📋 **To do**
+
+> ✅ `T1` *Turn order: four matching steps, tested on five new players.*\
+> ✅ `T4` *Refill arrow drawn on the market of all three copies.*\
+> 🔹 `T3` Move the score track off the board's fold.\
+> 🔹 `T5` Decide on solo mode: three testers asked for it.\
+> 🔹 `T6` Decide on bigger cards: two testers asked for them.
+
+---
+
+=== m playtest.14b thread=playtest-main side=u from=p1 to=c7
+Nobody asked me a single rules question all night. Best review I've ever had!
+
+=== end branch
+
+=== side_story playtest.orange chance=0.5
+=== m playtest.20 thread=playtest-main side=u from=p2 to=c7
+{{c7.name}}, I have read all twelve rows of the playtest sheet. Row 4 describes the prototype box as "a little orange". I would like that written down somewhere permanent.
+
+=== m playtest.21 thread=playtest-main side=a from=c7 to=p2 turn=t20 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+It's written down: row 4, comment column, "nice box, a little orange." For balance, none of the other eleven testers mention the box at all, and for a prototype I'd count that as a pass. I've kept it off the To do list because the prototype box isn't the one you'll print, but it's in the sorted file's Comments section, word for word.
+
+---
+
+=== m playtest.22 thread=playtest-main side=u from=p1 to=c7
+{{p2.name}} has been waiting five years for a stranger to say that.
+=== end side_story
+
+=== side_story playtest.late chance=0.35
+=== note asset playtest_a6: watcher-feedback-sheet.png, a phone photo of a handwritten feedback sheet from someone who watched a whole game from the next chair without playing. All three scores are 4, and the comment reads: "I didn't play, and I still wanted to know if the village made it through winter."
+=== m playtest.23 thread=playtest-main side=u from=p1 to=c7 files=playtest_a6
+A thirteenth sheet just turned up! A tester's friend watched a whole game from the next chair and filled one in anyway. Photo attached. Do we add it?
+
+=== m playtest.24 thread=playtest-main side=a from=c7 to=p1 turn=t21 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Thanks for sending it! I'd keep it out of the counts: they didn't play, so their scores can't sit honestly next to the other twelve. The comment is worth keeping, though: "I didn't play, and I still wanted to know if the village made it through winter." That's a lovely line from someone with no stake in the game. If they're happy to be quoted, it could be useful whenever you describe the game to new people.
+
+---
+
+=== m playtest.25 thread=playtest-main side=u from=p1 to=c7
+I'll ask them tonight. That line made my day!
+=== end side_story
+
+=== m playtest.26 thread=playtest-main side=u from=p1 to=c7
+Okay, two asks left on the list: T5 and T6. {{p2.name}} asked the printer, and bigger cards would add about 11% per copy and need a deeper box. Solo mode is a week of my evenings at least. I've got one free evening before Friday. Which one gets it?
+
+=== m playtest.27 thread=playtest-main side=a from=c7 to=p1 turn=t22 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Good question to ask before spending the evening. Here's what the sheets say about each.
+
+▫️ **Bigger cards**
+
+Both testers who asked pointed at the winter cards, which carry the most words, at 9 point. So the ask is really about text. Bigger cards would fix it at 11% a copy plus a deeper box. Rewriting the six winter cards shorter, at 11 point, fixes the same squint in one evening and costs nothing extra to print.\
+↳ `T6`
+
+▫️ **Solo mode**
+
+Three of the twelve asked, and all three mostly play alone, so it's a real signal. But a solo mode needs its own balance testing. A one-page variant tried once on Friday will tell you whether it's worth building, not whether it works.\
+↳ `T5`
+
+▫️ **My pick**
+
+I'd spend the evening on the winter cards: every player at every table reads them, and solo mode will still be wanted next month. If you want to start shaping solo early, B gets you a first reading sooner, and that's a fair reason to choose it.\
+↳ `Y2`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y2` Where the one evening goes:\
+> ⭐ **A** Shorter text at 11 point on the six winter cards, and solo mode waits until after launch\
+> ➖ **B** A one-page solo variant for one volunteer on Friday, and bigger cards are dropped as too costly
+
+📋 **To do**
+
+> 🔹 `T3` Move the score track off the board's fold.\
+> 🔹 `T5` Decide on solo mode: three testers asked for it.\
+> 🔹 `T6` Decide on bigger cards: two testers asked for them.
+
+---
+
+=== branch playtest.dropped
+--- option solo weight=3
+=== m playtest.28 thread=playtest-main side=u from=p1 to=c7
+Y2 A. Solo mode deserves more than one rushed evening, and it'll make a lovely stretch goal later.
+
+=== m playtest.29 thread=playtest-main side=a from=c7 to=p1 turn=t23 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Agreed. A stretch goal also gets proper solo testing before anyone is promised it. The three solo comments stay in the sorted file's Comments section, word for word, for after launch.\
+↳ `Y2` `T5`
+
+For the six winter cards, one tip from the sheets: both testers squinted at the effect line, not the title. Trim the flavor text first and keep the effect whole.\
+↳ `T6`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *One evening: shorter text on the winter cards; solo mode waits.*
+
+📋 **To do**
+
+> ❎ `T5` *Dropped for now: solo mode, to revisit after launch.*\
+> 🔹 `T3` Move the score track off the board's fold.\
+> 🔹 `T6` Decide on bigger cards: two testers asked for them.
+
+---
+
+=== m playtest.30 thread=playtest-main side=u from=p1 to=c7
+Done! All six winter cards are rewritten and up from 9 to 11 point. Storm Shutters lost a whole sentence and reads better for it.
+
+=== m playtest.31 thread=playtest-main side=a from=c7 to=p1 turn=t24 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Shorter text at a readable size helps every table, not just the two who asked. If anyone on Friday still squints at a winter card, that's the card to look at next.\
+↳ `T6`
+
+---
+
+📋 **To do**
+
+> ✅ `T6` *Bigger cards: same size, shorter text at 11 point on the six winter cards.*\
+> 🔹 `T3` Move the score track off the board's fold.
+
+---
+
+--- option cards weight=2
+=== m playtest.28b thread=playtest-main side=u from=p1 to=c7
+Y2 B. 11% a copy is a no, and {{p2.name}} would say the same thing, only louder. I'd rather spend the evening on solo.
+
+=== m playtest.29b thread=playtest-main side=a from=c7 to=p1 turn=t23 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Solo it is, and bigger cards are off the list. The two testers who asked will see the same cards on Friday, so their comments stay in the sorted file in case the size comes up again.\
+↳ `Y2` `T6`
+
+▫️ **What Friday's volunteer needs from the page**
+
+1. One win condition and one loss condition, both checkable without asking you.
+2. Every setup change in a single numbered list, so nothing hides in a paragraph.
+3. A target time, so we know whether the solo game is too long or too short.
+
+A volunteer playing alone can't turn to a neighbor and ask, so the page has to answer every question by itself.\
+↳ `T5`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *One evening: a one-page solo variant; bigger cards dropped.*
+
+📋 **To do**
+
+> ❎ `T6` *Dropped: bigger cards, too costly at 11% a copy plus a deeper box.*\
+> 🔹 `T3` Move the score track off the board's fold.\
+> 🔹 `T5` Decide on solo mode: three testers asked for it.
+
+---
+
+=== note asset playtest_a5: solo-variant.md, a one-page solo variant: a numbered setup list, the weather deck playing as a second neighbor, a win condition (every task done by the end of winter), a loss line reading "if the village runs out of favor, you lose" and a target time of 25 minutes.
+=== m playtest.30b thread=playtest-main side=u from=p1 to=c7 files=playtest_a5
+Here it is. One page, I promise it's one page.
+
+=== m playtest.31b thread=playtest-main side=a from=c7 to=p1 turn=t24 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+It is one page, and a tidy one. I read it as a stranger would.
+
+▫️ **Findings**
+
+1. **Setup** is one numbered list, exactly what a volunteer needs.
+2. **The weather deck as a second neighbor** is clear and charming. I followed it on the first read.
+3. **The loss line** is ambiguous: "if the village runs out of favor, you lose." Does that happen the moment favor hits zero, or at the end of the season? At a full table, players would settle it out loud. Alone, a volunteer will just guess, and we'll learn nothing from the guess.
+4. **The 25-minute target** sounds right for one player with the four seasons intact.
+
+Fix finding 3 and the page is ready for Friday.\
+↳ `T5`
+
+---
+
+📋 **To do**
+
+> 🔹 `T3` Move the score track off the board's fold.\
+> 🔹 `T5` Decide on solo mode: three testers asked for it.
+
+---
+
+=== m playtest.32b thread=playtest-main side=u from=p1 to=c7
+The moment it hits zero. Fixed: the line now says "the moment the village has no favor left, you lose."
+
+=== m playtest.33b thread=playtest-main side=a from=c7 to=p1 turn=t25 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+That reads one way only. On Friday, ask for one volunteer at the start and give them the page and a timer, nothing else, so the page does all the teaching.\
+↳ `T5`
+
+---
+
+📋 **To do**
+
+> ✅ `T5` *Solo mode: a one-page variant, ready for one volunteer on Friday.*\
+> 🔹 `T3` Move the score track off the board's fold.
+
+---
+
+=== end branch
+
+=== m playtest.40 thread=playtest-main side=u from=p1 to=c7
+The score track runs along the outside edge of the board now, so T3 is done. Next up, Friday at {{pick.cafe}}: how many tables should I ask for, and what do I need to bring?
+
+=== m playtest.41 thread=playtest-main side=a from=c7 to=p1 turn=t30 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Thanks for moving the score track! A kit list is coming, with a timing plan.
+
+---
+
+=== note asset playtest_a7: friday-kit.md, a numbered checklist for Friday's playtest in packing order: three prototype copies with their tokens counted, a season timing sheet per table, twelve pens, the feedback sheets, sticky notes and a spare bag for tokens, followed by the 75-minute session plan.
+=== m playtest.42 thread=playtest-main side=a from=c7 to=p1 turn=t30 part=2 files=playtest_a7
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Ask for three tables of four, with one prototype copy each. You have three copies, so a fourth table would be a table with nothing to play, the one bug I can't fix.\
+↳ `T7`
+
+▫️ **Timing**
+
+Plan 75 minutes for each session:
+
+1. 10 minutes to teach.
+2. About 45 minutes to play, a little over the 40 on the box.
+3. 15 minutes for the sheets and a chat.
+4. 5 minutes of slack, because someone always arrives late.
+
+▫️ **The kit**
+
+The file below is a checklist in packing order, so the last thing into the bag is the first thing you need at the table. Each table also gets a timing sheet with a box for every season, so the timing is done the same way at all three.
+
+Shall I draft Friday's feedback sheet next?
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Score track moved to the board's outside edge.*\
+> 💠 `T7` Ask {{pick.cafe}} for three tables of four, set a little apart.
+
+---
+
+📎 **Files**
+
+1. [friday-kit.md](friday-kit.md): the packing checklist and the 75-minute session plan.
+
+---
+
+=== m playtest.43 thread=playtest-main side=u from=p1 to=c7
+Three tables, perfect. And yes to the sheet, please!
+
+=== note asset playtest_a3: feedback-sheet-v1.md, the first draft of Friday's feedback sheet on two sides of a page: a first-name line, fun, clarity and length scored 1 to 10, "Was any part of the game slow or confusing? Which season?", "What's one thing you'd change?" and "Would you back it on launch day? Yes, maybe, no."
+=== m playtest.44 thread=playtest-main side=a from=c7 to=p1 turn=t31 part=1 files=playtest_a3
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Here's the first draft. It keeps the three scores from the first playtest and adds one question aimed at whatever is still slow or confusing, with a season attached, so every answer points somewhere.
+
+▫️ **What's on it**
+
+1. A line for the player's first name.
+2. Fun, clarity and length, each scored from 1 to 10.
+3. "Was any part of the game slow or confusing? Which season?"
+4. "What's one thing you'd change?"
+5. "Would you back it on launch day? Yes, maybe, no."
+
+▫️ **Names or not**
+
+First names let you follow up on a puzzling comment over coffee. Anonymous sheets tend to get blunter scores. With twelve people at three tables, I'd take the follow-ups.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y3` Names on Friday's sheet:\
+> ⭐ **A** First names at the top\
+> ➖ **B** Anonymous, with a seat number instead
+
+📋 **To do**
+
+> 🔷 `T7` Ask {{pick.cafe}} for three tables of four, set a little apart.\
+> 💠 `T8` Print twelve copies of the feedback sheet.
+
+---
+
+📎 **Files**
+
+1. [feedback-sheet-v1.md](feedback-sheet-v1.md): Friday's feedback sheet, first draft.
+
+---
+
+=== side_story playtest.dog chance=0.4
+=== m playtest.45 thread=playtest-main side=u from=p1 to=c7
+Small incident: {{pick.dog}} has found a new hobby, and it is wooden tokens. One favor token is gone, last seen heading under the sofa.
+
+=== m playtest.46 thread=playtest-main side=a from=c7 to=p1 turn=t32 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+A new bug, and a chewy one! Two things are worth doing before Friday:
+
+1. Count each copy's tokens when you pack. Every copy should hold the same number, so a short one shows up fast.
+2. Keep the box lid on whenever the table is unattended. {{pick.dog}} has clearly found the good stuff.
+
+If the token comes back damp but whole, it still counts.
+
+---
+
+=== m playtest.47 thread=playtest-main side=u from=p1 to=c7
+Found it. Slightly damp, fully playable, and {{pick.dog}} is unrepentant.
+=== end side_story
+
+=== branch playtest.names
+--- option first weight=2
+=== m playtest.50 thread=playtest-main side=u from=p1 to=c7
+Y3 A, first names. Two things, though: can it fit on one side, and can the scores go 1 to 5 like last time? Otherwise I can't compare. And {{pick.cafe}} said yes to three tables!
+
+=== m playtest.51 thread=playtest-main side=a from=c7 to=p1 turn=t33 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Both fair, and the second is a good catch. Fixing it now.
+
+---
+
+=== note asset playtest_a4: feedback-sheet-v2.md, the second version of Friday's feedback sheet, on one side of a page: a first-name line, fun, clarity and length scored 1 to 5 in the same column order as the first playtest CSV, "Was any part of the game slow or confusing? Which season, and what would you change?" and three tick boxes for "Would you back it on launch day?"
+=== m playtest.52 thread=playtest-main side=a from=c7 to=p1 turn=t33 part=2 files=playtest_a4
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Here's the second version. I'd moved the scores to 1 to 10 for finer detail, but you're right: a 7 out of 10 can't sit honestly next to a 4 out of 5, and comparing Friday with the first playtest matters more than a decimal place.
+
+▫️ **What changed**
+
+1. Scores are 1 to 5 again, in the same column order as the first CSV, so Friday's rows paste straight in next to the first twelve.
+2. It fits on one side: the change question is now part of the slow-or-confusing one, and the backing question shrank to three tick boxes.
+3. First names go at the top, as you picked.
+
+Three tables at {{pick.cafe}} is exactly the plan, thank you.\
+↳ `Y3` `T7`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Sheet: first names at the top.*
+
+📋 **To do**
+
+> ✅ `T7` *Three tables of four booked at {{pick.cafe}}.*\
+> 🔷 `T8` Print twelve copies of the feedback sheet.
+
+---
+
+📎 **Files**
+
+1. [feedback-sheet-v2.md](feedback-sheet-v2.md): Friday's feedback sheet, second version, one side and scored 1 to 5.
+
+---
+
+=== m playtest.53 thread=playtest-main side=u from=p1 to=c7
+Printed twelve, and they're in the box with the three prototypes. Thank you, {{c7.name}}, this was the least painful triage I've ever done!
+
+=== m playtest.54 thread=playtest-main side=a from=c7 to=p1 turn=t34 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Everything for Friday is in the box. Here's what Friday can tell us, so we know what to look for in the sheets.
+
+▫️ **What Friday can answer**
+
+1. Whether this week's fixes hold up with twelve players, not just a few friendly ones.
+2. Whether a game fits the 40 minutes on the box, timed season by season with the kit's timing sheet.
+3. Where "slow or confusing" points now, with a season next to every answer.
+
+Send me the sheets as a CSV, in the same columns as the first one, and I'll sort them the same way so the two playtests line up side by side. With first names on top, any puzzling comment can be followed up before people leave.\
+↳ `T8`
+
+---
+
+📌 **Summary**
+
+1. Twelve sheets, three prototypes and the kit are packed for Friday.
+2. Friday checks this week's fixes, the 40 minutes and anything still slow or confusing.
+
+📋 **To do**
+
+> ✅ `T8` *Twelve feedback sheets printed and packed.*
+
+---
+
+--- option anonymous weight=1
+=== m playtest.50b thread=playtest-main side=u from=p1 to=c7
+Y3 B. People are far too polite with their names on. Two things, though: can it fit on one side, and can the scores go 1 to 5 like last time? Otherwise I can't compare. And {{pick.cafe}} said yes to three tables!
+
+=== m playtest.51b thread=playtest-main side=a from=c7 to=p1 turn=t33 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Both fair, and the second is a good catch. Fixing it now.
+
+---
+
+=== note asset playtest_a4b: feedback-sheet-v2-anonymous.md, the second version of Friday's feedback sheet, on one side of a page: a seat-number box instead of a name line, fun, clarity and length scored 1 to 5 in the same column order as the first playtest CSV, "Was any part of the game slow or confusing? Which season, and what would you change?" and three tick boxes for "Would you back it on launch day?"
+=== m playtest.52b thread=playtest-main side=a from=c7 to=p1 turn=t33 part=2 files=playtest_a4b
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Here's the second version. I'd moved the scores to 1 to 10 for finer detail, but you're right: a 7 out of 10 can't sit honestly next to a 4 out of 5, and comparing Friday with the first playtest matters more than a decimal place.
+
+▫️ **What changed**
+
+1. Scores are 1 to 5 again, in the same column order as the first CSV, so Friday's rows paste straight in next to the first twelve.
+2. It fits on one side: the change question is now part of the slow-or-confusing one, and the backing question shrank to three tick boxes.
+3. There's no name line. Instead, a seat-number box at the top, from 1 to 12.
+
+The seat numbers only help if the seats carry them too. With a numbered note at each place, you can still match a puzzling comment to a table while people talk afterward, without knowing who wrote it.\
+↳ `Y3` `T9`
+
+Three tables at {{pick.cafe}} is exactly the plan, thank you.\
+↳ `T7`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Sheet: anonymous, with seat numbers 1 to 12.*
+
+📋 **To do**
+
+> ✅ `T7` *Three tables of four booked at {{pick.cafe}}.*\
+> 🔷 `T8` Print twelve copies of the feedback sheet.\
+> 💠 `T9` Write sticky notes numbered 1 to 12, one for each seat, four to a table.
+
+---
+
+📎 **Files**
+
+1. [feedback-sheet-v2-anonymous.md](feedback-sheet-v2-anonymous.md): Friday's feedback sheet, second version, one side, scored 1 to 5 and anonymous.
+
+---
+
+=== m playtest.53b thread=playtest-main side=u from=p1 to=c7
+Printed twelve sheets and numbered twelve notes, all in the box with the three prototypes. Thank you, {{c7.name}}!
+
+=== m playtest.54b thread=playtest-main side=a from=c7 to=p1 turn=t34 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Everything for Friday is in the box. Here's what Friday can tell us, so we know what to look for in the sheets.
+
+▫️ **What Friday can answer**
+
+1. Whether this week's fixes hold up with twelve players, not just a few friendly ones.
+2. Whether a game fits the 40 minutes on the box, timed season by season with the kit's timing sheet.
+3. Where "slow or confusing" points now, with a season next to every answer.
+
+Send me the sheets as a CSV, in the same columns as the first one plus the seat number, and I'll sort them the same way so the two playtests line up side by side. Seats 1 to 4, 5 to 8 and 9 to 12 tell me the table without telling me the person.\
+↳ `T8` `T9`
+
+---
+
+📌 **Summary**
+
+1. Twelve anonymous sheets, twelve seat notes, three prototypes and the kit are packed for Friday.
+2. Friday checks this week's fixes, the 40 minutes and anything still slow or confusing.
+
+📋 **To do**
+
+> ✅ `T8` *Twelve feedback sheets printed and packed.*\
+> ✅ `T9` *Seat notes 1 to 12 written and packed.*
+
+---
+
+=== end branch
+
+=== hook friday-playtest
+
+=== canon The game plays in four seasons as rounds: spring, summer, autumn and winter. Players hold task cards, earn favor, draw weather cards, refill a market row of five cards and pass a lantern as the first-player marker.
+=== canon The studio has three prototype copies of the game.
+=== canon The first playtest had twelve testers at three tables of four, two days before the story week.
+=== canon The task card Mend the Nets gives 2 favor; the card was wrong, the reference sheet was right, and all three copies are fixed.
+=== canon The score track runs along the outside edge of the board, off the fold.
+=== canon A hand-drawn refill arrow sits on the last market slot of each prototype copy.
+=== canon Bigger cards would add about 11% per copy and need a deeper box.
+=== canon The six winter cards carry the most text.
+=== canon Friday's playtest at {{pick.cafe}} uses three tables of four and 75-minute sessions, with a one-sided feedback sheet scored 1 to 5 in the same columns as the first playtest.
+=== canon If the middle game dragged: the task hand dropped from five cards to four, and a quick test at a table of five ran 44 minutes.
+=== canon If the turn order was confusing: a turn is four steps (draw weather, take two actions, refill the market, pass the lantern), page 4 of the rulebook had the old order, and five board game club players tested the new steps.
+=== canon If solo mode was dropped: it waits until after launch as a possible stretch goal, and the six winter cards now have shorter text at 11 point.
+=== canon If bigger cards were dropped: the cards keep their size, and a one-page solo variant with a 25-minute target goes to one volunteer on Friday.

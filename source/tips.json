@@ -1,0 +1,52 @@
+[
+ {
+  "id": "tip-title",
+  "trigger": "title_line",
+  "text": "Every reply starts with a title line: which Claude wrote it, and when. The same name and emoji follow that Claude across every thread."
+ },
+ {
+  "id": "tip-items",
+  "trigger": "items",
+  "text": "Choices wait on a person's word and To do items wait on someone's action. Each has a code, so every message about it links up."
+ },
+ {
+  "id": "tip-choice",
+  "trigger": "first_choice",
+  "text": "A star marks the option the Claude recommends. A person answers with a short line, like Y1 A, and the item closes in later replies."
+ },
+ {
+  "id": "tip-needs",
+  "trigger": "home_needs",
+  "text": "Open To do items collect on the home page, so it shows what is waiting on whom without reading every thread."
+ },
+ {
+  "id": "tip-prompt",
+  "trigger": "first_prompt",
+  "text": "This message carries a prompt for another Claude. The Prompts tab follows it from written to carried to answered."
+ },
+ {
+  "id": "tip-relay",
+  "trigger": "first_relay",
+  "text": "The coordinator sends short notes into other threads. Each one shows up in that thread, marked as a note, not as a person."
+ },
+ {
+  "id": "tip-file",
+  "trigger": "first_file",
+  "text": "Files that people attach and Claudes send are kept with the message. The Files tab lists every one."
+ },
+ {
+  "id": "tip-visual",
+  "trigger": "first_visual",
+  "text": "Pictures and pages a Claude made to choose from are kept too. The Visuals tab shows them all in one place."
+ },
+ {
+  "id": "tip-search",
+  "trigger": "first_search",
+  "text": "Search works across every thread. Try a code, a name, or from: and after: to narrow it down."
+ },
+ {
+  "id": "tip-end",
+  "trigger": "end",
+  "text": "That's the whole week for this visit. Start over for a different run: other branches, other side stories, other names."
+ }
+]

@@ -1,0 +1,860 @@
+@storyline campaign context=quests weight=2
+@thread campaign-main writer=c3 title="{{c3.emoji}} {{c3.name}} · The dark lighthouse"
+
+=== m campaign.01 thread=campaign-main side=u from=p1 to=c3 phase=backstory at=-3d20:05
+Hi {{c3.name}}! A different kind of job: could you run a short fantasy adventure for me and two friends on game night? We've all played a bit, and nobody wants homework. Can you do voices? And is two hours realistic?
+
+=== m campaign.02 thread=campaign-main side=a from=c3 to=p1 turn=t1 part=1 phase=backstory at=-3d20:07
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Yes to voices, yes to two hours, and yes, I'm already a little too excited.
+
+▫️ **What I have in mind**
+
+A one-evening adventure on a stormy coast. A lighthouse has gone dark, a boat is due home, a storm is coming, and three unlikely heroes have one night to sort it out. There are three big moments where your table decides how it goes, and plenty of small ones in between.
+
+▫️ **A few questions first**
+
+Three things will shape how I write it: how it feels, how long it runs, and who rolls the dice.\
+↳ `Y1` `Y2` `Y3`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` Tone:\
+> ⭐ **A** Cozy and silly, with a little real tension\
+> ➖ **B** Moody and a bit spooky
+>
+> 💠 `Y2` Length:\
+> ⭐ **A** One evening, about two hours\
+> ➖ **B** Two shorter sessions
+>
+> 💠 `Y3` Dice:\
+> ⭐ **A** Real dice at your table, and you type me the numbers\
+> ➖ **B** I roll for everyone
+>
+> Answer line: `Y1 A Y2 A Y3 A`, or "all recommended".
+
+---
+
+=== m campaign.03 thread=campaign-main side=u from=p1 to=c3 phase=backstory at=-3d20:16
+Cozy and silly, one evening, and real dice, because real dice are half the fun. Here are my notes for the characters. They're a mess, sorry:
+
+cartographer?? draws maps of places that don't exist yet. scared of heights, pretends not to be. carries far too many pencils. compass that points to snacks, maybe. friend one wants a knight who's very polite and very broke. friend two wants an herbalist who talks to plants and maybe animals. nobody wants to be the leader
+
+=== m campaign.04 thread=campaign-main side=a from=c3 to=p1 turn=t2 part=1 phase=backstory at=-3d20:24 files=campaign_a1,campaign_a2
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Your notes are safe with me, pencils and all. I kept every idea you wrote and only tidied them. Nothing was cut, and the snack compass is now an official magic item.
+
+▫️ **The party**
+
+1. **The Cartographer** (yours): maps places before they exist, carries eleven pencils, and is not scared of heights, thank you very much. Brains +3, Nerve +0, Snacks +2. Owns a brass compass that always points to the nearest food.
+2. **The Knight of Modest Means**: excellent manners, no money, pays for everything in buttons. Strength +3, Charm +2, Wallet −1.
+3. **The Herbalist**: talks to plants and is fairly sure they talk back. Remedies +3, Kindness +2, Balance −1. Carries a satchel of salves, seeds and dried things.
+
+▫️ **How it works**
+
+1. When something is chancy, I'll ask for a roll on a twenty-sided die. You type me the number, and I'll tell you the bonus to add.
+2. Nobody has to lead. I'll put choices to the whole table, and you answer for all three.
+3. The map is a handout. It shows the town, the river and the lighthouse, and it leaves blank spaces for the Cartographer to fill in.
+
+---
+
+📌 **Summary**
+
+1. Cozy and silly, one evening, real dice.
+2. Three character sheets and a map, ready to print.
+
+❓ **Choices**
+
+> ✅ `Y1` *Tone: cozy and silly, with a little real tension.*
+>
+> ✅ `Y2` *Length: one evening, about two hours.*
+>
+> ✅ `Y3` *Dice: real dice at the table.*
+
+📋 **To do**
+
+> 💠 `T1` Print the three character sheets and the map.\
+> 💠 `T2` Put some real cheese on the table on game night. No questions. Trust your game master.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.rough_notes}}` {{skillv.rough_notes}}
+
+---
+
+📎 **Files**
+
+1. [character-sheets.md](character-sheets.md): the three characters, one page each.
+2. [gullstone-map.png](gullstone-map.png): the handout map, with blank spaces for the Cartographer.
+
+---
+
+=== note asset campaign_a1: a Markdown file of three one-page fantasy character sheets, the Cartographer, the Knight of Modest Means and the Herbalist, each with three traits and a short description
+=== note asset campaign_a2: a hand-drawn-style map of a fictional coast: a fishing town, a cliff road, a river with a rope bridge, a gate in a narrow pass and a lighthouse on a point, with blank parchment patches
+
+=== m campaign.05 thread=campaign-main side=u from=p1 to=c3 phase=backstory at=-1d18:30
+Printed everything, and the map looks great on the fridge! Cheese acquired, though I have questions. Also, the Knight's player asked if the Knight can have a horse?
+
+=== m campaign.06 thread=campaign-main side=a from=c3 to=p1 turn=t3 part=1 phase=backstory at=-1d18:34
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The Knight can absolutely have a horse. His name is Barley. He is twenty-six years old and walks at the speed of a thoughtful conversation. He'll wait at the inn's stable for most of the night, because he has earned it.
+
+As for the cheese: questions noted, none answered.
+
+---
+
+📋 **To do**
+
+> ✅ `T1` *Sheets and map printed.*\
+> ✅ `T2` *Cheese acquired.*
+
+---
+
+=== m campaign.07 thread=campaign-main side=u from=p1 to=c3 files=campaign_a3
+We're all here! Dice out, cheese out, tea's on. I'm typing for the whole table. Photo attached for atmosphere. Ready when you are!
+
+=== note asset campaign_a3: game-night-table.png, a photo of a kitchen table at night with three printed character sheets, a handful of dice, a small cheese board, mugs of tea and a map held down by a pencil case
+
+=== m campaign.08 thread=campaign-main side=a from=c3 to=p1 turn=t4 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+What a table. Lights down. Well, lamp down. Here we go.
+
+---
+
+=== m campaign.09 thread=campaign-main side=a from=c3 to=p1 turn=t4 part=2
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **Saltmarrow, at dusk**
+
+The fishing town of Saltmarrow sits in the elbow of a gray bay, all crooked roofs and drying nets. Gulls argue on every chimney. Out on Gullstone Point the lighthouse stands like a finger raised to ask a question, and for three nights now it hasn't answered. The lamp is dark.
+
+▫️ **The trouble**
+
+1. The old Keeper climbed the lighthouse three days ago and hasn't come down.
+2. A fishing boat, the *Merry Halibut*, is due home at midnight.
+3. A storm is piling up on the horizon like a heap of dirty laundry.
+
+⏳ Storm clock: four hours to midnight.
+
+The three of you stand outside the Drowned Lantern, the only inn, which is warm, loud and smells of chowder. Someone has to do something. The town has looked around and decided it's you.\
+↳ `Y4`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y4` Where do you start:\
+> ⭐ **A** Go into the inn and ask around\
+> ➖ **B** Take the cliff road north right away
+
+---
+
+=== m campaign.10 thread=campaign-main side=u from=p1 to=c3
+Y4 A. The Herbalist is ordering soup, and the Knight is paying in buttons.
+
+=== m campaign.11 thread=campaign-main side=a from=c3 to=p1 turn=t5 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **The Drowned Lantern**
+
+The innkeeper has flour up to her elbows and a voice like a door that needs oiling. She looks at the Knight's buttons for a long moment.
+
+"Buttons. Hm." She holds one up to the light. "These are *good* buttons. Fine. Soup's on the house if you're going where I think you're going."
+
+▫️ **What you learn**
+
+1. The Keeper went up to fix the lamp three days ago. Nobody has seen a light, or the Keeper, since.
+2. The lamp burns with an Ember Stone, which "wants waking now and then, like a teenager."
+3. The cliff road crosses the river Gall by a rope bridge, "mostly a bridge," then passes a gate in the narrow pass.
+4. The gate is kept by a troll. "Polite, if you're polite. Fussy about snacks."
+5. Past the gate is Gullstone Point and the lighthouse.
+
+Barley is settled in the stable with a bucket of oats and the air of a horse who has seen all this before.
+
+⏳ Storm clock: three hours and forty minutes.
+
+---
+
+📌 **Summary**
+
+1. The lamp needs its Ember Stone woken, and the Keeper is missing.
+2. On the road: a bridge, a troll's gate, then the lighthouse.
+
+❓ **Choices**
+
+> ✅ `Y4` *Start: asking around at the inn.*
+
+---
+
+=== m campaign.12 thread=campaign-main side=u from=p1 to=c3
+Two things before we leave: where does the Cartographer's compass point? And can the Herbalist buy a bun for the road?
+
+=== m campaign.13 thread=campaign-main side=a from=c3 to=p1 turn=t6 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The compass needle swings once and settles firmly on the pie case behind the bar. As ever, it isn't wrong.
+
+The bun costs one copper, or one button. It's the size of a small loaf and still warm, and the Herbalist tucks it into his satchel like a secret.
+
+You step out into the wind. The cliff road runs north along the edge, with the sea grumbling below. The river Gall is about an hour's walk ahead.
+
+---
+
+=== side_story campaign.goose chance=0.5
+
+=== m campaign.14 thread=campaign-main side=u from=p1 to=c3
+The Herbalist's player wants to know if there's a goose on this road. They're very insistent. There has to be a goose.
+
+=== m campaign.15 thread=campaign-main side=a from=c3 to=p1 turn=t7 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+There is now a goose.
+
+It's a large gray goose, standing in the exact middle of the road and looking at all three of you as if you owe it money.
+
+"HONK," it says. Roughly translated: "State your business."
+
+If the Herbalist wants to make friends, roll and add 2. He talks to plants, and that's close enough.
+
+---
+
+=== m campaign.16 thread=campaign-main side=u from=p1 to=c3
+He rolled a 3, so 5 with the bonus. He held out the bun very, very slowly.
+
+=== m campaign.17 thread=campaign-main side=a from=c3 to=p1 turn=t8 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The goose takes the bun in one swallow. Then, while everyone is still admiring that, it takes the Herbalist's hat.
+
+"HONK." Translation: "Thank you. I'll be keeping this."
+
+The goose now has a hat and the Herbalist does not. He may try again if his dignity allows.
+
+---
+
+=== m campaign.18 thread=campaign-main side=u from=p1 to=c3
+His dignity allows. He's complimenting its neck. Rolled a 7, so 9.
+
+=== m campaign.19 thread=campaign-main side=a from=c3 to=p1 turn=t9 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The goose considers the compliment carefully. It decides the compliment was meant for the Knight's ankle, and hisses at the Knight.
+
+The Knight of Modest Means retreats behind the Cartographer with excellent manners and some speed. The goose adjusts the hat.
+
+One more try, if he dares.
+
+---
+
+=== m campaign.20 thread=campaign-main side=u from=p1 to=c3
+He dares. He's singing to it now, and the whole table is humming along. 18!! So 20.
+
+=== m campaign.21 thread=campaign-main side=a from=c3 to=p1 turn=t10 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The goose goes very still. Then it sets the hat down at the Herbalist's feet, only slightly chewed at the brim, and falls into step beside him.
+
+For half a mile it walks with you and honks along to the song, almost in tune. At a reedy pond by the road it stops and looks up at the Herbalist for a long moment.
+
+"honk," it says, softly. Translation: "Well. Goodbye, then."
+
+It wades into the reeds and is gone. The Herbalist is not crying. It's the wind.
+
+---
+
+=== end side_story
+
+=== m campaign.22 thread=campaign-main side=u from=p1 to=c3
+Okay, onward to the river! How bad is this bridge?
+
+=== m campaign.23 thread=campaign-main side=a from=c3 to=p1 turn=t11 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **The river Gall**
+
+The bridge is a rope bridge over a deep, loud gorge, and calling it a bridge is generous. Its planks look like a gap-toothed grin. It sways when the wind breathes on it.
+
+A carved post says FORD, with an arrow pointing downstream and, underneath in smaller letters, *about an hour*.
+
+⏳ Storm clock: three and a half hours.
+
+▫️ **How it works**
+
+1. **The bridge:** each of you rolls, and 10 or more crosses cleanly. It's quick, and you'll be well ahead of the storm.
+2. **The ford:** it's safe-ish, slow and wet, and you'll see more of the riverbank than you planned.
+
+A note for tonight: ⭐ marks the bolder way, not the safer one. I'm your game master, not your insurer.\
+↳ `Y5`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y5` How to get over the Gall:\
+> ⭐ **A** Cross the rope bridge\
+> ➖ **B** Walk downstream to the ford
+
+---
+
+=== branch campaign.bridge
+--- option cross weight=3
+
+=== m campaign.24 thread=campaign-main side=u from=p1 to=c3
+Y5 A! The Knight goes first because she insists on it. Rolls: Knight 14, Cartographer 11, Herbalist 6. Oh no.
+
+=== m campaign.25 thread=campaign-main side=a from=c3 to=p1 turn=t12 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The Knight crosses with great dignity and salutes the gorge from the far side. The gorge does not salute back.
+
+The Cartographer crosses clutching eleven pencils, without looking down even once, which is easy if your eyes are shut.
+
+The Herbalist is three planks from safety when one of them simply leaves. He drops, catches the rope with one hand, and hangs there over the river with his satchel swinging from his shoulder.\
+↳ `Y6`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *River: the rope bridge.*
+>
+> 💠 `Y6` How to save the Herbalist:\
+> ⭐ **A** The Knight hauls him up: a Strength roll, 8 or more with her bonus\
+> ➖ **B** The Cartographer throws him a rope: a Brains roll, 12 or more
+
+---
+
+=== m campaign.26 thread=campaign-main side=u from=p1 to=c3
+Y6 A, the Knight rolled a 19!!! We all screamed.
+
+=== m campaign.27 thread=campaign-main side=a from=c3 to=p1 turn=t13 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The Knight plants her boots, grabs the Herbalist by the collar, and hauls him up onto the bank like a sack of very grateful turnips.
+
+The satchel, though, slips off his shoulder on the way up. It turns once in the air, falls into the Gall, and takes its salves, seeds and dried things with it, off toward the sea.
+
+⏳ Storm clock: three hours. The bridge was quick, even counting the screaming.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y6` *The Herbalist: hauled up by the Knight. The satchel: lost.*
+
+---
+
+=== m campaign.28 thread=campaign-main side=u from=p1 to=c3
+The Herbalist is in mourning. Can he find anything on this side to replace even a little of it?
+
+=== m campaign.29 thread=campaign-main side=a from=c3 to=p1 turn=t14 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Behind an old stump on the far bank he finds a patch of fogmint, small and silvery and smelling like a cold morning. He picks one careful handful and thanks the plant out loud. The plant, he reports, says "you're welcome".
+
+He brews a tiny tea in the upturned crown of the Knight's helmet. It makes everyone's ears tingle and their steps lighter. It isn't magic. Probably.
+
+---
+
+--- option ford weight=2
+
+=== m campaign.24b thread=campaign-main side=u from=p1 to=c3
+The ford, please. The Herbalist doesn't trust rope, and honestly neither do I.
+
+=== m campaign.25b thread=campaign-main side=a from=c3 to=p1 turn=t12 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+You follow the river downstream through wet grass and nettles. The Herbalist apologizes to each nettle personally. After an hour you reach the ford: a line of flat stones under fast, knee-deep water, as cold as a landlord's heart.
+
+Halfway across, the current starts tugging at your ankles like a small dog with opinions. Each of you, roll: 6 or more keeps you on your feet.
+
+⏳ Storm clock: two and a half hours.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y5` *River: the ford.*
+
+---
+
+=== m campaign.26b thread=campaign-main side=u from=p1 to=c3
+Knight 9, Cartographer 15, Herbalist 2. He's fine, right?
+
+=== m campaign.27b thread=campaign-main side=a from=c3 to=p1 turn=t13 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+He's fine. The Herbalist sits down in the river, all of him. Then he stands up again with tremendous dignity and a small, confused fish in his coat pocket.
+
+The Knight and the Cartographer are wet to the knees. The Herbalist is wet to the eyebrows.
+
+On the far bank the Cartographer spots an old boundary stone. It's carved with a tiny lighthouse and, beside it, an even tinier troll at a gate. They copy it onto the map, into one of the blank spaces. Someone has walked this way before you.
+
+⏳ Storm clock: two hours.\
+↳ `Y6`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y6` You're soaked:\
+> ⭐ **A** Push on wet, and squelch your way to the gate\
+> ➖ **B** Light a fire and dry off, losing half an hour
+
+---
+
+=== m campaign.28b thread=campaign-main side=u from=p1 to=c3
+Push on. The Knight says wet boots build character. Also, I love that the ford is slower but you get to see things. That's a whole design lesson in one river.
+
+=== m campaign.29b thread=campaign-main side=a from=c3 to=p1 turn=t14 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Squelch, squelch, squelch. Character is being built at a tremendous rate.
+
+The Herbalist sneezes every ninety seconds, each sneeze like a small brass instrument warming up. He sets the fish free in a roadside puddle and wishes it a good life.
+
+The road climbs, the cliffs close in, and the first roll of thunder arrives just as you do.
+
+⏳ Storm clock: an hour and a half. Tight, but alive.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y6` *Soaked: pushed on, and squelching.*
+
+---
+
+=== end branch
+
+=== m campaign.30 thread=campaign-main side=u from=p1 to=c3
+Quick tea break for us, back in five! The Knight's player says this troll had better be nice.
+
+=== m campaign.31 thread=campaign-main side=a from=c3 to=p1 turn=t15 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Take your time. The troll is very nice, within its terms and conditions.
+
+---
+
+=== m campaign.32 thread=campaign-main side=u from=p1 to=c3
+Back, with biscuits. Bring on the troll!
+
+=== m campaign.33 thread=campaign-main side=a from=c3 to=p1 turn=t16 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **The gate in the pass**
+
+Where the cliff road pinches narrow, there's a stone arch with an iron gate in it. Beside the gate, on a stool far too small for it, sits a troll the size of a garden shed. It's knitting a scarf out of seaweed.
+
+It doesn't look up.
+
+"Evening, travelers. Gate's shut. Gate opens for an answer, or, failing that, for cheese. I'm not fussy." A pause, a stitch. "I'm a *little* fussy."
+
+▫️ **The riddle**
+
+*"I hold every road, but walk none of them. Fold me up, and I hold them all tighter. What am I?"*
+
+You can talk it over. Trolls are patient. The sky, which is turning the color of old pewter, is not.\
+↳ `Y7`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y7` At the gate:\
+> ⭐ **A** Answer the riddle\
+> ➖ **B** Offer the troll cheese
+
+---
+
+=== branch campaign.riddle
+--- option solve weight=2
+
+=== m campaign.34 thread=campaign-main side=u from=p1 to=c3
+We got it!! The Cartographer unfolds their own map, holds it up and says: "A map."
+
+=== m campaign.35 thread=campaign-main side=a from=c3 to=p1 turn=t17 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The troll puts down its knitting and claps three times, slowly and enormously.
+
+"*Nobody* gets it," it rumbles, delighted. "Everybody brings cheese. My cellar is so full of cheese I've had to start sleeping on it." It unhooks the gate. "Tell you what. Riddle me one back. If I can't answer it, you get a biscuit for the road."\
+↳ `Y8`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y7` *Gate: riddle answered. A map, naturally.*
+>
+> 💠 `Y8` The troll's offer:\
+> ⭐ **A** Riddle it back\
+> ➖ **B** Thank it nicely and hurry on
+
+---
+
+=== m campaign.36 thread=campaign-main side=u from=p1 to=c3
+Y8 A, the Herbalist's player has one: "What's gray, sits on a tiny stool, and is about to lose a biscuit?"
+
+=== m campaign.37 thread=campaign-main side=a from=c3 to=p1 turn=t18 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The troll frowns. It counts on its fingers. It looks at the stool. It looks at its own gray hands.
+
+Then it laughs so hard the gate rattles on its hinges and a gull falls off the arch.
+
+"*Me!* Oh, that's rotten. That's lovely." It hands over a bundle of warm biscuits wrapped in the seaweed scarf. "Keep the scarf. It's itchy, but it's yours."
+
+---
+
+❓ **Choices**
+
+> ✅ `Y8` *The troll: riddled back, and out-riddled.*
+
+---
+
+--- option cheese weight=2
+
+=== m campaign.34b thread=campaign-main side=u from=p1 to=c3
+None of us got it. The Knight's player guessed "a hedge", for reasons nobody understands. We offer cheese. There's real cheese on our table, by the way.
+
+=== m campaign.35b thread=campaign-main side=a from=c3 to=p1 turn=t17 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+At the word "cheese" the troll stops knitting. Very slowly it leans forward, until its nose is level with the Knight's helmet.
+
+"Describe it," it says. "Precisely. I have standards."
+
+Since there's a real cheese on your real table, I'd like a real description.\
+↳ `Y8`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y7` *Gate: cheese offered.*
+>
+> 💠 `Y8` How to describe the cheese:\
+> ⭐ **A** Honestly, every detail\
+> ➖ **B** Oversell it wildly
+
+---
+
+=== m campaign.36b thread=campaign-main side=u from=p1 to=c3
+Y8 A, honestly: aged, crumbly, and it smells a bit like a barn. The Knight's player wants it on record that they're against giving it away.
+
+=== m campaign.37b thread=campaign-main side=a from=c3 to=p1 turn=t18 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The troll sniffs the air, and its eyes go misty.
+
+"A barn," it whispers. "Yes. A *good* barn." It takes the cheese between two fingers as if it were a jewel, and opens the gate with its other hand.
+
+As you pass, it adds kindly, "It was a map, by the way."
+
+The Cartographer groans. The troll nods. "Everybody groans."
+
+The Knight's objection is noted, and I hear the cheese at your own table is going quickly too.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y8` *Cheese: described honestly, received with tears.*
+
+---
+
+=== end branch
+
+=== side_story campaign.sock chance=0.4
+
+=== m campaign.38 thread=campaign-main side=u from=p1 to=c3
+Pause! {{pick.dog}} just ran off with one of the Knight's player's socks. Not off their actual foot, off the radiator, but still. Negotiations are underway.
+
+=== m campaign.39 thread=campaign-main side=a from=c3 to=p1 turn=t19 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Take all the time you need. For the record, a sock thief of that skill would make an excellent rogue in a future party.
+
+---
+
+=== m campaign.40 thread=campaign-main side=u from=p1 to=c3
+Sock recovered. Slightly damp, mostly whole. Treaty signed for one dog biscuit. We continue!
+
+=== end side_story
+
+=== m campaign.41 thread=campaign-main side=u from=p1 to=c3
+To the lighthouse! We're running, the storm's right behind us.
+
+=== m campaign.42 thread=campaign-main side=a from=c3 to=p1 turn=t20 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The rain arrives all at once, like thrown gravel. You sprint the last stretch of Gullstone Point with the wind shoving at your backs.
+
+The lighthouse door is banging open and shut. Inside, a spiral stair climbs into the dark: two hundred and twelve steps, with a long drop down the middle.
+
+The Cartographer, who is famously not scared of heights, would like a word with whoever designed this. Roll for nerve: 8 or more with no bonus, because Nerve is +0, as written on your own sheet.
+
+---
+
+=== m campaign.43 thread=campaign-main side=u from=p1 to=c3
+The Cartographer rolled a 6. But the Knight is holding their hand the whole way up, does that count?
+
+=== m campaign.44 thread=campaign-main side=a from=c3 to=p1 turn=t21 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Hand-holding counts. That's +2, which makes 8: exactly enough. The Cartographer climbs all two hundred and twelve steps, counting out loud the whole way, and never once looks down the middle.
+
+▫️ **The lamp room**
+
+At the top, behind the great dark lens, the Keeper sits on the floor wrapped in a blanket, one ankle propped on a coil of rope. They're cross, cold and very much alive.
+
+"About time," the Keeper says. "Wind blew the door in, knocked me flat, and the lamp went out with me. Three days I've been talking to that stone."
+
+The Ember Stone sits in its brass cradle, glowing a dull red, like a coal at breakfast. Far out on the black water a tiny light bobs and dips. That's the *Merry Halibut*, coming home.
+
+▫️ **Two ways**
+
+"I've seen both work," says the Keeper. "You can wake the stone. That takes three pairs of hands and a bit of luck. Or you can ring the bell and trust the Point. This kind of storm always turns at the Point. Usually."\
+↳ `Y9`
+
+---
+
+📌 **Summary**
+
+1. The Keeper is found: a twisted ankle and a bad temper, nothing worse.
+2. The stone is dim, the boat is out there, and the storm is here.
+
+❓ **Choices**
+
+> 💠 `Y9` The lighthouse:\
+> ⭐ **A** Wake the Ember Stone and relight the lamp, all three together\
+> ➖ **B** Ring the bell and wait for the storm to turn
+
+---
+
+=== branch campaign.ending
+--- option relit weight=3
+
+=== m campaign.45 thread=campaign-main side=u from=p1 to=c3
+Relight it! All three of us, together.
+
+=== m campaign.46 thread=campaign-main side=a from=c3 to=p1 turn=t22 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The Keeper points at the stone with a shaking finger. "Three pairs of hands. Go on."
+
+Each of you gets one roll, plus one sentence on what your character does to help. Between the three of you, 30 or more wakes the stone. Make it count.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y9` *The lighthouse: relight the lamp.*
+
+---
+
+=== m campaign.47 thread=campaign-main side=u from=p1 to=c3
+Knight 12: she shields the stone from the wind with her cloak. Herbalist 8: he breathes on it very gently, like coaxing a seedling. Cartographer 16: they read the lamp's old instructions off a chart pinned to the wall, out loud, in a brave voice. 36!
+
+=== m campaign.48 thread=campaign-main side=a from=c3 to=p1 turn=t23 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **The stone wakes**
+
+The cloak holds back the wind. The breath reaches the stone. The Cartographer's voice reaches the last line of the instructions, which turns out to say *and then step back, quickly*.
+
+You step back, quickly.
+
+The Ember Stone flares from breakfast coal to a small sun. The great lens catches it and begins to turn, and a long gold beam sweeps out over the water: once, twice, three times. Far out, the tiny light of the *Merry Halibut* swings around and heads for home.
+
+▫️ **At dawn**
+
+1. **The Knight of Modest Means** is offered a reward and asks only for her buttons back. She's given three new ones, much nicer.
+2. **The Herbalist** is asked to look at the Keeper's ankle. He declares it "sprained but optimistic" and talks to it kindly. It improves.
+3. **The Cartographer** fills in the last blank space on the map: a lighthouse, lit, with three small figures at the top, one of them definitely not looking down.
+
+The Keeper, leaning on the Knight's arm at the harbor, watches the boat tie up and says, "Not bad. For beginners." Coming from the Keeper, that counts as a speech.
+
+---
+
+📌 **Summary**
+
+1. The lamp is relit and the *Merry Halibut* is home.
+2. The end, and a very good one.
+
+---
+
+=== m campaign.49 thread=campaign-main side=u from=p1 to=c3
+We cheered so loudly that {{pick.dog}} barked from the hallway. Thank you!! That was exactly the night I hoped for.
+
+=== m campaign.50 thread=campaign-main side=a from=c3 to=p1 turn=t24 part=1 files=campaign_a4
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+That was a joy to run. You three made every scene better than I wrote it, especially the brave voice.
+
+I've written a short recap of the night, the kind you read in a year and remember the cheese.
+
+---
+
+📋 **To do**
+
+> 💠 `T3` Send the recap to your two friends.
+
+---
+
+📎 **Files**
+
+1. [the-dark-lighthouse-recap.md](the-dark-lighthouse-recap.md): one page on the night, from the inn to the lamp.
+
+---
+
+=== note asset campaign_a4: a one-page Markdown recap of the adventure, told like a story, ending with the lamp relit and the boat home at dawn
+
+--- option storm weight=2
+
+=== m campaign.45b thread=campaign-main side=u from=p1 to=c3
+We trust the Keeper. Ring the bell and wait. The Knight's player says this is the brave choice, actually.
+
+=== m campaign.46b thread=campaign-main side=a from=c3 to=p1 turn=t22 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+The Knight's player is right: waiting is the hardest kind of brave.
+
+The Knight hauls on the bell rope and the great bell booms out over the water, slow and steady: once a minute, the way the Keeper says it's done. The tower shakes. Rain hammers the glass. The little light of the *Merry Halibut* bobs, disappears, and bobs again.
+
+"Long hour, this," says the Keeper. "Always is."\
+↳ `Y10`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y9` *The lighthouse: ring the bell and wait.*
+>
+> 💠 `Y10` How you pass the long hour:\
+> ⭐ **A** Tell stories between the bells\
+> ➖ **B** Play cards with the Keeper, who cheats
+
+---
+
+=== m campaign.47b thread=campaign-main side=u from=p1 to=c3
+Stories! The Knight tells the tale of her famous duel with a hedge.
+
+=== m campaign.48b thread=campaign-main side=a from=c3 to=p1 turn=t23 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+▫️ **The duel with the hedge**
+
+It was, the Knight explains, a very rude hedge. It blocked a lane. It scratched a horse. It would not apologize. The duel lasted from noon until supper. The Knight won on points, the hedge on stamina, and they parted with mutual respect and a great many leaves in the Knight's hair.
+
+The Keeper laughs so hard they forget their ankle. The Herbalist says he has spoken to hedges, and they tell the story differently.
+
+▫️ **The storm turns**
+
+Somewhere near the last bell before dawn, the wind changes its mind. It bends around the Point exactly as the Keeper promised, and the rain softens to a drizzle, then to nothing.
+
+At first light the *Merry Halibut* comes into harbor, a little battered and entirely whole. "We followed the bell," the skipper tells the town. "Slow and steady, once a minute."
+
+The lamp is still dark. The Ember Stone still glows its sleepy red. "We'll wake it properly," says the Keeper, "next time you're passing. Bring the hedge story."
+
+▫️ **At dawn**
+
+1. **The Knight of Modest Means** is famous by breakfast, for the hedge.
+2. **The Herbalist** splints the Keeper's ankle and declares it "sprained but optimistic".
+3. **The Cartographer** draws a small bell in the last blank space on the map, with sound lines coming off it.
+
+---
+
+📌 **Summary**
+
+1. The storm turned at the Point, and the boat came home following the bell.
+2. The lamp waits for another night.
+
+❓ **Choices**
+
+> ✅ `Y10` *The long hour: stories, including the hedge.*
+
+---
+
+=== m campaign.49b thread=campaign-main side=u from=p1 to=c3
+A little anticlimactic and we LOVED it. The hedge duel is officially the best thing that happened tonight. Thank you!!
+
+=== m campaign.50b thread=campaign-main side=a from=c3 to=p1 turn=t24 part=1 files=campaign_a5
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Quiet endings are underrated, and that hedge has earned its place in history.
+
+I've written a short recap of the night, with a whole paragraph for the duel.
+
+---
+
+📋 **To do**
+
+> 💠 `T3` Send the recap to your two friends.
+
+---
+
+📎 **Files**
+
+1. [the-dark-lighthouse-recap.md](the-dark-lighthouse-recap.md): one page on the night, from the inn to the bell.
+
+---
+
+=== note asset campaign_a5: a one-page Markdown recap of the adventure, told like a story, ending with the storm turning at the point, the boat home at dawn and the lamp still to be relit
+
+=== end branch
+
+=== m campaign.51 thread=campaign-main side=u from=p1 to=c3
+Morning! I sent them the recap, and both of them asked straight away when the next one is. Same characters or new ones, what do you think?
+
+=== m campaign.52 thread=campaign-main side=a from=c3 to=p1 turn=t25 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Wonderful. I'd keep the same three. They have things worth coming back to: a compass that points to snacks, a Knight who pays in buttons, and an Herbalist the whole coast now knows. New characters are fun too, but these three have only just found their feet.\
+↳ `Y11`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y11` The next adventure:\
+> ⭐ **A** Same three characters, new trouble\
+> ➖ **B** A brand-new party
+
+📋 **To do**
+
+> ✅ `T3` *Recap sent to both friends.*
+
+---
+
+=== m campaign.53 thread=campaign-main side=u from=p1 to=c3
+Y11 A. Also, the Herbalist's player has requested "more animals". I'm just passing it on.
+
+=== m campaign.54 thread=campaign-main side=a from=c3 to=p1 turn=t26 part=1
+{{c3.emoji}} **{{c3.name}}** · {{date}} · {{time}}
+
+Request received and taken very seriously. I'll start sketching the next one, with the same three heroes, more animals and at least one snack the compass can't resist.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y11` *Next adventure: the same three characters.*
+
+---
+
+=== canon {{c3.name}} runs tabletop adventures for {{p1.name}} and two friends in Side Quests, with real dice at {{p1.name}}'s table and {{p1.name}} typing for everyone.
+=== canon {{p1.name}}'s character is the Cartographer: carries eleven pencils, claims not to be scared of heights, and owns a brass compass that points to the nearest food.
+=== canon The friends play the Knight of Modest Means, who pays in buttons, and the Herbalist, who talks to plants.
+=== canon The Knight's horse is named Barley, is twenty-six, and waits at the inn's stable.
+=== canon The first adventure is set in the fishing town of Saltmarrow, at the Drowned Lantern inn and the lighthouse on Gullstone Point.
+=== canon The troll at the gate opens it for a riddle's answer or for cheese, and is a little fussy about cheese.
+=== canon The next adventure keeps the same three characters, and the Herbalist's player has asked for more animals.

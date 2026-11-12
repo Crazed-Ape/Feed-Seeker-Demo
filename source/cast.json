@@ -1,0 +1,310 @@
+{
+ "roles": [
+  {
+   "slug": "coordinator",
+   "role": "Coordinator",
+   "emoji": [
+    "🗺️",
+    "📯",
+    "🪁"
+   ],
+   "colors": [
+    "#2F7D6D",
+    "#B5562C",
+    "#5A64C8",
+    "#A23E78",
+    "#3E7FB0",
+    "#8A6A1F",
+    "#4F8A3A",
+    "#9A4FC4",
+    "#C0493F",
+    "#2E8C99",
+    "#7A5C9E",
+    "#B0702A"
+   ]
+  },
+  {
+   "slug": "researcher",
+   "role": "Researcher",
+   "emoji": [
+    "🔭",
+    "🗂️",
+    "🧐"
+   ],
+   "colors": [
+    "#2F7D6D",
+    "#B5562C",
+    "#5A64C8",
+    "#A23E78",
+    "#3E7FB0",
+    "#8A6A1F",
+    "#4F8A3A",
+    "#9A4FC4",
+    "#C0493F",
+    "#2E8C99",
+    "#7A5C9E",
+    "#B0702A"
+   ]
+  },
+  {
+   "slug": "writer",
+   "role": "Writer",
+   "emoji": [
+    "✒️",
+    "📝",
+    "🪶"
+   ],
+   "colors": [
+    "#2F7D6D",
+    "#B5562C",
+    "#5A64C8",
+    "#A23E78",
+    "#3E7FB0",
+    "#8A6A1F",
+    "#4F8A3A",
+    "#9A4FC4",
+    "#C0493F",
+    "#2E8C99",
+    "#7A5C9E",
+    "#B0702A"
+   ]
+  },
+  {
+   "slug": "designer",
+   "role": "Designer",
+   "emoji": [
+    "🖌️",
+    "🧵",
+    "🪄"
+   ],
+   "colors": [
+    "#2F7D6D",
+    "#B5562C",
+    "#5A64C8",
+    "#A23E78",
+    "#3E7FB0",
+    "#8A6A1F",
+    "#4F8A3A",
+    "#9A4FC4",
+    "#C0493F",
+    "#2E8C99",
+    "#7A5C9E",
+    "#B0702A"
+   ]
+  },
+  {
+   "slug": "builder",
+   "role": "Builder",
+   "emoji": [
+    "🔩",
+    "🏗️",
+    "⚙️"
+   ],
+   "colors": [
+    "#2F7D6D",
+    "#B5562C",
+    "#5A64C8",
+    "#A23E78",
+    "#3E7FB0",
+    "#8A6A1F",
+    "#4F8A3A",
+    "#9A4FC4",
+    "#C0493F",
+    "#2E8C99",
+    "#7A5C9E",
+    "#B0702A"
+   ]
+  },
+  {
+   "slug": "reviewer",
+   "role": "Reviewer",
+   "emoji": [
+    "👓",
+    "🪞",
+    "🧾"
+   ],
+   "colors": [
+    "#2F7D6D",
+    "#B5562C",
+    "#5A64C8",
+    "#A23E78",
+    "#3E7FB0",
+    "#8A6A1F",
+    "#4F8A3A",
+    "#9A4FC4",
+    "#C0493F",
+    "#2E8C99",
+    "#7A5C9E",
+    "#B0702A"
+   ]
+  },
+  {
+   "slug": "tester",
+   "role": "Tester",
+   "emoji": [
+    "🧪",
+    "🎯",
+    "🐞"
+   ],
+   "colors": [
+    "#2F7D6D",
+    "#B5562C",
+    "#5A64C8",
+    "#A23E78",
+    "#3E7FB0",
+    "#8A6A1F",
+    "#4F8A3A",
+    "#9A4FC4",
+    "#C0493F",
+    "#2E8C99",
+    "#7A5C9E",
+    "#B0702A"
+   ]
+  },
+  {
+   "slug": "bookkeeper",
+   "role": "Bookkeeper",
+   "emoji": [
+    "🧮",
+    "📒",
+    "🪙"
+   ],
+   "colors": [
+    "#2F7D6D",
+    "#B5562C",
+    "#5A64C8",
+    "#A23E78",
+    "#3E7FB0",
+    "#8A6A1F",
+    "#4F8A3A",
+    "#9A4FC4",
+    "#C0493F",
+    "#2E8C99",
+    "#7A5C9E",
+    "#B0702A"
+   ]
+  }
+ ],
+ "cast": [
+  {
+   "slot": "c1",
+   "kind": "claude",
+   "role": "coordinator",
+   "name_list": "claude_names",
+   "pronouns": [
+    "she/her",
+    "he/him",
+    "they/them"
+   ]
+  },
+  {
+   "slot": "c2",
+   "kind": "claude",
+   "role": "researcher",
+   "name_list": "claude_names",
+   "pronouns": [
+    "she/her",
+    "he/him",
+    "they/them"
+   ]
+  },
+  {
+   "slot": "c3",
+   "kind": "claude",
+   "role": "writer",
+   "name_list": "claude_names",
+   "pronouns": [
+    "she/her",
+    "he/him",
+    "they/them"
+   ]
+  },
+  {
+   "slot": "c4",
+   "kind": "claude",
+   "role": "designer",
+   "name_list": "claude_names",
+   "pronouns": [
+    "she/her",
+    "he/him",
+    "they/them"
+   ]
+  },
+  {
+   "slot": "c5",
+   "kind": "claude",
+   "role": "builder",
+   "name_list": "claude_names",
+   "pronouns": [
+    "she/her",
+    "he/him",
+    "they/them"
+   ]
+  },
+  {
+   "slot": "c6",
+   "kind": "claude",
+   "role": "reviewer",
+   "name_list": "claude_names",
+   "pronouns": [
+    "she/her",
+    "he/him",
+    "they/them"
+   ]
+  },
+  {
+   "slot": "c7",
+   "kind": "claude",
+   "role": "tester",
+   "name_list": "claude_names",
+   "pronouns": [
+    "she/her",
+    "he/him",
+    "they/them"
+   ]
+  },
+  {
+   "slot": "c8",
+   "kind": "claude",
+   "role": "bookkeeper",
+   "name_list": "claude_names",
+   "pronouns": [
+    "she/her",
+    "he/him",
+    "they/them"
+   ]
+  },
+  {
+   "slot": "p1",
+   "kind": "person",
+   "name_list": "people_names"
+  },
+  {
+   "slot": "p2",
+   "kind": "person",
+   "name_list": "people_names"
+  },
+  {
+   "slot": "p3",
+   "kind": "person",
+   "name_list": "kid_names"
+  }
+ ],
+ "contexts": {
+  "studio": {
+   "title": "Studio",
+   "short": "ST",
+   "coordinator": "c1"
+  },
+  "kitchen": {
+   "title": "Kitchen Table",
+   "short": "KT",
+   "coordinator": "c1"
+  },
+  "quests": {
+   "title": "Side Quests",
+   "short": "SQ",
+   "coordinator": "c1"
+  }
+ }
+}

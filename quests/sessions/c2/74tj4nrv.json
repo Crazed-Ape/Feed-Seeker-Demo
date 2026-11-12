@@ -1,0 +1,21 @@
+{
+  "format": 1,
+  "session": "74tj4nrv",
+  "writer": "c2",
+  "context": "quests",
+  "platform": "projects",
+  "conversation": "74tj4nrv",
+  "title": "🗂️ Elodie · German for the fair",
+  "first": "2026-11-07T07:05:00.000Z",
+  "last": "2026-11-10T12:02:46.000Z",
+  "engine": "demo",
+  "capture": {
+    "runs": 30,
+    "turns_seen": 30,
+    "messages_written": 30,
+    "references": 0,
+    "failed": 0,
+    "skipped_entries": 0,
+    "last_run": "2026-11-10T12:02:46.000Z"
+  }
+}

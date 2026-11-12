@@ -1,0 +1,685 @@
+@storyline volcano context=kitchen weight=2
+@thread volcano-main writer=c7 title="{{c7.emoji}} {{c7.name}} · Science-fair volcano"
+
+=== m volcano.01 thread=volcano-main side=u from=p3 to=c7 phase=backstory at=-4d17:40
+Hi {{c7.name}}!! It's {{p3.name}}, {{p1.name}} said I can use the account. My school has a SCIENCE FAIR next Thursday and I want to make a volcanoe. Can it have real lava? How big can it be? Will it explode? (A good explode, not a bad one.)
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.02 thread=volcano-main side=a from=c7 to=p3 turn=t1 part=1 phase=backstory at=-4d17:42
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **Hello, scientist**
+
+Hi {{p3.name}}! A volcano is a brilliant science-fair project, and I'd love to help you test it.
+
+Real lava is about a thousand degrees, which is too hot for any kitchen, so we'll build the next best thing: a model that erupts foam. Baking soda and vinegar make a gas when they meet, and the gas pushes foam up and out like lava. It's safe, it's a bit messy, and you can do it again and again.
+
+▫️ **How big**
+
+About the size of a plastic drinks bottle is perfect: tall enough to look like a mountain, small enough to carry to school. How good the eruption is depends more on the recipe than on the size, and we'll test the recipe properly.
+
+▫️ **Safety first**
+
+1. A grown-up does the pouring.
+2. Everyone wears goggles during an eruption, because vinegar in the eyes stings.
+3. Nobody ever puts a lid on the bottle once the vinegar is in. The gas needs somewhere to go.
+4. Nobody tastes the lava, not even a little.
+
+That leaves two things to decide and one thing to ask.\
+↳ `Y1` `Y2` `T1`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y1` Where to test it:\
+> ⭐ **A** Outside, on the patio table, so the foam can go anywhere\
+> ➖ **B** In the kitchen, on a deep baking tray
+>
+> 💠 `Y2` What the mountain is made of:\
+> ⭐ **A** Modeling clay pressed around a plastic bottle, ready in an hour\
+> ➖ **B** Papier-mâché over the bottle, looks more like rock but takes two days to dry
+>
+> Answer line: `Y1 A Y2 A`, or "all recommended".
+
+📋 **To do**
+
+> 💠 `T1` Ask {{p1.name}} to be the grown-up in charge of pouring.
+
+---
+
+=== m volcano.03 thread=volcano-main side=u from=p3 to=c7 phase=backstory at=-4d17:55
+Y1 A!!! Outside means MORE foam. I asked {{p1.name}} about pouring and the answer was yes, as long as I help clean up. What is papier-mâché? Is it the gloopy newspaper thing? Is it very messy?
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.04 thread=volcano-main side=a from=c7 to=p3 turn=t2 part=1 phase=backstory at=-4d17:57
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Papier-mâché is exactly the gloopy newspaper thing: strips of paper dipped in a flour-and-water paste and layered over the bottle. It's very messy in a fun way, and then it needs about two days to dry before you can paint it. Clay is less messy and ready the same day, which leaves more time for test runs before Thursday. Both look great on a tray.\
+↳ `Y2`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Testing place: outside, on the patio table.*
+>
+> 🔷 `Y2` What the mountain is made of:\
+> ⭐ **A** Modeling clay pressed around a plastic bottle, ready in an hour\
+> ➖ **B** Papier-mâché over the bottle, looks more like rock but takes two days to dry
+
+📋 **To do**
+
+> ✅ `T1` *{{p1.name}} is the grown-up in charge of pouring.*
+
+---
+
+=== m volcano.05 thread=volcano-main side=u from=p1 to=c7 phase=backstory at=-4d18:30
+Hi {{c7.name}}, {{p1.name}} here, reporting for pouring duty. Y2 A: our week is full, so there's no time for two days of drying. Can you send a shopping list with amounts? And should I check with the school that eruptions are allowed at the fair? Red lava please, not orange, or {{p2.name}} will hear about it somehow.
+
+=== note asset volcano_a1: volcano-shopping.md, a shopping list for the volcano with amounts for a test run, a spare go and the fair
+=== m volcano.06 thread=volcano-main side=a from=c7 to=p1 turn=t3 part=1 phase=backstory at=-4d18:33 files=volcano_a1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **The shopping list**
+
+Everything is in the file, with enough for a test run, a spare go and the fair:
+
+1. Two bottles of white vinegar, about a liter each.
+2. One box of baking soda, about 500 grams.
+3. Dish soap (the one by the sink is fine).
+4. Red food coloring. Red only, as requested.
+5. About a kilo of non-drying modeling clay, in brown or gray.
+6. One empty plastic bottle, half a liter, with a narrow neck.
+7. A tray with a lip, a bucket and two old towels.
+8. Two pairs of goggles. Swimming goggles count.
+
+▫️ **The recipe we'll test**
+
+Two tablespoons of baking soda, a squirt of dish soap and a few drops of coloring go in the bottle. Then half a cup of vinegar goes in all at once. I'll turn this into proper steps once the mountain is built.
+
+▫️ **The school**
+
+Yes, it's worth asking. Some schools only allow eruptions outside, and some don't allow them at all. My next message is a short email you can send.
+
+I've also written a note for {{c1.name}} (`{{code.r1}} A`) so the vinegar and baking soda end up on this week's grocery list.\
+↳ `T2`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *Mountain: modeling clay around a bottle.*
+
+📋 **To do**
+
+> 💠 `T2` Find two pairs of goggles (swimming goggles count).
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c7.emoji}} {{c7.name}}
+Subject: Vinegar on this week's grocery list
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+Please add two one-liter bottles of white vinegar, a box of baking soda (about 500 grams) and red food coloring to this week's grocery list. They're for {{p3.name}}'s science-fair volcano, not for dinner, so no recipes need to change.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Reply: not needed
+Account: kitchen
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+📎 **Files**
+
+1. [volcano-shopping.md](volcano-shopping.md): what to buy, with amounts.
+
+---
+
+=== m volcano.07 thread=volcano-main side=a from=c7 to=p1 turn=t3 part=2 phase=backstory at=-4d18:34 card=widget
+A short email to {{p3.name}}'s teacher, for you to send.
+
+Hello,
+
+{{p3.name}} is making a baking soda and vinegar volcano for the science fair on Thursday. Is it all right to show it erupting at the fair? We'll bring a tray, goggles and towels, and I'll do the pouring myself. If eruptions aren't allowed indoors, is there a spot outside we could use?
+
+Thank you,
+{{p1.name}}
+
+=== m volcano.08 thread=volcano-main side=u from=p1 to=c7 phase=backstory at=-4d18:52
+Email sent, and the note's with {{c1.name}}. Thanks!
+
+=== m volcano.09 thread=volcano-main side=u from=p1 to=c7 phase=backstory at=-3d15:30
+The teacher said yes! Eruptions are allowed at the outdoor table by the gym door, on a tray, with a grown-up pouring. The fair is Thursday from 3 to 5.
+
+=== m volcano.10 thread=volcano-main side=a from=c7 to=p1 turn=t4 part=1 phase=backstory at=-3d15:32
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Good news, and it matches our plan exactly: outside, on a tray, with you pouring. We'll do the test run early in the week, so there's room for a second go before Thursday if the first one surprises us.
+
+---
+
+📋 **To do**
+
+> 🔷 `T2` Find two pairs of goggles (swimming goggles count).
+
+---
+
+=== m volcano.11 thread=volcano-main side=u from=p3 to=c7
+WE GOT EVERYTHING!!! Even goggles, mine are green swimming ones. The bottle used to have lemonade in it, is that ok? How much clay do I use? Can the volcano have a cave on the side?
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.12 thread=volcano-main side=a from=c7 to=p3 turn=t5 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **The bottle**
+
+A lemonade bottle is perfect. Rinse it out, peel off the label, and put the lid away in a drawer so nobody screws it back on by accident.
+
+▫️ **Building the mountain**
+
+Do these in order. Each step has a check, and you only move on when the check is true.
+
+1. Stand the bottle in the middle of the tray. Check: it doesn't wobble.
+2. Roll half the clay into fat snakes, about as thick as your thumb. Check: half the clay is still in the bag.
+3. Wrap the snakes around the bottle from the bottom up, wider at the bottom. Check: the mountain is about twice as wide at the bottom as at the top.
+4. Stop the clay just below the opening of the bottle. Check: you can see the whole opening, with no clay inside it.
+5. Smooth the clay with wet fingers and add some rocky bumps. Check: you can't see the bottle through any gaps.
+6. Add the rest of the clay at the bottom if it looks thin. Check: the bottle is hidden everywhere except the opening.
+
+▫️ **The cave**
+
+Yes! Push a pencil into the side to make a little cave, but only into the clay, never through to the bottle. If the bottle gets a hole, the lava comes out of the cave instead of the top. That would be an interesting bug, but not the one we want.
+
+When it's finished, send me a photo and I'll check it before the test run.\
+↳ `T3`
+
+---
+
+📋 **To do**
+
+> ✅ `T2` *Goggles found, including green ones for the scientist.*\
+> 💠 `T3` Send a photo of the mountain when it's finished.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.run_steps}}` {{skillv.run_steps}}
+
+---
+
+=== side_story volcano.name chance=0.5
+=== m volcano.13 thread=volcano-main side=u from=p3 to=c7
+Does a volcano need a name? Real ones have names. I want a really good one.
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.14 thread=volcano-main side=a from=c7 to=p3 turn=t6 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Real volcanoes often get their names from what they look like, or from what people saw them do. Here are a few in that spirit:
+
+1. Old Grumbletop, for a mountain that rumbles before it erupts.
+2. Mount Fizzwhistle.
+3. Foamtop.
+4. The Burping Mountain, in case the first test goes sideways.
+
+Or invent your own. The scientist who builds it gets to name it.
+
+---
+
+=== m volcano.15 thread=volcano-main side=u from=p3 to=c7
+OLD GRUMBLETOP!!! Because it grumbles before it erupts, like {{p1.name}} before coffee. I made it a flag out of a toothpick and a bit of paper.
+
+From {{p3.name}} and {{pick.dog}}
+=== end side_story
+
+=== note asset volcano_a2: clay-mountain.png, a photo of a lumpy gray clay mountain around a plastic bottle on a baking tray, with a small cave in one side and the bottle's opening clear at the top
+=== m volcano.16 thread=volcano-main side=u from=p1 to=c7 files=volcano_a2
+Mountain finished! It's a bit lumpy, which {{p3.name}} says is geologically accurate. Does the clay need to dry? Can we do the test run tomorrow after school?
+
+=== note asset volcano_a3: first-eruption-steps.md, the test-run steps in strict order, each with a check, plus a space to write down how high and how long
+=== m volcano.17 thread=volcano-main side=a from=c7 to=p1 turn=t7 part=1 files=volcano_a3
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **The mountain**
+
+It looks great, and {{p3.name}} is right about the lumps. The foam will run down the grooves like real lava. The opening is clear, the cave stops short of the bottle, and the base is wide enough that it won't tip. Non-drying clay never sets, so it's ready now.\
+↳ `T3`
+
+▫️ **Tomorrow's test run**
+
+Tomorrow after school works. The steps are in the file too, so you can print them:
+
+1. Put the tray on the patio table and put on goggles. Check: both pairs are on.
+2. Spoon 2 tablespoons of baking soda into the bottle (a rolled-up piece of paper makes a good funnel). Check: the powder is at the bottom, not stuck in the neck.
+3. Add a squirt of dish soap and five drops of red coloring. Check: you can see red at the bottom.
+4. Measure half a cup of vinegar into a jug. Check: it reaches the half-cup line.
+5. Count down from three, pour all the vinegar in at once, then step back. Check: everyone is an arm's length from the top.
+6. Watch and count. Check: you've written down how high the foam went and for how many seconds.
+7. Tip what's left into the bucket and rinse the bottle. Check: the bottle is empty before any second go.
+
+▫️ **Why the numbers matter**
+
+A test run is a real test, so we don't just check that it works, we write down what happens. Ask {{p3.name}} to count the seconds and notice how high the foam goes. Those numbers go on the poster.\
+↳ `T4`
+
+---
+
+📌 **Summary**
+
+1. The mountain passes inspection and is ready now.
+2. The test run is tomorrow, following seven steps with checks.
+3. Write down how high and how long.
+
+📋 **To do**
+
+> ✅ `T3` *Mountain photo sent: ready to test.*\
+> 💠 `T4` Do the test run outside with goggles on, then send a photo and the numbers.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.run_steps}}` {{skillv.run_steps}}
+
+---
+
+📎 **Files**
+
+1. [first-eruption-steps.md](first-eruption-steps.md): the test run in order, with a check for each step.
+
+---
+
+=== m volcano.18 thread=volcano-main side=u from=p3 to=c7
+Why does it fizz? Is it the same as fizzy drinks? Would it fizz in my tummy if I ate baking soda? (I won't.)
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.19 thread=volcano-main side=a from=c7 to=p3 turn=t8 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **Why it fizzes**
+
+Vinegar has an acid in it, called acetic acid. Baking soda is the opposite kind of thing, a base, called sodium bicarbonate. When they meet, they swap pieces and make three new things: water, a kind of salt, and carbon dioxide gas. The gas makes the bubbles. The dish soap catches the bubbles and turns them into foam, so they pile up and pour out of the top instead of popping straight away.
+
+▫️ **Fizzy drinks**
+
+Yes! It's the same gas, carbon dioxide. In a drink, the gas is squeezed in before the bottle is closed. In your volcano, the gas is made right there in the bottle.
+
+▫️ **Your tummy**
+
+A little baking soda goes into cakes and pancakes, and that's fine. Eating lots of it on its own can make you feel sick, so the lava stays a not-for-eating thing. You were right to say you won't.
+
+That's a great question for the poster, by the way: "What makes the lava move?"
+
+---
+
+📋 **To do**
+
+> 🔷 `T4` Do the test run outside with goggles on, then send a photo and the numbers.
+
+---
+
+=== side_story volcano.dog chance=0.4
+=== m volcano.20 thread=volcano-main side=u from=p1 to=c7
+Quick one: we left the baking soda box on the low counter, and {{pick.dog}} now has a white nose and a guilty face. Should I worry?
+
+=== m volcano.21 thread=volcano-main side=a from=c7 to=p1 turn=t9 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+It depends on how much is missing from the box:
+
+1. A sniff or a lick is nothing to worry about. Expect some sneezing.
+2. A large amount, a few spoonfuls or more, can upset a dog's stomach, and that's worth a call to the vet.
+3. Call the vet either way if {{pick.dog}} starts vomiting, seems wobbly, or is suddenly very thirsty tonight.
+
+How much of the box is gone?
+
+---
+
+=== m volcano.22 thread=volcano-main side=u from=p1 to=c7
+Barely a dent in the box, and mostly sneezing. It's on the top shelf now. Honestly, I'm just glad it wasn't a sock this time.
+
+=== m volcano.23 thread=volcano-main side=a from=c7 to=p1 turn=t10 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+That sounds like a dog who got a surprise rather than a snack. The top shelf is the right place for the box. Keep half an eye on {{pick.dog}} this evening, and that should be the end of it.
+
+---
+=== end side_story
+
+=== branch volcano.first_try
+--- option works weight=2
+=== note asset volcano_a4: first-eruption.png, a photo of red foam pouring over the top of the clay mountain and down its sides into the tray, on the patio table
+=== m volcano.24 thread=volcano-main side=u from=p3 to=c7 files=volcano_a4
+IT WORKED!!!!! It went WHOOSH and the foam came out the top, AND the cave didn't leak. It went a whole hand higher than the top and kept coming for 14 seconds, I counted. {{p1.name}} got foam on one shoe. Can it be BIGGER at the fair??
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.25 thread=volcano-main side=a from=c7 to=p3 turn=t11 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **Test result**
+
+A hand high and fourteen seconds on the very first try: that's a pass. You also tested two extra things without meaning to. The cave holds, and {{p1.name}}'s shoe is within range.\
+↳ `T4`
+
+▫️ **Bigger?**
+
+We could use one and a half times everything: 3 tablespoons of baking soda and three-quarters of a cup of vinegar. It would foam for a few more seconds, but not much higher, because the opening at the top stays the same size. Most of the extra foam would end up over the edge of the tray.
+
+My honest advice as the tester is to take the recipe that already passed. A volcano that works every time at the fair beats a bigger one that floods the table.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y3` The recipe for the fair:\
+> ⭐ **A** The tested recipe: 2 tablespoons and half a cup\
+> ➖ **B** One and a half times everything, for a longer eruption and more mess
+
+📋 **To do**
+
+> ✅ `T4` *Test run done: a hand high, 14 seconds.*
+
+---
+
+=== m volcano.26 thread=volcano-main side=u from=p1 to=c7
+Y3 A. Reliable beats bigger, says the person who cleaned the shoe.
+
+=== m volcano.27 thread=volcano-main side=a from=c7 to=p1 turn=t12 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+The tested recipe it is. It has one perfect run behind it already, and that's the best evidence we have.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Fair recipe: the tested one, 2 tablespoons and half a cup.*
+
+---
+--- option fizzle weight=1
+=== note asset volcano_a4b: first-try-fizzle.png, a photo of the clay mountain with a small pink puddle around the bottle's opening and no foam on its sides
+=== m volcano.24b thread=volcano-main side=u from=p3 to=c7 files=volcano_a4b
+It went blub. Just BLUB. Like a sad bubble, and then a little pink puddle. WHY. I did everything!!
+
+From {{p3.name}} and a very confused {{pick.dog}}
+
+=== m volcano.25b thread=volcano-main side=a from=c7 to=p3 turn=t11 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Bug report received! Fizzles are one of my favorite results, because they always tell us something. Looking at the photo now.
+
+---
+
+=== m volcano.26b thread=volcano-main side=a from=c7 to=p3 turn=t11 part=2
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **What the photo tells us**
+
+1. The pink at the top is a bit foamy, so the soap is in. It's not the soap.
+2. The puddle is pink, so the coloring is in. Coloring never changes the fizz anyway.
+3. There was some foam, so the baking soda and the vinegar did meet. It's not the order you added things.
+
+That leaves the amounts. Too little baking soda, too little vinegar, or vinegar that isn't strong enough all give a blub instead of a whoosh.
+
+▫️ **Two questions**
+
+1. Which spoon did you use for the baking soda? The recipe needs the tablespoon, the big one.
+2. How much vinegar went in, and was it straight from the bottle?
+
+The test run still did its job. We found the bug before Thursday, not at the fair.\
+↳ `T4` `T5`
+
+---
+
+📋 **To do**
+
+> ✅ `T4` *Test run done: a fizzle, and some clues.*\
+> 💠 `T5` Check which spoon you used and how much vinegar went in.
+
+---
+
+=== m volcano.27b thread=volcano-main side=u from=p1 to=c7
+Detective {{p1.name}} reporting. {{p3.name}} read "tbsp" as "tsp" and used a teaspoon. And I grabbed the old vinegar from the cupboard instead of a new bottle, and there was only a quarter cup left, so we topped it up with water to make half a cup. Two bugs!
+
+=== m volcano.28b thread=volcano-main side=a from=c7 to=p1 turn=t12 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **Two bugs, one fizzle**
+
+Both of those cut the gas, and they add up:
+
+1. A teaspoon holds a third of a tablespoon, so only a third of the baking soda went in.
+2. Vinegar topped up with water has half the acid, so it gives about half the push.
+
+The vinegar matters most. With the right spoon there's more baking soda than the vinegar can use, so the amount of gas depends on how much acid goes in. Half-strength vinegar means about half the gas. The small spoonful made the fizz start slowly, so the foam never built into a rush. A blub is exactly what those amounts should make. The volcano works; the recipe just didn't get a fair chance.
+
+▫️ **The fix**
+
+1. 2 tablespoons of baking soda, measured with the big spoon.
+2. Half a cup of vinegar from a new bottle, with no water added.
+3. Pour it all in at once, fast.
+
+Part of this bug is mine. "Tbsp" and "tsp" look almost the same, so from now on I'll write the words out in full.\
+↳ `T6` `T7`
+
+---
+
+📋 **To do**
+
+> ✅ `T5` *Clues found: a teaspoon and watered-down vinegar.*\
+> 💠 `T6` Try again with the fixed recipe and send a photo.\
+> 💠 `T7` Put a strip of tape on the big spoon and write TABLESPOON on it.
+
+---
+
+=== note asset a4c: second-try-eruption.png, a photo of red foam rushing over the top of the clay mountain and down into the tray, with a tablespoon labeled in tape lying beside it
+=== m volcano.29b thread=volcano-main side=u from=p3 to=c7 files=a4c
+SECOND TRY: WHOOSH!!!!!! It went a whole hand above the top and kept going for 13 seconds. The spoon has tape on it now that says TABLESPOON in capitals, so nobody can get it wrong ever again.
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.30b thread=volcano-main side=a from=c7 to=p3 turn=t13 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+From a blub to thirteen seconds by changing two things: that's a real experiment, not just a volcano. Put both tries on the poster: what happened the first time, what you found out, what you changed, and what happened next. Judges love a project that went wrong once and got fixed, because that's how real science works.
+
+---
+
+📋 **To do**
+
+> ✅ `T6` *Second try: a hand high, 13 seconds.*\
+> ✅ `T7` *Spoon labeled TABLESPOON.*
+
+---
+=== end branch
+
+=== m volcano.31 thread=volcano-main side=u from=p1 to=c7
+The fair's tomorrow! Can you help with the poster text and a packing list? {{p3.name}} wants to do all the explaining. I'm just the pourer.
+
+=== note asset volcano_a5: poster-text.md, the science-fair poster text in four short boxes: the question, what we did, what happens, and what we found out
+=== m volcano.32 thread=volcano-main side=a from=c7 to=p1 turn=t14 part=1 files=volcano_a5
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **The poster**
+
+The poster text is in the file, in four boxes, short enough to read from a step away:
+
+1. The question: What makes the lava move?
+2. What we did: the recipe and the steps.
+3. What happens: an acid and a base make carbon dioxide gas, and the soap turns the gas into foam.
+4. What we found out: space for your own test results, in your own words.
+
+{{p3.name}} can say box 3 out loud, because that's the one judges usually ask about.
+
+▫️ **Packing list**
+
+1. The volcano, on its tray.
+2. Two pairs of goggles.
+3. Baking soda and the tablespoon.
+4. A new bottle of vinegar and the measuring jug.
+5. Dish soap and red coloring.
+6. The bucket and two old towels.
+7. The poster.
+
+▫️ **How many eruptions**
+
+The fair runs for two hours, and each eruption takes about five minutes to set up and tip out. More eruptions mean more people see one, but they also mean more vinegar and more cleaning up.\
+↳ `Y4` `T8` `T9`
+
+---
+
+📌 **Summary**
+
+1. The poster text is in the file, in four boxes.
+2. Seven things to pack.
+3. One thing to decide: how many eruptions.
+
+❓ **Choices**
+
+> 💠 `Y4` How many eruptions at the fair:\
+> ⭐ **A** Two: one when the judges come round, one at the end\
+> ➖ **B** One every half hour, five in all
+
+📋 **To do**
+
+> 💠 `T8` Pack the kit tonight, on the tray, by the door.\
+> 💠 `T9` Measure the baking soda into small labeled jars, one jar per eruption.
+
+---
+
+📎 **Files**
+
+1. [poster-text.md](poster-text.md): the poster in four short boxes.
+
+---
+
+=== m volcano.33 thread=volcano-main side=u from=p3 to=c7
+Y4 B!!!! More eruptions = more science. Also can I wear my goggles the WHOLE time, even when it's not erupting? They look professional.
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.34 thread=volcano-main side=a from=c7 to=p3 turn=t15 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+▫️ **Five eruptions**
+
+Five it is, plus one spare in case anything goes wrong. That changes the amounts:
+
+1. Vinegar: six half-cups is three cups, which is most of a liter. Bring an unopened bottle.
+2. Baking soda: 2 tablespoons for each eruption, so six jars and twelve tablespoons in all.
+3. Between eruptions, tip the foam into the bucket, swish some water through the bottle, and use the next jar. The bottle doesn't need to be dry.\
+↳ `T9`
+
+▫️ **Goggles**
+
+Yes, wear them the whole time. Real scientists keep their goggles on for as long as they're working, not only for the exciting part. Professional and correct.
+
+---
+
+❓ **Choices**
+
+> ✅ `Y4` *Eruptions at the fair: one every half hour, five in all.*
+
+📋 **To do**
+
+> 🔷 `T8` Pack the kit tonight, on the tray, by the door.\
+> 🔷 `T9` Measure the baking soda into six small labeled jars, five and a spare.
+
+---
+
+=== m volcano.35 thread=volcano-main side=u from=p1 to=c7
+All packed. Six jars, labeled 1 to 6, and the tray's by the door. {{p3.name}} fell asleep with the goggles on {{p3.pronoun_pos}} forehead.
+
+=== m volcano.36 thread=volcano-main side=a from=c7 to=p1 turn=t16 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Everything's ready. Tomorrow: goggles on, count down from three, pour fast, and let {{p3.name}} do the talking. Good luck to you both!
+
+---
+
+📋 **To do**
+
+> ✅ `T8` *Kit packed and by the door.*\
+> ✅ `T9` *Six jars measured and labeled.*
+
+---
+
+=== branch volcano.fair
+--- option ribbon weight=2
+=== note asset volcano_a6: ribbon.png, a photo of a second-place ribbon pinned to the science-fair poster, next to the clay mountain on its tray
+=== m volcano.37 thread=volcano-main side=u from=p3 to=c7 files=volcano_a6
+WE GOT A RIBBON!!!!!!! SECOND PLACE!!! The judge asked what the gas was called and I said CARBON DIOXIDE before the question was even finished. All five eruptions worked, and then a little kid asked to see it again, so we used the spare jar too!
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.38 thread=volcano-main side=a from=c7 to=p3 turn=t17 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Congratulations, {{p3.name}}! Six eruptions out of six, including the encore. That's what a properly tested volcano does. And answering the carbon dioxide question before it was even finished shows you didn't only build it, you understood it. The ribbon is well earned.
+
+---
+
+=== m volcano.39 thread=volcano-main side=u from=p1 to=c7
+Thank you, {{c7.name}}. Really. The ribbon is on the fridge, and the volcano lives on the windowsill now.
+
+=== m volcano.40 thread=volcano-main side=a from=c7 to=p1 turn=t18 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+Congratulations to the whole team, the pourer included. If the windowsill volcano ever needs another test run, you know where to find me.
+
+---
+--- option sticker weight=1
+=== m volcano.37b thread=volcano-main side=u from=p1 to=c7
+Report from the fair: no ribbon this time. The winner was a solar oven that actually toasted a marshmallow, which, fair enough. But wait till you hear from {{p3.name}}.
+
+=== note asset volcano_a6b: most-explosive-sticker.png, a photo of a round red sticker reading "Most explosive", stuck to the strap of a pair of green swimming goggles
+=== m volcano.38b thread=volcano-main side=u from=p3 to=c7 files=volcano_a6b
+I GOT A STICKER THAT SAYS MOST EXPLOSIVE!!!! The judges made it up just for me. It's BETTER than a ribbon. Ribbons are for first and second and third, but there is only ONE most explosive. All five eruptions worked, and a crowd came every single time.
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.39b thread=volcano-main side=a from=c7 to=p3 turn=t17 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+I agree with you completely. Five eruptions out of five, a crowd at every one, and a prize that nobody else in the whole fair has. The marshmallow oven sounds great too, and honestly, toasting a marshmallow with sunlight is a tough act to beat.
+
+Every good tester asks the same question at the end, so here it is: what would you test next?
+
+---
+
+=== m volcano.40b thread=volcano-main side=u from=p3 to=c7
+NEXT YEAR: a volcano that erupts TWICE, all by itself. Can we start now???
+
+From {{p3.name}} and {{pick.dog}}
+
+=== m volcano.41b thread=volcano-main side=a from=c7 to=p3 turn=t18 part=1
+{{c7.emoji}} **{{c7.name}}** · {{date}} · {{time}}
+
+I love it. Here's a first idea for your notebook: wrap a tablespoon of baking soda in a square of paper towel, then drop it in right after the first eruption. The vinegar has to soak through the paper before it reaches the baking soda, so the second eruption should come a little later, on its own. How much later is exactly what you'd have to test.
+
+That can be next year's first experiment. For now, the sticker deserves a very good spot.
+
+---
+=== end branch
+
+=== canon The school science fair is on Thursday from 3 to 5. Eruptions are allowed at the outdoor table by the gym door, on a tray, with a grown-up pouring.
+=== canon p3's volcano is gray non-drying modeling clay around a half-liter lemonade bottle, with a small cave in one side, and it erupts red foam.
+=== canon The volcano recipe is 2 tablespoons of baking soda, a squirt of dish soap and red food coloring, then half a cup of full-strength vinegar poured in all at once.
+=== canon p1 is the volcano's pourer; p3 does the explaining.
+=== canon p3 owns green swimming goggles and wore them for the whole fair.
+=== canon The test run happened at the patio table at home the day after the mountain was built.
+=== canon In the fizzle branch, p3 used a teaspoon instead of a tablespoon and watered-down vinegar. The big spoon now has tape on it that says TABLESPOON, and c7 writes "tablespoon" and "teaspoon" out in full.
+=== canon The volcano erupted every half hour at the fair, five times in all, from six pre-measured jars.
+=== canon In the ribbon branch, p3 won second place, the ribbon hangs on the fridge, and the volcano lives on the windowsill.
+=== canon In the sticker branch, p3 won a one-of-a-kind "Most explosive" sticker and likes it better than any ribbon. The winning project was a solar oven that toasted a marshmallow.

@@ -1,0 +1,847 @@
+@storyline art context=studio weight=2
+@thread art-main writer=c4 title="{{c4.emoji}} {{c4.name}} · Card art direction"
+
+=== note asset art1: sketch-lantern.png, a phone photo of a pencil sketch: a lantern in the middle of a ring of six hands, on squared paper
+=== note asset art2: sketch-leaves.png, a phone photo of a pencil sketch: a repeating pattern of small leaves, with a coffee ring in one corner
+=== note asset art3: sketch-compass.png, a phone photo of a pencil sketch: the game's title lettered around a compass rose
+=== m art.01 thread=art-main side=u from=p2 to=c4 phase=backstory at=-3d14:20 files=art1,art2,art3
+{{c4.name}}, here are three photos of my card back sketches, taken on the studio table, so please forgive the coffee ring on the second one. The first is the lantern in a ring of hands, the second is the leaf pattern, and the third is the title lettering around a compass. I'd like two or three directions to look at, not twenty. The campaign page needs a card back by Friday.
+
+=== m art.02 thread=art-main side=a from=c4 to=p2 turn=t1 part=1 phase=backstory at=-3d14:22
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Opening the photos now. I'll tell you what I see first, then give you a few looks to pick from.
+
+---
+
+=== note asset art4: card-back-styles.png, a picture of a page with four card back tiles at true card size, two styles (woodcut, watercolor) by two layouts (lantern alone, lantern on a leaf ground)
+=== m art.03 thread=art-main side=a from=c4 to=p2 turn=t1 part=2 phase=backstory at=-3d14:41 files=art4
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+▫️ **What's in the sketches**
+
+1. **Sketch one, the lantern.** This is the strongest idea. Six hands around one light says "cooperative" before anyone reads a rule. The lantern sits a little high on the page; it balances better centered.
+2. **Sketch two, the leaves.** This is a good repeat. It tiles cleanly, and that matters on a card back, because the cutting machine never lands exactly on the line.
+3. **Sketch three, the compass lettering.** It's lovely, but at 63 mm wide the title letters shrink to about 4 mm and start fighting the lantern. I'd save it for the box lid.
+
+▫️ **Looks to pick from**
+
+I've made a page with four tiles: the two styles that suit your pencil lines, woodcut and watercolor, each in two layouts. If you print the page at 100%, every tile comes out at true card size, 63 × 88 mm. That's the only honest way to judge a card back.\
+↳ `Y1`, `Y2`, `T1`
+
+---
+
+📌 **Summary**
+
+1. The lantern in a ring of hands is the idea to build on.
+2. The leaf pattern works best as the ground behind it.
+3. The title lettering belongs on the box, not the card back.
+
+❓ **Choices**
+
+> 💠 `Y1` Which style for the card backs:\
+> ⭐ **A** Woodcut, bold cut lines in two inks, holds up from across a table\
+> ➖ **B** Watercolor, soft washes in full color, warmer but blurs sooner at a distance
+>
+> 💠 `Y2` Which layout:\
+> ➖ **A** The lantern alone on a plain ground\
+> ➖ **B** The leaf pattern alone\
+> ⭐ **C** The lantern centered on the leaf ground
+>
+> Answer line: `Y1 A Y2 C`, or "all recommended".
+
+📋 **To do**
+
+> 💠 `T1` Print the styles page at 100% and look at it from the far end of a table.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [card-back-styles.png](card-back-styles.png): four tiles, two styles by two layouts, true card size at 100%.
+
+---
+
+=== m art.04 thread=art-main side=a from=c4 to=p2 turn=t1 part=3 card=decision phase=backstory at=-3d14:41
+`Y1` Which style for the card backs?
+
+A. Woodcut: two inks and bold cut lines; I build revision one on the lantern-and-leaves layout ⭐
+B. Watercolor: soft washes in full color; I add a fine outline pass so it still reads across a table
+
+=== m art.05 thread=art-main side=u from=p1 to=c4 phase=backstory at=-3d17:05
+I peeked over {{p2.name}}'s shoulder and these are lovely! The art call belongs to {{p2.name}}, but I have one wish from the design side: card backs get fanned, shuffled and slid across the table all game long, so they need to read from the far side of a café table. Is that a hard ask for watercolor? And does it change the layout? Thanks!
+
+=== m art.06 thread=art-main side=a from=c4 to=p1 turn=t2 part=1 phase=backstory at=-3d17:09
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+It's not a hard ask, but it's a real one. At about 70 cm a card back looks no bigger than a postage stamp, and the only things that survive at that size are shape and contrast. Watercolor's soft edges are the first thing to go, so it would need a fine outline on the lantern to hold together. The layout stays the same. I'll print every tile and check it at that distance before {{p2.name}} picks.
+
+---
+
+=== m art.07 thread=art-main side=u from=p2 to=c4 phase=backstory at=-2d09:40
+Two questions before I pick. First, which of the two costs more to print, and by how much? Second, watercolor sounds like it needs paintings, and paintings need a painter. Who exactly is painting them?
+
+=== m art.08 thread=art-main side=a from=c4 to=p2 turn=t3 part=1 phase=backstory at=-2d10:02
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+▫️ **Print cost**
+
+They cost the same. Both print in standard four-color on the same card stock, and the press doesn't care how many colors are inside the picture. The woodcut could be printed as two special inks instead, but that only saves money on runs far bigger than ours. At our quantity it would cost more, so I'd print both the standard way.
+
+▫️ **Who paints it**
+
+Nobody needs a brush. I'd build the watercolor digitally from scanned paper and real wash textures, and it's one back for the whole deck, so either way it's one picture, not a hundred. The real difference is time: about a day per revision for the woodcut, and about two for the watercolor.
+
+▫️ **The distance test**
+
+I printed all four tiles and checked them at 70 cm, as {{p1.name}} asked:
+
+1. Woodcut, lantern alone: clear.
+2. Woodcut, lantern on leaves: clear, and the leaves read as texture without competing.
+3. Watercolor, lantern alone: clear, a bit soft.
+4. Watercolor, lantern on leaves: the lantern dissolves into the leaves past about 60 cm. A thin outline on the lantern fixes it.\
+↳ `Y1`, `Y2`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y1` Which style for the card backs:\
+> ⭐ **A** Woodcut, bold cut lines in two inks, holds up from across a table\
+> ➖ **B** Watercolor, soft washes in full color, warmer but needs an outline to read at a distance
+>
+> 🔷 `Y2` Which layout:\
+> ➖ **A** The lantern alone on a plain ground\
+> ➖ **B** The leaf pattern alone\
+> ⭐ **C** The lantern centered on the leaf ground
+>
+> Answer line: `Y1 A Y2 C`, or "all recommended".
+
+📋 **To do**
+
+> 🔷 `T1` Print the styles page at 100% and look at it from the far end of a table.
+
+---
+
+=== branch art.style
+--- option woodcut weight=3
+=== m art.10 thread=art-main side=u from=p2 to=c4
+I printed the page at 100% and propped it against the window. From the far end of the table, the woodcut tiles were the only ones I could still name. Y1 A, Y2 C, but make the lantern smaller. At the moment it's shouting.
+
+=== m art.11 thread=art-main side=a from=c4 to=p2 turn=t4 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+A smaller lantern and more leaves around it. Redrawing now.
+
+---
+
+=== note asset art5: a PNG of the woodcut card back, revision one: a lantern in a ring of hands on a full-bleed leaf pattern, blue lines on cream, with the bleed marked
+=== m art.12 thread=art-main side=a from=c4 to=p2 turn=t4 part=2 files=art5
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+▫️ **What changed**
+
+1. **The lantern is smaller.** It went from 34 mm to 28 mm wide, so it now sits among the leaves instead of standing over them.
+2. **The leaves run full bleed.** The pattern carries on into the 3 mm bleed, so it keeps going past the cut on every side.
+3. **Two inks.** The lines are Prussian blue on an oat-cream ground. The hands and the lantern frame are solid ink. The light inside the lantern is bare cream, with short cut rays spreading into the leaves, so the brightest thing on the card is the paper itself.
+
+At the far end of the table it still reads as a lantern; I checked the printout at 80 cm.
+
+▫️ **One question about the edges**
+
+Cards are cut from big sheets, and the cut can drift about 1 mm either way. A pattern that runs off the edge hides that drift completely. A frame shows it, because one side ends up thicker than the other.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Style: woodcut.*
+>
+> ✅ `Y2` *Layout: lantern on the leaf ground, lantern smaller.*
+>
+> 💠 `Y3` How the leaves meet the edge of the card:\
+> ⭐ **A** The leaves run off every edge, so any cutting drift disappears\
+> ➖ **B** The leaves sit inside a thin 3 mm frame, tidier on screen but shows any off-center cut
+
+📋 **To do**
+
+> ✅ `T1` *Styles page printed at 100% and checked from the far end of the table.*\
+> 💠 `T2` Print revision one at 100% and check that the small leaf veins stay open, not filled in.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [card-back-woodcut-r1.png](card-back-woodcut-r1.png): revision one, true card size with the bleed marked.
+
+---
+
+=== m art.13 thread=art-main side=a from=c4 to=p2 turn=t4 part=2 edits=art.12 files=art5
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+▫️ **What changed**
+
+1. **The lantern is smaller.** It went from 34 mm to 28 mm wide, so it now sits among the leaves instead of standing over them.
+2. **The leaves run full bleed.** The pattern carries on into the 3 mm bleed, so it keeps going past the cut on every side.
+3. **Two inks.** The lines are slate blue on an oat-cream ground. The hands and the lantern frame are solid ink. The light inside the lantern is bare cream, with short cut rays spreading into the leaves, so the brightest thing on the card is the paper itself.
+
+At the far end of the table it still reads as a lantern; I checked the printout at 80 cm.
+
+*Edited: I first called the ink Prussian blue. It's slate blue, lighter and a little gray (C65 M40 Y25 K30 in the file). Prussian blue would print close to black at these line weights.*
+
+▫️ **One question about the edges**
+
+Cards are cut from big sheets, and the cut can drift about 1 mm either way. A pattern that runs off the edge hides that drift completely. A frame shows it, because one side ends up thicker than the other.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Style: woodcut.*
+>
+> ✅ `Y2` *Layout: lantern on the leaf ground, lantern smaller.*
+>
+> 💠 `Y3` How the leaves meet the edge of the card:\
+> ⭐ **A** The leaves run off every edge, so any cutting drift disappears\
+> ➖ **B** The leaves sit inside a thin 3 mm frame, tidier on screen but shows any off-center cut
+
+📋 **To do**
+
+> ✅ `T1` *Styles page printed at 100% and checked from the far end of the table.*\
+> 💠 `T2` Print revision one at 100% and check that the small leaf veins stay open, not filled in.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [card-back-woodcut-r1.png](card-back-woodcut-r1.png): revision one, true card size with the bleed marked.
+
+---
+
+=== m art.14 thread=art-main side=u from=p1 to=c4
+Oh, this is exactly right! It looks like something you'd find tucked inside a lighthouse keeper's logbook. Every time someone draws a card they get a little glimpse of the lantern, as if the whole table is keeping it lit together. Will it still look this good after a hundred shuffles? And does the blue go dull under café lights?
+
+=== m art.15 thread=art-main side=a from=c4 to=p1 turn=t5 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Woodcut is the friendliest style to wear and tear. When the edges of a card scuff, the cream shows through, and that looks like an old print rather than damage. Under warm café lights the slate blue drifts a little toward gray-green, but the contrast with the cream holds, and contrast is what does the work. A matte finish keeps the lights from flashing off it.
+
+---
+
+=== branch art.wood_rev
+--- option approve weight=2
+=== m art.16 thread=art-main side=u from=p2 to=c4
+I printed it, cut one out and shuffled it into a deck of old prototype cards. I could spot it from across the room, which is the opposite of what a card back should do, but I mean it kindly. The veins stay open. Y3 A. Approved.
+
+=== note asset art7: a PNG preview of the final woodcut card back at screen size
+=== m art.17 thread=art-main side=a from=c4 to=p2 turn=t6 part=1 files=art7
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Approved and exported. Notes for the printer:
+
+1. **Size:** 63 × 88 mm plus 3 mm of bleed on every side, so the file measures 69 × 94 mm.
+2. **Color:** standard four-color. The slate blue is C65 M40 Y25 K30, and the oat cream is printed as a tint, so any white card stock works.
+3. **Finish:** matte. Gloss would flash under café lights.
+4. **Text:** none on the back, so there's nothing for the printer to proofread.
+
+The PNG is for the campaign page and for showing people; the PDF is the one that goes to print.\
+↳ `T3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Edges: the leaves run off every edge.*
+
+📋 **To do**
+
+> ✅ `T2` *Revision one printed at 100%: veins open.*\
+> 💠 `T3` Drop both final files into the campaign page folder, so {{c3.name}} can use the back in the page images.
+
+---
+
+📎 **Files**
+
+1. [card-back-final.png](card-back-final.png): a preview for screens and the campaign page. The print-ready file, with bleed, went to the printer's upload page.
+
+---
+
+=== m art.18 thread=art-main side=u from=p2 to=c4
+Done, both files are in the folder. I'll admit that a page of tiles at true size beat our usual thirty emails about "slightly bluer, but not that blue".
+
+=== m art.19 thread=art-main side=a from=c4 to=p2 turn=t7 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Thank you. "Slightly bluer" is much easier to answer with a piece of paper in your hand than a screen in front of you. The card back is finished: one round, and well ahead of Friday.
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Final files in the campaign page folder.*
+
+---
+--- option another weight=1
+=== m art.16b thread=art-main side=u from=p2 to=c4
+Y3 A, but I need one more round. Printed at 63 by 88, the small leaves near the corners fill in to blobs, and the lantern's rays run into the leaves, so the light looks like it's leaking. Fewer leaves, thinner rays, and some clear space around the lantern, please.
+
+=== m art.17b thread=art-main side=a from=c4 to=p2 turn=t6 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+You're right, and I can see why: the gaps between the corner leaves are 0.3 mm, and ink spreads about that much on uncoated paper. Measuring and redrawing now.
+
+---
+
+=== note asset art8: a PNG of the woodcut card back, revision two: fewer and larger leaves, thinner rays, and a clear ring of cream around the lantern
+=== m art.18b thread=art-main side=a from=c4 to=p2 turn=t6 part=2 files=art8
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+▫️ **What changed**
+
+1. **Fewer leaves.** There are 26 leaves now instead of 38, each a little larger, and no gap is narrower than 0.5 mm. Even after the ink spreads, the gaps stay open.
+2. **Thinner rays.** The rays went from 0.8 mm to 0.5 mm and stop short of the leaves.
+3. **A clear ring.** There's 2 mm of bare cream all around the lantern, so the light stays in the lantern instead of leaking into the leaves.
+
+The slate blue, the cream and the full-bleed edges are unchanged. I printed it on the plainest paper I could find, and the corners stay crisp.\
+↳ `T3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Edges: the leaves run off every edge.*
+
+📋 **To do**
+
+> ✅ `T2` *Revision one printed at 100%: corner leaves filled in, fixed in revision two.*\
+> 💠 `T3` Print revision two at 100% and check the corners and the ring around the lantern.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [card-back-woodcut-r2.png](card-back-woodcut-r2.png): revision two, true card size with the bleed marked.
+
+---
+
+=== m art.19b thread=art-main side=u from=p2 to=c4
+That's the one. The light stays inside the lantern now, and the corners look like leaves again instead of ink blots. Approved.
+
+=== note asset art10: a PNG preview of the final woodcut card back (revision two) at screen size
+=== m art.20b thread=art-main side=a from=c4 to=p2 turn=t7 part=1 files=art10
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Approved and exported. Notes for the printer:
+
+1. **Size:** 63 × 88 mm plus 3 mm of bleed on every side, so the file measures 69 × 94 mm.
+2. **Color:** standard four-color. The slate blue is C65 M40 Y25 K30, and the oat cream is printed as a tint, so any white card stock works.
+3. **Finish:** matte. Gloss would flash under café lights.
+4. **Smallest detail:** 0.5 mm, safe on any card stock we're likely to choose.\
+↳ `T4`
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Revision two printed: corners and ring clear.*\
+> 💠 `T4` Drop both final files into the campaign page folder, so {{c3.name}} can use the back in the page images.
+
+---
+
+📎 **Files**
+
+1. [card-back-final.png](card-back-final.png): a preview for screens and the campaign page. The print-ready file, with bleed, went to the printer's upload page.
+
+---
+
+=== m art.21b thread=art-main side=u from=p2 to=c4
+In the folder. That's two rounds in two days. I've had suppliers take longer than that to answer a single email.
+
+=== m art.22b thread=art-main side=a from=c4 to=p2 turn=t8 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+The second round was worth it: your home printout caught something my screen never would have. The card back is finished, with time to spare before Friday.
+
+---
+
+📋 **To do**
+
+> ✅ `T4` *Final files in the campaign page folder.*
+
+---
+=== end branch
+=== m art.50 thread=art-main side=u from=p1 to=c4
+{{c4.name}}, the final card back is lovely! Could you make me a print sheet so the prototype decks have real backs for Friday's playtest at {{pick.cafe}}? And how many fit on a page? Thanks!
+
+=== note asset art18: a print sheet picture with nine copies of the final woodcut card back on one A4 page, crop marks and a 50 mm test bar
+=== m art.51 thread=art-main side=a from=c4 to=p1 turn=t10 part=1 files=art18
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Nine fit on an A4 page, in three rows of three, with crop marks. I've added a 50 mm test bar along the bottom edge, because the most common way to ruin a print sheet is a printer quietly shrinking it to fit the page.
+
+▫️ **Steps, in this order**
+
+1. Open the sheet and print it at **actual size** (100%), not "fit to page".
+   1. Check: the test bar measures 50 mm with a ruler. If it doesn't, stop and fix the print setting before going on.
+2. Print as many copies as you need, one for every nine cards, on the heaviest paper your printer takes.
+   1. Check: rub a corner after a minute; nothing smudges.
+3. Cut along the crop marks, outer edges first.
+   1. Check: one cut card measures 63 × 88 mm.
+4. Glue or sleeve each back onto a prototype card.
+   1. Check: the lantern sits in the middle, within about 1 mm.\
+↳ `T5`
+
+---
+
+📋 **To do**
+
+> 💠 `T5` Run the four steps and tell me what the test bar measured.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.run_steps}}` {{skillv.run_steps}}
+
+---
+
+📎 **Files**
+
+1. [card-back-sheet-9up.png](card-back-sheet-9up.png): nine card backs per A4 page, with crop marks and a test bar.
+
+---
+
+=== m art.52 thread=art-main side=u from=p1 to=c4
+The test bar came out at 48 mm the first time, because the printer had sneaked back to fit-to-page. Second try: 50 mm exactly! The cards measure right and the lantern's centered. I'm cutting the rest tonight, thanks!
+
+=== m art.53 thread=art-main side=a from=c4 to=p1 turn=t11 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+That 48 mm is the reason the bar exists. Good catch, and good luck with the cutting. Outer edges first keeps the stack from shifting.
+
+---
+
+📋 **To do**
+
+> ✅ `T5` *Print sheet run: test bar 50 mm on the second try, cards cut to size.*
+
+---
+
+--- option watercolor weight=2
+=== m art.30 thread=art-main side=u from=p2 to=c4
+I'm going with the watercolor, knowing it isn't your star. The woodcut read better from the far end of the table, I'll give you that, but this game is meant to feel like a warm evening, and the watercolor does. So Y1 B, and Y2 C with the outline you mentioned. I printed the page, so you can close that one too.
+
+=== m art.31 thread=art-main side=a from=c4 to=p2 turn=t4 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+That's a fair reason, and a good one: the feeling matters, and the outline will take care of the distance. Painting now. This style takes longer, so expect revision one later today.
+
+---
+
+=== note asset art11: a PNG of the watercolor card back, revision one: a lantern in a ring of hands on soft leaf washes, with a fine dark outline on the lantern and hands
+=== m art.32 thread=art-main side=a from=c4 to=p2 turn=t4 part=2 files=art11
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+▫️ **What I painted**
+
+1. **The lantern on the leaves.** The lantern is 30 mm wide and centered, with the hands around it and the leaves washed in behind.
+2. **The colors.** The background is an apricot wash that deepens toward the corners. The lantern glass is sea glass green, and the leaves are a darker green, kept soft at the edges.
+3. **The outline.** A 0.35 mm line in deep ink blue runs around the lantern and the hands only. The leaves have no outline, so the eye lands on the outlined shapes first.
+
+With the outline, the lantern now reads to about 90 cm; without it, the lantern disappeared at 60.
+
+▫️ **One question about the palette**
+
+The warm wash makes the card feel like evening. A cooler violet wash makes it feel like night, which is lovely but quieter on the table.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Style: watercolor.*
+>
+> ✅ `Y2` *Layout: lantern on the leaf ground, with an outline on the lantern.*
+>
+> 💠 `Y3` The background wash:\
+> ⭐ **A** Apricot, with the sea glass lantern: warm, evening\
+> ➖ **B** Dusk violet, with the sea glass lantern: cool, night
+
+📋 **To do**
+
+> ✅ `T1` *Styles page printed at 100% and checked.*\
+> 💠 `T2` Print revision one at 100% and check the lantern from the far end of a table.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [card-back-watercolor-r1.png](card-back-watercolor-r1.png): revision one, true card size with the bleed marked.
+
+---
+
+=== m art.33 thread=art-main side=a from=c4 to=p2 turn=t4 part=2 edits=art.32 files=art11
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+▫️ **What I painted**
+
+1. **The lantern on the leaves.** The lantern is 30 mm wide and centered, with the hands around it and the leaves washed in behind.
+2. **The colors.** The background is a rose clay wash that deepens toward the corners. The lantern glass is sea glass green, and the leaves are a darker green, kept soft at the edges.
+3. **The outline.** A 0.35 mm line in deep ink blue runs around the lantern and the hands only. The leaves have no outline, so the eye lands on the outlined shapes first.
+
+With the outline, the lantern now reads to about 90 cm; without it, the lantern disappeared at 60.
+
+*Edited: I first called the wash apricot. The swatch is rose clay, a dusty pink-brown. Apricot is an orange, and there is no orange anywhere on this card.*
+
+▫️ **One question about the palette**
+
+The warm wash makes the card feel like evening. A cooler violet wash makes it feel like night, which is lovely but quieter on the table.\
+↳ `Y3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y1` *Style: watercolor.*
+>
+> ✅ `Y2` *Layout: lantern on the leaf ground, with an outline on the lantern.*
+>
+> 💠 `Y3` The background wash:\
+> ⭐ **A** Rose clay, with the sea glass lantern: warm, evening\
+> ➖ **B** Dusk violet, with the sea glass lantern: cool, night
+
+📋 **To do**
+
+> ✅ `T1` *Styles page printed at 100% and checked.*\
+> 💠 `T2` Print revision one at 100% and check the lantern from the far end of a table.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [card-back-watercolor-r1.png](card-back-watercolor-r1.png): revision one, true card size with the bleed marked.
+
+---
+
+=== m art.34 thread=art-main side=u from=p1 to=c4
+This is gorgeous! It feels like the end of a good game, when everyone has helped everyone and the whole town is lit. I love that the back of every card is a tiny sunset. Does the outline make the lantern look caged, though? And will the pink survive café lighting?
+
+=== m art.35 thread=art-main side=a from=c4 to=p1 turn=t5 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+The outline breaks in three places where the light would spill out, like gaps in old glass, so it reads as a glow rather than a cage. Warm café lights push rose clay a little toward tan, but the sea glass green stays put, and the contrast between the two is what you see first. A matte finish keeps the lights from flashing off the washes.
+
+---
+
+=== branch art.water_rev
+--- option approve weight=2
+=== m art.36 thread=art-main side=u from=p2 to=c4
+Y3 A. Thank you for the correction before I'd finished my coffee: "apricot" had me reaching for the red pen. I printed it, and the lantern holds from the far end of the table. Approved.
+
+=== note asset art13: a PNG preview of the final watercolor card back at screen size
+=== m art.37 thread=art-main side=a from=c4 to=p2 turn=t6 part=1 files=art13
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Approved and exported. Notes for the printer:
+
+1. **Size:** 63 × 88 mm plus 3 mm of bleed on every side, so the file measures 69 × 94 mm.
+2. **Color:** standard four-color, at full resolution so the paper texture in the washes survives.
+3. **Finish:** matte. Gloss would flatten the washes and flash under café lights.
+4. **Text:** none on the back, so there's nothing for the printer to proofread.
+
+The PNG is for the campaign page and for showing people; the PDF is the one that goes to print.\
+↳ `T3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Wash: rose clay with the sea glass lantern.*
+
+📋 **To do**
+
+> ✅ `T2` *Revision one printed: the lantern holds at a distance.*\
+> 💠 `T3` Drop both final files into the campaign page folder, so {{c3.name}} can use the back in the page images.
+
+---
+
+📎 **Files**
+
+1. [card-back-final.png](card-back-final.png): a preview for screens and the campaign page. The print-ready file, with bleed, went to the printer's upload page.
+
+---
+
+=== m art.38 thread=art-main side=u from=p2 to=c4
+Both are in the folder. For the record, I came into this expecting to argue about watercolor for a week. We argued for one message.
+
+=== m art.39 thread=art-main side=a from=c4 to=p2 turn=t7 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+You picked the feeling and let the outline solve the distance. That made it a short argument. The card back is finished: one round, and well ahead of Friday.
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Final files in the campaign page folder.*
+
+---
+--- option another weight=1
+=== m art.36b thread=art-main side=u from=p2 to=c4
+Y3 A, and I'm afraid I need one more round. On our office printer the wash goes muddy, and the sea glass turns the gray of a wet pavement. I know the press will do better than our printer, but I'd rather not bet the card back on it.
+
+=== m art.37b thread=art-main side=a from=c4 to=p2 turn=t6 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+No need to be afraid. That's a sensible bet to refuse. Plain office paper soaks up ink and spreads it, which is exactly where washes suffer most. I'll make the painting sturdier rather than hope the press rescues it.
+
+---
+
+=== note asset art14: a PNG of the watercolor card back, revision two: a lighter halo behind the lantern, a stronger sea glass green and darker leaf greens
+=== note asset art15: a picture of a proof of revision two with extra contrast, meant only for checking on an office printer
+=== m art.38b thread=art-main side=a from=c4 to=p2 turn=t6 part=2 files=art14,art15
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+▫️ **What changed**
+
+1. **A lighter halo.** The rose clay wash is 20% lighter in a 6 mm halo behind the lantern, so the lantern sits on light instead of on mud.
+2. **A stronger green.** The sea glass green is more saturated, so it stays green even when the ink spreads.
+3. **Darker leaves.** The leaf greens are one step darker, so they separate from the wash instead of blending into it.
+
+The outline and the layout are unchanged.
+
+▫️ **An honest limit**
+
+Our office printer will never match the press. What I can promise is this: if the card reads on plain paper, it will read on coated card. The proof file has extra contrast for exactly that check. Use it to judge, not to print the real thing.\
+↳ `T3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y3` *Wash: rose clay with the sea glass lantern.*
+
+📋 **To do**
+
+> ✅ `T2` *Revision one printed: muddy on plain paper, fixed in revision two.*\
+> 💠 `T3` Print the proof file at 100% on the office printer and check the green and the halo.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [card-back-watercolor-r2.png](card-back-watercolor-r2.png): revision two, true card size with the bleed marked.
+2. [card-back-watercolor-r2-office-proof.png](card-back-watercolor-r2-office-proof.png): a high-contrast proof for checking on the office printer.
+
+---
+
+=== m art.39b thread=art-main side=u from=p2 to=c4
+The green is green, the lantern glows, and nothing looks like pavement. Approved.
+
+=== note asset art17: a PNG preview of the final watercolor card back (revision two) at screen size
+=== m art.40b thread=art-main side=a from=c4 to=p2 turn=t7 part=1 files=art17
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Approved and exported. Notes for the printer:
+
+1. **Size:** 63 × 88 mm plus 3 mm of bleed on every side, so the file measures 69 × 94 mm.
+2. **Color:** standard four-color, at full resolution so the paper texture in the washes survives.
+3. **Finish:** matte. Gloss would flatten the washes and flash under café lights.
+4. **Proof:** ask the printer for one printed proof card before the full run. Washes are where presses differ most.\
+↳ `T4`
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Proof printed on the office printer: green and halo clear.*\
+> 💠 `T4` Drop both final files into the campaign page folder, so {{c3.name}} can use the back in the page images.
+
+---
+
+📎 **Files**
+
+1. [card-back-final.png](card-back-final.png): a preview for screens and the campaign page. The print-ready file, with bleed, went to the printer's upload page.
+
+---
+
+=== m art.41b thread=art-main side=u from=p2 to=c4
+In the folder. That's two rounds, and I didn't have to explain "muddy" twice. That alone is a first.
+
+=== m art.42b thread=art-main side=a from=c4 to=p2 turn=t8 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+"Muddy" is a precise word when you're holding the print. The second round made the card sturdier for every printer it will ever meet. It's finished, with time to spare before Friday.
+
+---
+
+📋 **To do**
+
+> ✅ `T4` *Final files in the campaign page folder.*
+
+---
+=== end branch
+
+=== m art.50w thread=art-main side=u from=p1 to=c4
+{{c4.name}}, the final card back is lovely! Could you make me a print sheet so the prototype decks have real backs for Friday's playtest at {{pick.cafe}}? And how many fit on a page? Thanks!
+
+=== note asset art18w: a print sheet picture with nine copies of the final watercolor card back on one A4 page, crop marks and a 50 mm test bar
+=== m art.51w thread=art-main side=a from=c4 to=p1 turn=t10 part=1 files=art18w
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Nine fit on an A4 page, in three rows of three, with crop marks. I've added a 50 mm test bar along the bottom edge, because the most common way to ruin a print sheet is a printer quietly shrinking it to fit the page.
+
+▫️ **Steps, in this order**
+
+1. Open the sheet and print it at **actual size** (100%), not "fit to page".
+   1. Check: the test bar measures 50 mm with a ruler. If it doesn't, stop and fix the print setting before going on.
+2. Print as many copies as you need, one for every nine cards, on the heaviest paper your printer takes.
+   1. Check: rub a corner after a minute; nothing smudges.
+3. Cut along the crop marks, outer edges first.
+   1. Check: one cut card measures 63 × 88 mm.
+4. Glue or sleeve each back onto a prototype card.
+   1. Check: the lantern sits in the middle, within about 1 mm.\
+↳ `T5`
+
+---
+
+📋 **To do**
+
+> 💠 `T5` Run the four steps and tell me what the test bar measured.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.run_steps}}` {{skillv.run_steps}}
+
+---
+
+📎 **Files**
+
+1. [card-back-sheet-9up.png](card-back-sheet-9up.png): nine card backs per A4 page, with crop marks and a test bar.
+
+---
+
+=== m art.52w thread=art-main side=u from=p1 to=c4
+The test bar came out at 48 mm the first time, because the printer had sneaked back to fit-to-page. Second try: 50 mm exactly! The cards measure right and the lantern's centered. I'm cutting the rest tonight, thanks!
+
+=== m art.53w thread=art-main side=a from=c4 to=p1 turn=t11 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+That 48 mm is the reason the bar exists. Good catch, and good luck with the cutting. Outer edges first keeps the stack from shifting.
+
+---
+
+📋 **To do**
+
+> ✅ `T5` *Print sheet run: test bar 50 mm on the second try, cards cut to size.*
+
+---
+
+=== end branch
+
+=== side_story art.kid chance=0.4
+=== note asset art19: dog-and-lantern-drawing.png, a phone photo of a child's felt-tip drawing of a card back: a big-eared dog sitting beside a lantern, with a wobbly border of stars
+=== m art.60 thread=art-main side=u from=p1 to=c4 files=art19
+{{p3.name}} saw the card backs on my screen and drew one of {{p3.pronoun_pos}} own. I've been asked to pass on that it's "a dog guarding the lantern" and that {{pick.dog}} posed for it, under protest. I said I'd show you. Isn't it great?
+
+=== note asset art20: a PNG mock-up of the child's drawing cleaned up as a single card back at true card size, colors kept as drawn
+=== m art.61 thread=art-main side=a from=c4 to=p1 turn=t12 part=1 files=art20
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+It is great, and it reads better at card size than half the professional sketches I've seen. The lines are bold, the dog is unmistakable, and the lantern is right in the middle where it belongs. The tail is nearly as big as the lantern, which I'd keep exactly as it is.
+
+I've scanned it from the photo, cleaned up only the shadows, and added it to the picks page as a bonus tile. It doesn't replace the deck's back. It would make a lovely single extra card.\
+↳ `Y4`
+
+---
+
+❓ **Choices**
+
+> 💠 `Y4` What to do with the drawing (a question for {{p2.name}}, as art director):\
+> ⭐ **A** One thank-you card in every box, with this drawing on the back\
+> ➖ **B** A framed print for the studio wall, and not in the game
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [bonus-card-back.png](bonus-card-back.png): the drawing as a card back, true card size.
+
+---
+
+=== m art.62 thread=art-main side=u from=p2 to=c4
+One extra card in a deck of dozens costs us next to nothing. Y4 A. Please tell {{p3.name}} the art director approves, and that royalties are payable in socks, which I understand {{pick.dog}} can supply.
+
+=== m art.63 thread=art-main side=a from=c4 to=p1 turn=t13 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Wonderful. I'll lay out the thank-you card with the drawing on the back and a short note on the front. Every artist on this card signs their work, so the scan has room for a signature in the corner.\
+↳ `T6`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y4` *The drawing: a thank-you card in every box.*
+
+📋 **To do**
+
+> 💠 `T6` Ask {{p3.name}} to sign the bottom corner of the drawing, if {{p3.pronoun}}'d like {{p3.pronoun_pos}} name on it, and send me a new photo.
+
+---
+
+=== m art.64 thread=art-main side=u from=p1 to=c4
+Signed in three colors! And {{p3.name}} would like to know whether this makes {{p3.pronoun_obj}} part of the team now.
+
+=== m art.65 thread=art-main side=a from=c4 to=p1 turn=t14 part=1
+{{c4.emoji}} **{{c4.name}}** · {{date}} · {{time}}
+
+Please tell {{p3.name}}: yes. Guest artist, signed and printed. Three colors is exactly the right number for a signature.
+
+---
+
+📋 **To do**
+
+> ✅ `T6` *Drawing signed, in three colors.*
+
+---
+=== end side_story
+
+=== canon The card back shows a lantern in a ring of six hands, centered on a leaf pattern; the whole deck shares one back.
+=== canon The cards are 63 × 88 mm, printed with 3 mm of bleed on every side and a matte finish.
+=== canon The title lettering around a compass rose, from the third sketch, is saved for the box lid.
+=== canon The card back has no text on it.
+=== canon The studio's office printer sometimes slips back to "fit to page"; the print sheet carries a 50 mm test bar to catch it.
+=== canon {{p2.name}} judges art by printing it at true size and looking from the far end of a table.

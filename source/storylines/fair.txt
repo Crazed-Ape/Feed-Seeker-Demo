@@ -1,0 +1,834 @@
+@storyline fair context=studio weight=2
+@thread fair-main writer=c1 title="{{c1.emoji}} {{c1.name}} · Trade-fair trip"
+@thread fair-money writer=c8 title="{{c8.emoji}} {{c8.name}} · Fair wholesale order"
+
+=== note asset fair_a1: fair-itinerary-v1.md, both versions of the trip (train and plane) hour by hour, from leaving {{pick.town}} to getting home
+=== note asset fair_a2: exhibitor-pack.md, the fair's exhibitor pack as text in twelve numbered sections: booth types and prices, the hall map, setup and power rules, and the booth form in section 11
+=== note asset fair_a3: fair-hall-plan.png, a picture of the hall's floor plan with corner booth 14 circled near the side entrance and table 22 circled in the indie row on the main aisle
+=== note asset fair_a4: booth-options.png, a picture of the exhibitor pack's two photos side by side: an empty gray corner booth with a back wall, and a two-meter table with a bright orange skirting cloth
+
+=== m fair.01 thread=fair-main side=u from=p1 to=c1 phase=backstory at=-4d10:05
+Morning {{c1.name}}! We're doing the fair in {{pick.fair_city}} after all, both of us. It runs on the Wednesday and Thursday of the week after next. Can you plan the trip, and work out whether we're a train studio or a plane studio? {{p2.name}} says 1,500 euros all in, booth included, and will check every line.
+
+=== m fair.02 thread=fair-main side=a from=c1 to=p1 turn=t1 part=1 phase=backstory at=-4d10:06
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+On it. I'll come back with an itinerary and a budget for both ways of getting there.
+
+---
+
+=== m fair.03 thread=fair-main side=a from=c1 to=p1 turn=t1 part=2 phase=backstory at=-4d10:21 files=fair_a1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **The shape of the trip**
+
+The fair has a trade day on Wednesday, for shops and distributors, and a public day on Thursday. Setup runs from 8:00 to 10:30 on Wednesday, and the hall closes at 17:00 on Thursday. That leaves two ways to do it:
+
+1. **Train.** About six and a half hours with one change. You'd leave on Tuesday at 11:20, sleep two nights at the hotel, and take the 17:52 home on Thursday, back just after midnight.
+2. **Plane.** A 6:50 flight on Wednesday from the regional airport, landing at 8:35. One hotel night, and a 19:30 flight home on Thursday, back around 22:30. Setup is tight this way: about 45 minutes between dropping your bags at the hotel and the doors opening.
+
+The full plan, hour by hour, is in the itinerary file.
+
+▫️ **The budget**
+
+| Item | Train | Plane |
+|---|---|---|
+| Tickets, two people, return | €276 | €498 |
+| Banner tube as a checked bag, both ways | €0 | €70 |
+| Hotel, two rooms | €356 (2 nights) | €178 (1 night) |
+| Food, €35 a day each | €210 | €140 |
+| Local transport | €60 | €60 |
+| **Total before the booth** | **€902** | **€946** |
+
+These are today's fares. The train is €44 cheaper even with the extra night, and the gap may grow: the train company opens its saver fares for that week on Monday.\
+↳ `Y1`
+
+The booth isn't in the table yet. It depends on what the fair offers, and that's in the exhibitor pack.\
+↳ `T1`
+
+---
+
+📌 **Summary**
+
+1. Two fair days: trade on Wednesday, public on Thursday.
+2. Train €902, plane €946, both before the booth.
+3. The booth comes next, once I've seen the exhibitor pack.
+
+❓ **Choices**
+
+> 💠 `Y1` How to get to {{pick.fair_city}}:\
+> ⭐ **A** Train: €902 before the booth, leaves on Tuesday, a day longer\
+> ➖ **B** Plane: €946 before the booth, one night away, tight setup
+
+📋 **To do**
+
+> 💠 `T1` Forward me the fair's exhibitor pack.
+
+---
+
+📎 **Files**
+
+1. [fair-itinerary-v1.md](fair-itinerary-v1.md): both versions of the trip, hour by hour.
+
+---
+
+=== m fair.04 thread=fair-main side=u from=p2 to=c1 phase=backstory at=-4d18:40
+{{c1.name}}, two questions before I trust that table. Which hotel, exactly? And is the €276 refundable? I can't put "today's fares" in a spreadsheet.
+
+=== m fair.05 thread=fair-main side=a from=c1 to=p2 turn=t2 part=1 phase=backstory at=-4d18:52
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **The hotel**
+
+Hotel Vantwell, by the fair's north gate, a ten-minute walk from the hall. €89 per room per night, breakfast included, free cancellation until Monday at 18:00. I've counted two rooms.
+
+If you book Tuesday and Wednesday nights now, nothing is lost: if you fly, you cancel Tuesday for free before Monday evening.\
+↳ `T2`
+
+▫️ **The fares**
+
+1. The €276 is the flexible return fare for two. It's refundable until the day before travel, minus €10 per ticket.
+2. The saver fares open on Monday morning. They're nonrefundable, and on this route they've been 10 to 15% under the flexible fare over the last three months, so somewhere between €235 and €248 for the two of you. That's the route's fare history, not a promise.
+3. The flight is €498 today and has gone up about €20 a week for the past month.
+
+So the honest answer is that the table holds until Monday, and Monday is likely to make the train look better, not worse. I'd decide on Monday morning, once the saver fares are out.\
+↳ `Y1`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y1` How to get to {{pick.fair_city}}:\
+> ⭐ **A** Train: cheaper, likely more so on Monday, leaves on Tuesday\
+> ➖ **B** Plane: one night away, tight setup, likely to get dearer
+
+📋 **To do**
+
+> 🔷 `T1` Forward me the fair's exhibitor pack.\
+> 💠 `T2` Book two rooms at Hotel Vantwell for Tuesday and Wednesday nights.
+
+---
+
+=== m fair.06 thread=fair-main side=u from=p1 to=c1 phase=backstory at=-3d09:30 files=fair_a2
+Here's the exhibitor pack! And {{p2.name}} booked the hotel last night, so that's both of your to-dos done. Which booth should we get?
+
+=== m fair.07 thread=fair-main side=a from=c1 to=p1 turn=t3 part=1 phase=backstory at=-3d09:44 files=fair_a3,fair_a4
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **Two booths that fit**
+
+The pack offers six booth types. Four are too big for two people or for the budget, which leaves these:
+
+1. **Corner booth 14.** 2 × 2 m, its own back wall for the banner, its own socket, €420. It's near the side entrance, which the pack's visitor map shows as the quieter one.
+2. **Half of table 22.** One meter of a two-meter table in the indie row, €190. The other half is taken by a small two-person studio from {{pick.fair_city}} who asked the fair for a table partner. The indie row is on the main aisle, so it sees more people. One thing you'll spot in the photo: the tables come with the fair's orange skirting cloth.
+
+I've circled both on the floor plan and put the pack's photos side by side, so you can see the space before you pick.\
+↳ `Y2`
+
+▫️ **What it does to the total**
+
+| | Train | Plane |
+|---|---|---|
+| With corner booth 14 | €1,322 | €1,366 |
+| With half of table 22 | €1,092 | €1,136 |
+
+All four are inside the €1,500. I'd take the table: half the price, on the busier aisle, and the cloth can be covered.
+
+---
+
+❓ **Choices**
+
+> 💠 `Y2` Which booth:\
+> ➖ **A** Corner booth 14: own wall and socket, quieter spot, €420\
+> ⭐ **B** Half of table 22: busier aisle, shared socket, orange cloth to cover, €190
+>
+> 🔹 `Y1` How to get to {{pick.fair_city}}:\
+> ⭐ **A** Train: cheaper, leaves on Tuesday\
+> ➖ **B** Plane: one night away, tight setup
+>
+> Answer line: `Y2 B`; `Y1` can wait for Monday's fares.
+
+📋 **To do**
+
+> ✅ `T1` *Exhibitor pack received.*\
+> ✅ `T2` *Hotel booked: two rooms, Tuesday and Wednesday nights.*
+
+🧩 **Skills**
+
+> Loaded: `{{skill.visual_picks}}` {{skillv.visual_picks}}
+
+---
+
+📎 **Files**
+
+1. [fair-hall-plan.png](fair-hall-plan.png): the hall's floor plan with both spots circled.
+2. [booth-options.png](booth-options.png): the pack's photos of both spaces, side by side.
+
+---
+
+=== m fair.08 thread=fair-main side=u from=p1 to=c1 phase=backstory at=-3d10:15
+Before {{p2.name}} decides: does table 22 have power? The demo lamp needs a plug, and the hall looks dark in the photos. And the orange cloth, how bad is it?
+
+=== m fair.09 thread=fair-main side=a from=c1 to=p1 turn=t4 part=1 phase=backstory at=-3d10:22
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **Power**
+
+Table 22 has one double socket under the table, shared with the other studio (section 7 of the pack). A lamp draws very little, so sharing is fine unless they bring a screen too. That's worth asking them before the fair, not at it. Corner 14 has a socket of its own.
+
+▫️ **The cloth**
+
+It's floor-length, on three sides of the table, and the photo doesn't flatter it. The pack allows your own cloth over it as long as it's flame-retardant, and a two-meter dark one would cover your half with room to spare. Corner 14 has gray walls and no orange anywhere.\
+↳ `Y2`
+
+---
+
+❓ **Choices**
+
+> 🔷 `Y2` Which booth:\
+> ➖ **A** Corner booth 14: own wall and socket, quieter spot, €420\
+> ⭐ **B** Half of table 22: busier aisle, shared socket, orange cloth to cover, €190
+>
+> 🔹 `Y1` How to get to {{pick.fair_city}}:\
+> ⭐ **A** Train: cheaper, leaves on Tuesday\
+> ➖ **B** Plane: one night away, tight setup
+>
+> Answer line: `Y2 B`; `Y1` can wait for Monday's fares.
+
+---
+
+=== branch fair.booth
+--- option corner weight=2
+=== m fair.10 thread=fair-main side=u from=p2 to=c1 phase=backstory at=-3d12:02
+Y2 A. I've seen that orange in person at other fairs, and I'm not paying €190 to stand next to it for two days. Also, our own wall means our own banner, at full size.
+
+=== m fair.11 thread=fair-main side=a from=c1 to=p2 turn=t5 part=1 phase=backstory at=-3d12:10
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Corner booth 14 it is. I've written it up as a decision, so it doesn't get reopened when someone sees the price again.
+
+`D-005` Booth at the {{pick.fair_city}} fair: corner booth 14, 2 × 2 m, €420. Chosen over half of table 22 for its own wall, its own socket and the absence of orange.\
+↳ `D-005`
+
+With the booth in, the trip comes to €1,322 by train or €1,366 by plane on today's fares, inside the €1,500. The fair holds the booth until Monday at noon, so the form has to go in before then.\
+↳ `T3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *Booth: corner booth 14.*
+>
+> 🔹 `Y1` How to get to {{pick.fair_city}}:\
+> ⭐ **A** Train: cheaper, leaves on Tuesday\
+> ➖ **B** Plane: one night away, tight setup
+
+📋 **To do**
+
+> 💠 `T3` Send the booth form (section 11 of the pack) by Monday at noon.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+=== m fair.12 thread=fair-main side=u from=p1 to=c1 phase=backstory at=-3d16:48
+Form sent! They've confirmed corner 14, and they say the banner can hang from the back wall's top rail.
+
+=== m fair.13 thread=fair-main side=a from=c1 to=p1 turn=t6 part=1 phase=backstory at=-3d16:55
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Thank you! The rail is at 2.4 m and the banner is 2 m long, so it clears the table by a good hand's width. I've added the rail to the setup notes in the itinerary.
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Booth form sent: corner 14 confirmed.*
+
+---
+--- option shared weight=3
+=== m fair.10b thread=fair-main side=u from=p2 to=c1 phase=backstory at=-3d12:02
+Y2 B, with our own cloth over the orange. Half the price on the busier aisle is an easy sum. Can you draft the note to the other studio? I'd like it to say clearly who brings what.
+
+=== m fair.11b thread=fair-main side=a from=c1 to=p2 turn=t5 part=1 phase=backstory at=-3d12:12
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Half of table 22 it is. I've written it up as a decision, so it stays settled.
+
+`D-005` Booth at the {{pick.fair_city}} fair: half of table 22 in the indie row, €190, shared with a two-person studio from {{pick.fair_city}}. Chosen over corner booth 14 for the price and the busier aisle; we bring our own cloth.\
+↳ `D-005`
+
+With the booth in, the trip comes to €1,092 by train or €1,136 by plane on today's fares, which leaves about €400 of the €1,500 unspent. The note to the other studio is in the next message, ready to send.\
+↳ `T3`
+
+---
+
+❓ **Choices**
+
+> ✅ `Y2` *Booth: half of table 22.*
+>
+> 🔹 `Y1` How to get to {{pick.fair_city}}:\
+> ⭐ **A** Train: cheaper, leaves on Tuesday\
+> ➖ **B** Plane: one night away, tight setup
+
+📋 **To do**
+
+> 💠 `T3` Send the note to the studio sharing table 22.
+
+🧩 **Skills**
+
+> Loaded: `{{skill.decision_log}}` {{skillv.decision_log}}
+
+---
+
+=== m fair.12b thread=fair-main side=a from=c1 to=p2 turn=t5 part=2 phase=backstory at=-3d12:12 card=widget
+A draft email to the studio sharing table 22, for {{p2.name}} to send.
+
+Subject: Sharing table 22 at the fair
+
+Hello, and thank you for looking for a table partner. We're {{pick.studio}}, two people from {{pick.town}}, and we'd be glad to take the other half of table 22.
+
+A few things so the table works for both of us:
+
+1. We'll bring a plain dark cloth for our half, to go over the fair's skirting.
+2. We have one small lamp for our demo board. Does that leave you enough of the double socket?
+3. We'll be at the table by 9:45 on Wednesday at the latest.
+4. We're happy to keep an eye on your half during breaks, if you'll keep one on ours.
+
+Looking forward to meeting you,
+{{p2.name}}
+
+=== m fair.13b thread=fair-main side=u from=p1 to=c1 phase=backstory at=-3d20:30
+{{p2.name}} sent it and they've already said yes! They're bringing a screen, so they're bringing a four-way extension too. And yes to watching each other's half.
+
+=== m fair.14b thread=fair-main side=a from=c1 to=p1 turn=t6 part=1 phase=backstory at=-3d20:41
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+That's the power sorted, and a friendly neighbor before you've even arrived. I've added their extension and the break swap to the setup notes in the itinerary.
+
+---
+
+📋 **To do**
+
+> ✅ `T3` *Note sent: the other studio agreed, and brings the extension.*
+
+---
+=== end branch
+
+=== m fair.15 thread=fair-main side=u from=p1 to=c1
+Morning! Are the train's Monday fares out? And can you make the packing list? {{pick.dog}} has started on the packing pile, so it's urgent.
+
+=== m fair.16 thread=fair-main side=a from=c1 to=p1 turn=t7 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **Monday's fares**
+
+The saver fares opened at 7:00, and the flight went up again over the weekend:
+
+| Item | Train | Plane |
+|---|---|---|
+| Tickets, two people, return | €248 (saver, nonrefundable) | €522 |
+| Banner tube, both ways | €0 | €70 |
+| Hotel, two rooms | €356 (2 nights) | €178 (1 night) |
+| Food | €210 | €140 |
+| Local transport | €60 | €60 |
+| **Total before the booth** | **€874** | **€970** |
+
+The train is now €96 cheaper. The plane still saves a night away from home. If you fly, Tuesday's hotel night has to be cancelled before 18:00 today to stay free.\
+↳ `Y1`, `T5`
+
+▫️ **The packing list**
+
+Coming as soon as `Y1` is settled, because half of it depends on trains or planes: liquids, the banner tube, snacks, chargers. The socks are going on it either way, in bold.
+
+---
+
+❓ **Choices**
+
+> 🔹 `Y1` How to get to {{pick.fair_city}}:\
+> ⭐ **A** Train: €874 before the booth, leaves on Tuesday at 11:20\
+> ➖ **B** Plane: €970 before the booth, leaves on Wednesday at 6:50
+
+📋 **To do**
+
+> 💠 `T5` If you fly, cancel Tuesday night at Hotel Vantwell before 18:00 today.
+
+---
+
+=== branch fair.travel
+--- option train weight=3
+=== m fair.17 thread=fair-main side=u from=p2 to=c1
+Y1 A. €96 is €96, and six hours on a train is six hours of campaign emails that nobody can interrupt.
+
+=== m fair.18 thread=fair-main side=u from=p1 to=c1
+Fine by me! Window seat, sketchbook, done.
+
+=== note asset fair_a5: fair-itinerary-v2.md, the train plan hour by hour: the 11:20 from {{pick.town}} on Tuesday with its 40-minute change, Hotel Vantwell, setup on Wednesday, both fair days, and the 17:52 home on Thursday
+=== note asset fair_a6: packing-list.md, twenty numbered items in four groups (booth, stock, travel, personal), train version, with the power bank as item 7 and socks in bold
+=== m fair.19 thread=fair-main side=a from=c1 to=p2 turn=t8 part=1 files=fair_a5,fair_a6
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **The plan**
+
+1. **Tuesday:** the 11:20 from {{pick.town}}, a 40-minute change halfway, arriving in {{pick.fair_city}} at 17:45. Check in at Hotel Vantwell, dinner, early night.
+2. **Wednesday:** at the hall at 8:30 with the hotel porter's help loading the taxi, two hours of setup, trade day from 10:30 to 18:00.
+3. **Thursday:** public day from 10:00 to 17:00, pack down by 17:30, the 17:52 home, back just after midnight.
+
+I'd book coach 6: it's the quiet coach, and it has sockets at every pair of seats, so the laptops will last the six hours.\
+↳ `T4`
+
+▫️ **The packing list**
+
+Twenty items in four groups: booth, stock, travel, personal. The train-specific ones are a power bank, snacks for the change (the station café closes at 14:00 on weekdays), and the banner tube, which goes in the luggage rack at the end of the coach. **Socks: two extra pairs, and count them again before you close the case.**
+
+---
+
+📌 **Summary**
+
+1. Train it is: out on Tuesday, home just after midnight on Thursday.
+2. The trip is €874 before the booth.
+3. The packing list is ready.
+
+❓ **Choices**
+
+> ✅ `Y1` *Travel: train, leaving on Tuesday at 11:20.*
+
+📋 **To do**
+
+> 💠 `T4` Book two saver fares in coach 6.\
+> ✖️ `T5` *Left to run out: on the train, Tuesday night is needed.*
+
+---
+
+📎 **Files**
+
+1. [fair-itinerary-v2.md](fair-itinerary-v2.md): the train plan, hour by hour.
+2. [packing-list.md](packing-list.md): twenty items in four groups, train version.
+
+---
+
+=== m fair.20 thread=fair-main side=u from=p2 to=c1
+Booked. Coach 6, seats 41 and 42, nonrefundable as advertised.
+
+=== m fair.21 thread=fair-main side=a from=c1 to=p2 turn=t9 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Thank you. The seat numbers are in the itinerary now, next to the times.
+
+---
+
+📋 **To do**
+
+> ✅ `T4` *Train booked: coach 6, seats 41 and 42.*
+
+---
+
+=== m fair.22 thread=fair-main side=u from=p1 to=c1 after=meals.35
+On the train! Small problem: there's no socket at seats 41 and 42. My laptop's at 31%, {{p2.name}}'s at 58%, and {{p2.name}} is judging me.
+
+=== note asset fair_a7: fair-itinerary-v3.md, the train plan again, corrected: sockets only at the four end tables of each older coach, the café coach (coach 4) marked, and a socket note for the trip home
+=== m fair.23 thread=fair-main side=a from=c1 to=p1 turn=t10 part=1 files=fair_a7
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+That one's my mistake, sorry. I read the seat map for the newer trains, and this route still runs the older ones on Tuesdays. On the older coaches, the sockets are only at the four tables at each end.
+
+Here's what gets you through:
+
+1. **The power bank** (item 7 on the packing list) takes a laptop from 31% to about 70%.
+2. **The café coach**, coach 4, has sockets at its counter seats. A coffee buys you an hour there.
+3. **After the change**, the second train is the newer type, with a socket at every seat.
+
+I've corrected the itinerary and added a line on sockets for the trip home on Thursday, which is an older train too.
+
+---
+
+📎 **Files**
+
+1. [fair-itinerary-v3.md](fair-itinerary-v3.md): the train plan again, with the socket note and the café coach.
+
+---
+--- option plane weight=2
+=== m fair.17b thread=fair-main side=u from=p1 to=c1
+Y1 B. I'd rather spend the €96 than miss two bedtimes. Sorry {{p2.name}}!
+
+=== m fair.18b thread=fair-main side=u from=p2 to=c1
+Agreed. Though 6:50 isn't a departure time, it's a threat.
+
+=== note asset fair_a5b: fair-itinerary-v2-plane.md, the plane plan hour by hour: leaving {{pick.town}} at 5:15 on Wednesday, the 6:50 flight, the taxi to Hotel Vantwell, setup from 9:45, both fair days, and the 19:30 flight home on Thursday
+=== note asset fair_a6b: packing-list-plane.md, twenty numbered items in four groups (booth, stock, travel, personal), plane version, with liquids in a clear bag and the banner tube as a checked bag
+=== m fair.19b thread=fair-main side=a from=c1 to=p1 turn=t8 part=1 files=fair_a5b,fair_a6b
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **The plan**
+
+1. **Wednesday:** leave {{pick.town}} at 5:15 for the regional airport, fly at 6:50, land at 8:35. Taxi to Hotel Vantwell, leave your own bags at the desk, and let the porter load the booth kit into the taxi while you check in. At the hall by 9:45, with 45 minutes of setup.
+2. **Thursday:** public day from 10:00 to 17:00, pack down by 17:30, taxi to the airport, fly at 19:30, home around 22:30.
+
+45 minutes is enough if the booth kit comes out of one case in the right order, so I've packed it that way: cloth, board, lamp, tokens, cards, banner last.\
+↳ `T4`
+
+Tuesday's hotel night needs cancelling before 18:00 today; it's free until then.\
+↳ `T5`
+
+▫️ **The packing list**
+
+Twenty items in four groups: booth, stock, travel, personal. The plane-specific ones are liquids under 100 ml in the clear bag, the banner tube booked as a checked bag and tagged with the studio's address, and the board's wooden tokens in hand luggage, so they can't go missing. **Socks: two extra pairs, and count them again before you close the case.**
+
+---
+
+📌 **Summary**
+
+1. Plane it is: out on Wednesday at 6:50, home on Thursday around 22:30.
+2. The trip is €970 before the booth.
+3. Setup is tight but planned; the packing list is ready.
+
+❓ **Choices**
+
+> ✅ `Y1` *Travel: plane, Wednesday at 6:50.*
+
+📋 **To do**
+
+> 💠 `T4` Book the two flights, with the banner tube as a checked bag.\
+> 🔷 `T5` Cancel Tuesday night at Hotel Vantwell before 18:00.
+
+---
+
+📎 **Files**
+
+1. [fair-itinerary-v2-plane.md](fair-itinerary-v2-plane.md): the plane plan, hour by hour.
+2. [packing-list-plane.md](packing-list-plane.md): twenty items in four groups, plane version.
+
+---
+
+=== m fair.20b thread=fair-main side=u from=p2 to=c1
+Booked both, and Tuesday night is cancelled. The banner tube costs €35 each way, which makes it the most expensive passenger on the plane per kilo.
+
+=== m fair.21b thread=fair-main side=a from=c1 to=p2 turn=t9 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Thank you. The tube is at least the quietest passenger. Both bookings are in the itinerary now.
+
+---
+
+📋 **To do**
+
+> ✅ `T4` *Flights booked, with the banner tube.*\
+> ✅ `T5` *Tuesday night cancelled.*
+
+---
+
+=== m fair.22b thread=fair-main side=u from=p1 to=c1 after=meals.35
+At the airport, awake-ish. The banner tube was 4 cm over the size rule for long items. They took it anyway, with a sticker that says FRAGILE in three languages.
+
+=== m fair.23b thread=fair-main side=a from=c1 to=p1 turn=t10 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+A tube with a sticker and an attitude: perfect. From landing, the plan is:
+
+1. Banner tube from the oversize belt, which usually comes out after the main one.
+2. Taxi to Hotel Vantwell; your bags at the desk, the booth kit into the taxi with the porter.
+3. At the hall by 9:45, cloth first.
+
+Doors open for the trade day at 10:30. Safe flight!
+
+---
+=== end branch
+
+=== m fair.24 thread=fair-main side=u from=p2 to=c1
+We're set up and open. The banner fits, the lamp works, and the first visitor asked whether the wooden tokens were sweets. Twenty minutes in, four shops have taken a card.
+
+=== m fair.25 thread=fair-main side=a from=c1 to=p2 turn=t11 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Four shops in twenty minutes on a trade day is a good start. For the rest of today:
+
+1. **Shops and distributors first.** Today is the day they come; tomorrow is mostly players. A name and an email on each card is enough.
+2. **Campaign sign-ups.** Everyone who plays a round gets the little card with the sign-up link, so the six weeks start with names.
+3. **Two photos of the stand** with the board laid out, if you get a quiet minute. {{c3.name}} can use them on the campaign page.
+
+The tokens-as-sweets question is a compliment to the wood, but maybe keep the bowl out of reach of small hands tomorrow.\
+↳ `T6`
+
+---
+
+📋 **To do**
+
+> 💠 `T6` Count the campaign sign-ups at the end of each day.
+
+---
+
+=== side_story fair.suitcase chance=0.4
+=== m fair.40 thread=fair-main side=u from=p2 to=c1
+Small crisis. The case with the stock, 36 copies of our first game for tomorrow's sales, isn't here. The porter loaded the taxi this morning and I was sure it went in. It didn't come out at the hall.
+
+=== m fair.41 thread=fair-main side=a from=c1 to=p2 turn=t12 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+▫️ **Where it can be**
+
+1. **At the hotel.** The porter loaded the taxi from the luggage room. A case left behind would still be there, or on a trolley. This is the most likely place.
+2. **In the taxi.** If it went in and didn't come out, it left with the driver. The receipt has the car number.
+3. **At the hall's loading bay**, if it came out of the taxi with the rest and got set aside. Worth one look.
+
+The hotel desk first (the number is on the booking confirmation), then the taxi company.\
+↳ `T7`
+
+▫️ **If it doesn't turn up**
+
+Today is the trade day, so nothing is lost yet: nobody buys copies today. Tomorrow, without the stock, you can take orders on the order pads in the booth kit and ship from the studio next week. I'll write the sign for that if we need it.\
+↳ `T8`
+
+---
+
+📋 **To do**
+
+> 💠 `T7` Call the hotel desk and the taxi company.\
+> 💠 `T8` If the case is still missing at 18:00, switch tomorrow's sales to orders.
+
+---
+
+=== m fair.42 thread=fair-main side=u from=p1 to=c1
+Hotel desk is looking. The taxi company says the car was empty when the driver cleaned it at 11. {{p2.name}} has checked the loading bay twice.
+
+=== m fair.43 thread=fair-main side=a from=c1 to=p1 turn=t13 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Then the hotel is the best bet by a long way: a case that never reached the taxi can only be where the taxi started. I'd leave the desk to look and get back to the shops; the sign for tomorrow can wait until 18:00.
+
+---
+
+📋 **To do**
+
+> ✅ `T7` *Hotel desk and taxi company called.*\
+> 🔷 `T8` If the case is still missing at 18:00, switch tomorrow's sales to orders.
+
+---
+
+=== m fair.44 thread=fair-main side=u from=p2 to=c1
+Found. It spent the afternoon in the hotel's back office, on a trolley tagged for room 214, next to someone else's golf bag. Nobody in room 214 plays golf either, apparently.
+
+=== m fair.45 thread=fair-main side=a from=c1 to=p2 turn=t14 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Good: 36 copies, back in time for the day that sells them. Room 214 remains a mystery. I'd carry that case to the taxi yourselves in the morning.
+
+---
+
+📋 **To do**
+
+> ❎ `T8` *Dropped: no order plan needed, the stock is back.*
+
+---
+=== end side_story
+
+=== m fair.50 thread=fair-main side=u from=p1 to=c1
+Quick one! The owner of a game shop here wants 40 copies of our first game for the shop. What do we offer? They're coming back at 3. And is that a me question or a {{c8.name}} question?
+
+=== m fair.51 thread=fair-main side=a from=c1 to=p1 turn=t15 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+A {{c8.name}} question: discounts and payment terms are {{c8.pronoun_pos}} side, and I'd rather you had real numbers at 3 than my guess. The prompt below asks for exactly what you need to say. Paste it into {{c8.pronoun_pos}} thread and bring the answer back.\
+↳ `{{code.r1}} A`
+
+Meanwhile, ask the owner for a card with the shop's billing address. Whatever the terms, the offer goes out in writing.
+
+---
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} A START]
+To: {{c8.emoji}} {{c8.name}}
+From: {{c1.emoji}} {{c1.name}}
+Subject: Wholesale terms for a shop order at the fair
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+A game shop owner in {{pick.fair_city}} wants 40 copies of the studio's first game for their shop. {{p1.name}} meets them again at 15:00 today, at the fair.
+
+Please send back, in a form {{p1.name}} can say out loud:
+
+1. the discount to offer,
+2. the shipping terms,
+3. the payment terms.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+```
+
+---
+
+=== m fair.52 thread=fair-money side=u from=p1 to=c8
+Quick one from the fair, from {{c1.name}}:
+
+[PROMPT {{code.r1}} A START]
+To: {{c8.emoji}} {{c8.name}}
+From: {{c1.emoji}} {{c1.name}}
+Subject: Wholesale terms for a shop order at the fair
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅰️⬛🔽🔽⬛
+
+A game shop owner in {{pick.fair_city}} wants 40 copies of the studio's first game for their shop. {{p1.name}} meets them again at 15:00 today, at the fair.
+
+Please send back, in a form {{p1.name}} can say out loud:
+
+1. the discount to offer,
+2. the shipping terms,
+3. the payment terms.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅰️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} A END]
+
+=== m fair.53 thread=fair-money side=a from=c8 to=p1 turn=t1 part=1
+{{c8.emoji}} **{{c8.name}}** · {{date}} · {{time}}
+
+Good news, and an easy one. Our wholesale price for the first game is 45% off retail for 12 copies or more, so 40 copies qualifies without any special deal. Shipping 40 copies takes two cartons, about €68, and I'd cover it: it's a fair order, and free shipping over 30 copies is a nice thing to be able to say. Because it's a first order with this shop, I'd ask for half up front and half in 30 days.
+
+The answer is below, for {{c1.name}}. One gentle rule: nothing ships until the shop has the offer in writing and the first half has arrived.\
+↳ `{{code.r1}} B`
+
+---
+
+🧩 **Skills**
+
+> Loaded: `{{skill.prompt_relay}}` {{skillv.prompt_relay}}
+
+---
+
+📨 **Prompts**
+
+```text
+[PROMPT {{code.r1}} B START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Wholesale terms for a shop order at the fair
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅱️⬛🔽🔽⬛
+
+Terms for the 40 copies:
+
+1. Discount: our standard wholesale, 45% off retail (it applies from 12 copies).
+2. Shipping: free, since the order is over 30 copies. It costs us about €68.
+3. Payment: half when the order is confirmed, half within 30 days.
+
+Nothing ships until the shop has the offer in writing and the first half is paid.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} B END]
+```
+
+---
+
+=== m fair.54 thread=fair-main side=u from=p1 to=c1
+Back from {{c8.name}}:
+
+[PROMPT {{code.r1}} B START]
+To: {{c1.emoji}} {{c1.name}}
+From: {{c8.emoji}} {{c8.name}}
+Subject: Wholesale terms for a shop order at the fair
+Created: {{date_long}} · {{time_long}}
+⬛🔽🔽⬛🆔{{code.r1.keys}}🅱️⬛🔽🔽⬛
+
+Terms for the 40 copies:
+
+1. Discount: our standard wholesale, 45% off retail (it applies from 12 copies).
+2. Shipping: free, since the order is over 30 copies. It costs us about €68.
+3. Payment: half when the order is confirmed, half within 30 days.
+
+Nothing ships until the shop has the offer in writing and the first half is paid.
+
+⬛🔼🔼⬛🆔{{code.r1.keys}}🅱️⬛🔼🔼⬛
+Account: studio
+Skills: {{skill.prompt_relay}} {{skillv.prompt_relay}}
+[PROMPT {{code.r1}} B END]
+
+=== m fair.55 thread=fair-main side=a from=c1 to=p1 turn=t16 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+That's a clear yes from {{c8.name}}. Here it is in three sentences you can say at 3:
+
+1. "Our wholesale price is 45% off retail, and 40 copies qualifies."
+2. "Shipping's on us, since it's over 30 copies."
+3. "Half when you confirm, half within 30 days, and we'll send it all in writing on Monday."
+
+If they ask for more than 45%, that's a "let me check" rather than a yes on the spot.\
+↳ `T9`
+
+---
+
+📋 **To do**
+
+> 🔷 `T6` Count the campaign sign-ups at the end of each day.\
+> 💠 `T9` Send the shop the written offer by Monday, with {{c8.name}}'s terms.
+
+---
+
+=== m fair.56 thread=fair-main side=u from=p1 to=c1
+Done, and they said yes! Final numbers: 31 copies of the first game sold, 74 sign-ups for the campaign list (29 yesterday, 45 today), and one shop order of 40. My feet have filed a formal complaint. Heading home!
+
+=== m fair.57 thread=fair-main side=a from=c1 to=p1 turn=t17 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+That's a very good fair. The 74 sign-ups matter most for the next six weeks: those are people who've held the tokens and played a round, and they're the likeliest first backers. The shop order is the nicest surprise, a second shop for the first game in a city you'd never sold in.
+
+Rest the feet. The written offer can wait until Monday, as promised.\
+↳ `T9`
+
+---
+
+📌 **Summary**
+
+1. 31 copies sold at the stand.
+2. 74 campaign sign-ups over two days.
+3. A shop in {{pick.fair_city}} ordering 40 copies, offer in writing by Monday.
+
+📋 **To do**
+
+> ✅ `T6` *Sign-ups counted: 29 on Wednesday, 45 on Thursday.*\
+> 🔷 `T9` Send the shop the written offer by Monday, with {{c8.name}}'s terms.
+
+---
+
+=== m fair.58 thread=fair-main side=u from=p2 to=c1
+Receipts are in the shared folder, all 23 of them. Local transport came in at €48 against €60 planned. I looked for something wrong with the trip plan, and the only thing I found was the price of coffee at the hall, which I accept was not your fault. The shop offer went out this morning, too. Thank you, {{c1.name}}.
+
+=== m fair.59 thread=fair-main side=a from=c1 to=p2 turn=t18 part=1
+{{c1.emoji}} **{{c1.name}}** · {{date}} · {{time}}
+
+Thank you, {{p2.name}}, that means a lot coming from the person who checks every line. €12 under on transport and a whole fair without a lost receipt is a good week's work. The receipts are ready for {{c8.name}}'s monthly check whenever you are.
+
+---
+
+📋 **To do**
+
+> ✅ `T9` *Shop offer sent.*\
+> 💠 `T10` Hand the receipts folder to {{c8.name}} for the monthly check.
+
+---
+
+=== hook after-fair
+
+=== canon The fair in {{pick.fair_city}} runs on Wednesday (trade day) and Thursday (public day) of the week after the story week; the planning and booking happen in the story week, the trip after it; {{p1.name}} and {{p2.name}} are both there and get home late on Thursday night.
+=== canon The studio's money is counted in euros; the fair trip's budget was €1,500 all in, booth included.
+=== canon At the fair, {{p1.name}} and {{p2.name}} stay at Hotel Vantwell, by the fair's north gate, at €89 a room a night.
+=== canon `D-005` is the fair booth: corner booth 14 for €420 in the corner branch, or half of table 22 for €190 in the shared branch.
+=== canon The fair's tables come with orange skirting cloths.
+=== canon In the train branch, they leave on Tuesday at 11:20 in coach 6, seats 41 and 42, on €248 saver fares; {{c1.name}} wrongly said the seats had sockets and corrected it.
+=== canon In the plane branch, they fly on Wednesday at 6:50 and home on Thursday at 19:30; the banner tube flies as a checked bag at €35 each way.
+=== canon At the fair the studio sold 31 copies of its first game, got 74 campaign sign-ups (29 on Wednesday, 45 on Thursday), and a shop in {{pick.fair_city}} ordered 40 copies.
+=== canon The first game's wholesale price is 45% off retail from 12 copies; shipping is free over 30 copies; first orders pay half up front and half within 30 days.
+=== canon Local transport on the fair trip came to €48 against €60 planned; there are 23 receipts in the shared folder.
