@@ -5,7 +5,8 @@ Usage:
     scan.py DEMO_REPO [--terms DENY_LIST.md] [--patterns PATTERNS.json]
 
 Reads every file in DEMO_REPO except .git/ and this scanner's own three files (scan.py, images.py, patterns.json)
-with their compiled .pyc files in its __pycache__/, when they sit inside DEMO_REPO, and every path's name. Flags:
+with their compiled .pyc files in its __pycache__/ (unless run with -B, as CI is, which writes none), when they sit
+inside DEMO_REPO, and every path's name. Flags:
 
 1. every pattern in the public patterns file (tools/demo/patterns.json beside this script, unless --patterns names
    another), on text with hidden characters removed and NFKC applied, plus each hidden character itself;
@@ -146,7 +147,7 @@ def walk(repo):
     here = os.path.realpath(HERE)
     skip = {os.path.join(root, ".git")}
     skip.update(os.path.join(here, n) for n in OWN_FILES)
-    cache = os.path.join(here, "__pycache__")  # only the .pyc files Python writes there are skipped
+    cache = os.path.join(here, "__pycache__")  # only the .pyc files Python writes there are skipped, and none under -B
     out = []
     for folder, dirs, names in os.walk(root):
         keep = []
@@ -162,7 +163,7 @@ def walk(repo):
         dirs[:] = keep
         for n in sorted(names):
             path = os.path.join(folder, n)
-            if folder == cache and n.endswith(".pyc") and not os.path.islink(path):
+            if folder == cache and n.endswith(".pyc") and not os.path.islink(path) and not sys.dont_write_bytecode:
                 continue
             if path not in skip:
                 out.append((path, os.path.islink(path)))
