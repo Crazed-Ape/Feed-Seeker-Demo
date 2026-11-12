@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "about": "The Seeker demo scanner's patterns (spec 9.2): what must never appear in demo content, whoever wrote it. Public on purpose: it holds shapes, not names. The private term list lives outside every repo and points here.",
+  "allow_urls": [],
+  "patterns": [
+    {"n": 1, "what": "an email address",
+     "re": "[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\\.[A-Za-z0-9-]+)*\\.[A-Za-z]{2,}"},
+    {"n": 2, "what": "a platform ID (message, channel, session, user or tool call)",
+     "re": "(?<![A-Za-z0-9])(?:cmsg|chan|cse|session|user|toolu)_[A-Za-z0-9]+"},
+    {"n": 3, "what": "a GitHub address other than the demo repo's own",
+     "re": "(?i)(?<![A-Za-z0-9.-])(?:[A-Za-z0-9-]+\\.)*github\\.(?:com|io)(?![A-Za-z0-9-])",
+     "unless": ["(?i)github\\.com/Crazed-Ape/Feed-Seeker-Demo(?![A-Za-z0-9_.-])"]},
+    {"n": 4, "what": "a claude.ai address other than a demo page stand-in or an allowed link",
+     "re": "(?i)(?<![A-Za-z0-9.-])claude\\.ai(?![A-Za-z0-9-])",
+     "unless": ["claude\\.ai/artifact/demo-[a-z2-7]{12}(?![A-Za-z0-9_-])", "@allow_urls"]},
+    {"n": 5, "what": "a 40-character hex string (a commit or a key) other than the demo CI's pinned checkout action",
+     "re": "(?<![0-9A-Fa-f])[0-9A-Fa-f]{40}(?![0-9A-Fa-f])",
+     "unless": ["(?<=uses: actions/checkout@)08c6903cd8c0fde910a37f88322edcfb5dd907a8(?![0-9A-Fa-f])"]},
+    {"n": 6, "what": "a path on a real machine",
+     "re": "/mnt/project-files|/home/|/root/|/tmp/claude"},
+    {"n": 7, "what": "something shaped like a secret",
+     "re": "sk-ant-|(?<![A-Za-z0-9])gh[pousr]_[A-Za-z0-9]|github_pat_|xox[bp]-|AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----"},
+    {"n": 8, "what": "a githubusercontent.com or claude.com address",
+     "re": "(?i)githubusercontent\\.com|(?<![A-Za-z0-9.-])claude\\.com(?![A-Za-z0-9-])"},
+    {"n": 9, "what": "a zero-width or direction-control character",
+     "re": "hidden"}
+  ],
+  "hidden": "[\\u00AD\\u034F\\u061C\\u115F\\u1160\\u180E\\u200B-\\u200F\\u202A-\\u202E\\u2060-\\u2064\\u2066-\\u2069\\u3164\\uFE00-\\uFE0F\\uFEFF\\uFFA0\\U000E0000-\\U000E007F\\U000E0100-\\U000E01EF]",
+  "hidden_note": "Hidden: soft hyphen, combining grapheme joiner, Arabic letter mark, Hangul and halfwidth fillers, Mongolian vowel separator, zero-width and direction marks, embeddings, overrides and isolates, invisible operators, variation selectors, the byte-order mark and tag characters. Two are part of ordinary emoji and aren't flagged: a zero-width joiner (U+200D) between an emoji and a symbol, and the emoji presentation selector (U+FE0F) after a symbol, or after 0-9, # or * before the keycap mark U+20E3. Every hidden character is still removed before the other patterns and the terms are matched."
+}
